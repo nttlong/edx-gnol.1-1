@@ -1083,6 +1083,7 @@ if settings.FEATURES.get('ENABLE_API_DOCS'):
     ]
 
 urlpatterns.extend(plugin_urls.get_patterns(plugin_constants.ProjectType.LMS))
-
+import os
 import xdj
-urlpatterns = xdj.load_apps("/opt/edx-hawthorn.2-4/apps/edx/edx-platform/xdj_apps",urlpatterns)
+_path = os.sep.join([settings.REPO_ROOT.__str__(),"xdj_apps"])
+urlpatterns = xdj.load_apps(_path,urlpatterns)
