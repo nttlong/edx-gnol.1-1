@@ -1,56 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a76d17d1-ee98-4620-ad71-9e5a4ffb3d0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/cache.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/headers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/logging.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/profiling.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/request.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/settings.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/signals.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/sql.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/sql_explain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/sql_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/sql_select.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/staticfiles.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/template_source.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/templates.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/timer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/panels/versions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/debug_toolbar/redirect.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/cache.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/headers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/logging.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/profiling.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/request.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/settings.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/signals.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/sql.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/sql_explain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/sql_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/sql_select.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/staticfiles.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/template_source.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/templates.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/timer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/panels/versions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/debug_toolbar/redirect.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/learner_profile/learner-achievements-fragment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/learner_profile/learner_profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/pipeline/css.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/pipeline/css.jinja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/pipeline/inline_js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/pipeline/inline_js.jinja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/pipeline/js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/pipeline/js.jinja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/lms/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj/config/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/config/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/config/settings.json" afterDir="false" />
-    </list>
+    <list default="true" id="a76d17d1-ee98-4620-ad71-9e5a4ffb3d0b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/template/loaders/filesystem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="63" selection-end-column="16" />
+            <state relative-caret-position="262">
+              <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -170,7 +121,7 @@
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj-gnol-lms-templates" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj-tmp-templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -271,7 +222,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1301" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2832551" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -279,12 +229,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.117263846" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46579805" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.36482084" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.36482084" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -656,8 +606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/template/loaders/filesystem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="63" selection-end-column="16" />
+        <state relative-caret-position="262">
+          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
         </state>
       </provider>
     </entry>
