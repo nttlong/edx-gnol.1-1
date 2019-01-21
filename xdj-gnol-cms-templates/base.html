@@ -74,7 +74,7 @@ import xdj
     <%static:css group='style-vendor-tinymce-skin'/>
 
     % if uses_bootstrap:
-      <link rel="stylesheet" href="${static.url(self.attr.main_css)}" type="text/css" media="all" />
+      <link rel="stylesheet" href="/static/${self.attr.main_css}" type="text/css" media="all" />
     % else:
       <%static:css group='${self.attr.main_css}'/>
     % endif

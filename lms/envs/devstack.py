@@ -77,9 +77,9 @@ DEBUG_TOOLBAR_PANELS = (
     # that imports and extends devstack.py.
 )
 
-DEBUG_TOOLBAR_CONFIG = {
-    'SHOW_TOOLBAR_CALLBACK': 'lms.envs.devstack.should_show_debug_toolbar',
-}
+# DEBUG_TOOLBAR_CONFIG = {
+#     'SHOW_TOOLBAR_CALLBACK': 'lms.envs.devstack.should_show_debug_toolbar',
+# }
 
 
 def should_show_debug_toolbar(request):

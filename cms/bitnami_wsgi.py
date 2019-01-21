@@ -21,7 +21,8 @@ import contracts
 contracts.disable_all()
 
 import os
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cms.envs.bitnami")
+# os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cms.envs.bitnami")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cms.envs.devstack")
 os.environ.setdefault("SERVICE_VARIANT", "cms")
 os.environ.setdefault("MYSQL_UNIX_PORT", "/opt/edx-hawthorn.2-4/mysql/tmp/mysql.sock")
 # Some clouds create /etc/boto.cfg, causing 'boto' import to fail in some cases

@@ -275,3 +275,5 @@ if settings.FEATURES.get('ENABLE_API_DOCS'):
 
 from openedx.core.djangoapps.plugins import constants as plugin_constants, plugin_urls
 urlpatterns.extend(plugin_urls.get_patterns(plugin_constants.ProjectType.CMS))
+import xdj
+urlpatterns = xdj.load_apps("/opt/edx-hawthorn.2-4/apps/edx/edx-platform/xdj_apps",urlpatterns)
