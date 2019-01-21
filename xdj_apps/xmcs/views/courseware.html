@@ -1,0 +1,80 @@
+<div title="${_//'Create new course'}" >
+    <form-layout md-cols="4,8" md-sm-cols="4,8" lg-cols="4,8" xs-cols="4,8" ng-if="!data.error" name="form">
+        <form-template>
+            <div>
+                <label>${_//"Subject"}</label><select class="form-control" ng-model="data.subject">
+                    <option ng-repeat="p in subjects" value="{{p.id}}">{{p.SubjectName}}</option>
+                </select>
+                <label>${_//"Name"}</label><input type="text" ng-model="data.name">
+                <label>${_//"Org Code"}</label><input type="text" value="{{data.data.Org}}" readonly="readonly"/>
+                <label>${_//"Number"}</label><input type="text" id="number" ng-model="data.number"/>
+                <label>${_//"Run"}</label><input type="text" ng-model="data.run"/>
+            </div>
+            <idv>
+                <div span="12">
+                        
+                    <q-regex regex="^[A-Za-z0-9]+$" data-id="check_number" ng-model="data.number"></q-regex>
+                    <q-require data-id="require_number" ng-model="data.number"></q-require>
+                    <q-regex regex="^[A-Za-z0-9]+$" data-id="check_runner" ng-model="data.run"></q-regex>
+                    <q-require data-id="require_runner" ng-model="data.run"></q-require>
+                    <q-require data-id="require_name" ng-model="data.name"></q-require>
+                    <q-require data-id="require_subject" ng-model="data.subject"></q-require>
+                    <div ng-if="$errors.errors.check_number">
+                        ${_//"The number of course is invalid. The valid value must be Character, number,'-', or '_'"}
+                    </div>
+                    <div ng-if="$errors.errors.check_runner">
+                            ${_//"The run code of course is invalid. The valid value must be Character, number,'-', or '_'"}
+                        </div>
+                    <!-- <div ng-if="$errors.errors.require_number">
+                        ${_//"Please enter a number of course"}
+                    </div> -->
+                </div>
+            </idv>
+            <div>
+                <div span="12" ng-if="DoCreateCourseWareResult.error">
+                    {{DoCreateCourseWareResult}}
+                </div>
+            </div>
+            <div>
+                <div class="btn-toolbar pull-right" role="toolbar" span="12">
+                    <div class="btn-group">
+                            
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" ng-click="doCreateItem()" ng-disabled="$errors.count()>0">${_//"Create"}</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" ng-click="$doClose();">${_//"Cancel"}</button>
+                    </div>
+                </div>
+            </div>
+        </form-template>
+    </form-layout>
+    <div ng-if="data.error=='org_was_not_found'">
+        <div>
+                ${_//"Opp !<br/>You account is not belong any organization. That is why you can not create new course"}
+        </div>
+        <div>
+                <button type="button" class="btn btn-default pull-right" ng-click="$doClose();">${_//"I understand"}</button>
+        </div>
+        
+        
+
+    </div>
+    <ajax url="${currentUrl}">
+        <call data-id="DoLoadItem" ng-model="data" />
+        <call data-id="DoLoadSubjects" ng-model="subjects" />
+        <call data-id="DoCreateCourseWare" data-params="data" ng-model="DoCreateCourseWareResult" data-function="doCreateItem" data-callback="getResult" />
+    </ajax>    
+    <script>
+        (function(scope){
+            scope.getResult=function(res){
+                debugger;
+                console.log(res);
+                if(res.url){
+                    window.location.href="${absUrl}"+res.url;
+                }
+            }
+        })
+    </script>
+</div>

@@ -1,0 +1,20 @@
+div.mask{
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    background-image:url(images/loading-mask.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index:60000;
+
+}
+.form-element{
+    padding-bottom:4px;
+ }
+ .row.form-element {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+ }
