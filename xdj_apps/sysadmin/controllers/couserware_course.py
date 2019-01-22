@@ -66,3 +66,49 @@ class couserware_couser_controller(xdj.BaseController):
         CourseOverview.objects.filter(id=course_id).delete()
         """delete courseware by current user"""
         return {}
+    @xdj.Page(
+        url="editor",
+        template="couserware/course.html"
+    )
+    class Editor(object):
+
+        def DoLoadSubjects(self, model):
+            from xdj_models.models import CourseSubjectsLinks, CourseSubjects
+            ret = []
+            for item in CourseSubjects().objects.all():
+                ret.append(dict(val=item.SubjectCode, name=item.SubjectName))
+            return ret
+
+        def DoLoadItem(self, model):
+            from opaque_keys.edx.locator import CourseLocator
+            id = CourseLocator.from_string(model.post_data.id)
+            from openedx.core.djangoapps.content.course_overviews.models import CourseOverview
+            ret = CourseOverview.objects.get(id=id)
+            from xdj_models.models import CourseSubjectsLinks, CourseSubjects
+            list(CourseSubjectsLinks().objects.filter(id=1))
+            items =list(CourseSubjectsLinks().objects.filter(course_id=id).all())
+            subject = ""
+            if items.__len__() > 0:
+                subject = items[0].subject_id
+
+            return dict(
+                id=ret.id.html_id(),
+                name=ret.display_name,
+                subject=subject
+
+            )
+            pass
+
+        def DoUpdateItem(self, model):
+            from xdj_models.models import CourseSubjectsLinks, CourseSubjects
+            from opaque_keys.edx.locator import CourseLocator
+            id = CourseLocator.from_string(model.post_data.data["id"])
+            items = list(CourseSubjectsLinks().objects.filter(course_id=id).all())
+            if items.__len__() == 0:
+                x = CourseSubjectsLinks().objects.create(course_id=id, subject_id=model.post_data.data['subject'])
+                x.save()
+            else:
+                x=items[0]
+                x.subject_id = model.post_data.data['subject']
+                x.save()
+            return {}

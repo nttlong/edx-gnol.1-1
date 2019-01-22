@@ -31,7 +31,13 @@
             <td>
                 <input type="button" class="btn btn-default" value="${_//'Edit'}" ng-click="editItem=p;$root.$dialog($id).url('${appUrl}/system/orgs/org').done();">
             </td>
-            <td>{{p}}</td>
+            <td>
+                <label>${_//"Code"}</label>:<span>{{p.OrgCode}}</span><br>
+                <label>${_//"Name"}</label>:<span>{{p.OrgName}}</span><br>
+                <label>${_//"Foreigner name"}</label>:<span>{{p.OrgFName}}</span><br>
+                <label>${_//"Description"}</label>:<span>{{p.OrgDescription}}</span>
+
+            </td>
         </tr>
         </tbody>
     </table>

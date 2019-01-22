@@ -5,9 +5,13 @@ from . import course_subjects
 class CourseSubjectsLinks(models.Model):
     # course = models.ForeignKey(CourseOverview)
     id = models.AutoField(primary_key=True)
-    subject_id = models.OneToOneField(
-        to= course_subjects,
-        to_field=course_subjects.SubjectCode,
+    subject = models.ForeignKey(
+        to= course_subjects.CourseSubjects,
+        to_field="SubjectCode",
+
+        related_name="subject_code",
+
+
     )
     course = models.ForeignKey(CourseOverview)
     class Meta:

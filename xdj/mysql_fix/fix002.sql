@@ -18,3 +18,9 @@ CREATE TABLE `user_api_userretirementrequest` (
   UNIQUE KEY `user_id` (`user_id`),
   CONSTRAINT `user_api_userretirementrequest_user_id_7f7ca22f_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `courseware_subjects_links` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `subject_id` VARCHAR(145) NULL,
+  `course_id` VARCHAR(145) NULL,
+  PRIMARY KEY (`id`));

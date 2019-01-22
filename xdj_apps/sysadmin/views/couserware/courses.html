@@ -3,19 +3,23 @@
     	<li ng-repeat="p in courses" class="list-group-item">
             <table>
                 <tr>
-                    <td valign="top"><img src="${absUrl}{{p.course_image_url}}" style="max-width:120px;min-width:120px"></td>
+                    <td valign="top">
+                        <input type="button" class="btn btn-primary" value="${_//'Edit'}" ng-click="currentId=p.course_id;$root.$dialog($id).url('${currentUrl}/editor').done()"/>
+                    </td>
+                    <td valign="top"><img src="${absUrl}{{p.course_image_url}}" style="max-width:120px;min-width:120px;padding:4px"></td>
                     <td style="width:100%">
                         <div class="container-fluid">
-                            <span>${_//"Mã khóa học"}</span>:<b> {{p.course_id}}</b><br>
-                            <span>${_//"Tên"}</span>:{{p.display_name}}<br>
-                            <span>enrollment_end</span>:{{p.enrollment_end}}<br>
-                            <span>org</span>:{{p.org}}<br>
-                            <span>${_//"Số học viên tối đa"}</span>:{{p.max_student_enrollments_allowed}}<br>
-                            <span>announcement</span>:{{p.announcement}}<br>
-                            <span>start</span>:{{p.start}}<br>
-                            <span>short_description</span>:{{p.short_description}}<br>
-                            <span>{{p.students}}</span>
-                            <span>${_//"Tác giả"}</span>:{{p.author.username}}<br>
+                           
+                            <label>${_//"Code"}</label>: {{p.course_id}}<br>
+                            <label>${_//"Name"}</label>:{{p.display_name}}<br>
+                            <label>${_//"Enrollment end"}</label>:{{p.enrollment_end}}<br>
+                            <label>${_//"Organizatio code"}</label>:{{p.org}}<br>
+                            <label>${_//"Limit students"}</label>:{{p.max_student_enrollments_allowed}}<br>
+                            <label>${_//"Announcement"}</label>:{{p.announcement}}<br>
+                            <label>${_//"Start on"}</label>:{{p.start}}<br>
+                            <label>${_//"Description"}</label>:{{p.short_description}}<br>
+                            <!-- <label>{{p.students}}</label> -->
+                            <label>${_//"Owner"}</label>:{{p.author.username}}<br>
                         </div>
 
                     </td>

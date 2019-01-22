@@ -1,5 +1,5 @@
-<div title="${_//'Edit or add new subject'}" ng-init="data=$parent.selectedItem||{SubjectCode:'',SubjectName:'',SubjectFName:''}">
-    <form-layout>
+<div title="${_//'Edit or add new subject'}" ng-init="data={SubjectCode:'xxxx'}">
+    <form-layout xs-cols="12" sm-col="4,8" md-col="4,8" lg-cols="4,8">
         <form-template>
             <div>
                 <label>${_//"Code"}</label><input type="text" ng-model="data.SubjectCode"/>
@@ -14,7 +14,16 @@
             </div>
             <div>
                 <div span="12">
-                     {{doSaveResult}}   
+                    <div ng-if="doSaveResult" ng-init="$parent.data=doSaveResult.data">
+                        <div ng-if="doSaveResult.error">
+                                {{doSaveResult.error}}
+                        </div>
+                        <div ng-if="!doSaveResult.error">
+                               ${_//"Update data is successfull"} 
+                        </div>
+                            
+                    </div>
+                    
                 </div>
             </div>
             <div>
@@ -26,13 +35,14 @@
                         <button type="button" class="btn btn-primary" ng-click="doSave()">${_//"Update"}</button>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-default" ng-click="$doClose();">${_//"Cancel"}</button>
+                        <button type="button" class="btn btn-default" ng-click="$doClose();">${_//"Close"}</button>
                     </div>
                 </div>
             </div>
         </form-template>
     </form-layout>
     <ajax url="${currentUrl}">
+        <call data-id="DoLoadItem" data-params="{id:$parent.selectedId}" ng-model="data"/>
         <call data-id="DoSaveItem" data-params="data" data-function="doSave" ng-model="doSaveResult"/>
     </ajax>
 </div>

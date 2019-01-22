@@ -1,15 +1,18 @@
 <div title="${_//'Edot or add new organiozation info'}" ng-init="data=$parent.editItem||{OrgCode:'',OrgName:''}">
-    <form-layout>
+    <form-layout xs-cols="12" sm-col="4,8" md-col="4,8" lg-cols="4,8">
         <form-template>
             <div>
                 <label>${_//"Code"}</label><input type="text" ng-model="data.OrgCode" maxlength="50"/>
                 
             </div>
             <div>
-                <label>${_//"Name"}</label><input type="text" ng-model="data.OrgName" span="12" maxlength="200"/>
+                <label>${_//"Name"}</label><input type="text" ng-model="data.OrgName" maxlength="200"/>
             </div>
             <div>
-                <label>${_//"Foreigner name"}</label><input type="text" ng-model="data.OrgFName" span="12" maxlength="200"/>
+                <label>${_//"Foreigner name"}</label><input type="text" ng-model="data.OrgFName"  maxlength="200"/>
+            </div>
+            <div>
+                    <label>${_//"Description"}</label><textarea class="form-control" ng-model="data.OrgDescription"  maxlength="2000"></textarea>
             </div>
             <div ng-if="saveItemResult.error_field">
                 <span span="12">

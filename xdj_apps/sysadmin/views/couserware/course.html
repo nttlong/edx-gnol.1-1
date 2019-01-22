@@ -1,0 +1,32 @@
+<div title="${_//'Edit course info'}">
+    <form-layout xs-cols="12" sm-col="4,8" md-col="4,8" lg-cols="4,8">
+        <form-template>
+            <div>
+                <label>${_//"Code"}</label><input type="tex" ng-model="data.id" readonly="readonly"/>
+                <label>${_//"Name"}</label><input type="tex" ng-model="data.name" readonly="readonly"/>
+                <label>${_//"Subject"}</label><select class="form-control" ng-model="data.subject">
+                    <option ng-repeat="p in subjects" value="{{p.val}}">{{p.name}}</option>
+                </select>
+            </div>
+            <div>
+                <div class="btn-toolbar pull-right" role="toolbar" span="12">
+                    <div class="btn-group">
+
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" ng-click="doUpdate();">${_//"Update"}</button>
+
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default" ng-click="$doClose()">${_//"Close"}</button>
+                    </div>
+                </div>
+            </div>
+        </form-template>
+    </form-layout>
+    <ajax url="${currentUrl}">
+        <call data-id="DoLoadItem" data-params="{id:$parent.currentId}" ng-model="data"/>
+        <call data-id="DoLoadSubjects" ng-model="subjects"/>
+        <call data-id="DoUpdateItem" data-function="doUpdate" data-params="{data:data}" ng-model="result" data-callback="$doClose" />
+    </ajax>
+</div>>
