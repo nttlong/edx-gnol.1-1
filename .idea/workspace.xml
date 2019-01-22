@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76d17d1-ee98-4620-ad71-9e5a4ffb3d0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/couserware/course.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.babelrc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.coveragerc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.eslintignore" beforeDir="false" />
@@ -4362,17 +4361,12 @@
       <change beforePath="$PROJECT_DIR$/../docs/testing.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/v1_sass_pipeline.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj/mysql_fix/fix002.sql" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/mysql_fix/fix002.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/couserware_course.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/couserware_course.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/views/couserware/courses.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/couserware/courses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/org.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/org.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/orgs.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/orgs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subject.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subject.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_models/models/course_subject_link.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_models/models/course_subject_link.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_models/models/course_subjects.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_models/models/course_subjects.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lms/envs/devstack.py" beforeDir="false" afterPath="$PROJECT_DIR$/lms/envs/devstack.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-cms-templates/xdj-vendor.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/xdj-vendor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/views/base_lms.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/views/base_lms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/views/commons/nav_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/views/commons/nav_bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/views/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/views/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/README.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/celery.py" beforeDir="false" />
@@ -8368,7 +8362,7 @@
         <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/couserware_course.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="402">
-              <caret line="102" column="77" lean-forward="true" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="77" />
+              <caret line="102" column="77" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="77" />
               <folding>
                 <element signature="e#2379#2876#0" />
               </folding>
@@ -8385,11 +8379,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lms/static/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+            <state relative-caret-position="307">
+              <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lms/envs/devstack.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -8407,7 +8410,7 @@
         <entry file="file://$PROJECT_DIR$/xdj_models/models/course_subject_link.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -8419,7 +8422,7 @@
         <entry file="file://$PROJECT_DIR$/xdj_models/models/course_subjects.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -8431,7 +8434,7 @@
         <entry file="file://$PROJECT_DIR$/xdj_models/models/course_authors.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+              <caret column="30" selection-start-column="30" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -8449,16 +8452,7 @@
         <entry file="file://$PROJECT_DIR$/xdj/mysql_fix/fix002.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/mysql_fix/xlms.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="123" column="37" lean-forward="true" selection-start-line="123" selection-start-column="37" selection-end-line="123" selection-end-column="37" />
+              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -8474,7 +8468,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>xxxx/js/lms-application.js</find>
       <find>lms-base-application.js</find>
       <find>bundles/commons.js</find>
       <find>static/js/lms-main_vendor.js</find>
@@ -8504,6 +8497,7 @@
       <find>django_comment_common_coursediscussionsettings</find>
       <find>courseware_subjects_links</find>
       <find>name=&quot;search_query&quot;</find>
+      <find>debug_toolbar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -8538,7 +8532,6 @@
         <option value="$PROJECT_DIR$/cms/envs/common.py" />
         <option value="$PROJECT_DIR$/cms/bitnami_wsgi.py" />
         <option value="$PROJECT_DIR$/lms/bitnami_wsgi.py" />
-        <option value="$PROJECT_DIR$/lms/envs/devstack.py" />
         <option value="$PROJECT_DIR$/cms/envs/devstack.py" />
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/views/librabry_editor.html" />
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py" />
@@ -8557,6 +8550,7 @@
         <option value="$PROJECT_DIR$/xdj_models/models/course_subject_link.py" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py" />
         <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/index.html" />
+        <option value="$PROJECT_DIR$/lms/envs/devstack.py" />
       </list>
     </option>
   </component>
@@ -8578,6 +8572,11 @@
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
@@ -8691,14 +8690,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18961748" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18961748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.21814255" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.35313174" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -8773,15 +8773,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/home_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/views/decorators/http.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -9022,28 +9013,28 @@
     <entry file="file://$PROJECT_DIR$/xdj/mysql_fix/xlms.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
-          <caret line="123" column="37" lean-forward="true" selection-start-line="123" selection-start-column="37" selection-end-line="123" selection-end-column="37" />
+          <caret line="123" column="37" selection-start-line="123" selection-start-column="37" selection-end-line="123" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xdj/mysql_fix/fix002.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xdj_models/models/course_authors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xdj_models/models/course_subjects.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -9053,7 +9044,7 @@
     <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/couserware_course.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
-          <caret line="102" column="77" lean-forward="true" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="77" />
+          <caret line="102" column="77" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="77" />
           <folding>
             <element signature="e#2379#2876#0" />
           </folding>
@@ -9063,7 +9054,7 @@
     <entry file="file://$PROJECT_DIR$/xdj_models/models/course_subject_link.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -9093,8 +9084,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lms/static/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        <state relative-caret-position="307">
+          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lms/envs/devstack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
         </state>
       </provider>
     </entry>

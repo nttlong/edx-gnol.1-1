@@ -40,7 +40,16 @@ import xdj
             display: block !important;
          }
     </style>
-
+<style>
+  .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+            cursor: not-allowed;
+            filter: alpha(opacity=65);
+            -webkit-box-shadow: none;
+            background-color: #1c1c1c !important;
+            box-shadow: none;
+            opacity: .65;
+    }
+</style>
 ## Define a couple of helper functions to make life easier when
 ## embedding theme conditionals into templates. All inheriting
 ## templates have access to these functions, and we can import these
@@ -238,6 +247,16 @@ import xdj
 <script src="/lms/static/boostrap/js/bootstrap.min.js"></script>
 <link href="/lms/static/boostrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <%block name="angular"/>
+<style>
+    .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+              cursor: not-allowed;
+              filter: alpha(opacity=65);
+              -webkit-box-shadow: none;
+              background-color: #1c1c1c !important;
+              box-shadow: none;
+              opacity: .65;
+      }
+  </style>
   <script>
     var mdl = angular.module("cms",[]);
     var ctrl =mdl.controller("cms",["$scope",function($scope){

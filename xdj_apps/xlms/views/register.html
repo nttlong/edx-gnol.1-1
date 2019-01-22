@@ -7,6 +7,14 @@ ${_>"Register new account"}
     margin: 0 auto;
     width: 80%;
 }
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+            cursor: not-allowed;
+            filter: alpha(opacity=65);
+            -webkit-box-shadow: none;
+            background-color: #1c1c1c;
+            box-shadow: none;
+            opacity: .65;
+    }
 </style>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 
