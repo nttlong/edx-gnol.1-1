@@ -8623,7 +8623,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cms">
+  <component name="RunManager" selected="Python.manage">
     <configuration name="cms" type="PythonConfigurationType" factoryName="Python">
       <module name="edx-platform" />
       <option name="INTERPRETER_OPTIONS" value="" />
