@@ -63,6 +63,11 @@
   {% endif %}
 
 <div class="container">
+    <style>
+        .open>.dropdown-menu {
+            display: block !important;
+         }
+    </style>
     {% load render_bundle from webpack_loader %}
     {% render_bundle "AlertStatusBar" %}
 
