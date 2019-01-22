@@ -559,9 +559,12 @@ def apply_context(context):
     def res(key,value=None):
         if value == None:
             value = key
+        from xdj.middle_ware import GlobalRequestMiddleware
+        x= context
+        request = GlobalRequestMiddleware.get_current_request()
+        from xdj import languages
+        return languages.get_item(request.LANGUAGE_CODE, "_", "_", key, value)
 
-
-        return value
     # context._data.update({"res": res})
     # context.res = res
     context.res = res
