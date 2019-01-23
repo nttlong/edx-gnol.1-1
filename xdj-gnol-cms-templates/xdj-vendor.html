@@ -1,6 +1,13 @@
 <script src="/cms/static/bootstrap.js"></script>
 <style>
-    
+    .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+            cursor: not-allowed;
+            filter: alpha(opacity=65);
+            -webkit-box-shadow: none;
+            background-color: #1c1c1c;
+            box-shadow: none;
+            opacity: .65;
+    }
         .xblock-editor {
              overflow-y: auto !important;
         }

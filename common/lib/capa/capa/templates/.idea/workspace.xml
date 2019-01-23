@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25ec6f3e-a1c1-4b5a-bc90-d34891b13e77" name="Default Changelist" comment="" />
+    <list default="true" id="25ec6f3e-a1c1-4b5a-bc90-d34891b13e77" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-outline-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-outline-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/course_experience/course-dates-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/course_experience/course-home-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_experience/dates-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/course_experience/dates-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../openedx/features/course_experience/templates/course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../openedx/features/course_experience/templates/course_experience/course-dates-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../openedx/features/course_experience/templates/course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../openedx/features/course_experience/templates/course_experience/course-home-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-cms-templates/xdj-vendor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-cms-templates/xdj-vendor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/course_experience/course-dates-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/course_experience/course-home-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/navbar-logo-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/navbar-logo-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/user_dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/user_dropdown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/preview_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/preview_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/seq_module.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/seq_module.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/ux/reference/fragments/unit-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/ux/reference/fragments/unit-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/middle_ware.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/middle_ware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/static/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/views/active_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/views/active_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/views/base_lms.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/views/base_lms.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +50,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="27" />
-    <option name="width" value="1833" />
+    <option name="width" value="1823" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -32,6 +59,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -43,7 +71,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -81,6 +108,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

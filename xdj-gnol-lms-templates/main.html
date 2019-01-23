@@ -40,16 +40,8 @@ import xdj
             display: block !important;
          }
     </style>
-<style>
-  .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
-            cursor: not-allowed;
-            filter: alpha(opacity=65);
-            -webkit-box-shadow: none;
-            background-color: #1c1c1c !important;
-            box-shadow: none;
-            opacity: .65;
-    }
-</style>
+    <link rel="stylesheet" href="/lms/static/site.css" type="text/css" media="all" />
+
 ## Define a couple of helper functions to make life easier when
 ## embedding theme conditionals into templates. All inheriting
 ## templates have access to these functions, and we can import these
@@ -59,7 +51,12 @@ import xdj
 <%def name="pagetitle()" />
   <%block name="title">
       <title>
-       ${static.get_page_title_breadcrumbs(self.pagetitle())}
+        %if self.request.path=='/':
+          ${self.res("Lms system")}
+        %else:
+          ${static.get_page_title_breadcrumbs(self.pagetitle())}
+        %endif
+       
       </title>
   </%block>
 

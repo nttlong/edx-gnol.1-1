@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c4a4ad10-c078-4534-8ebf-ddf551b27444" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-outline-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-outline-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/course-dates-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/course-home-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/dates-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/dates-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../openedx/features/course_experience/templates/course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../openedx/features/course_experience/templates/course_experience/course-dates-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../openedx/features/course_experience/templates/course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../openedx/features/course_experience/templates/course_experience/course-home-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj-gnol-cms-templates/xdj-vendor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj-gnol-cms-templates/xdj-vendor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course.html" beforeDir="false" afterPath="$PROJECT_DIR$/../course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../course_experience/course-dates-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../course_experience/course-home-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../header/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../header/navbar-logo-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../header/navbar-logo-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../header/user_dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/../header/user_dropdown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../preview_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/../preview_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../seq_module.html" beforeDir="false" afterPath="$PROJECT_DIR$/../seq_module.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ux/reference/fragments/unit-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ux/reference/fragments/unit-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj/config/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj/middle_ware.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj/middle_ware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xlms/static/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xlms/views/active_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xlms/views/active_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xlms/views/base_lms.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xlms/views/base_lms.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/article_menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>view</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/includes/article_menu.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="1823" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wiki" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wiki" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wiki" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wiki" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c4a4ad10-c078-4534-8ebf-ddf551b27444" name="Default Changelist" comment="" />
+      <created>1548216439540</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548216439540</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/includes/article_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

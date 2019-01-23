@@ -9,7 +9,10 @@ from openedx.core.djangolib.js_utils import dump_js_escaped_json
 from openedx.core.djangolib.markup import HTML, Text
 from xmodule.partitions.partitions_service import get_all_partitions_for_course
 %>
-
+<%
+    import xdj
+    xdj.apply_context(self)
+%>
 <%
 show_preview_menu = course and staff_access and supports_preview_menu
 %>
@@ -26,16 +29,16 @@ show_preview_menu = course and staff_access and supports_preview_menu
     specific_student_selected = selected(not staff_selected and masquerade.user_name)
     student_selected = selected(not staff_selected and not specific_student_selected and not masquerade_group_id)
     %>
-    <nav class="wrapper-preview-menu" aria-label="${_('Course View')}">
+    <nav class="wrapper-preview-menu" aria-label="${self.res('Course View')}">
         <div class="preview-menu">
             <ol class="preview-actions">
                 <li class="action-preview">
                     <form action="#" class="action-preview-form" method="post">
-                        <label for="action-preview-select" class="action-preview-label">${_("View this course as:")}</label>
+                        <label for="action-preview-select" class="action-preview-label">${self.res("View this course as:")}</label>
                         <select class="action-preview-select" id="action-preview-select" name="select">
-                            <option value="staff" ${staff_selected}>${_("Staff")}</option>
-                            <option value="student" ${student_selected}>${_("Learner")}</option>
-                            <option value="specific student" ${specific_student_selected}>${_("Specific learner")}</option>
+                            <option value="staff" ${staff_selected}>${self.res("Staff")}</option>
+                            <option value="student" ${student_selected}>${self.res("Learner")}</option>
+                            <option value="specific student" ${specific_student_selected}>${self.res("Specific learner")}</option>
                             % if course_partitions:
                                 % for course_partition in course_partitions:
                                     % for group in sorted(course_partition.groups, key=lambda group: group.name):
@@ -47,10 +50,10 @@ show_preview_menu = course and staff_access and supports_preview_menu
                             % endif
                         </select>
                         <div class="action-preview-username-container">
-                          <label for="action-preview-username" class="action-preview-label">${_("Username or email:")}</label>
+                          <label for="action-preview-username" class="action-preview-label">${self.res("Username or email:")}</label>
                           <input type="text" class="action-preview-username" id="action-preview-username">
                         </div>
-                        <button type="submit" class="sr-only" name="submit" value="submit">${_("Set preview mode")}</button>
+                        <button type="submit" class="sr-only" name="submit" value="submit">${self.res("Set preview mode")}</button>
                     </form>
                 </li>
             </ol>

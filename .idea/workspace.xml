@@ -4360,6 +4360,33 @@
       <change beforePath="$PROJECT_DIR$/../docs/test_pyramid.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/testing.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../docs/v1_sass_pipeline.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-outline-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-outline-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/lib/capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/capa/capa/templates/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-dates-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-home-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/dates-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/dates-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openedx/features/course_experience/templates/course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/openedx/features/course_experience/templates/course_experience/course-dates-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/openedx/features/course_experience/templates/course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/openedx/features/course_experience/templates/course_experience/course-home-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-cms-templates/xdj-vendor.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/xdj-vendor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/course_experience/course-dates-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/course_experience/course-home-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/navbar-logo-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/navbar-logo-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/user_dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/user_dropdown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/preview_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/preview_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/seq_module.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/seq_module.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/ux/reference/fragments/unit-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/ux/reference/fragments/unit-fragment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/wiki/includes/article_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/wiki/includes/article_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/config/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj/middle_ware.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/middle_ware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/static/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/views/active_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/views/active_account.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/views/base_lms.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/views/base_lms.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/README.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/celery.py" beforeDir="false" />
@@ -8352,72 +8379,73 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lms/envs/devstack.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_models/models/course_subjects.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_models/models/course_authors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="30" selection-start-column="30" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="568" column="23" lean-forward="true" selection-start-line="568" selection-start-column="23" selection-end-line="568" selection-end-column="23" />
+            <state relative-caret-position="182">
+              <caret line="564" column="78" lean-forward="true" selection-start-line="559" selection-start-column="4" selection-end-line="564" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/courseware/courses.html">
+        <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/template/loaders/filesystem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="42" column="72" lean-forward="true" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
+            <state relative-caret-position="280">
+              <caret line="64" column="47" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/views/active_account.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-outline-fragment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="98" selection-start-line="6" selection-start-column="98" selection-end-line="6" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-dates-fragment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/wiki/article.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/active_account_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/active_account_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj/middle_ware.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="150">
+              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -8426,7 +8454,7 @@
         <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="31" column="62" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="31" selection-end-column="62" />
+              <caret line="31" column="62" selection-start-line="30" selection-start-column="4" selection-end-line="31" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -8451,10 +8479,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lms-main.css</find>
-      <find>paragon.min.css</find>
-      <find>/lms/static/bundles/commons.js</find>
-      <find>css/lms-style-vendor.css</find>
       <find>lms-style-vendor.css</find>
       <find>PIPELINE_CSS</find>
       <find>xxx/xxx</find>
@@ -8481,6 +8505,10 @@
       <find>def res(</find>
       <find>id=&quot;discovery-message&quot;</find>
       <find>&quot;Viewing</find>
+      <find>class=&quot;profile profile-self&quot;</find>
+      <find>Expand All</find>
+      <find>${self.res(&quot;Important Course Dates&quot;)}</find>
+      <find>class=&quot;article-functions&quot;</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -8489,26 +8517,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../../memcached/scripts/ctl.sh" />
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/views/commons/edx.html" />
-        <option value="$PROJECT_DIR$/cms/templates/base.html" />
-        <option value="$PROJECT_DIR$/xdj-gnol-cms-templates/base.html" />
-        <option value="$PROJECT_DIR$/lms/static/templates/main.html" />
-        <option value="$PROJECT_DIR$/lms/envs/common.py" />
-        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/certificates/_badges-modal.html" />
-        <option value="$PROJECT_DIR$/lms/static/templates/certificates/_badges-modal.html" />
-        <option value="$PROJECT_DIR$/lms/templates/certificates/_badges-modal.html" />
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/views/base_lms.html" />
-        <option value="$PROJECT_DIR$/lms/templates/main.html" />
-        <option value="$PROJECT_DIR$/openedx/features/course_experience/templates/course_experience/course-home-fragment.html" />
-        <option value="$PROJECT_DIR$/themes/edx.org/lms/templates/course_modes/choose.html" />
-        <option value="$PROJECT_DIR$/themes/edx.org/lms/templates/dashboard.html" />
-        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/course_experience/course-home-fragment.html" />
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/static/js/student_account/components/PasswordResetConfirmation.jsx" />
-        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/registration/password_reset_confirm.html" />
-        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/student_account/account_settings.html" />
-        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/course.html" />
-        <option value="$PROJECT_DIR$/lms/startup.py" />
         <option value="$PROJECT_DIR$/cms/startup.py" />
         <option value="$PROJECT_DIR$/cms/urls.py" />
         <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/static_content.html" />
@@ -8524,7 +8532,6 @@
         <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/head-extra.html" />
         <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/main.html" />
         <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/wiki/base.html" />
-        <option value="$PROJECT_DIR$/xdj/config/settings.json" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/couserware/courses.html" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/couserware/course.html" />
         <option value="$PROJECT_DIR$/xdj/mysql_fix/fix002.sql" />
@@ -8534,16 +8541,40 @@
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py" />
         <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/index.html" />
         <option value="$PROJECT_DIR$/lms/envs/devstack.py" />
-        <option value="$PROJECT_DIR$/xdj/middle_ware.py" />
-        <option value="$PROJECT_DIR$/xdj/__init__.py" />
         <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/courseware/courses.html" />
+        <option value="$PROJECT_DIR$/xdj/config/settings.json" />
+        <option value="$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-outline-fragment.html" />
+        <option value="$PROJECT_DIR$/openedx/features/course_experience/static/course_experience/fixtures/course-outline-fragment.html" />
+        <option value="$PROJECT_DIR$/lms/static/course_experience/fixtures/course-outline-fragment.html" />
+        <option value="$PROJECT_DIR$/openedx/features/course_bookmarks/templates/course_bookmarks/course-bookmarks.html" />
+        <option value="$PROJECT_DIR$/lms/templates/courseware/courseware.html" />
+        <option value="$PROJECT_DIR$/lms/static/templates/courseware/courseware.html" />
+        <option value="$PROJECT_DIR$/,/home/nttlong/code/edx/apps/edx/var/staticfiles/templates/courseware/courseware.html" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/courseware.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/courseware/courseware.html" />
+        <option value="$PROJECT_DIR$/,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-home-fragment.html" />
+        <option value="$PROJECT_DIR$/lms/static/course_experience/fixtures/course-home-fragment.html" />
+        <option value="$PROJECT_DIR$/openedx/features/course_experience/templates/course_experience/course-home-fragment.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/course_experience/course-home-fragment.html" />
+        <option value="$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-home-fragment.html" />
+        <option value="$PROJECT_DIR$/openedx/features/course_experience/static/course_experience/fixtures/course-home-fragment.html" />
+        <option value="$PROJECT_DIR$/openedx/features/course_experience/templates/course_experience/course-dates-fragment.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/course_experience/course-dates-fragment.html" />
+        <option value="$PROJECT_DIR$/,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-outline-fragment.html" />
+        <option value="$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-dates-fragment.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/preview_menu.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/ux/reference/fragments/unit-fragment.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/seq_module.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/wiki/article.html" />
+        <option value="$PROJECT_DIR$/xdj/__init__.py" />
+        <option value="$PROJECT_DIR$/xdj/middle_ware.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="27" />
-    <option name="width" value="1833" />
+    <option name="width" value="1823" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -8552,6 +8583,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -8562,39 +8594,24 @@
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
-              <item name="xlms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
-              <item name="xlms" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
-              <item name="xlms" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="editorconfig.notification" value="spaces" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.caa" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/xdj-gnol-lms-templates/wiki" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -8685,6 +8702,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18961748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -8692,12 +8710,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40280777" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.44816414" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.56911445" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4449244" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32937366" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -8764,29 +8782,19 @@
           <option name="timeStamp" value="199" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/xdj/__init__.py</url>
-          <line>566</line>
-          <option name="timeStamp" value="200" />
+          <url>file://$PROJECT_DIR$/xdj/middle_ware.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/xdj/middle_ware.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="205" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/XBlockExt/chapters_modifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/openassessmentblock/edit/oa_edit.html" />
     <entry file="file://$PROJECT_DIR$/xdj_hr/models/emps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -8869,13 +8877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/template/loaders/filesystem.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="67" column="48" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/wiki/dir.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -8887,13 +8888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
           <caret line="5487" selection-start-line="5487" selection-end-line="5495" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -9016,6 +9010,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lms/envs/devstack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/xdj_models/models/course_subjects.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -9033,6 +9034,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/courseware/courses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="72" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/views/active_account.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="62" selection-start-line="30" selection-start-column="4" selection-end-line="31" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/xdj/mysql_fix/fix002.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -9040,48 +9058,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lms/envs/devstack.py">
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/active_account_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
+        <state relative-caret-position="60">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/settings.py">
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/template/loaders/filesystem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="62" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="31" selection-end-column="62" />
+        <state relative-caret-position="280">
+          <caret line="64" column="47" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/middle_ware.py">
+    <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-outline-fragment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="98" selection-start-line="6" selection-start-column="98" selection-end-line="6" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-dates-fragment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/wiki/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xdj/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="568" column="23" lean-forward="true" selection-start-line="568" selection-start-column="23" selection-end-line="568" selection-end-column="23" />
+        <state relative-caret-position="182">
+          <caret line="564" column="78" lean-forward="true" selection-start-line="559" selection-start-column="4" selection-end-line="564" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/courseware/courses.html">
+    <entry file="file://$PROJECT_DIR$/xdj/middle_ware.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="42" column="72" lean-forward="true" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/views/active_account.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/active_account_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="150">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
         </state>
       </provider>
     </entry>

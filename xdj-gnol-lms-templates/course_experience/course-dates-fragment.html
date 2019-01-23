@@ -7,7 +7,11 @@
 <%!
 from django.utils.translation import ugettext as _
 %>
-<h3 class="hd hd-6 handouts-header">${_("Important Course Dates")}</h3>
+<%
+    import xdj
+    xdj.apply_context(self)
+%>
+<h3 class="hd hd-6 handouts-header">${self.res("Important Course Dates")}</h3>
 ## Should be organized by date, last date appearing at the bottom
 
 % for course_date in course_date_blocks:

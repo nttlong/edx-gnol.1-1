@@ -556,11 +556,10 @@ def debugTemplate(x):
     request = GlobalRequestMiddleware.get_current_request()
     pass
 def apply_context(context):
+    from xdj.middle_ware import GlobalRequestMiddleware
     def res(key,value=None):
         if value == None:
             value = key
-        from xdj.middle_ware import GlobalRequestMiddleware
-        x= context
         request = GlobalRequestMiddleware.get_current_request()
         from xdj import languages
         return languages.get_item(request.LANGUAGE_CODE, "_", "_", key, value)
@@ -568,6 +567,7 @@ def apply_context(context):
     # context._data.update({"res": res})
     # context.res = res
     context.res = res
+    context.request = GlobalRequestMiddleware.get_current_request()
     # context._data["res"] = res
     # context["self"].context._data["res"] = res
 

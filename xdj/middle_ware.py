@@ -11,6 +11,17 @@ class GlobalRequestMiddleware(object):
     def process_request(self, request):
         import threading
         threading.current_thread().request = request
+        class RES(object):
+            def __rshift__(self, other):
+                return  other
+            def res(key, value=None):
+                if value == None:
+                    value = key
+                request = GlobalRequestMiddleware.get_current_request()
+                from xdj import languages
+                return languages.get_item(request.LANGUAGE_CODE, "_", "_", key, value)
+        request.xdj_res = RES()
+        request.TEST="XXXXX"
 
     def process_exception(self, request, exception):
         try:

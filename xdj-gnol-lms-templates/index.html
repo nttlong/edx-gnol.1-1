@@ -38,9 +38,12 @@ from openedx.core.djangolib.markup import HTML, Text
                     <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_("Search")}</span>
                   </button> -->
                   <div class="input-group">
-                      <input type="text" class="form-control" placeholder="${_("Search for a course")}" name="search_query">
+                      <input type="text" class="form-control" placeholder='${self.res("Search for a course")}' name="search_query">
                       <span class="input-group-btn">
-                        <button class="btn btn-primary" type="submit" style="height: 35px">${_("Search")}</button>
+                        <button class="btn btn-primary main-search" type="submit">
+                            <i class="icon fa fa-search" aria-hidden="true"></i>
+                          <!-- ${_("Search")} -->
+                        </button>
                       </span>
                     </div>
                 </form>

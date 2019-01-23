@@ -11,11 +11,11 @@ from six import text_type
 %>
 <%page args="course" expression_filter="h"/>
 <link href="/lms/static/css/lms-style-vendor.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="/static/css/bootstrap/lms-main.css" type="text/css" media="all" />
-<script type="text/javascript" src="/static/js/lms-base-vendor.js" charset="utf-8"></script>
-<script type="text/javascript" src="/lms//static/js/lms-base-application.js" charset="utf-8"></script>
-<script type="text/javascript" src="/static/bundles/commons.js" ></script>
-<script type="text/javascript" src="/static/common/js/vendor/bootstrap.bundle.js"></script>
+<link rel="stylesheet" href="/lms/static/css/bootstrap/lms-main.css" type="text/css" media="all" />
+<script type="text/javascript" src="/lms/static/js/lms-base-vendor.js" charset="utf-8"></script>
+<script type="text/javascript" src="/lms/static/js/lms-base-application.js" charset="utf-8"></script>
+<script type="text/javascript" src="/lms/static/bundles/commons.js" ></script>
+<script type="text/javascript" src="/lms/static/common/js/vendor/bootstrap.bundle.js"></script>
 
 <article class="course" id="${course.id}" role="region" aria-label="${course.display_name_with_default}">
   <a href="${reverse('about_course', args=[text_type(course.id)])}">

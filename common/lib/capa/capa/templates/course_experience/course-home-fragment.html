@@ -18,7 +18,10 @@ from openedx.features.course_experience import UNIFIED_COURSE_TAB_FLAG, SHOW_REV
 from openedx.features.learner_analytics import ENABLE_DASHBOARD_TAB
 from openedx.features.portfolio_project import INCLUDE_PORTFOLIO_UPSELL_MODAL
 %>
-
+<%
+    import xdj
+    xdj.apply_context(self)
+%>
 <%block name="header_extras">
   <link rel="stylesheet" type="text/css" href="/lms/static/paragon/static/paragon.min.css" />
 </%block>
@@ -53,9 +56,13 @@ from openedx.features.portfolio_project import INCLUDE_PORTFOLIO_UPSELL_MODAL
                 <div class="page-header-search">
                     <form class="search-form input-group" role="search" action="${reverse('openedx.course_search.course_search_results', args=[course_key])}">
                             <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="${_('Search the course')}">
+                                    <input type="text" class="form-control" placeholder="${self.res('Search content in this course')}">
                                     <span class="input-group-btn">
-                                      <button class="btn btn-primary action-resume-course" submit="button" style="height:35px;">${_('Search')}</button>
+                                      <!-- <button class="btn btn-primary action-resume-course" submit="button" style="height:35px;">${_('Search')}</button> -->
+                                      <button class="btn btn-primary main-search" submit="button" style="height:35px;">
+                                        <i class="icon fa fa-search" aria-hidden="true"></i>
+                                    <!-- ${_('Search')} -->
+                                        </button>
                                     </span>
                                   </div>
                         <!-- <label class="field-label sr-only" for="search" id="search-hint">${_('Search the course')}</label>
@@ -76,9 +83,9 @@ from openedx.features.portfolio_project import INCLUDE_PORTFOLIO_UPSELL_MODAL
                 % if resume_course_url:
                     <a class="btn btn-primary action-resume-course" href="${resume_course_url}">
                         % if has_visited_course:
-                            <span data-action-type="resume">${_("Resume Course")}</span>
+                            <span data-action-type="resume">${self.res("Resume Course")}</span>
                         % else:
-                            <span data-action-type="start">${_("Start Course")}</span>
+                            <span data-action-type="start">${self.res("Start Course")}</span>
                         % endif
                     </a>
                 % endif
@@ -129,13 +136,13 @@ from openedx.features.portfolio_project import INCLUDE_PORTFOLIO_UPSELL_MODAL
             % endif
             % if course_tools:
                 <div class="section section-tools">
-                    <h3 class="hd-6 section-title">${_("Course Tools")}</h3>
+                    <h3 class="hd-6 section-title">${self.res("Course Tools")}</h3>
                     <ul class="list-unstyled">
                         % for course_tool in course_tools:
                             <li class="course-tool">
                                 <a class="course-tool-link" data-analytics-id="${course_tool.analytics_id()}" href="${course_tool.url(course_key)}">
                                     <span class="icon ${course_tool.icon_classes()}" aria-hidden="true"></span>
-                                    ${course_tool.title()}
+                                    ${self.res("Bookmarks")}
                                 </a>
                             </li>
                         % endfor
