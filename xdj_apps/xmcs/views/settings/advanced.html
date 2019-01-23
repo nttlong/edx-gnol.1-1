@@ -1,0 +1,64 @@
+<%inherit file="../base.html"/>
+
+
+<div class="container" id="main-container">
+        <div class="row">
+            <div class="xs-col-12">
+                <span>&nbsp;</span>
+            </div>
+        </div>
+        <form action="" method="post" role="form">
+            <legend>${_//"Advanced Settings"}</legend>
+    
+            <div class="form-group">
+                <form-layout xs-cols="4,8" sm-cols="4,8" md-cols="4,8" lg-cols="4,8">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token.__str__()}"/>
+                    <form-template>
+                            <div>
+                                    %for x in fields:
+                                        <label>${_//fieldInfo[x]["caption"]}</label>
+                                        %if fieldInfo[x]["type"]=="bool":
+                                            <input type="checkbox"/>
+                                        %else:
+                                            <input type="text"/>
+                                        %endif
+                                    %endfor
+                            </div>
+                            
+                            % if error:
+                                <div>
+                                     <p>
+                                       ${error.message}   
+                                     </p>   
+                                </div>
+                            % endif
+                            
+                            <div>
+                                <div class="btn-toolbar pull-right" role="toolbar" span="12">
+                                    <div class="btn-group">
+    
+                                    </div>
+                                    <div class="btn-group">
+    
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="submit" class="btn btn-default">${_//"Save"}</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </form-template>
+    
+                </form-layout>
+            </div>
+            
+        </form>
+    
+    </div>
+
+<%block name="angular">
+    <script>
+        function onInit(scope){
+            scope.data=${to_json(ng_data)}
+        }    
+    </script>
+</%block>

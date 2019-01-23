@@ -1,0 +1,82 @@
+<h2 class="info-course">
+        <span class="sr">Current Course:</span>
+        <a class="course-link" href="/course/${course.id.html_id()}">
+          <span class="course-org">${course.org}</span><span class="course-number">${course.number}</span>
+          <span class="course-title" title="test">${course.display_name}</span>
+        </a>
+      </h2>
+  <nav class="nav-course nav-dd ui-left" aria-label="Course">
+    <h2 class="sr">Course Navigation</h2>
+    <ol>
+      <li class="nav-item nav-course-courseware">
+        <h3 class="title"><span class="label"><span class="label-prefix sr">Course </span>Content</span> <span class="icon fa fa-caret-down ui-toggle-dd" aria-hidden="true"></span></h3>
+
+        <div class="wrapper wrapper-nav-sub">
+          <div class="nav-sub">
+            <ul>
+              <li class="nav-item nav-course-courseware-outline">
+                <a href="/course/${course.id.html_id()}">${_//"Outline"}</a>
+              </li>
+              <li class="nav-item nav-course-courseware-updates">
+                <a href="/course_info/${course.id.html_id()}">${_//"Updates"}</a>
+              </li>
+              <li class="nav-item nav-course-courseware-pages">
+                <a href="/tabs/${course.id.html_id()}">${_//"Pages"}</a>
+              </li>
+              <li class="nav-item nav-course-courseware-uploads">
+                <a href="/assets/${course.id.html_id()}/">${_//"Files & Uploads"}</a>
+              </li>
+              <li class="nav-item nav-course-courseware-textbooks">
+                <a href="/textbooks/${course.id.html_id()}">${_//"Textbooks"}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item nav-course-settings">
+        <h3 class="title"><span class="label"><span class="label-prefix sr">Course </span>Thiết lập</span> <span class="icon fa fa-caret-down ui-toggle-dd" aria-hidden="true"></span></h3>
+
+        <div class="wrapper wrapper-nav-sub">
+          <div class="nav-sub">
+            <ul>
+              <li class="nav-item nav-course-settings-schedule">
+                <a href="/settings/details/${course.id.html_id()}">${_//"Schedule & Details"}</a>
+              </li>
+              <li class="nav-item nav-course-settings-grading">
+                <a href="/settings/grading/${course.id.html_id()}">${_//"Grading"}</a>
+              </li>
+              <li class="nav-item nav-course-settings-team">
+                <a href="/course_team/${course.id.html_id()}">${_//"Course Team"}</a>
+              </li>
+              <li class="nav-item nav-course-settings-group-configurations">
+                <a href="/group_configurations/${course.id.html_id()}">${_//"Group Configurations"}</a>
+              </li>
+              <li class="nav-item nav-course-settings-advanced">
+                <a href="/settings/advanced/${course.id.html_id()}">${_//"Advanced Settings"}</a>
+              </li>
+              <li class="nav-item nav-course-settings-certificates">
+                <a href="/certificates/${course.id.html_id()}">${_//"Certificates"}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="nav-item nav-course-tools">
+        <h3 class="title"><span class="label">Tools</span> <span class="icon fa fa-caret-down ui-toggle-dd" aria-hidden="true"></span></h3>
+        <div class="wrapper wrapper-nav-sub">
+          <div class="nav-sub">
+            <ul>
+              <li class="nav-item nav-course-tools-import">
+                <a href="/import/${course.id.html_id()}">Import</a>
+              </li>
+              <li class="nav-item nav-course-tools-export">
+                <a href="/export/${course.id.html_id()}">Export</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </nav>

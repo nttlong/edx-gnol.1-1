@@ -35,6 +35,15 @@ class CommonController(xdj.BaseController):
             return False
         else:
             return x[0].user.username == user.username
+    def __get_course_ware_from_str_key__(self,course_key,user):
+
+        from xmodule.modulestore.django import modulestore
+        id = self.__get_course_id_from_text__(course_key)
+        with modulestore().bulk_operations(id):
+            course_module = modulestore().get_course(id)
+            return course_module
+
+
 class StaffController(xdj.BaseController):
     def IsAllow(self,model):
         return model.user.is_staff

@@ -579,6 +579,10 @@ class Handler(object):
 
     def __init__(self,model):
         self.model = model
+    def OnBeforeHandler(self,model):
+        pass
+    def OnAfterHandler(self,model):
+        pass
 
 
 def clear_language_cache():
