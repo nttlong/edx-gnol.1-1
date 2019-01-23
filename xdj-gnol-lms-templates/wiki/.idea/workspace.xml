@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4a4ad10-c078-4534-8ebf-ddf551b27444" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-outline-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/course_experience/fixtures/course-outline-fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/course-dates-fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/course-home-fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/dates-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/course_experience/dates-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../openedx/features/course_experience/templates/course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../openedx/features/course_experience/templates/course_experience/course-dates-fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../openedx/features/course_experience/templates/course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../openedx/features/course_experience/templates/course_experience/course-home-fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj-gnol-cms-templates/xdj-vendor.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj-gnol-cms-templates/xdj-vendor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course.html" beforeDir="false" afterPath="$PROJECT_DIR$/../course.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course_experience/course-dates-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../course_experience/course-dates-fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../course_experience/course-home-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../course_experience/course-home-fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../header/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../header/navbar-logo-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../header/navbar-logo-header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../header/user_dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/../header/user_dropdown.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../preview_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/../preview_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../seq_module.html" beforeDir="false" afterPath="$PROJECT_DIR$/../seq_module.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ux/reference/fragments/unit-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ux/reference/fragments/unit-fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj/middle_ware.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj/middle_ware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xlms/static/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xlms/views/active_account.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xlms/views/active_account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xlms/views/base_lms.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xlms/views/base_lms.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
