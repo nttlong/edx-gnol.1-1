@@ -1,5 +1,7 @@
 <%inherit file="../base.html"/>
-
+<%
+  from django.utils.translation import ugettext as _res
+%>
 
 <div class="container" id="main-container">
         <div class="row">
@@ -8,15 +10,15 @@
             </div>
         </div>
         <h1 class="page-header">
-                <small class="subtitle">${_//"Settings"}</small>
-                <span class="sr">&gt; </span>${_//"Advanced Settings"}
+                <small class="subtitle">${_res("Settings")}</small>
+                <span class="sr">&gt; </span>${_res("Advanced Settings")}
         </h1>
         <form-layout xs-cols="12" sm-cols="4,8" md-cols="4,8" lg-cols="4,8">
                 <input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token.__str__()}"/>
             <form-template>
                             %for x in fields:
                                 <div>
-                                    <label>${_//fieldInfo[x]["caption"]}</label>
+                                    <label>${_res(fieldInfo[x]["caption"])}</label>
                                     %if fieldInfo[x]["type"]=="bool":
                                         <input type="checkbox" ng-model="data.${x}"/>
                                     %elif fieldInfo[x]["type"]=="date":
