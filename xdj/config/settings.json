@@ -18,7 +18,7 @@
     "/home/nttlong/code/edx/apps/edx/edx-platform/cms/static"
 
   ],
-  "MAKO_MODULE_DIR_": "/home/nttlong/code/edx/apps/edx/edx-platform/xdj-tmp-templates",
+  "MAKO_MODULE_DIR": "/home/nttlong/code/edx/apps/edx/edx-platform/xdj-tmp-templates",
   "LMS_TEMPLATE": "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/xdj-gnol-lms-templates",
   "CMS_TEMPLATE": "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/xdj-gnol-cms-templates",
   "LMS_TEMPLATE_": "/home/nttlong/code/edx/apps/edx/edx-platform/xdj-gnol-lms-templates",
@@ -50,5 +50,6 @@
   "COLLECTION_LANGUAGE": "sys.langs",
   "ENABLE_COURSEWARE_INDEX": true,
   "ENABLE_LIBRARY_INDEX": true,
-  "PIPELINE_ENABLED": false
+  "PIPELINE_ENABLED": false,
+  "CUSTOM_SETTINGS_ADVANCED": true
 }

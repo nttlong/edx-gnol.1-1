@@ -203,8 +203,7 @@ def to_json(data):
 
 class Model(object):
     def __init__(self):
-
-
+        import urllib
         self.request = None
         self.response = None
         self.absUrl = None
@@ -216,6 +215,7 @@ class Model(object):
         self.post_data= PostData();
         self.settings=None
         self.to_json= to_json
+        self.escape = urllib.quote_plus
 
     def debugger(self):
         print "debugger"

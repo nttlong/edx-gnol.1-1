@@ -2,98 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25ec6f3e-a1c1-4b5a-bc90-d34891b13e77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/settings_advanced_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/AboutDescriptor.a616c46517e7638400ff.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/AboutModule.94ab0de75eb40ce1879f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/AlertStatusBar.daab49ba96d008f5df11.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/AnnotatableDescriptor.80ea6ed8e2d1f2cefa35.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/AnnotatableModule.67ea8b6f934fa69d2971.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CapaDescriptor.a2c899b71bad5f94bb3d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CapaModule.c6eb163b20ce039c3d33.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CompletionOnViewService.7db9e96bff1ca753026c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/ConditionalDescriptor.76d090fbbd6c16707fbb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/ConditionalModule.cd4453f03e7fead911ee.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CookiePolicyBanner.e96ed149f565df12c8da.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CourseDescriptor.3a9f1a739f9110396aae.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CourseGoals.08a1ee32a23bd0c511c5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CourseHome.9cafd328372dcb349520.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CourseInfoDescriptor.5570ef9279bfe1f0806a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CourseInfoModule.178aa9a48b5c10da8893.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CourseModule.347ca13462d8ae1accfb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CourseOrLibraryListing.cfcc09fb6d7c12635356.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CourseOutline.831775b5a631f033c988.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CourseSock.43ffb68a30fa51e4e467.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CourseTalkReviews.332551138687394151a7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/Currency.de455571dd78a6f51c1b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CustomTagDescriptor.8069abc999e9a5cc1f87.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/CustomTagModule.60289b77f0db9c48f4e9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/Enrollment.57a1f0e198ade3332c48.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/EntitlementFactory.1d14b002bc8fa5c29275.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/EntitlementSupportPage.aac4a3e059c647a6a390.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/EntitlementUnenrollmentFactory.2652af07818af6beae90.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/ErrorDescriptor.c83e5d83e30700ea5725.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/ErrorModule.eccc9248d687581afbb9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/HiddenDescriptor.0a165be39c5e4627d14a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/HiddenModule.1d9c23a84624974291d0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/HtmlDescriptor.79f85700c2b1483ab3a1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/HtmlModule.174055b73c05dccfbd8b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/ImageAnnotationDescriptor.775ca58dfadb0e9c7744.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/ImageAnnotationModule.a84221ee0884ff1b5341.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/Import.107e831dda029ad719b4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/LTIDescriptor.5bb0ef635e6cedc2940c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/LTIModule.97a5aa735ac88002b52c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/LatestUpdate.219d00f34df498ebba84.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/LearnerAnalyticsDashboard.3c6f310994aaf080b422.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/LibraryContentDescriptor.cd784e6c1ab440e88647.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/LibraryContentModule.891bb2da971192fc1cc9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/PasswordResetConfirmation.9d75c23978473e6a515c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/PollDescriptor.7d960b576568c11b8e86.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/PollModule.100a6542f170124f6c35.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/PortfolioExperimentUpsellModal.27d14d907ba169b6c5db.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/ProgramDetailsFactory.bc243f554a4734dd67f9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/ProgramListFactory.505e36dfa1c8468b0053.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/RandomizeDescriptor.382e20002d84f0d5e18f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/RandomizeModule.dddfdfbbedc2f8aaa512.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/RawDescriptor.78899250f5a3d095277b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/ReactRenderer.e0bfeef03cd128cc97b3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/SectionDescriptor.e919e4d2918c63663faf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/SectionModule.0fdd76e917933d1195c7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/SemanticSectionDescriptor.5c98da7b0e546fc4471e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/SequenceDescriptor.08218b77a70196874859.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/SequenceModule.251564cf8963e6f00227.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/SingleSupportForm.81426903b5977d77c7b7.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/SplitTestDescriptor.42b576ae050ad6a2c857.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/SplitTestModule.a44729cfd1c64e780ccf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/StaticTabDescriptor.4f32ab944d7bf1dffbe8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/StaticTabModule.51d3384385536fa97a8d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/StudentAccountDeletion.9bd4e2a826a57ac8cc81.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/StudentAccountDeletionInitializer.9fb2fcb5d80f0992b39c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/TextAnnotationDescriptor.9c323f591941755aec03.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/TextAnnotationModule.97e5726b0677c5290499.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/TranslateCustomTagDescriptor.0e0bf00ce3738abe60a8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/UnenrollmentFactory.1a105338599fdc1caae5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/UpsellExperimentModal.748f1580cf339076b633.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/VerticalStudentView.6f1068648eb9e8d18da9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/VideoAnnotationDescriptor.6b5d02970ace4af1246b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/VideoAnnotationModule.c8f21bddbaace9c25212.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/VideoDescriptor.160041cd29c1b830377b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/VideoModule.ab8b735d060658476fad.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/WelcomeMessage.13c3a9763eaba3ba396d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/WordCloudDescriptor.5eed48cea4f971b4e549.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/WordCloudModule.d632d7b44f7dcd9347a1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/XModule.0d03b77f66008aecafec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/XModuleShim.68b7a679342e3bdb698f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../,/home/nttlong/code/edx/apps/edx/var/staticfiles/bundles/commons.d60dcd98c024881d011e.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/course_team_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/settings/course_team.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/wiki/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/wiki/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/commons/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/commons/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/JSON/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/JSON/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/controllers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/settings_advanced_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/settings_advanced_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/client/ui.directtives/ui.bootstrap.layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/client/ui.directtives/ui.bootstrap.layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/fix.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/fix.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/account_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/account_info.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/base_nav_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/base_nav_bar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/settings/advanced.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/settings/advanced.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -1,25 +1,38 @@
 import xdj
 from xdj_apps.xmcs.controllers.commons import CommonController
-@xdj.Controller(
-    url="settings/advanced",
-    template="settings/advanced.html",
-    check_url_=r"^settings/advanced/(?P<course_key_string>[^/+]+(/|\+)[^/+]+(/|\+)[^/?]+)$",
-    replace_url =r"^settings/advanced/(?P<course_key_string>[^/+]+(/|\+)[^/+]+(/|\+)[^/?]+)$"
-)
+import urllib
+
+
+def func_decoration():
+    from django.conf import settings
+    if settings.CUSTOM_SETTINGS_ADVANCED:
+        return xdj.Controller(
+            url="settings/advanced",
+            template="settings/advanced.html",
+            check_url_=r"^settings/advanced/(?P<course_key_string>[^/+]+(/|\+)[^/+]+(/|\+)[^/?]+)$",
+            replace_url =r"^settings/advanced/(?P<course_key_string>[^/+]+(/|\+)[^/+]+(/|\+)[^/?]+)$"
+        )
+    else:
+        return xdj.Controller(
+            url="settings/advanced",
+            template="settings/advanced.html"
+
+        )
+@func_decoration()
 class SettingsAdvancedController(CommonController):
-    def on_get(self,model):
-        course = self.__get_course_ware_from_str_key__(model.params.course_key_string,model.user)
-        model.course = course
-        fields = dict(
+
+    def getFields(self,model):
+        info = dict(
             display_name=dict(
                 caption="Course Display Name",
                 type="text",
-                description="Enter the name of the course as it should appear in the edX.org course list."
+                description="Enter the name of the course as it should appear in the edX.org course list.",
+                display_index = -1000
             ),
             advanced_modules=dict(
                 caption="Advanced Module List",
                 type="list",
-                description ="Enter the names of the advanced modules to use in your course."
+                description="Enter the names of the advanced modules to use in your course."
 
             ),
 
@@ -50,6 +63,7 @@ class SettingsAdvancedController(CommonController):
             cert_name_long=dict(
                 caption="Certificate Name (Long)",
                 type="text",
+                disable = True,
                 description="Use this setting only when generating PDF certificates. Between quotation marks, "
                             "enter the long name of the type of certificate that students receive when they complete the course. "
                             "For instance, ""Certificate of Achievement""."
@@ -57,6 +71,7 @@ class SettingsAdvancedController(CommonController):
             cert_name_short=dict(
                 caption="Certificate Name (Short)",
                 type="list",
+                disable= True,
                 description="Use this setting only when generating PDF certificates. Between quotation marks, "
                             "enter the short name of the type of certificate that students receive when they complete the course. "
                             "For instance, ""Certificate""."
@@ -64,6 +79,7 @@ class SettingsAdvancedController(CommonController):
             cert_html_view_overrides=dict(
                 caption="Certificate Web/HTML View Overrides",
                 type="list",
+                disable = True,
                 description="Enter course-specific overrides for the Web/HTML template parameters here (JSON format)"
             ),
             certificates_display_behavior=dict(
@@ -80,7 +96,7 @@ class SettingsAdvancedController(CommonController):
 
             cosmetic_display_price=dict(
                 caption="Cosmetic Course Display Price",
-                type="list",
+                type="number",
                 description="The cost displayed to students for enrolling in the course. "
                             "If a paid course registration price is set by an administrator in the database, "
                             "that price will be displayed instead of this one."
@@ -107,11 +123,12 @@ class SettingsAdvancedController(CommonController):
             instructor_info=dict(
                 caption="Course Instructor",
                 type="list",
+                disable = True,
                 description="Enter the details for Course Instructor"
             ),
             is_new=dict(
                 caption="Course Is New",
-                type="list",
+                type="bool",
                 description="Enter true or false. If true, the course appears in the list of new courses on edx.org, "
                             "and a New! badge temporarily appears next to the course image."
             ),
@@ -136,6 +153,7 @@ class SettingsAdvancedController(CommonController):
             discussion_blackouts=dict(
                 caption="Discussion Blackout Dates",
                 type="dates",
+                disable=True,
                 description="Enter pairs of dates between which students cannot post to discussion forums. "
                             "Inside the provided brackets, enter an additional set of square brackets "
                             "surrounding each pair of dates you add. Format each pair of dates as [""YYYY-MM-DD"", ""YYYY-MM-DD""]."
@@ -146,7 +164,8 @@ class SettingsAdvancedController(CommonController):
 
             discussion_sort_alpha=dict(
                 caption="Discussion Sorting Alphabetical",
-                type="list",
+                type="bool",
+                disable=True,
                 description="Enter true or false. If true, discussion categories and subcategories are sorted alphabetically. "
                             "If false, they are sorted chronologically by creation date and time."
             ),
@@ -160,27 +179,27 @@ class SettingsAdvancedController(CommonController):
             ),
             use_latex_compiler=dict(
                 caption="Enable LaTeX Compiler",
-                type="list",
+                type="bool",
                 description="Enter true or false. "
                             "If true, you can use the LaTeX templates for HTML components and advanced Problem components."
             ),
 
             enable_proctored_exams=dict(
                 caption="Enable Proctored Exams",
-                type="list",
+                type="bool",
                 description="Enter true or false. If this value is true, "
                             "proctored exams are enabled in your course. "
                             "Note that enabling proctored exams will also enable timed exams."
             ),
             enable_subsection_gating=dict(
                 caption="Enable Subsection Prerequisites",
-                type="list",
+                type="bool",
                 description="Enter true or false. If this value is true, you can hide a subsection until "
                             "learners earn a minimum score in another, prerequisite subsection."
             ),
             enable_timed_exams=dict(
                 caption="Enable Timed Exams",
-                type="list",
+                type="bool",
                 description="Enter true or false. If this value is true, "
                             "timed exams are enabled in your course. Regardless of this setting, "
                             "timed exams are enabled if Enable Proctored Exams is set to true."
@@ -188,23 +207,24 @@ class SettingsAdvancedController(CommonController):
             html_textbooks=dict(
                 caption="HTML Textbooks",
                 type="list",
+                disable=True,
                 description="For HTML textbooks that appear as separate tabs in the course, "
                             "enter the name of the tab (usually the title of the book) as well as "
                             "the URLs and titles of each chapter in the book."
             ),
             due=dict(
                 caption="Due Date",
-                type="list",
+                type="date",
                 description="Enter the date by which problems are due."
             ),
             invitation_only=dict(
                 caption="Invitation Only",
-                type="list",
+                type="bool",
                 description="Whether to restrict enrollment to invitation by the course staff."
             ),
             max_attempts=dict(
                 caption="Maximum Attempts",
-                type="list",
+                type="number",
                 description="Enter the maximum number of times a student can try to answer problems. "
                             "By default, Maximum Attempts is set to null, "
                             "meaning that students have an unlimited number of attempts for problems. "
@@ -214,22 +234,114 @@ class SettingsAdvancedController(CommonController):
             ),
             rerandomize=dict(
                 caption="Randomization",
-                type="list",
+                type="select",
+                dropdown=[
+                    dict(
+                        value="never",
+                        caption=model._ // "never"
+                    ),
+                    dict(
+                        value="always",
+                        caption= model._//"always"
+                    ),
+                    dict(
+                        value="onreset",
+                        caption=model._ // "on reset"
+                    ),
+
+                    dict(
+                        value="per_student",
+                        caption=model._ // "per student"
+                    )
+                ],
                 description="Specify the default for how often variable values in a problem are randomized. "
                             "This setting should be set to ""never"" unless you plan to provide a "
                             "Python script to identify and randomize values in most of the problems in your course. "
                             "Valid values are ""always"", ""onreset"", ""never"", and ""per_student""."
             )
         )
-        ng_data = {}
-        model.fields=[]
-        for k,v in fields.items():
-            model.fields.append(k)
-            model.fieldInfo=fields
-            ng_data.update({
-                k : getattr(course,k)
+        fields = {}
+        keys = [dict(key=k,index = v.get("display_index",0)) for k,v in info.items() if not v.get("disable",False)]
+        keys = sorted(keys, key=lambda x: x["index"])
+        for k in keys:
+            val = info[k["key"]].copy()
+            val["description"]= model._.g(k["key"]+"_description",val["description"])
+
+            fields.update({
+                k["key"]: info[k["key"]]
             })
-        model.ng_data=ng_data
+        return fields
+
+    def get_data(self,model):
+        course = self.__get_course_ware_from_str_key__(model.params.course_key_string, model.user)
+        model.course = course
+        fields = self.getFields(model)
+        ng_data = {}
+        model.fields = [dict(key=k, index=v.get("display_index", 0)) for k, v in fields.items()]
+        model.fields = sorted(model.fields, key=lambda x: x["index"])
+        model.fields = [x["key"] for x in model.fields]
+        for k, v in fields.items():
+            model.fieldInfo = fields
+            ng_data.update({
+                k: getattr(course, k)
+            })
+        return ng_data
+
+    def on_get(self,model):
+        if not self.__check_is_creator_of_courseware__(model.params.course_key_string,model.user):
+            return model.redirect(model.absUrl+"/signin?next={0}".format(
+                model.escape(model.absUrl + model.request.get_full_path())
+            ))
+        model.ng_data=self.get_data(model)
         return self.render(model)
+
     def on_post(self,model):
         return xdj.Handler(model)
+
+    def DoLoadItem(self,model):
+        if not self.__check_is_creator_of_courseware__(model.params.course_key_string,model.user):
+            return model.redirect(model.absUrl+"/signin?next={0}".format(
+                urllib.quote_plus(model.absUrl+ model.request.get_full_path())
+            ))
+        return self.get_data(model)
+
+    def DoSaveItem(self,model):
+        if not self.__check_is_creator_of_courseware__(model.params.course_key_string,model.user):
+            return model.redirect(model.absUrl+"/signin?next={0}".format(
+                urllib.quote_plus(model.absUrl+ model.request.get_full_path())
+            ))
+        from xmodule.modulestore.django import modulestore
+        from models.settings.course_metadata import CourseMetadata
+        from contentstore.views.course import _refresh_course_tabs
+        id = self.__get_course_id_from_text__(model.params.course_key_string)
+        with modulestore().bulk_operations(id):
+            course_module = modulestore().get_course(id)
+            update_data ={}
+            for k,v in self.getFields(model).items():
+                if not v.get("disable",False):
+                    val = model.post_data.data.get(k,None)
+                    if v["type"]=="date":
+                        import datetime
+                         # = datetime.datetime.fromisoformat(model.post_data.data.get(k,None))
+                        x=1
+                    setattr(course_module,k,val)
+                    update_data.update({
+                        k: dict(value= model.post_data.data.get(k,None))
+                    })
+            ret = modulestore().update_item(course_module, model.user.id)
+            # is_valid, errors, updated_data = CourseMetadata.validate_and_update_from_json(
+            #     course_module,
+            #     update_data,
+            #     user=model.user,
+            # )
+
+            if not ret:
+
+                return dict(
+                    data={}
+                )
+            else:
+                _refresh_course_tabs(model.request, course_module)
+                return {}
+
+        pass

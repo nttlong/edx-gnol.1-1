@@ -7,51 +7,79 @@
                 <span>&nbsp;</span>
             </div>
         </div>
-        <form action="" method="post" role="form">
-            <legend>${_//"Advanced Settings"}</legend>
-    
-            <div class="form-group">
-                <form-layout xs-cols="4,8" sm-cols="4,8" md-cols="4,8" lg-cols="4,8">
-                        <input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token.__str__()}"/>
-                    <form-template>
-                            <div>
-                                    %for x in fields:
-                                        <label>${_//fieldInfo[x]["caption"]}</label>
-                                        %if fieldInfo[x]["type"]=="bool":
-                                            <input type="checkbox"/>
-                                        %else:
-                                            <input type="text"/>
-                                        %endif
-                                    %endfor
-                            </div>
-                            
-                            % if error:
+        <h1 class="page-header">
+                <small class="subtitle">${_//"Settings"}</small>
+                <span class="sr">&gt; </span>${_//"Advanced Settings"}
+        </h1>
+        <form-layout xs-cols="12" sm-cols="4,8" md-cols="4,8" lg-cols="4,8">
+                <input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token.__str__()}"/>
+            <form-template>
+                            %for x in fields:
                                 <div>
-                                     <p>
-                                       ${error.message}   
-                                     </p>   
+                                    <label>${_//fieldInfo[x]["caption"]}</label>
+                                    %if fieldInfo[x]["type"]=="bool":
+                                        <input type="checkbox" ng-model="data.${x}"/>
+                                    %elif fieldInfo[x]["type"]=="date":
+                                        <input type="datetime-local" class="form-control" ng-model="data.${x}" lang="vi"/>
+                                    %elif fieldInfo[x]["type"]=="number":
+                                        <input type="number" ng-model="data.${x}"/>
+                                    %elif fieldInfo[x]["type"]=="select":
+                                        <select class="form-control">
+                                            %for m in fieldInfo[x]["dropdown"]:
+                                                <option value="${m['value']}">
+                                                    ${m["caption"]}
+                                                </option>
+                                            %endfor
+                                        </select> 
+                                    %elif fieldInfo[x]["type"]=="dates":
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <label class="control-label">&nbsp;${_//"from"}&nbsp;</label>
+                                                </td>
+                                                <td>
+                                                    <input type="date" ng-model="data.${x}.from" class="form-control"/> 
+                                                </td>
+                                                <td>
+                                                        <label  class="control-label">&nbsp;${_//"to"}&nbsp;</label>
+                                                </td>
+                                                <td>
+                                                        <input type="date" ng-model="data.${x}.to" class="form-control"/> 
+                                                </td>
+                                            </tr>
+                                        </table>   
+                                    %else:
+                                        <input type="text"  ng-model="data.${x}"/>
+                                    %endif
                                 </div>
-                            % endif
-                            
-                            <div>
-                                <div class="btn-toolbar pull-right" role="toolbar" span="12">
-                                    <div class="btn-group">
-    
-                                    </div>
-                                    <div class="btn-group">
-    
-                                    </div>
-                                    <div class="btn-group">
-                                        <button type="submit" class="btn btn-default">${_//"Save"}</button>
-                                    </div>
+                                <div>
+                                        <label>&nbsp;</label><div>${fieldInfo[x]["description"]}</div>
                                 </div>
+                                
+                            %endfor
+                    
+                   
+                    
+                    <div>
+                        <div class="btn-toolbar pull-right" role="toolbar" span="12">
+                            <div class="btn-group">
+
                             </div>
-                    </form-template>
-    
-                </form-layout>
-            </div>
-            
-        </form>
+                            <div class="btn-group">
+                                    <button type="button" class="btn btn-default" ng-click="doRefesh();">${_//"Refresh"}</button>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary" ng-click="doSaveItem();">${_//"Save"}</button>
+                            </div>
+                        </div>
+                    </div>
+            </form-template>
+
+        </form-layout>
+       <ajax url="${currentUrl}">
+           <call data-id="DoLoadItem" ng-model="data" data-function="doRefesh"></call>
+           <call data-id="DoSaveItem" ng-model="doSaveItemResult" data-params="{data:data}" data-function="doSaveItem"></call>
+       </ajax>
     
     </div>
 

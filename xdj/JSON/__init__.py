@@ -10,6 +10,7 @@ datetime_format = "%Y-%m-%dT%H:%M:%S.%f"
 datetime_format_javascript = "%Y-%m-%dT%H:%M:%S.%fZ"
 datetime_format_regex = re.compile(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{6}$')
 datetime_format_regex_from_javascript = re.compile(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z$')
+datetime_format_from_date_control = re.compile(r'^\d{4}-\d{2}-\d{2}T\d{2}\:\d{2}\:\d{2}\+\d{2}\:\d{2}')
 global check_list
 if sys.version_info[0]<=2:
     check_list=[unicode,str]
@@ -60,10 +61,25 @@ def json_serial(obj):
     return obj.__str__()
 def datetime_parser(dct):
     if type(dct) in check_list:
+        import bson
         if datetime_format_regex.match(dct):
             return datetime.strptime(dict, datetime_format)
         elif datetime_format_regex_from_javascript.match(dct):
             return datetime.strptime(dict, datetime_format_javascript)
+        elif datetime_format_from_date_control.match(dct):
+            x= dct
+            items = x.split('-')
+            year = int(items[0])
+            month = int(items[1])
+            day = int(items[2].split('T')[0])
+            fx = items[2].split('T')[1].split(":")
+            hours = int(fx[0])
+            minutes = int(fx[1])
+            tz1= int(fx[2].split('+')[1])
+            tz2 = int(fx[3])
+            tz = bson.tz_util.FixedOffset(bson.tz_util.timedelta(0),"UTC")
+
+            return datetime(year,month,day,hours,minutes,tz1,tz2,tz)
         else:
             return dct
     elif type(dct) is list:
