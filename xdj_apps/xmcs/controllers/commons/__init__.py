@@ -1,5 +1,7 @@
 import xdj
 from openedx.core.djangoapps.content.course_overviews.models import CourseOverview
+from django.db.models import Q
+
 class CommonController(xdj.BaseController):
     def __is_email__(self,txt):
         """
@@ -25,16 +27,31 @@ class CommonController(xdj.BaseController):
             return None
         else:
             return users[0]
+
     def __get_course_id_from_text__(self,txt):
         from opaque_keys.edx.locator import CourseLocator
         return CourseLocator.from_string(txt)
+
     def __check_is_creator_of_courseware__(self,txt_course_id,user):
         from xdj_models.models import CourseAuthors
-        x = list(CourseAuthors().objects.filter(course_id=self.__get_course_id_from_text__(txt_course_id)))
-        if x.__len__()==0:
+        from student.models import CourseAccessRole
+        course_id = self.__get_course_id_from_text__(txt_course_id)
+        x = CourseAuthors().objects.filter(
+            Q(course_id = course_id) &
+            Q(user = user)
+        ).count() + CourseAccessRole.objects.filter(
+            Q(course_id=course_id) &
+            Q(user = user) &
+            Q(role ="staff")
+        ).count()
+        # x = list(CourseAuthors().objects.filter(course_id=self.__get_course_id_from_text__(txt_course_id)))+
+        # CourseAccessRole.objects.filter(
+        #     Q(course_id=self.__get_course_id_from_text__(txt_course_id)) & Q(user=user)).count()
+        if x == 0:
             return False
         else:
-            return x[0].user.username == user.username
+            return True
+
     def __get_course_ware_from_str_key__(self,course_key,user):
 
         from xmodule.modulestore.django import modulestore

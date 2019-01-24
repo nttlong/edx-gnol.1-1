@@ -203,6 +203,7 @@ def to_json(data):
 
 class Model(object):
     def __init__(self):
+        from django.utils.translation import ugettext
         import urllib
         self.request = None
         self.response = None
@@ -216,6 +217,7 @@ class Model(object):
         self.settings=None
         self.to_json= to_json
         self.escape = urllib.quote_plus
+        self.djRes = ugettext
 
     def debugger(self):
         print "debugger"

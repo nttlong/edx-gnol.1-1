@@ -1,14 +1,68 @@
 <%inherit file="../base.html"/>
+<%inherit file="../base.html"/>
+<%
+  from django.utils.translation import ugettext as _res
+%>
 
-
-<div class="container" id="main-container">
+<div class="container" id="main-container" ng-init="courseId='${course.id.html_id()}'">
         <div class="row">
             <div class="xs-col-12">
                 <span>&nbsp;</span>
             </div>
         </div>
         <h1 class="page-header">
-                <small class="subtitle">${_//"Settings"}</small>
-                <span class="sr">&gt; </span>${_//"Course Team"}
+                <small class="subtitle">${djRes("Settings")}</small>
+                <span class="sr">&gt; </span>${djRes("Course Team")}
         </h1>
+        <table class="table table-bordered table-hover" ng-if="data.length>0">
+            <thead>
+            <tr>
+                <th></th>
+                <th>
+                    ${_//"Username"}
+                </th>
+                <th>
+                    ${_//"Email"}
+                </th>
+                <th>
+                    ${_//"First Name"}
+                </th>
+                <th>
+                    ${_//"Last Name"}
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="p in data">
+                <td>
+                    <input type="checkbox"/>
+                </td>
+                <td>
+                    {{p.username}}
+                </td>
+                <td>
+                        {{p.email}}
+                </td>
+                <td>
+                        {{p.first_name}}
+                </td>
+                <td>
+                        {{p.last_name}}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div ng-if="data.length==0">
+            <p>${_//"Thật đáng tiếc! không có cộng tác viên nào trong khóa học này"}<br></p>
+            <p>
+                    <input type="button" class="btn btn-primary" value="${'Add new member'}" ng-click="$root.$dialog($id).url('/cms/settings/course_team/editor').done()"/>    
+            </p>    
+            
+            
+        </div>
+    
+        <ajax url="${currentUrl}">
+            <call data-id="DoLoadItems" ng-model="data"></call>
+            <call data-id="DoLoadItems" ng-model="data" data-function="doRefresh"></call>
+        </ajax>
 </div>
