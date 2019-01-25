@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25ec6f3e-a1c1-4b5a-bc90-d34891b13e77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../../xdj_sql/funcs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../xdj_sql/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../xdj_sql/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/wiki/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/wiki/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/course_team_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/course_team_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/settings/course_team.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/settings/course_team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_hr/models/emps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_hr/models/emps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_sql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_sql/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_sql/funcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_sql/funcs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_sql/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_sql/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

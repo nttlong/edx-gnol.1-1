@@ -56,37 +56,41 @@ class CourseTeamController(CommonController):
             from xdj_models.models import CoursewareUserOrgs
             from django.db.models import F,Q
 
-            fx = qr(CoursewareUserOrgs()).where(Fields.User==model.user).first()
-
-            x=qr(CoursewareUserOrgs())
-            x.select_related(User)
-            x.where(
-                (Fields.Org == fx.Org) &
-                (Fields.User.is_staff == True) &
-                (Fields.User != model.user)
-            )
+            # fx = qr(CoursewareUserOrgs()).where(Fields.User==model.user).first()
+            #
+            # x=qr(CoursewareUserOrgs())
+            # x.select_related(User)
+            # x.where(
+            #     (Fields.Org == fx.Org) &
+            #     (Fields.User.is_staff == True) &
+            #     (Fields.User != model.user)
+            # )
             # x.select(
             #     Fields.User.username,
             #     Fields.User.email,
             #     Fields.User.first_name,
             #     Fields.User.last_name
             # )
-            x.select(
-                Fields.xxxx << (Fields.User.id + Fields.id)*12,
-                # Fields.username << Fields.User.username,
-                # Fields.email << Fields.User.email,
-                # Fields.FName << Fields.User.first_name,
-                # Fields.LName << Fields.User.last_name,
-                Fields.FullName << Funcs.call(Upper,Funcs.concat(Fields.User.first_name," ",Fields.User.last_name))
-            )
-            print x.execute().query
-            d= x.all()
+            # x.select(
+            #     Fields.xxxx << (Fields.User.id + Fields.id)*12,
+            #     # Fields.username << Fields.User.username,
+            #     # Fields.email << Fields.User.email,
+            #     # Fields.FName << Fields.User.first_name,
+            #     # Fields.LName << Fields.User.last_name,
+            #     Fields.FullName << Funcs.call(Upper,Funcs.concat(Fields.User.first_name," ",Fields.User.last_name))
+            # )
+            # x.sort(Fields.xxxx,-Fields.FullName)
+            #
+            # print x.execute().query
+            # d= x.all()
+
+            from xdj_hr.models import emps
 
 
 
 
 
-            item = CoursewareUserOrgs().objects.filter(User=model.user).first()
+            item = CoursewareUserOrgs().objects.filter(User = model.user).first()
             ret = CoursewareUserOrgs().objects.filter(
                 Org=item.Org
             ).select_related("User").filter(

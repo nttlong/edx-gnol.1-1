@@ -26,6 +26,7 @@ class qr(object):
         self.__fields__ = {}
         self.__where__ = None
         self.__select_related__ = []
+        self.__sort__ = []
 
     def select(self,*args,**kwargs):
         from django.db.models.fields import DeferredAttribute
@@ -103,7 +104,7 @@ class qr(object):
                 if not v.__expr__:
                     selected_fields.append(k)
                 else:
-                    alias_fields.append((k,v.__expr__))
+                    alias_fields.append((k, v.__expr__))
             else:
                 selected_fields.append(k)
 
@@ -120,8 +121,47 @@ class qr(object):
             qr_set = qr_set.annotate(**_annotate)
             selected_fields = [x[0] for x in alias_fields]
             qr_set = qr_set.values(*selected_fields)
-
+        if self.__sort__.__len__() > 0:
+            _sort_ = []
+            for x in self.__sort__:
+                if x["asc"]:
+                    _sort_.append(x["field"])
+                    # qr_set = qr_set.order_by(x["field"])
+                else:
+                    _sort_.append("-" + x["field"])
+                    # qr_set = qr_set.order_by("-"+x["field"])
+            qr_set = qr_set.order_by(*_sort_)
         return qr_set
+
+    def count(self):
+        return self.execute().count()
+
+    def limit(self,num):
+        return self.execute()[:num]
+
+    def skip(self,num):
+        return self.execute()[num:]
+
+    def sort(self,*args,**kwargs):
+        from xdj_sql.utils import __field__
+        if args.__len__()>0:
+            for x in args:
+                if isinstance(x,__field__):
+                    if x.__sort__ == "desc":
+                        self.__sort__.append(dict(
+                            field=x.__f_name__,
+                            asc = False
+                        ))
+                    else:
+                        self.__sort__.append(dict(
+                            field=x.__f_name__,
+                            asc= True
+                        ))
+        return self
+
+
+    def get_page(self,page_size,page_index):
+        return self.execute()[page_size * page_index: page_size ]
 
     def first(self):
         return self.execute().first()
@@ -148,3 +188,5 @@ class qr(object):
 
 Fields = utils.Fields
 import funcs as Funcs
+from . models import table
+from . models import fields

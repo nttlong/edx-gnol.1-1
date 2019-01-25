@@ -11,7 +11,18 @@ def concat(*args,**kwargs):
             elif type(x) in [str, unicode]:
                 params.append(Value(x))
     return Concat(*params)
-
+def contains(field,txt):
+    """
+    icontains
+    :param field:
+    :param txt:
+    :return:
+    """
+    from .utils import __field__
+    if isinstance(field,__field__):
+        if field.__f_name__.count("__icontains")==0:
+            field.__f_name__ = "{0}__icontains".format(field.__f_name__)
+    return field
 def call(fn,*args,**kwargs):
     from .utils import __field__
     from django.db.models import Value,F
