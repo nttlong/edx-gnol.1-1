@@ -14,6 +14,7 @@
                 <small class="subtitle">${djRes("Settings")}</small>
                 <span class="sr">&gt; </span>${djRes("Course Team")}
         </h1>
+       
         <table class="table table-bordered table-hover" ng-if="data.length>0">
             <thead>
             <tr>
@@ -48,6 +49,11 @@
                 </td>
                 <td>
                         {{p.last_name}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="btn btn-primary" value="${'Add new member'}" ng-click="$root.$dialog($id).url('/cms/settings/course_team/editor').done()"/>
                 </td>
             </tr>
             </tbody>

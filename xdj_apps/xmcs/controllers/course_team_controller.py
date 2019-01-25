@@ -49,8 +49,43 @@ class CourseTeamController(CommonController):
     class editor(object):
 
         def DoLoadItems(self,model):
+            from xdj_sql import Fields,qr,Funcs
+            from django.db.models.functions import Upper
+
+
             from xdj_models.models import CoursewareUserOrgs
             from django.db.models import F,Q
+
+            fx = qr(CoursewareUserOrgs()).where(Fields.User==model.user).first()
+
+            x=qr(CoursewareUserOrgs())
+            x.select_related(User)
+            x.where(
+                (Fields.Org == fx.Org) &
+                (Fields.User.is_staff == True) &
+                (Fields.User != model.user)
+            )
+            # x.select(
+            #     Fields.User.username,
+            #     Fields.User.email,
+            #     Fields.User.first_name,
+            #     Fields.User.last_name
+            # )
+            x.select(
+                Fields.xxxx << (Fields.User.id + Fields.id)*12,
+                # Fields.username << Fields.User.username,
+                # Fields.email << Fields.User.email,
+                # Fields.FName << Fields.User.first_name,
+                # Fields.LName << Fields.User.last_name,
+                Fields.FullName << Funcs.call(Upper,Funcs.concat(Fields.User.first_name," ",Fields.User.last_name))
+            )
+            print x.execute().query
+            d= x.all()
+
+
+
+
+
             item = CoursewareUserOrgs().objects.filter(User=model.user).first()
             ret = CoursewareUserOrgs().objects.filter(
                 Org=item.Org

@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4a4ad10-c078-4534-8ebf-ddf551b27444" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../xdj_apps/xmcs/views/settings/course_team_editor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xdj_sql/funcs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../xdj_sql/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj/controllers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xmcs/controllers/commons/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xmcs/controllers/commons/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../xdj_apps/xmcs/controllers/course_team_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xmcs/controllers/course_team_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../xdj_apps/xmcs/views/settings/course_team.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xmcs/views/settings/course_team.html" afterDir="false" />
     </list>
@@ -23,7 +21,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/article_menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
+            <state relative-caret-position="156">
               <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
             </state>
           </provider>
@@ -58,7 +56,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -75,6 +72,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -131,7 +129,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/includes/article_menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="156">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
