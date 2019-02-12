@@ -35,11 +35,6 @@ import xdj
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        .open>.dropdown-menu {
-            display: block !important;
-         }
-    </style>
     <link rel="stylesheet" href="/lms/static/site.css" type="text/css" media="all" />
 
 ## Define a couple of helper functions to make life easier when
@@ -204,10 +199,10 @@ import xdj
   <div class="window-wrap" dir="${static.dir_rtl()}">
 % endif
     <a class="nav-skip sr-only sr-only-focusable" href="#main">${_("Skip to main content")}</a>
-
+    <%include file="./header/header2.html"/>
     % if not disable_header:
-        <%include file="${static.get_template_path('header.html')}" args="online_help_token=online_help_token" />
-        <%include file="/preview_menu.html" />
+        <!-- include file="${static.get_template_path('header.html')}" args="online_help_token=online_help_token"
+        include file="/preview_menu.html"  -->
     % endif
 
     <%include file="/page_banner.html" />
@@ -235,25 +230,10 @@ import xdj
   <script type="text/javascript" src="/lms/static/js/utils/navigation.js" charset="utf-8"></script>
   <script type="text/javascript" src="/lms/static/js/header/header.js"></script>
   <%static:optional_include_mako file="body-extra.html" is_theming_enabled="True" />
-<style>
-    input[type="submit"], input[type="button"], button, .button :hover {
-        background-color:none !important;
-        background-image:none !important;
-    }
-</style>
 <script src="/lms/static/boostrap/js/bootstrap.min.js"></script>
 <link href="/lms/static/boostrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <%block name="angular"/>
-<style>
-    .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
-              cursor: not-allowed;
-              filter: alpha(opacity=65);
-              -webkit-box-shadow: none;
-              background-color: #1c1c1c !important;
-              box-shadow: none;
-              opacity: .65;
-      }
-  </style>
+
   <script>
     var mdl = angular.module("cms",[]);
     var ctrl =mdl.controller("cms",["$scope",function($scope){

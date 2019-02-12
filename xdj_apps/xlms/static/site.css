@@ -1,4 +1,4 @@
-div.mask{
+/* div.mask{
     position:fixed;
     left:0;
     top:0;
@@ -10,9 +10,7 @@ div.mask{
     background-position: center;
 
 }
-.form-element{
-      padding:4px
- }
+
  .course-outline ol.block-tree.accordion li.outline-item.section input[type="submit"], input[type="button"], button, .button {
     color:red !important;
     box-shadow:none !important;
@@ -26,11 +24,7 @@ div.mask{
     padding:5px !important;
  }
  textarea, input[type="text"], input[type="url"], input[type="email"], input[type="password"], input[type="tel"] {
-   /* background: #fff; */
-   /* border: 1px solid #c8c8c8; */
    border-radius: 0 !important;
-   /* box-shadow: 0 1px 0 0 rgba(255,255,255,0.6), inset 0 0 3px 0 rgba(0,0,0,0.1); */
-   /* box-sizing: border-box; */
    font: inherit !important;
    height: 35px;
    padding: 5px 12px;
@@ -56,21 +50,10 @@ div.mask{
    background-image: none;
    border: 1px solid #0075b4 !important;
    border-radius: 0px !important;
-   color: #fcfcfc !important;
+   color: #fcfcfc;
    font-family: inherit !important;
 }
-.flag-icon-en {
- background-image: url('/cms/static/flags/en.svg');
- background-repeat: no-repeat;
- background-position: center center;
- background-size: contain;
-}
-.flag-icon-vi {
- background-image: url('/cms/static/flags/vn.svg');
- background-repeat: no-repeat;
- background-position: center center;
- background-size: contain;
-}
+
 .flag-icon, .flag-icon-background {
 background-repeat: no-repeat;
 background-size: contain;
@@ -116,8 +99,299 @@ background-position: 50%;
 .btn.btn-link.bookmark-button .bookmark-text {
    color:#000 !important;
 }
+
+button[disabled="disabled"]{
+   color: #fafafa !important;
+   padding: 8px !important;
+   font-size: 16px;
+}
+button.btn.register-btn, button.btn.login-btn  {
+    background: #fff;
+    color: #0075b4;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 8px !important;
+}
+button.btn.register-btn:hover, button.btn.login-btn:hover  {
+   background: #0075b4;
+   color: #fff !important;
+   font-weight: 400;
+   font-size: 16px;
+   padding: 8px !important;
+}
+@media (max-width: 991px) {
+   .mobile-menu .mobile-nav-link a {
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      outline: none;
+      display: block;
+      background-color: #fff;
+      border-radius: 0;
+      width: 100%;
+      padding: 12px 20px;
+      border-bottom: 1px solid #e7e7e7;
+      text-align: left;
+      cursor: pointer;
+      color: #000;
+   }
+}
+
+.progress.wrapper-course-material, .navbar.course-tabs, .instructor.wrapper-course-material{
+   background-color: transparent;
+    color: black;
+    border: none;
+    box-shadow: none;
+    height: 58px;
+    border: solid 4px red;
+    overflow-x: hidden;
+
+}
+.progress.wrapper-course-material li.nav-item, .navbar.course-tabs li.nav-item, .instructor.wrapper-course-material li.nav-item{
+   font-size: 14px
+}
+
  /* .btn-primary:hover, button.section-name.accordion-trigger:hover, button.subsection-text.accordion-trigger:hover {
     border:solid 1px #dcdcdc !important;
     background:none !important;
     padding:4px !important;
- } */
+ } */ 
+ nav.navbar {
+   display: block ;
+    flex-direction: unset;
+ }
+ nav.navbar .navbar-nav{
+    display: block ;
+    flex-direction: unset;
+
+ }
+ nav.navbar .navbar-nav .dropdown-menu {
+    float: none;
+    display: none;
+    float: left;
+    position: absolute;
+ }
+ textarea, input[type="text"], input[type="url"], input[type="email"], input[type="password"], input[type="tel"] {
+   background: #fff;
+   border: 1px solid #c8c8c8;
+   border-radius: 3px;
+   box-shadow: 0 1px 0 0 rgba(255,255,255,0.6), inset 0 0 3px 0 rgba(0,0,0,0.1);
+   box-sizing: border-box;
+   font-style: normal;
+   font-variant-ligatures: normal;
+   font-variant-caps: normal;
+   font-variant-numeric: normal;
+   font-variant-east-asian: normal;
+   font-weight: 400;
+   font-stretch: normal;
+   font-size: 14px;
+   line-height: 1.6rem;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
+   height: 35px;
+   padding: 5px 12px;
+   vertical-align: top;
+   -webkit-font-smoothing: antialiased;
+}
+.progress.wrapper-course-material, .navbar.course-tabs, .instructor.wrapper-course-material{
+   background-color: transparent;
+    color: black;
+    border: none;
+    box-shadow: none;
+    height: 58px;
+    
+    overflow-x: hidden;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.form-element{
+   padding:4px
+}
+.course-info header.course-profile {
+   background: #f5f5f5;
+   background-image: none;
+   background-size: cover;
+   box-shadow: 0 1px 80px 0 rgba(0,0,0,0.5);
+   border-bottom: 1px solid #646464;
+   box-shadow: inset 0 1px 5px 0 rgba(0,0,0,0.1);
+   height: 280px;
+   padding-top: 0;
+   overflow: hidden;
+   position: relative;
+   margin-top: -22px;
+   margin-bottom: 22px;
+   width: 100%;
+}
+.course-info header.course-profile {
+   background:transparent; 
+   background-image: none; 
+   background-size: cover; 
+   box-shadow: none; 
+   border: none;
+   box-shadow: none; 
+   height: 280px;
+   /*padding-top: 150px; */
+   /* overflow: hidden; */
+   /* position: relative; */
+   /* width: 100%;*/
+}
+.course-info header.course-profile .intro-inner-wrapper {
+    background: none; 
+   border: none;
+   box-shadow:none; 
+   box-sizing: border-box;
+   margin: 0 auto;
+   position: relative;
+   z-index: 2;
+}
+.dropdown-menu {
+   position: absolute !important;
+   top: 100%;
+   left: 0;
+   z-index: 1000;
+   display: none;
+   float: left;
+   min-width: 160px;
+   padding: 5px 0;
+   margin: 2px 0 0;
+   font-size: 14px;
+   text-align: left;
+   list-style: none;
+   background-color: #fff;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   border: 1px solid #ccc;
+   border: 1px solid rgba(0,0,0,.15);
+   border-radius: 4px;
+   -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+   box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.dropdown, .dropup {
+   position: relative !important;
+}
+.open>.dropdown-menu, .btn-group.open .wiki-wrapper section.wiki .dropdown-menu {
+   display: block !important;
+}
+main.course-outline input[type="submit"],main.course-outline  input[type="button"], main.course-outline  button, main.course-outline  .button {
+   box-shadow: none;
+   text-shadow: none;
+   background-image: none !important;
+   background-color: transparent !important;
+}
+main.course-outline input[type="submit"]:focus,main.course-outline  input[type="button"]:focus, main.course-outline  button:focus, main.course-outline  .button:focus {
+   box-shadow: none;
+   text-shadow: none;
+   background-image: none !important;
+   background-color: #337ab7 !important;
+   border-color: #337ab7 !important;
+   color: #f5f5f5;
+}
+
+main.course-outline input[type="submit"]:hover,main.course-outline  input[type="button"]:hover, main.course-outline  button:hover, main.course-outline  .button:hover {
+   box-shadow: none;
+   text-shadow: none;
+   background-image: none !important;
+   background-color: #337ab7 !important;
+   border-color: #337ab7 !important;
+   color: #f5f5f5;
+}
+main.course-outline a.outline-item {
+   color: #313131;
+   text-decoration: none;
+}
+main.course-outline a.outline-item:hover {
+   background-color: #337ab7 !important;
+   border-color: #337ab7 !important;
+   color: #f5f5f5;
+   text-decoration: none !important;
+}
+main.course-outline h3.section-title {
+   box-shadow: none;
+   text-shadow: none;
+   font-size: 18px !important;
+   font-weight: 400 !important;
+}
+main.course-outline h4.subsection-title{
+   box-shadow: none;
+   text-shadow: none;
+   font-size: 16px !important;
+   font-weight: 400 !important;
+}
+input[type="submit"]:active:not(:disabled), input[type="submit"]:focus:not(:disabled), input[type="button"]:active:not(:disabled), input[type="button"]:focus:not(:disabled), button:active:not(:disabled), button:focus:not(:disabled), .button:active:not(:disabled), .button:focus:not(:disabled) {
+   box-shadow: none;
+}
+nav.sequence-list-wrapper {
+   overflow-y: hidden;
+   overflow-x:auto; 
+}
+.sequence-list-wrapper ol#sequence-list {
+   border: solid 1px #f1f1f1;
+}
+.wiki-wrapper section.wiki label {
+   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-size: 0.9em;
+   font-weight: bold;
+   font-style: normal;
+   color: #414141;
+   text-align: left !important;
+}
+.wiki-wrapper section.wiki #id_content, .wiki-wrapper section.wiki .CodeMirror {
+   font-family: "Bitstream Vera Sans Mono",Consolas,Courier,monospace;
+   font-size: 14px;
+   line-height: 1.4em;
+   clear: both;
+   margin-top: 20px !important;
+   min-height: 200px;
+}
+.wiki-wrapper section.wiki #cheatsheetModal {
+   overflow: visible;
+}
+.wiki-wrapper section.wiki .modal {
+   overflow: auto;
+   height: auto !important ;
+   background-color:transparent;
+
+}
+.breadcrumbs .nav-item {
+   margin-left: 5px;
+   display: inline-block;
+   font-size: 14px;
+}
+.breadcrumbs .nav-item a, .breadcrumbs .nav-item a:visited {
+   color: #0075b4;
+   font-size: 14px;
+}
+.flag-icon, .flag-icon-background {
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 50%;
+   font-size: 48px;
+   margin: 0;
+   padding: 0;
+   
+   }
+.flag-icon-en {
+   background-image: url('/cms/static/flags/en.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+  }
+  .flag-icon-vi {
+   background-image: url('/cms/static/flags/vn.svg');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: contain;
+  }
+  .dropdown.lang .caret{
+     margin-bottom: 16px;
+     padding: 0;
+  }
+ /* .dropdown.lang{
+   margin-bottom: 16px;
+   padding: 0;
+   } */
+/* input[type="submit"], input[type="button"], button, .button { 
+   box-shadow:unset;
+   text-shadow:none;
+   color: #c8c8c8;
+} */

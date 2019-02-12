@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4a4ad10-c078-4534-8ebf-ddf551b27444" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../xdj_sql/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../common/lib/capa/capa/templates/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj-gnol-cms-templates/xdj-script.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj-gnol-cms-templates/xdj-script.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xmcs/controllers/course_team_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xmcs/controllers/course_team_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj_hr/models/emps.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_hr/models/emps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj_sql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_sql/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj_sql/funcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_sql/funcs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../xdj_sql/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_sql/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xlms/static/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xlms/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xlms/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xlms/views/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xlms/views/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../xdj_apps/xmcs/static/fix.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../xdj_apps/xmcs/static/fix.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/article_menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="261">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -78,7 +79,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/code/p-gnol" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -131,8 +132,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/includes/article_menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="261">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
         </state>
       </provider>
     </entry>

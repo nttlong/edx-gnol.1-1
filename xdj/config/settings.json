@@ -24,15 +24,8 @@
   "LMS_TEMPLATE_": "/home/nttlong/code/edx/apps/edx/edx-platform/xdj-gnol-lms-templates",
   "CMS_TEMPLATE_": "/home/nttlong/code/edx/apps/edx/edx-platform/xdj-gnol-cms-templates",
   "MAKO_TEMPLATE_DIRS_BASE_": [
-    "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/common/templates",
-    "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/common/djangoapps/pipeline_mako/templates",
-    "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/common/static",
-    "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/openedx/core/djangoapps/cors_csrf/templates",
-    "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/openedx/core/djangoapps/dark_lang/templates",
-    "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/openedx/core/lib/license/templates",
-    "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/cms/djangoapps/pipeline_js/templates",
-    "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/common/lib/capa/capa/templates"
-
+    "xdj-gnol-lms-templates/wiki",
+    "common/templates"
   ],
   "WEBPACK_LOADER_":{
     "DEFAULT": {

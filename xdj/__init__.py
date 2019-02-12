@@ -439,8 +439,12 @@ def load_settings(for_lms):
         for k,v in data.items():
             setattr(settings,k,v)
         if data.has_key("MAKO_TEMPLATE_DIRS_BASE"):
-            settings.TEMPLATES[0]['DIRS'] = data["MAKO_TEMPLATE_DIRS_BASE"]
-            settings.TEMPLATES[1]['DIRS'] = data["MAKO_TEMPLATE_DIRS_BASE"]
+            r = settings.REPO_ROOT
+            for x in data["MAKO_TEMPLATE_DIRS_BASE"]:
+                import path
+                import os
+                settings.TEMPLATES[0]['DIRS'].append(path.Path(os.sep.join([r,x])))
+                settings.TEMPLATES[1]['DIRS'].append(path.Path(os.sep.join([r,x])))
 
     import path
     if data.has_key("STATIC_ROOT"):
