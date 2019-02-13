@@ -12,6 +12,15 @@ __pages__ = []
 __build_cached__ = None
 __controllert_url_build_cache__ = None
 from . controllers import Model
+def find_url_by_pattern(urls,pattern):
+    for x in urls:
+        if x.regex.pattern == pattern:
+            return x
+        elif hasattr(x,"url_patterns"):
+            ret = find_url_by_pattern(x.url_patterns,pattern)
+            if ret:
+                return ret
+    pass
 def create(urls):
     """
     Tạp app
@@ -92,22 +101,22 @@ def create(urls):
             def exec_url(self,request,*args,**kwargs):
                 return self.obj.__view_exec__(request,*args,**kwargs)
         print "will replace with {0}".format(item.replace_url)
-        match_url = [x for x in urls if x.regex.pattern == item.replace_url]
-        if match_url.__len__() == 0:
+        match_url = find_url_by_pattern(urls, item.replace_url)
+        if not match_url:
             print "{0} can not find replacer, will run under {1}".format(item.replace_url,item.url)
         else:
             import inspect
-            print "{0} can not find replacer, will run by controller {1} in {2}".format(match_url[0].regex.pattern , item,inspect.getfile(item.__class__))
+            print "{0} can not find replacer, will run by controller {1} in {2}".format(match_url.regex.pattern , item,inspect.getfile(item.__class__))
             x= cls_replacer(item)
-            match_url[0].callback = x.exec_url
+            match_url.callback = x.exec_url
     for item in check_urls:
         print "{0} will be check".format(item.check_url)
-        match_url = [x for x in urls if x.regex.pattern == item.check_url]
-        if match_url.__len__() == 0:
+        match_url = match_url = find_url_by_pattern(urls, item.check_url)
+        if not match_url:
             print "{0} can not find checker, will run under {1}".format(item.check_url,item.url)
         else:
             import inspect
-            print "{0} will be check by controller {1} in {2}".format(match_url[0].regex.pattern , item,inspect.getfile(item.__class__))
+            print "{0} will be check by controller {1} in {2}".format(match_url.regex.pattern , item,inspect.getfile(item.__class__))
             class obj_check_url():
                 def __init__(self,obj,origin_callback):
                     self.obj = obj
@@ -129,17 +138,9 @@ def create(urls):
                     else:
                         return self.__origin_callback__(request, *args, **kwargs)
 
-            x_obj = obj_check_url(item,match_url[0].callback)
-            # item.__origin_callback__ = x_obj.check_request
-            # def __check_request__(request,*args,**kwargs):
-            #     ret = item.__view_exec__(request,*args,**kwargs)
-            #     if ret:
-            #         return ret
-            #     else:
-            #         return item.__origin_callback__(request,*args,**kwargs)
+            x_obj = obj_check_url(item,match_url.callback)
 
-
-            match_url[0].callback = x_obj.check_request
+            match_url.callback = x_obj.check_request
 
 
 
@@ -559,6 +560,7 @@ def debugTemplate(x):
     from xdj.middle_ware import GlobalRequestMiddleware
     request = GlobalRequestMiddleware.get_current_request()
     pass
+
 def apply_context(context):
     from xdj.middle_ware import GlobalRequestMiddleware
     def res(key,value=None):

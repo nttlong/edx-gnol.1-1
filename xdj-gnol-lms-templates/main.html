@@ -191,7 +191,7 @@ import xdj
 <script src="/lms/static/client/ui.directtives/ui.bootstrap.layout.js"></script> 
 </head>
 
-<body class="${static.dir_rtl()} <%block name='bodyclass'/> lang_${LANGUAGE_CODE}" ng-controller="cms">
+<body class="${static.dir_rtl()} <%block name='bodyclass'/> lang_${LANGUAGE_CODE}" ng-controller="cms" style="display:none">
 
 <%static:optional_include_mako file="body-initial.html" is_theming_enabled="True" />
 <div id="page-prompt"></div>
@@ -199,10 +199,10 @@ import xdj
   <div class="window-wrap" dir="${static.dir_rtl()}">
 % endif
     <a class="nav-skip sr-only sr-only-focusable" href="#main">${_("Skip to main content")}</a>
-    <%include file="./header/header2.html"/>
+    <!----include file="./header/header2.html"-->
     % if not disable_header:
-        <!-- include file="${static.get_template_path('header.html')}" args="online_help_token=online_help_token"
-        include file="/preview_menu.html"  -->
+        <%include file="${static.get_template_path('header.html')}" args="online_help_token=online_help_token"/>
+        <%include file="/preview_menu.html"/>
     % endif
 
     <%include file="/page_banner.html" />
@@ -235,6 +235,9 @@ import xdj
 <%block name="angular"/>
 
   <script>
+    $(document).ready(function(){
+      $("body").show();
+    });
     var mdl = angular.module("cms",[]);
     var ctrl =mdl.controller("cms",["$scope",function($scope){
        if(window.onInit){

@@ -1,5 +1,5 @@
 import thread
-
+from django.conf import settings
 class GlobalRequestMiddleware(object):
     _threadmap = {}
 
@@ -9,6 +9,9 @@ class GlobalRequestMiddleware(object):
         return threading.current_thread().request
 
     def process_request(self, request):
+
+        if request.path.find(settings.STATIC_URL)>-1:
+            return None
         import threading
         threading.current_thread().request = request
         class RES(object):

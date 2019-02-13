@@ -1,10 +1,6 @@
 <%
-    from django.urls import reverse
-    from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_image_urls_for_user
+    
     from django.conf import settings
-    from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_enabled, released_languages
-    from openedx.core.djangoapps.user_api.accounts.utils import retrieve_last_sitewide_block_completed
-    from openedx.features.enterprise_support.utils import get_enterprise_learner_generic_name
     import xdj
     xdj.apply_context(self)
     
@@ -49,56 +45,15 @@
                     </a>
                     <ul class="dropdown-menu ">
                         %for x in settings.SUPPORT_LANGUAGES:
-                            <li><a href="javascript:void(0);" onclick="doChangelanguage('${x["code"]}','${self.request.user.username}')" ><i class="flag-icon flag-icon-${x['code']}">&nbsp;&nbsp;</i><span class="name">${x["name"]}</span></a></li>
+                            <li><a href="javascript:void(0);" onclick="doChangelanguage('${x["code"]}')" ><i class="flag-icon flag-icon-${x['code']}">&nbsp;&nbsp;</i><span class="name">${x["name"]}</span></a></li>
                         %endfor
                     </ul>
                 </li>
             </ul>
-            %if not self.request.user.is_anonymous():
-                <%
-                    self.real_user = getattr(user, 'real_user', user)
-                    profile_image_url = get_profile_image_urls_for_user(self.real_user)['small']
-                    username = self.real_user.username
-                    displayname = get_enterprise_learner_generic_name(request) or username
-                    resume_block = retrieve_last_sitewide_block_completed(username)
-                %>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#"  data-toggle="dropdown">
-                            
-                            <img class="user-image-frame" src="${profile_image_url}" alt="">
-                            <span>${displayname} </span>
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            % if resume_block:
-                                <li><a href="${resume_block}" role="menuitem">${self.res("Resume your last course")}</a></li>
-                            % endif
-                            <li><a href="#"><a href="${reverse('dashboard')}" role="menuitem">${self.res("Dashboard")}</a></a></li>
-                            <li><a href="${reverse('learner_profile', kwargs={'username': username})}" role="menuitem">${self.res("Profile")}</a></li>
-                            <li><a href="${reverse('account_settings')}" role="menuitem">${self.res("Account")}</a></li>
-                            <li><a href="${reverse('logout')}" role="menuitem">${self.res("Sign Out")}</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            %else:
-            <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/login">
-                            ${self.res("Login")}
-                        </a>
-                    </li>
-                    <li>
-                            <a href="/register">
-                                ${self.res("Register")}
-                            </a>
-                    </li>
-            </ul>
-            %endif
+            
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-   
     <script>
         $(document).ready(function(){
             $("#main_nav").show();
@@ -113,16 +68,15 @@
             }
             return null;
         }
-        function doChangelanguage(code,username){
-            debugger;
+        function doChangelanguage(code){
             var data={}
             data["pref-lang"]=code;
             $.ajax({
-                url : '/api/user/v1/preferences/'+username,
+                url : '/lang_pref/session_language',
                 data : JSON.stringify(data),
-                // headers:{"X-CSRFToken":readCookie('csrftoken')},
+                headers:{"X-CSRFToken":readCookie('csrftoken')},
                 type : 'PATCH',
-                contentType : 'application/merge-patch+json',
+                contentType : 'application/json',
                 dataType: 'json',
                 success:function(fx){
                     window.location.reload();

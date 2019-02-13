@@ -5,7 +5,9 @@ import xdj
 @xdj.Controller(
     url="login",
     template="login.html",
-    replace_url=r"^login$"
+    replace_url=r"^login$",
+    check_url_=r'^login$'
+
 )
 class LoginController(xdj.BaseController):
     def on_get(self,model):

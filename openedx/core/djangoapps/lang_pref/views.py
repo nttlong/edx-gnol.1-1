@@ -18,7 +18,7 @@ def update_session_language(request):
     Update the language session key.
     """
     response = HttpResponse(200)
-    if request.method == 'PATCH':
+    if request.method == 'PATCH' or request.method=='POST':
         data = json.loads(request.body)
         language = data.get(LANGUAGE_KEY, settings.LANGUAGE_CODE)
         if request.session.get(LANGUAGE_SESSION_KEY, None) != language:
