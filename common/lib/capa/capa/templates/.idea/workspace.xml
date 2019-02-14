@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25ec6f3e-a1c1-4b5a-bc90-d34891b13e77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../../xdj/mysql_fix/fix003.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/compat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/db/fields.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/meta_backends/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/meta_backends/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/meta_backends/mongo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/meta_backends/orm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/storages/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/storages/base.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/storages/fallback.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/testutils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../xdj/storages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/XBlockExt/xblock_modifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/XBlockExt/xblock_modifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -57,5 +57,13 @@
   ],
   "MEDIA_ROOT": "/opt/edx-hawthorn.2-4/apps/edx/var/media",
   "USE_TZ": true,
-  "TIME_ZONE": "UTC"
+  "TIME_ZONE": "UTC",
+  "VIDEO_TRANSCRIPTS_SETTINGS": {
+        "DIRECTORY_PREFIX": "video-transcripts-new/",
+        "STORAGE_KWARGS": {
+            "base_url": "/media/",
+            "location": "/opt/edx-hawthorn.2-4/apps/edx/var/media/"
+        },
+        "VIDEO_TRANSCRIPTS_MAX_BYTES": 3145728
+    }
 }
