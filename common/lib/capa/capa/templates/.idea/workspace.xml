@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25ec6f3e-a1c1-4b5a-bc90-d34891b13e77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/controllers/password_reset_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/views/header2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../djangoapps/util/date_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../djangoapps/util/date_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../openedx/core/djangoapps/lang_pref/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../openedx/core/djangoapps/lang_pref/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/header2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/header2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-cms-templates/widgets/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-cms-templates/widgets/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/config/feature.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/config/feature.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj/middle_ware.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/middle_ware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/controllers/login_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/controllers/login_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/static/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/views/base_lms.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/views/base_lms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/fix.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/fix.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/courseware_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/courseware_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/courseware.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/views/courseware.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +46,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -64,6 +57,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">

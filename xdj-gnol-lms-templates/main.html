@@ -240,6 +240,7 @@ import xdj
     });
     var mdl = angular.module("cms",[]);
     var ctrl =mdl.controller("cms",["$scope",function($scope){
+      $("body").show();
        if(window.onInit){
          window.onInit($scope);
        }

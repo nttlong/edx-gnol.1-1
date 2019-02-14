@@ -78,7 +78,11 @@ def to_timestamp(datetime_value):
     Convert a datetime into a timestamp, represented as the number
     of seconds since January 1, 1970 UTC.
     """
-    return int((datetime_value - datetime(1970, 1, 1, tzinfo=utc)).total_seconds())
+    if not datetime_value.tzinfo:
+        return int((datetime_value - datetime(1970, 1, 1)).total_seconds())
+    else:
+        return int((datetime_value - datetime(1970, 1, 1, tzinfo=utc)).total_seconds())
+
 
 
 def from_timestamp(timestamp):

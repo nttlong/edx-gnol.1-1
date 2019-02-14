@@ -42,23 +42,26 @@ class CoursewareController(xdj.BaseController):
             run = data["run"]
         ))
         ret = cms.djangoapps.contentstore.views.course._create_or_rerun_course(model.request)
-        if hasattr(ret,"getValue"):
-            ret_json = xdj.JSON.from_json(ret.getValue())
+        if hasattr(ret,"getvalue"):
+            ret_json = xdj.JSON.from_json(ret.getvalue())
             if ret_json.has_key("ErrMsg"):
                 return dict(error_msg=ret_json["ErrMsg"])
-            else:
-                return ret
-        else:
-            from opaque_keys.edx.locator import CourseLocator
-            course_id = CourseLocator(org=org.OrgCode, course=data["number"], run=data["run"])
-            from xdj_models.models import CourseAuthors
-            ca = CourseAuthors().objects.create()
-            ca.user = model.user
-            from datetime import datetime
-            ca.created_on = datetime.utcnow()
-            ca.course_id = course_id
-            ca.save()
-            return ret
+        from opaque_keys.edx.locator import CourseLocator
+        course_id = CourseLocator(org=org.OrgCode, course=data["number"], run=data["run"])
+        from xdj_models.models import CourseAuthors, CourseSubjectsLinks, CourseSubjects
+        ca = CourseAuthors().objects.create()
+        ca.user = model.user
+        from datetime import datetime
+        ca.created_on = datetime.utcnow()
+        ca.course_id = course_id
+        ca.save()
+        subject_model = CourseSubjects()
+        subject_item = subject_model.objects.filter(id=data["subject"]).first()
+        course_subjects_links_model = CourseSubjectsLinks()
+        course_subjects_links_model = course_subjects_links_model.objects.create(subject_id=subject_item.SubjectCode, course_id=course_id)
+        course_subjects_links_model.save()
+
+        return ret
     def DoInit(self,model):
         if isinstance(model,xdj.Model):
 
