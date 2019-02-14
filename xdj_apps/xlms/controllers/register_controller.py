@@ -1,14 +1,17 @@
 import xdj
+from xdj_apps.xlms.controllers.commons.edx_controller import EdxController
 from docutils.utils.math.latex2mathml import mo
 
 
 @xdj.Controller(
     url="register",
     replace_url=r"^register$",
-    template="register.html"
+    template_="register.html",
+    template="xdj-htmls/register.html"
 )
-class RegisterController(xdj.BaseController):
+class RegisterController(EdxController):
     def on_get(self,model):
+        model.ng_response = {}
         return self.render(model)
     def on_post(self,model):
         from django.contrib.auth.models import User

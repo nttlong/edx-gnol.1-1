@@ -1,0 +1,59 @@
+<%inherit file="../main.html" />
+<div class="container-fluid main-container" style="max-width:350px">
+        <form action="${currentUrl}" method="post" style="min-width:350px;position:relative;top:400px" id="frmLogin">
+            <fieldset>
+                <legend>
+                    ${_>"Login"}&nbsp;${_>"or"} <a href="/register">${_>"register new account"}</a>
+
+                </legend>
+                <input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token.__str__()}"/>
+                    <input type="hidden" value="{{ret_url}}" name="next"/>
+                     <form-layout xs-cols="12" md-cols="6,6" sm-cols="6,6" lg-cols="6,6" >
+                        <form-template>
+                            <div>
+                                <lable>${_>"Username or Email"}</lable><input type="text" placeholder="${_>'Enter your Username or Email'}" name="username">
+                                <lable>${_>"Password"}</lable><input type="password" placeholder="${_>'Enter password'}" name="password">
+                            </div>
+                            %if isError:
+                            <div>
+                                <div span="12">
+                                        ${_>"Login fail"}
+                                </div>
+                            </div>
+                            %endif
+                            <div>
+                                <div class="btn-toolbar pull-right" role="toolbar" span="12">
+                                    <div class="btn-group">
+
+                                    </div>
+                                    <div class="btn-group">
+
+                                    </div>
+                                    <div class="btn-group">
+                                        <button type="submit" class="btn btn-primary">${_>"Login"}</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form-template>
+                    </form-layout>
+            </fieldset>
+
+        </form>
+</div>
+<%block name="angular">
+    <script name="angular">
+        
+       function onInit(scope){
+           
+            
+            $("#content").css({
+                height:$(window).height()-$(".wrapper.wrapper-footer").height()-$(".global-header").height()-60
+            });
+            $("#frmLogin").css({
+                top:($("#content").height()-$("#frmLogin").height())/2
+            })
+       }
+    </script>
+
+</%block>

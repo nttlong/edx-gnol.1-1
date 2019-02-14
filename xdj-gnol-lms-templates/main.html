@@ -29,8 +29,8 @@ import xdj
     xdj.apply_context(self)
 %>
 <!DOCTYPE html>
-<!--[if lte IE 9]><html class="ie ie9 lte9" lang="${LANGUAGE_CODE}" ng-app="cms"><![endif]-->
-<!--[if !IE]><!--><html lang="${LANGUAGE_CODE}" ng-app="cms"><!--<![endif]-->
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="${LANGUAGE_CODE}" ng-app="lms"><![endif]-->
+<!--[if !IE]><!--><html lang="${LANGUAGE_CODE}" ng-app="lms"><!--<![endif]-->
 <head dir="${static.dir_rtl()}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -179,19 +179,10 @@ import xdj
         branch.init('${branch_key | n, js_escaped_string}');
     </script>
 % endif
-<link rel="stylesheet" href="/lms/static/site.css" type="text/css" media="all" />
-<script src="/lms/static/client/angular.min.js"></script>
-<script src="/lms/static/client/ajax.js"></script>
-<script src="/lms/static/client/ui.js"></script>
-<script src="/lms/static/client/ui.directtives/ui.qTemplate.js"></script>
-<script src="/lms/static/client/ui.directtives/ui.service.ajax.js"></script>
-<script src="/lms/static/client/ui.directtives/ui.drectives.ajax.js"></script>
-<script src="/lms/static/client/ui.directtives/ui.directitive.ajax.call.js"></script>
-<script src="/lms/static/client/ui.directtives/ui.services.dialog.js"></script>
-<script src="/lms/static/client/ui.directtives/ui.bootstrap.layout.js"></script> 
+
 </head>
 
-<body class="${static.dir_rtl()} <%block name='bodyclass'/> lang_${LANGUAGE_CODE}" ng-controller="cms" style="display:none">
+<body class="${static.dir_rtl()} <%block name='bodyclass'/> lang_${LANGUAGE_CODE}" ng-controller="lms" style="display:none">
 
 <%static:optional_include_mako file="body-initial.html" is_theming_enabled="True" />
 <div id="page-prompt"></div>
@@ -233,19 +224,41 @@ import xdj
 <script src="/lms/static/boostrap/js/bootstrap.min.js"></script>
 <link href="/lms/static/boostrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <%block name="angular"/>
-
+<link rel="stylesheet" href="/lms/static/site.css" type="text/css" media="all" />
+<script src="/lms/static/client/angular.min.js"></script>
+<script src="/lms/static/client/ajax.js"></script>
+<script src="/lms/static/client/ui.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.qTemplate.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.service.ajax.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.drectives.ajax.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.directitive.ajax.call.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.services.dialog.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.bootstrap.layout.js"></script>
   <script>
     $(document).ready(function(){
       $("body").show();
     });
-    var mdl = angular.module("cms",[]);
-    var ctrl =mdl.controller("cms",["$scope",function($scope){
-      $("body").show();
-       if(window.onInit){
-         window.onInit($scope);
-       }
-       
-    }])
+    var mdl = angular.module("lms",["q-ui"]);
+        var ctrl =mdl.controller("lms",["$compile","$ajax","$scope",function($compile,$ajax,$scope){
+          $("body").show();
+            $scope.ret_url="";
+           if( window.location.href.indexOf('?')>-1){
+
+            $scope.ret_url=window.location.href.split('?')[1]
+           }
+
+          $scope.$root.$dialog = dialog
+          $scope.$root.$compile=$compile;
+          $scope.$ajax = $ajax;
+          if(window.onInit){
+              window.onInit($scope);
+          }
+          
+          $("body").css({
+            height:$(window).height()
+          });
+
+        }])
 </script>
 </body>
 </html>

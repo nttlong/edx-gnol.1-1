@@ -1,17 +1,22 @@
 
-
+from xdj_apps.xlms.controllers.commons.edx_controller import EdxController
 import xdj
 
 @xdj.Controller(
     url="login",
-    template="login.html",
+    template_="login.html",
+    template="xdj-htmls/login.html",
     replace_url=r"^login$",
     check_url_=r'^login$'
 
 )
-class LoginController(xdj.BaseController):
+class LoginController(EdxController):
     def on_get(self,model):
+        # from edxmako.shortcuts import render_to_response
+        # return render_to_response("xdj-htmls/login.html",model.__dict__)
+        model.isError = False
         return self.render(model)
+        # return self.render(model)
     def on_post(self,sender):
         if isinstance(sender, xdj.Model):
             from django.contrib.auth import authenticate, login
@@ -42,8 +47,8 @@ class LoginController(xdj.BaseController):
                 else:
                     return sender.redirect(sender.request.GET.get("next",None))
             else:
-                sender.isError=True
-
-
+                sender.isError = True
             sender.username = sender.post_data.username[0]
+
+        # return render_to_response("xdj-htmls/login.html", model.__dict__)
         return self.render(sender)

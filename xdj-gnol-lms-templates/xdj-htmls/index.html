@@ -1,0 +1,91 @@
+<%inherit file="../main.html" />
+<main id="main" aria-label="Content" tabindex="-1">
+        <section class="home">
+          <header style="background-image: url(http://suredx.net/static/lv02/css/images/5a0bac80d5b52917b8cc7a12.9ac919c77870.png)">
+            <div class="outer-wrapper">
+              <div class="title" style="background-color: transparent;box-shadow: none">
+                % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
+                  <div class="course-search">
+                    <form method="get" action="/courses">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td style="width: 100%;">
+                                            <input class="search-input" name="search_query" type="text" placeholder="${_>'Search for a course'}" style="width:100%;float: left;"></input>
+                                    </td>
+                                    <td style="width:80px;">
+                                            <button class="search-button" type="submit">
+                                                    <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_>"Search"}</span>
+                                            </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                      <!-- <label><span class="sr">${_>"Search for a course"}</span>
+                        <input class="search-input" name="search_query" type="text" placeholder="${_>'Search for a course'}"></input>
+                      </label> -->
+                      
+                    </form>
+                  </div>
+                % endif
+              </div>
+            </div>
+          </header>
+          <section class="courses-container">
+                <section class="highlighted-courses">
+              
+                    <section class="courses">
+                      <ul class="courses-listing">
+                            <!-- <label>${_//"Code"}</label>: {{p.course_id}}<br>
+                            <label>${_//"Name"}</label>:{{p.display_name}}<br>
+                            <label>${_//"Enrollment end"}</label>:{{p.enrollment_end}}<br>
+                            <label>${_//"Organizatio code"}</label>:{{p.org}}<br>
+                            <label>${_//"Limit students"}</label>:{{p.max_student_enrollments_allowed}}<br>
+                            <label>${_//"Announcement"}</label>:{{p.announcement}}<br>
+                            <label>${_//"Start on"}</label>:{{p.start}}<br>
+                            <label>${_//"Description"}</label>:{{p.short_description}}<br> -->
+                            <!-- <label>{{p.students}}</label> -->
+                            <!-- <label>${_//"Owner"}</label>:{{p.author.username}}<br> -->
+
+                            <li class="courses-listing-item" ng-repeat="p in data">
+                                <article class="course" id="{{p.course_id}}" role="region" aria-label="{{p.display_name}}">
+                                    <a href="/courses/{{p.course_id}}/about">
+                                    <header class="course-image">
+                                        <div class="cover-image">
+                                        <img src="${absUrl}{{p.course_image_url}}" alt="{{p.display_name}}">
+                                        <div class="learn-more" aria-hidden="true">${_>"Learn more"}</div>
+                                        </div>
+                                    </header>
+                                    <div class="course-info" aria-hidden="true">
+                                        <h2 class="course-name">
+                                        <span class="course-organization">{{p.org}}</span>
+                                        <span class="course-code">{{p.code}}</span>
+                                        <span class="course-title">{{p.display_name}}</span>
+                                        </h2>
+                                        <div class="course-date localized_datetime" aria-hidden="true" data-format="shortDate" data-datetime="2017-11-15T00:00:00+0000" data-string="Bắt đầu: {date}"></div>
+                                    </div>
+                                    <div class="sr">
+                                        <ul>
+                                        <li>{{p.org}}</li>
+                                        <li>{{p.run}}</li>
+                                            <li>Start at: <time class="localized_datetime" itemprop="startDate" data-format="shortDate" data-datetime="2017-11-15T00:00:00+0000"></time></li>
+                                        </ul>
+                                    </div>
+                                    </a>
+                                </article>
+                            </li>
+                       
+                      </ul>
+                    </section>
+                    <div class="courses-more">
+                      <a class="courses-more-cta" href="/courses"> ${_>"View all Courses"} </a>
+                    </div>
+              
+                </section>
+              </section>
+        </section>
+    
+    </main>
+    <ajax url="${currentUrl}">
+        <call data-id="doLoadItems" ng-model="data"></call>
+    </ajax>
