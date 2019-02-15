@@ -4,16 +4,8 @@
     <list default="true" id="25ec6f3e-a1c1-4b5a-bc90-d34891b13e77" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/course_experience/course-messages-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/course_experience/course-messages-fragment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/select_languages.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/select_languages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/static_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/static_content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/x-static-content.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/x-static-content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/xdj-htmls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/xdj-htmls/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/static/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/views/commons/edx.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/views/commons/edx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/xblock_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/xblock_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/fix.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/fix.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +90,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3065574" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

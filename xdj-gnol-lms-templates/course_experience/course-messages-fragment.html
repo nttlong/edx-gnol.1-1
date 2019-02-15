@@ -10,7 +10,12 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 from openedx.core.djangolib.markup import HTML
 from openedx.features.course_experience import CourseHomeMessages
 %>
-
+<%
+    import xdj
+    from xdj_apps.xlms.bll.course import get_author
+    xdj.apply_context(self)
+    get_author(self.request)
+%>
 <%
 is_rtl = get_language_bidi()
 %>

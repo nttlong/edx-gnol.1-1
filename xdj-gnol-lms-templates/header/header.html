@@ -22,7 +22,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
     is_show_subject = False
     if re.match("^/$",self.request.path) or re.match("^/lms/subjects/.*$",self.request.path):
         is_show_subject = True
-
+    self.image_src="XXXXXXXXXXXXXXX"
 %>
 ## Provide a hook for themes to inject branding on top.
 <%block name="navigation_top" />

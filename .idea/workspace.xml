@@ -4362,16 +4362,8 @@
       <change beforePath="$PROJECT_DIR$/../docs/v1_sass_pipeline.webp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/lib/capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/capa/capa/templates/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/course_experience/course-messages-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/course_experience/course-messages-fragment.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/select_languages.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/select_languages.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/static_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/static_content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/x-static-content.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/x-static-content.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/static/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/views/commons/edx.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/views/commons/edx.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/xmcs/static/fix.css" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xmcs/static/fix.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/README.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/celery.py" beforeDir="false" />
@@ -8364,58 +8356,81 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/course_jump_to.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/bll/users.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/bll/courses.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/openedx/features/course_experience/templates/course_experience/course-messages-fragment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-messages-fragment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/course_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="285">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/commons/base_controller.py">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/course_info_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="115" column="18" selection-start-line="115" selection-start-column="8" selection-end-line="115" selection-end-column="18" />
+            <state relative-caret-position="75">
+              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
               <folding>
-                <element signature="e#14#24#0" expanded="true" />
+                <element signature="e#0#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openedx/features/course_experience/utils.py">
+        <entry file="file://$PROJECT_DIR$/xdj/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="156" selection-start-line="156" selection-end-line="156" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lms/djangoapps/course_api/blocks/api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openedx/core/djangoapps/content/block_structure/api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="40" column="64" lean-forward="true" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="67" column="51" lean-forward="true" selection-start-line="66" selection-start-column="11" selection-end-line="67" selection-end-column="51" />
+            <state relative-caret-position="119">
+              <caret line="280" selection-start-line="280" selection-end-line="280" />
             </state>
           </provider>
         </entry>
@@ -8425,24 +8440,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="586" selection-start-line="586" selection-end-line="586" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/openedx/core/djangoapps/content/block_structure/manager.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
             </state>
           </provider>
         </entry>
@@ -8459,11 +8456,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>configure-button action-button</find>
-      <find>course/(?P&lt;course_key_string&gt;[^/+]+(/|\+)[^/+]+(/|\+)[^/?]+)?$</find>
-      <find>^xblock/(?P&lt;usage_key_string&gt;(?:i4x://?[^/]+/[^/]+/[^/]+/[^@]+(?:@[^/]+)?)|(?:[^/]+))?$</find>
-      <find>class=&quot;course-name&quot;</find>
-      <find>header</find>
       <find>class=&quot;intro-inner-wrapper&quot;</find>
       <find>MAKO_TEMPLATE_DIRS_BASE</find>
       <find>res(</find>
@@ -8489,6 +8481,11 @@
       <find>wrap-instructor-info studio-view</find>
       <find>instructor-info-action</find>
       <find>RequestCache</find>
+      <find>&lt;img class=&quot;message-author&quot;</find>
+      <find>^courses/(?P&lt;course_id&gt;[^/+]+(/|\+)[^/+]+(/|\+)[^/?]+)/course/</find>
+      <find>(?P&lt;course_id&gt;[^/+]+(/|\+)[^/+]+(/|\+)[^/?]+)</find>
+      <find>^courses/</find>
+      <find>/course/</find>
     </findStrings>
     <replaceStrings>
       <replace>=</replace>
@@ -8500,12 +8497,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xdj/JSON/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj/controllers/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/commons/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/xmcs/views/settings/course_team.html" />
-        <option value="$PROJECT_DIR$/xdj_apps/xmcs/views/settings/course_team_editor.html" />
-        <option value="$PROJECT_DIR$/xjd_sql/__init__.py" />
         <option value="$PROJECT_DIR$/xdj_sql/funcs.py" />
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/course_team_controller.py" />
         <option value="$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/options.py" />
@@ -8551,6 +8542,12 @@
         <option value="$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/xblock/fields.py" />
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/settings_advanced_controller.py" />
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/xlms/controllers/course_jump_to.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/xlms/bll/users.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/xlms/bll/courses.py" />
+        <option value="$PROJECT_DIR$/openedx/features/course_experience/templates/course_experience/course-messages-fragment.html" />
+        <option value="$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-messages-fragment.html" />
+        <option value="$PROJECT_DIR$/xdj_apps/xlms/controllers/course_info_controller.py" />
       </list>
     </option>
   </component>
@@ -8578,6 +8575,26 @@
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
               <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="xlms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="xlms" type="462c0819:PsiDirectoryNode" />
+              <item name="bll" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="xlms" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
@@ -8637,7 +8654,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cms">
+  <component name="RunManager" selected="Python.manage">
     <configuration name="cms" type="PythonConfigurationType" factoryName="Python">
       <module name="edx-platform" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -8700,7 +8717,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20054644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -8708,7 +8724,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.28509718" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43304536" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -8866,8 +8882,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="521" />
+          <line>43</line>
+          <option name="timeStamp" value="524" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/xdj_apps/xlms/controllers/course_jump_to.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="525" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/xdj_apps/xlms/bll/courses.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="526" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/xdj_apps/xlms/controllers/course_info_controller.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="528" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -8892,51 +8923,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/register_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/couserware/courses.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/controllers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="377" column="49" selection-start-line="377" selection-start-column="49" selection-end-line="377" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/test/db_cache/bok_choy_schema_default.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="2386" column="37" selection-start-line="2376" selection-end-line="2386" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/mysql_fix/fix003.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="26" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/XBlockExt/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="88" column="4" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/transaction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -9199,13 +9185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/course_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/commons/base_controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -9213,13 +9192,6 @@
           <folding>
             <element signature="e#14#24#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="586" selection-start-line="586" selection-end-line="586" />
         </state>
       </provider>
     </entry>
@@ -9236,7 +9208,7 @@
     <entry file="file://$PROJECT_DIR$/openedx/core/djangoapps/content/block_structure/api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="40" column="64" lean-forward="true" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
+          <caret line="40" column="64" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -9249,8 +9221,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="67" column="51" lean-forward="true" selection-start-line="66" selection-start-column="11" selection-end-line="67" selection-end-column="51" />
+        <state relative-caret-position="263">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/bll/users.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/bll/courses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/openedx/features/course_experience/templates/course_experience/course-messages-fragment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-messages-fragment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="280" selection-start-line="280" selection-end-line="280" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/course_info_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/course_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/course_jump_to.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
