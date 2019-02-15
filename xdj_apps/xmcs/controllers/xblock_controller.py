@@ -33,12 +33,16 @@ class XBlockController(xdj.BaseController):
             return None
         pass
     def on_post(self,model):
+        from openedx.core.djangoapps.content.block_structure.api import clear_course_from_cache
+        from opaque_keys.edx.locator import CourseLocator
         from xdj_apps.xmcs.controllers.XBlockExt import utils
         if model.params.usage_key_string:
             x = utils.get_usage_key(model.params.usage_key_string)
 
+
             if hasattr(model.post_data, "publish") and model.post_data.publish == "make_public":
                 from xdj_apps.xmcs.controllers.XBlockExt.publisher import Publisher
+                clear_course_from_cache(x.course_key)
                 return Publisher(model)
             if x.block_type=="sequential":
                 from xdj_apps.xmcs.controllers.XBlockExt.sequential_modifier import  SequentialModifier
@@ -59,6 +63,10 @@ class XBlockController(xdj.BaseController):
                 return XBlockModifier(model)
 
         else:
+
+            # x = utils.get_usage_key(model.post_data.parent_locator)
+            # clear_course_from_cache(x.course_key)
+
             if model.post_data.category == "chapter":
                 from xdj_apps.xmcs.controllers.XBlockExt.chapters_modifier import ChaptersModifier
                 return ChaptersModifier(model)

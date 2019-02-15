@@ -25,8 +25,12 @@ from pipeline_mako import render_require_js_path_overrides
 import xdj
 %>
 <%
-    import xdj
+    import xdj,re
     xdj.apply_context(self)
+    is_hide_body = True
+    if re.match("/courses/.*/progress",self.request.path):
+      is_hide_body = False
+
 %>
 <!DOCTYPE html>
 <!--[if lte IE 9]><html class="ie ie9 lte9" lang="${LANGUAGE_CODE}" ng-app="lms"><![endif]-->
@@ -182,7 +186,7 @@ import xdj
 
 </head>
 
-<body class="${static.dir_rtl()} <%block name='bodyclass'/> lang_${LANGUAGE_CODE}" ng-controller="lms" style="display:none">
+<body class="${static.dir_rtl()} <%block name='bodyclass'/> lang_${LANGUAGE_CODE}" ng-controller="lms">
 
 <%static:optional_include_mako file="body-initial.html" is_theming_enabled="True" />
 <div id="page-prompt"></div>

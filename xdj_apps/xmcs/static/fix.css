@@ -230,3 +230,7 @@ div.modal-section-content label.label {
 div.modal-window.confirm.modal-med modal-type-edit-settings.div.modal-section-content {
     border: solid 4px red;
 }
+.modal {
+    background-color: transparent;
+    box-shadow: none;
+}

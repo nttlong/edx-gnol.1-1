@@ -16,7 +16,14 @@ from branding import api as branding_api
 from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_enabled, released_languages
 
 %>
+<%
+    import xdj,re
+    xdj.apply_context(self)
+    is_show_subject = False
+    if re.match("^/$",self.request.path) or re.match("^/lms/subjects/.*$",self.request.path):
+        is_show_subject = True
 
+%>
 ## Provide a hook for themes to inject branding on top.
 <%block name="navigation_top" />
 
@@ -45,6 +52,9 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
             <span class="line"></span>
             <span class="line"></span>
         </div>
+        %if is_show_subject:
+            <%include file="../xdj-htmls/header-subjects.html"/>
+        %endif
         % if user.is_authenticated:
             <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
         % else:
@@ -52,6 +62,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         % endif
        
         <%include file="select_languages.html"/>
+        
     </div>
     
     
@@ -99,4 +110,3 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         </form>
     % endif
 % endif
-<div class="mobile-menu hidden" aria-label=${_("More Options")} role="menu" id="mobile-menu"></div>

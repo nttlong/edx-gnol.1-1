@@ -1,0 +1,1830 @@
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lte IE 9]><html class="ie ie9 lte9" lang="en" ng-app="lms"><![endif]-->
+<!--[if !IE]><!--><html lang="en" ng-app="lms"><!--<![endif]-->
+<head dir="ltr">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/lms/static/site.css" type="text/css" media="all" />
+
+
+
+  
+      <title>
+          Course | 101 | Your Platform Name Here
+       
+      </title>
+  
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  
+
+  <script type="text/javascript" src="/lms/static/js/i18n/en/djangojs.js"></script>
+  <script type="text/javascript" src="/lms/static/js/ie11_find_array.js"></script>
+
+  <link rel="icon" type="image/x-icon" href="/static/mages/favicon.ico" />
+  <link href="/lms/static/css/lms-style-vendor.css" rel="stylesheet" type="text/css" />
+  <link href="/lms/static/css/lms-main-v1.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="/lms/static/js/lms-main_vendor.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/lms/static/js/lms-application.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/lms/static/bundles/commons.js" ></script>
+  
+  
+
+      <link rel="stylesheet" href="/static/css/vendor/font-awesome.css" type="text/css" media="all" / >
+      <link rel="stylesheet" href="/static/css/vendor/jquery.qtip.min.css" type="text/css" media="all" / >
+
+      <link rel="stylesheet" href="/lms/static/css/bootstrap/lms-main.css" type="text/css" media="all" />
+
+    
+      <script type="text/javascript" src="/static/common/js/vendor/jquery.js"></script>
+      <script type="text/javascript" src="/static/common/js/vendor/jquery-migrate.js"></script>
+      <script type="text/javascript" src="/static/js/vendor/jquery.cookie.js"></script>
+      <script type="text/javascript" src="/static/js/vendor/url.min.js"></script>
+      <script type="text/javascript" src="/static/common/js/vendor/underscore.js"></script>
+      <script type="text/javascript" src="/static/common/js/vendor/underscore.string.js"></script>
+      <script type="text/javascript" src="/static/common/js/vendor/picturefill.js"></script>
+      <script type="text/javascript" src="/static/edx-ui-toolkit/js/utils/global-loader.js"></script>
+      <script type="text/javascript" src="/static/edx-ui-toolkit/js/utils/string-utils.js"></script>
+      <script type="text/javascript" src="/static/edx-ui-toolkit/js/utils/html-utils.js"></script>
+      <script type="text/javascript" src="/static/common/js/vendor/require.js"></script>
+      <script type="text/javascript" src="/static/js/RequireJS-namespace-undefine.js"></script>
+      <script type="text/javascript" src="/static/js/vendor/URI.min.js"></script>
+      <script type="text/javascript" src="/static/common/js/vendor/backbone.js"></script>
+
+    
+      <script type="text/javascript" src="/static/js/src/utility.js"></script>
+      <script type="text/javascript" src="/static/js/src/logger.js"></script>
+      <script type="text/javascript" src="/static/js/user_dropdown_v1.js"></script>
+      <script type="text/javascript" src="/static/js/dialog_tab_controls.js"></script>
+      <script type="text/javascript" src="/static/js/src/string_utils.js"></script>
+      <script type="text/javascript" src="/static/js/form.ext.js"></script>
+      <script type="text/javascript" src="/static/js/src/ie_shim.js"></script>
+      <script type="text/javascript" src="/static/js/src/accessibility_tools.js"></script>
+      <script type="text/javascript" src="/static/js/toggle_login_modal.js"></script>
+      <script type="text/javascript" src="/static/js/src/lang_edx.js"></script>
+
+
+  
+    
+    
+    <script type="text/javascript" src="/static/bundles/commons.d60dcd98c024881d011e.js" ></script>
+
+
+    <script type="text/javascript" src="/lms/static/common/js/vendor/bootstrap.bundle.js"></script>
+
+  <script>
+    window.baseUrl = "/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="/lms/static/lms/js/require-config.js"></script>
+  
+    <script type="text/javascript">
+        (function (require) {
+          require.config({
+              paths: {
+                'js/courseware/courseware_factory': 'js/courseware/courseware_factory',
+'draggabilly': 'js/vendor/draggabilly',
+'js/courseware/toggle_element_visibility': 'js/courseware/toggle_element_visibility',
+'hls': 'common/js/vendor/hls',
+'js/courseware/link_clicked_events': 'js/courseware/link_clicked_events',
+'moment': 'common/js/vendor/moment-with-locales',
+'moment-timezone': 'common/js/vendor/moment-timezone-with-data',
+'js/student_account/logistration_factory': 'js/student_account/logistration_factory',
+'js/groups/views/cohorts_dashboard_factory': 'js/groups/views/cohorts_dashboard_factory',
+'js/dateutil_factory': 'js/dateutil_factory',
+'course_bookmarks/js/views/bookmark_button': 'course_bookmarks/js/views/bookmark_button',
+'js/courseware/accordion_events': 'js/courseware/accordion_events',
+'js/views/message_banner': 'js/views/message_banner',
+'js/groups/discussions_management/discussions_dashboard_factory': 'js/discussions_management/views/discussions_dashboard_factory',
+'js/courseware/course_info_events': 'js/courseware/course_info_events'
+            }
+          });
+        }).call(this, require || RequireJS.require);
+    </script>
+  
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+<script type="application/json" id="user-metadata">
+    {"username": "root", "enrollment_mode": "audit", "upgrade_link": null, "user_id": 2, "course_start": "2018-06-01T00:00:00+00:00", "upgrade_deadline": null, "course_key_fields": {"org": "HCMUSSH", "run": "TT_101", "course": "101"}, "course_end": null, "pacing_type": "self_paced", "upgrade_price": "Free", "course_id": "course-v1:HCMUSSH+101+TT_101", "has_staff_access": true, "forum_roles": [["Student"]], "enrollment_time": "2019-02-13T20:43:18.787793+00:00", "schedule_start": null, "email": ""}
+</script>
+
+  
+
+  
+
+
+  
+
+
+<!-- begin Segment -->
+<script type="text/javascript">
+  // Asynchronously load Segment's analytics.js library
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+  analytics.load("as103");
+  analytics.page();
+  }}();
+  // Note: user tracking moved to segment-io-footer.html
+</script>
+<!-- end Segment -->
+
+
+  <meta name="path_prefix" content="">
+  
+  
+
+  <meta name="openedx-release-line" content="hawthorn" />
+
+
+
+
+
+</head>
+
+<body class="ltr None lang_en" ng-controller="lms">
+
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    <a class="nav-skip sr-only sr-only-focusable" href="#main">Skip to main content</a>
+    <!----include file="./header/header2.html"-->
+        
+
+
+
+
+
+
+
+
+
+
+
+<header class="global-header slim" style="overflow: visible;">
+    <div class="main-header">
+        
+
+
+
+
+
+<h1 class="header-logo">
+  <a href="/">
+    
+    <!--<img  class="logo" src="/static/images/logo.png" alt="Your Platform Name Here Home Page"/>-->
+    <img  class="logo" src="/lms/static/logo.png" alt="Your Platform Name Here Home Page"/>
+    
+  </a>
+    <div class="course-header">
+      <span class="provider">HCMUSSH:</span>
+      <span class="course-number">101</span>
+      
+      <span class="course-name">KỸ NĂNG THUYẾT TRÌNH</span>
+    </div>
+</h1>
+
+        <div class="hamburger-menu" role="button" aria-label=Options Menu aria-expanded="false" aria-controls="mobile-menu" tabindex="0">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+            
+
+
+
+
+
+
+
+
+<div class="nav-links">
+  <div class="main">
+      <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
+        <a class="tab-nav-link" href="/courses">Discover New</a>
+        <!-- Discover New -->
+      </div>
+  </div>
+  <div class="secondary">
+    <!-- <div class="mobile-nav-item hidden-mobile nav-item">
+      <a class="help-link" href="http://edx.readthedocs.io/projects/open-edx-learner-guide/en/open-release-hawthorn.master/index.html" target="_blank">Help</a>
+    </div> -->
+    
+
+
+
+
+
+
+<div class="nav-item hidden-mobile">
+    <a href="/dashboard" class="menu-title">
+        <img class="user-image-frame" src="/media/profile-images/50c89373a4e1d35ca55e62f3a77d4fdf_50.jpg?v=1550159257" alt="">
+        <span class="sr-only">Dashboard for:</span>
+        <span class="username">root</span>
+    </a>
+</div>
+<div class="nav-item hidden-mobile nav-item-dropdown" tabindex="-1">
+    <div class="toggle-user-dropdown" role="button" aria-label=Options Menu aria-expanded="false" tabindex="0" aria-controls="user-menu">
+        <span class="fa fa-caret-down" aria-hidden="true"></span>
+    </div>
+    <div class="dropdown-user-menu hidden" aria-label=More Options role="menu" id="user-menu" tabindex="-1">
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/dashboard" role="menuitem">Dashboard</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/u/root" role="menuitem">Profile</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/account/settings" role="menuitem">Account</a></div>
+        <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="/logout" role="menuitem">Sign Out</a></div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+       
+        <style>
+    .flag-icon {
+        background-position-x:50%;
+        background-position-y:50%;
+        background-size:contain;
+        color:rgb(85, 85, 85);
+        cursor:pointer;
+        display:inline-block;
+        font-family:"Open Sans", Verdana, Geneva, sans-serif, sans-serif;
+        font-size:16px;
+        font-stretch:100%;
+        font-style:italic;
+        font-variant-caps:normal;
+        font-variant-east-asian:normal;
+        font-variant-ligatures:normal;
+        font-variant-numeric:normal;
+        font-weight:400;
+        height:32px !important;
+        line-height:16px;
+        list-style-image:none;
+        list-style-position:outside;
+        list-style-type:none;
+        position:relative;
+        text-align:left;
+        text-size-adjust:100%;
+        width:21.3333px;
+        margin: 0 !important;
+        padding: 0 !important;
+        -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+    }
+    .language span {
+            position: relative;
+            top: -12px;
+    }
+    .flag-icon-en {
+          background-image: url('/cms/static/flags/en.svg');
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          /* min-width: 30px;
+          max-width: 30px;
+          width: 30px;
+          height: 30px;
+          border: none !important; */
+     }
+     .flag-icon-vi {
+          background-image: url('/cms/static/flags/vn.svg');
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          /* min-width: 30px;
+          max-width: 30px;
+          width: 30px;
+          height: 30px;
+          border: none !important; */
+     }
+     .flag-icon, .flag-icon-background {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+    }
+    .navbar-nav{
+        list-style: none;
+    }
+    .main-header {
+        height: 60px;
+    }
+    #language-settings-form {
+        display:none;
+    }
+    .course-profile {
+        padding-top: 0 !important;
+    }
+    .course-info header.course-profile .intro-inner-wrapper{
+        
+    }
+    .course-info header.course-profile .intro-inner-wrapper .table {
+        max-height: 260px;
+    }
+    .course-info header.course-profile .intro-inner-wrapper .media .hero img {
+        display: block;
+        width: auto !important;
+        max-height: 230px !important;
+    }
+    html, body {
+        font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 1rem !important;
+        font-style: normal;
+        line-height: 1em;
+    }
+    .footer-language-selector{
+        display: none;
+    }
+    .wrapper-logo {
+        display: none;
+    }
+    body.view-in-course .wrapper-course-material, body.view-in-course .wrapper-preview-menu {
+        padding: 0;
+        height: 57px;
+    }
+</style>
+<div class="mobile-nav-item hidden-mobile nav-item">
+    <ul class="navbar-nav navbar-right" style="margin-top: 21px;margin-right:8px">
+            <li class="dropdown language">
+                <a href="#"  data-toggle="dropdown"><i class="flag-icon flag-icon-en"></i>
+                    <span > 
+                       
+                        <b class="caret"></b>
+                    </span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="javascript:_do_select_lang('en')"><i class="flag-icon flag-icon-en"></i><span>&nbsp;</span> <span>English</span></a></li>
+                    <li><a href="javascript:_do_select_lang('vi')"><i class="flag-icon flag-icon-vi"></i><span>&nbsp;</span><span>Tiếng Việt</span></a></li>
+                </ul>
+            </li>
+        </ul>
+</div>
+<script>
+  function _do_select_lang(code){
+        $("#settings-language-value").val(code);
+        $("#settings-language-value").change();
+        // $("#url").val(window.location.href);
+        // $("#language").val(code);
+        // $("#form_change_language")[0].submit();
+  }
+</script>
+        
+    </div>
+    
+    
+</header>
+
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using <a href="https://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+    
+       
+        <form action="/i18n/setlang/" method="post" class="settings-language-form" id="language-settings-form">
+            <input type="hidden" id="csrf_token" name="csrfmiddlewaretoken" value="Y5BjoqphKdBCETy9kTEZRVcOPkwCIcevMXsm3QgVg9agXMzhW8WhWj3mjTNsAU2H">
+            
+                <input title="preference api" type="hidden" class="url-endpoint" value="/api/user/v1/preferences/root" data-user-is-authenticated="true">
+            <label><span class="sr">Choose Language</span>
+                
+            <select class="input select language-selector" id="settings-language-value" name="language">
+                        <option value="en" selected="selected">English</option>
+                        <option value="vi" >Tiếng Việt</option>
+            </select>
+            </label>
+        </form>
+<div class="mobile-menu hicourses/.*/progress
+
+        
+
+
+
+
+
+
+    
+    <nav class="wrapper-preview-menu" aria-label="Course View">
+        <div class="preview-menu">
+            <ol class="preview-actions">
+                <li class="action-preview">
+                    <form action="#" class="action-preview-form" method="post">
+                        <label for="action-preview-select" class="action-preview-label">View this course as:</label>
+                        <select class="action-preview-select" id="action-preview-select" name="select">
+                            <option value="staff" selected>Staff</option>
+                            <option value="student" >Learner</option>
+                            <option value="specific student" >Specific learner</option>
+                                    <option value="group.id" data-group-id="1576804141" data-partition-id="2041061558" >
+                                        Learner in Group 1
+                                    </option>
+                                    <option value="group.id" data-group-id="1778157566" data-partition-id="2041061558" >
+                                        Learner in Group 2
+                                    </option>
+                                    <option value="group.id" data-group-id="1086305586" data-partition-id="2041061558" >
+                                        Learner in Kỹ năng làm việc cá nhân
+                                    </option>
+                                    <option value="group.id" data-group-id="508397229" data-partition-id="2041061558" >
+                                        Learner in Kỹ năng làm việc nhóm
+                                    </option>
+                                    <option value="group.id" data-group-id="1" data-partition-id="50" >
+                                        Learner in Audit
+                                    </option>
+                        </select>
+                        <div class="action-preview-username-container">
+                          <label for="action-preview-username" class="action-preview-label">Username or email:</label>
+                          <input type="text" class="action-preview-username" id="action-preview-username">
+                        </div>
+                        <button type="submit" class="sr-only" name="submit" value="submit">Set preview mode</button>
+                    </form>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    
+    
+  
+  <script type="text/javascript">
+    (function (require) {
+          (function (require) {
+              require(['lms/js/preview/preview_factory'], function (PreviewFactory) {
+                  
+        PreviewFactory({"courseId": "course-v1:HCMUSSH+101+TT_101", "specificStudentSelected": "", "disableStudentAccess": false, "masqueradeUsername": null});
+    
+              });
+          }).call(this, require || RequireJS.require);
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="marketing-hero"></div>
+
+    <div class="content-wrapper main-container" id="content">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      <script type="text/javascript" src="/static/proctoring/js/models/proctored_exam_allowance_model.js"></script>
+      <script type="text/javascript" src="/static/proctoring/js/models/proctored_exam_attempt_model.js"></script>
+      <script type="text/javascript" src="/static/proctoring/js/models/proctored_exam_model.js"></script>
+      <script type="text/javascript" src="/static/proctoring/js/collections/proctored_exam_allowance_collection.js"></script>
+      <script type="text/javascript" src="/static/proctoring/js/collections/proctored_exam_attempt_collection.js"></script>
+      <script type="text/javascript" src="/static/proctoring/js/collections/proctored_exam_collection.js"></script>
+      <script type="text/javascript" src="/static/proctoring/js/views/Backbone.ModalDialog.js"></script>
+      <script type="text/javascript" src="/static/proctoring/js/views/proctored_exam_add_allowance_view.js"></script>
+      <script type="text/javascript" src="/static/proctoring/js/views/proctored_exam_allowance_view.js"></script>
+      <script type="text/javascript" src="/static/proctoring/js/views/proctored_exam_attempt_view.js"></script>
+      <script type="text/javascript" src="/static/proctoring/js/views/proctored_exam_view.js"></script>
+      <script type="text/javascript" src="/static/proctoring/js/proctored_app.js"></script>
+
+        <script type="text/template" id="proctored-exam-status-tpl">
+            <div class="exam-timer">
+    <%
+        function gtLtEscape(str) {
+            return String(str)
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+        }
+    %>
+    <div class='exam-text'>
+        <%= interpolate_text('You are taking "{exam_link}" as a {exam_type} exam. The timer on the right shows the time remaining in the exam.', {exam_link: "<a href='" + exam_url_path + "'>"+gtLtEscape(exam_display_name)+"</a>", exam_type: (!_.isUndefined(arguments[0].exam_type)) ? exam_type : gettext('timed')}) %>
+        <%- gettext('To receive credit for problems, you must select "Submit" for each problem before you select "End My Exam".') %>
+    </div>
+    <div id="turn_in_exam_id" class="pull-right turn_in_exam">
+        <span>
+            <% if(attempt_status !== 'ready_to_submit') {%>
+                <button class="exam-button-turn-in-exam btn btn-pl-primary">
+                    <%- gettext("End My Exam") %>
+                </button>
+            <% } %>
+        </span>
+        <span class="sr timer-announce" aria-live="assertive"></span>
+        <span class="exam-timer-clock">
+            <span id="time_remaining_id">
+                <b>
+                </b>
+            </span>
+            <button role="button" id="toggle_timer" aria-label="<%- gettext("Hide Timer") %>" aria-pressed="false">
+                <i class="fa fa-eye-slash" aria-hidden="true"></i>
+            </button>
+        </span>
+    </div>
+</div>
+
+        </script>
+    <div class="proctored_exam_status"></div>
+
+    
+        <nav class="navbar course-tabs pb-0 navbar-expand" aria-label="Course">
+            <ul class="navbar-nav mr-auto">
+                    
+                    <li class="nav-item active">
+                        <a href="/courses/course-v1:HCMUSSH+101+TT_101/course/" class="nav-link">
+                            Course
+                                <span class="sr-only">, current location</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <a href="/courses/course-v1:HCMUSSH+101+TT_101/discussion/forum/" class="nav-link">
+                            Discussion
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <a href="/courses/course-v1:HCMUSSH+101+TT_101/course_wiki" class="nav-link">
+                            Wiki
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <a href="/courses/course-v1:HCMUSSH+101+TT_101/progress" class="nav-link">
+                            Progress
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <a href="/courses/course-v1:HCMUSSH+101+TT_101/instructor" class="nav-link">
+                            Instructor
+                        </a>
+                    </li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/lms/static/paragon/static/paragon.min.css" />
+
+
+
+<div class="course-view page-content-container" id="course-container">
+
+
+
+    <header class="page-header has-secondary">
+        <div class="page-header-main">
+            <nav aria-label="Course Outline" class="sr-is-focusable" tabindex="-1">
+                <h2 class="hd hd-3 page-title">KỸ NĂNG THUYẾT TRÌNH</h2>
+            </nav>
+        </div>
+        <div class="page-header-secondary">
+                <div class="page-header-search">
+                    <form class="search-form input-group" role="search" action="/courses/course-v1:HCMUSSH+101+TT_101/search/">
+                            <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search content in this course">
+                                    <span class="input-group-btn">
+                                      <!-- <button class="btn btn-primary action-resume-course" submit="button" style="height:35px;">Search</button> -->
+                                      <button class="btn btn-primary main-search" submit="button" style="height:35px;">
+                                        <i class="icon fa fa-search" aria-hidden="true"></i>
+                                    <!-- Search -->
+                                        </button>
+                                    </span>
+                                  </div>
+                        <!-- <label class="field-label sr-only" for="search" id="search-hint">Search the course</label>
+                        <input
+                                class="field-input input-text search-input form-control"
+                                type="search"
+                                name="query"
+                                id="search"
+                                placeholder="Search the course"
+                        />
+                        <span class="input-group-btn">
+                            <button class="btn btn-outline-primary search-button" type="submit">Search</button>
+                        </span> -->
+                    </form>
+                </div>
+            <div class="form-actions">
+                    <a class="btn btn-primary action-resume-course" href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@course+block@course">
+                            <span data-action-type="start">Start Course</span>
+                    </a>
+            </div>
+        </div>
+    </header>
+    <div class="page-content">
+        <div class="page-content-main">
+                
+
+
+
+
+
+
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseGoals.08a1ee32a23bd0c511c5.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseGoals({
+        goalApiUrl: "http://0.0.0.0:8000/api/course_goals/v0/course_goals/",
+        courseId: "course\u002Dv1:HCMUSSH+101+TT_101",
+        username: "root",
+    });
+
+      </script>
+
+
+
+
+                
+
+
+
+
+
+
+
+<main role="main" class="course-outline" id="main" tabindex="-1">
+        <button class="btn btn-primary"
+                id="expand-collapse-outline-all-button"
+                aria-expanded="false"
+                aria-controls="course-outline-block-tree"
+                >
+          <span class="expand-collapse-outline-all-extra-padding" id="expand-collapse-outline-all-span">Expand All</span>
+          <!-- Expand All -->
+        </button>
+        <ol class="block-tree accordion"
+            id="course-outline-block-tree"
+            aria-labelledby="expand-collapse-outline-all-button">
+            
+                <li class="outline-item section">
+                    <button class="section-name accordion-trigger"
+                            aria-expanded="true"
+                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@chapter+block@ef4a3ebbd3d242c5bf681204b081011a_contents"
+                            id="block-v1:HCMUSSH+101+TT_101+type@chapter+block@ef4a3ebbd3d242c5bf681204b081011a">
+                        <span class="fa fa-chevron-right fa-rotate-90" aria-hidden="true"></span>
+                        <h3 class="section-title">KIỂM TRA ĐẦU VÀO</h3>
+                    </button>
+                    <ol class="outline-item accordion-panel "
+                        id="block-v1:HCMUSSH+101+TT_101+type@chapter+block@ef4a3ebbd3d242c5bf681204b081011a_contents"
+                        aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@chapter+block@ef4a3ebbd3d242c5bf681204b081011a">
+                
+                      <li class="subsection accordion current">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@2d31d8d9a19342a4b3e13f01d056dbb0"
+                                            aria-expanded="true"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@2d31d8d9a19342a4b3e13f01d056dbb0_contents">
+                                        <span class="fa fa-chevron-right fa-rotate-90"
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Entrance Exam - Subsection
+                                        </h4>
+                                        <div class="details">
+
+                
+                                            <span class="subtitle">
+                                                    <span
+                                                        class="localized-datetime subtitle-name"
+                                                        data-datetime="None"
+                                                        data-string="Entrance Exam"
+                                                        data-timezone="None"
+                                                        data-language="en"
+                                                    ></span>
+
+                                                        <span class="sr">&nbsp;This content is graded</span>
+                                            </span>
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel "
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@2d31d8d9a19342a4b3e13f01d056dbb0_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@2d31d8d9a19342a4b3e13f01d056dbb0"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@1a5e8932cb6440bc85f59411de6a86af"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@1a5e8932cb6440bc85f59411de6a86af">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Test tính cách
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@00c96a826c87473190dd902e68c20494"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@00c96a826c87473190dd902e68c20494">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Khảo sát
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@933b722c27ab4406abecb4ebcf620721"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@933b722c27ab4406abecb4ebcf620721">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Unit
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@2e46f18c7f764ee1bc82ecf19eafab54"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@2e46f18c7f764ee1bc82ecf19eafab54">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Unit
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                    </ol>
+                </li>
+            
+                <li class="outline-item section">
+                    <button class="section-name accordion-trigger"
+                            aria-expanded="false"
+                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@chapter+block@b209f92ae24747ecb7c296553d7e3181_contents"
+                            id="block-v1:HCMUSSH+101+TT_101+type@chapter+block@b209f92ae24747ecb7c296553d7e3181">
+                        <span class="fa fa-chevron-right " aria-hidden="true"></span>
+                        <h3 class="section-title">CHƯƠNG 1: XÂY DỰNG BÀI THUYẾT TRÌNH</h3>
+                    </button>
+                    <ol class="outline-item accordion-panel is-hidden"
+                        id="block-v1:HCMUSSH+101+TT_101+type@chapter+block@b209f92ae24747ecb7c296553d7e3181_contents"
+                        aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@chapter+block@b209f92ae24747ecb7c296553d7e3181">
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@01e49c36968c4898a5362b575cdb6ab0"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@01e49c36968c4898a5362b575cdb6ab0_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Tự đánh giá khả năng thuyết trình
+                                        </h4>
+                                        <div class="details">
+
+                
+                                            <span class="subtitle">
+                                                    <span
+                                                        class="localized-datetime subtitle-name"
+                                                        data-datetime="None"
+                                                        data-string="Homework"
+                                                        data-timezone="None"
+                                                        data-language="en"
+                                                    ></span>
+
+                                                        <span class="sr">&nbsp;This content is graded</span>
+                                            </span>
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@01e49c36968c4898a5362b575cdb6ab0_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@01e49c36968c4898a5362b575cdb6ab0"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@80adad56e7be44c481be2c137c459778"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@80adad56e7be44c481be2c137c459778">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Bảng khảo sát
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@3a888bf3a3b74c1e932883fdec503b83"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@3a888bf3a3b74c1e932883fdec503b83_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 01: Cách mở đầu lập tức gây sự chú ý
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@3a888bf3a3b74c1e932883fdec503b83_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@3a888bf3a3b74c1e932883fdec503b83"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@f357f6a640bc4598ab7932b56d6c6d38"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@f357f6a640bc4598ab7932b56d6c6d38">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Thu hút người nghe
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@1c79f256f9614cba9d2f2bc6d5e0e17f"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@1c79f256f9614cba9d2f2bc6d5e0e17f">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Kiểm tra
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@8c59fee73b1b4c04bb90675ae754e457"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@8c59fee73b1b4c04bb90675ae754e457_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 02: Các sai lầm chết người khi mở đầu
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@8c59fee73b1b4c04bb90675ae754e457_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@8c59fee73b1b4c04bb90675ae754e457"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@b625328062594661aab00624321ebdd4"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@b625328062594661aab00624321ebdd4">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Lỗi khi thuyết trình
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@03c51b4d2f1e4ce6ad922ada729ec3b7"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@03c51b4d2f1e4ce6ad922ada729ec3b7_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 03: Kết thúc ấn tượng để lại dư âm trong lòng khán giả
+                                        </h4>
+                                        <div class="details">
+
+                
+                                            <span class="subtitle">
+                                                    <span
+                                                        class="localized-datetime subtitle-name"
+                                                        data-datetime="None"
+                                                        data-string="Lab"
+                                                        data-timezone="None"
+                                                        data-language="en"
+                                                    ></span>
+
+                                                        <span class="sr">&nbsp;This content is graded</span>
+                                            </span>
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@03c51b4d2f1e4ce6ad922ada729ec3b7_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@03c51b4d2f1e4ce6ad922ada729ec3b7"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@0d4570e4ab5e4fc093c9b6228c5f7e95"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@0d4570e4ab5e4fc093c9b6228c5f7e95">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Test
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@18afaf3a06a34a889c668465552825c6"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@18afaf3a06a34a889c668465552825c6">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Tự tin giúp ích thế nào?
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@322dac5897a34f0faa2d255553687251"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@322dac5897a34f0faa2d255553687251_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 04: Xây dựng dàn bài nội dung chất lượng
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@322dac5897a34f0faa2d255553687251_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@322dac5897a34f0faa2d255553687251"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@586ff03eda6044bb895332021d869925"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@586ff03eda6044bb895332021d869925">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Unit
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@d87164ac94c34c6d960f196e6ac444f4"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@d87164ac94c34c6d960f196e6ac444f4_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 05: Thiết kế phương pháp trình bày sáng tạo
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@d87164ac94c34c6d960f196e6ac444f4_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@d87164ac94c34c6d960f196e6ac444f4"
+                                >
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@30cc728d95a24ea48aae05c76de24267"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@30cc728d95a24ea48aae05c76de24267_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Giới thiệu chung
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@30cc728d95a24ea48aae05c76de24267_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@30cc728d95a24ea48aae05c76de24267"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@cdb1779ff9104dd484a52e1f4d77ce57"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@cdb1779ff9104dd484a52e1f4d77ce57">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Giới thiệu
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@5b5447d760f64e19a97dc2382ba4f908"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@5b5447d760f64e19a97dc2382ba4f908_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Subsection
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@5b5447d760f64e19a97dc2382ba4f908_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@5b5447d760f64e19a97dc2382ba4f908"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@dfc2d0279d924076a28d0caeeefe57f6"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@dfc2d0279d924076a28d0caeeefe57f6">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Unit
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                    </ol>
+                </li>
+            
+                <li class="outline-item section">
+                    <button class="section-name accordion-trigger"
+                            aria-expanded="false"
+                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@chapter+block@5488cecd3e3f436abc13cfb93874191a_contents"
+                            id="block-v1:HCMUSSH+101+TT_101+type@chapter+block@5488cecd3e3f436abc13cfb93874191a">
+                        <span class="fa fa-chevron-right " aria-hidden="true"></span>
+                        <h3 class="section-title">CHƯƠNG 2: HOÀN THIỆN PHONG CÁCH CỦA BẠN</h3>
+                    </button>
+                    <ol class="outline-item accordion-panel is-hidden"
+                        id="block-v1:HCMUSSH+101+TT_101+type@chapter+block@5488cecd3e3f436abc13cfb93874191a_contents"
+                        aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@chapter+block@5488cecd3e3f436abc13cfb93874191a">
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e43141ac3614402889c8a356db259dec"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e43141ac3614402889c8a356db259dec_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 06: Vượt qua sự hồi hộp
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e43141ac3614402889c8a356db259dec_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e43141ac3614402889c8a356db259dec"
+                                >
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e29de173342b4105a68bb854106fab79"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e29de173342b4105a68bb854106fab79_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 07: Thuyết trình bằng cả cơ thể
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e29de173342b4105a68bb854106fab79_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e29de173342b4105a68bb854106fab79"
+                                >
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@2db77570ac7e4dc7bff839749b401b6c"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@2db77570ac7e4dc7bff839749b401b6c_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 08: Phát âm và luyện giọng
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@2db77570ac7e4dc7bff839749b401b6c_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@2db77570ac7e4dc7bff839749b401b6c"
+                                >
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e65fe6879f90438194ac627cb6e50425"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e65fe6879f90438194ac627cb6e50425_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 09: Vượt qua bệnh bí từ và cách dùng từ độc đáo
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e65fe6879f90438194ac627cb6e50425_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e65fe6879f90438194ac627cb6e50425"
+                                >
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@fba8c9262dc646f783e2d506396da50f"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@fba8c9262dc646f783e2d506396da50f_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 10: Xây dựng phong cách thuyết trình riêng
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@fba8c9262dc646f783e2d506396da50f_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@fba8c9262dc646f783e2d506396da50f"
+                                >
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@25ff64130b444922994466014d90f3ec"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@25ff64130b444922994466014d90f3ec_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Subsection
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@25ff64130b444922994466014d90f3ec_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@25ff64130b444922994466014d90f3ec"
+                                >
+                                </ol>
+                            </li>
+                    </ol>
+                </li>
+            
+                <li class="outline-item section">
+                    <button class="section-name accordion-trigger"
+                            aria-expanded="false"
+                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@chapter+block@d151203bec0745c5b29e82281c505a5d_contents"
+                            id="block-v1:HCMUSSH+101+TT_101+type@chapter+block@d151203bec0745c5b29e82281c505a5d">
+                        <span class="fa fa-chevron-right " aria-hidden="true"></span>
+                        <h3 class="section-title">CHƯƠNG 3: THUYẾT TRÌNH TỐT HƠN VỚI POWERPOINT</h3>
+                    </button>
+                    <ol class="outline-item accordion-panel is-hidden"
+                        id="block-v1:HCMUSSH+101+TT_101+type@chapter+block@d151203bec0745c5b29e82281c505a5d_contents"
+                        aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@chapter+block@d151203bec0745c5b29e82281c505a5d">
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@484cd7f4d8c846e6a01f6d67aab53bc6"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@484cd7f4d8c846e6a01f6d67aab53bc6_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Đánh giá và góp ý cho khóa học
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@484cd7f4d8c846e6a01f6d67aab53bc6_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@484cd7f4d8c846e6a01f6d67aab53bc6"
+                                >
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@6d3c0b410aff48d28d6b834ac5d438f1"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@6d3c0b410aff48d28d6b834ac5d438f1_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Các khóa học liên quan và ưu đãi dành cho bạn
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@6d3c0b410aff48d28d6b834ac5d438f1_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@6d3c0b410aff48d28d6b834ac5d438f1"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@d4947cc835a74d2c91f55dc36cb26da7"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@d4947cc835a74d2c91f55dc36cb26da7">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Unit
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@82a6f21acabc4bcdbbebc407a13680fe"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@82a6f21acabc4bcdbbebc407a13680fe_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 11: Nghệ thuật dùng chữ, hình ảnh, âm thanh và video clip sao cho hay cho đẹp
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@82a6f21acabc4bcdbbebc407a13680fe_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@82a6f21acabc4bcdbbebc407a13680fe"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@1850daff061847939398306f314ad773"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@1850daff061847939398306f314ad773">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Unit
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e2ea97d2015f44aeb064b8ac02f1f0da"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e2ea97d2015f44aeb064b8ac02f1f0da_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài 12: Một số thủ thuật thông minh với powerpoint
+                                        </h4>
+                                        <div class="details">
+
+                
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e2ea97d2015f44aeb064b8ac02f1f0da_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@e2ea97d2015f44aeb064b8ac02f1f0da"
+                                >
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@3bad328eb4df4cfa86914330948aaaa7"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@3bad328eb4df4cfa86914330948aaaa7_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Trắc nghiệm cuối khóa
+                                        </h4>
+                                        <div class="details">
+
+                
+                                            <span class="subtitle">
+                                                    <span
+                                                        class="localized-datetime subtitle-name"
+                                                        data-datetime="None"
+                                                        data-string="Midterm Exam"
+                                                        data-timezone="None"
+                                                        data-language="en"
+                                                    ></span>
+
+                                                        <span class="sr">&nbsp;This content is graded</span>
+                                            </span>
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@3bad328eb4df4cfa86914330948aaaa7_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@3bad328eb4df4cfa86914330948aaaa7"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@a7337e9c3000433f9673d0623f513dd7"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@a7337e9c3000433f9673d0623f513dd7">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Kiểm tra
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                
+                      <li class="subsection accordion ">
+                                    <button class="subsection-text accordion-trigger"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@9a632c3d30144c7c9af32fd63a66b4ca"
+                                            aria-expanded="false"
+                                            aria-controls="block-v1:HCMUSSH+101+TT_101+type@sequential+block@9a632c3d30144c7c9af32fd63a66b4ca_contents">
+                                        <span class="fa fa-chevron-right "
+                                              aria-hidden="true"></span>
+                                        <h4 class="subsection-title">
+                                            Bài tập thu hoạch cuối khóa
+                                        </h4>
+                                        <div class="details">
+
+                
+                                            <span class="subtitle">
+                                                    <span
+                                                        class="localized-datetime subtitle-name"
+                                                        data-datetime="None"
+                                                        data-string="Final Exam"
+                                                        data-timezone="None"
+                                                        data-language="en"
+                                                    ></span>
+
+                                                        <span class="sr">&nbsp;This content is graded</span>
+                                            </span>
+                                        </div> <!-- /details -->
+                                    </button> <!-- /subsection-text -->
+                                <ol class="outline-item accordion-panel is-hidden"
+                                    id="block-v1:HCMUSSH+101+TT_101+type@sequential+block@9a632c3d30144c7c9af32fd63a66b4ca_contents"
+                                    aria-labelledby="block-v1:HCMUSSH+101+TT_101+type@sequential+block@9a632c3d30144c7c9af32fd63a66b4ca"
+                                >
+                                    <li class="vertical outline-item focusable">
+                                        <a class="outline-item focusable"
+                                            href="http://0.0.0.0:8000/courses/course-v1:HCMUSSH+101+TT_101/jump_to/block-v1:HCMUSSH+101+TT_101+type@vertical+block@f53d1182ab284ce9a7ccbc624f1f16a6"
+                                            id="block-v1:HCMUSSH+101+TT_101+type@vertical+block@f53d1182ab284ce9a7ccbc624f1f16a6">
+                                            <div class="vertical-details">
+                                              <div class="vertical-title">
+                                                Kiểm tra
+                                              </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                    </ol>
+                </li>
+        </ol>
+</main>
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+          (function (require) {
+              require(['js/dateutil_factory'], function (DateUtilFactory) {
+                  
+    DateUtilFactory.transform('.localized-datetime');
+
+              });
+          }).call(this, require || RequireJS.require);
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseOutline.831775b5a631f033c988.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseOutline();
+
+      </script>
+
+
+        </div>
+        <aside class="page-content-secondary course-sidebar">
+                <div class="section section-tools">
+                    <h3 class="hd-6 section-title">Course Tools</h3>
+                    <ul class="list-unstyled">
+                            <li class="course-tool">
+                                <a class="course-tool-link" data-analytics-id="edx.bookmarks" href="/courses/course-v1:HCMUSSH+101+TT_101/bookmarks/">
+                                    <span class="icon fa fa-bookmark" aria-hidden="true"></span>
+                                    Bookmarks
+                                </a>
+                            </li>
+                            <li class="course-tool">
+                                <a class="course-tool-link" data-analytics-id="edx.updates" href="/courses/course-v1:HCMUSSH+101+TT_101/course/updates">
+                                    <span class="icon fa fa-newspaper-o" aria-hidden="true"></span>
+                                    Bookmarks
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="section section-dates">
+                    
+
+
+
+
+
+
+<h3 class="hd hd-6 handouts-header">Important Course Dates</h3>
+
+    
+
+
+<div class="date-summary-container">
+    <div class="date-summary date-summary-todays-date">
+                <span class="hd hd-6 heading localized-datetime" data-datetime="2019-02-15 06:33:19.633914+00:00" data-string="Today is {date}" data-timezone="None" data-language="en"></span>
+    </div>
+</div>
+
+
+
+  
+  <script type="text/javascript">
+    (function (require) {
+          (function (require) {
+              require(['js/dateutil_factory'], function (DateUtilFactory) {
+                  
+    DateUtilFactory.transform('.localized-datetime');
+
+              });
+          }).call(this, require || RequireJS.require);
+    }).call(this, require || RequireJS.require);
+  </script>
+
+
+                </div>
+                <div class="section section-handouts">
+                    <h3 class="hd-6 section-title">Course Handouts</h3>
+                    <p><a href="/assets/courseware/v1/a5460a14acf0c63fafca543a6c0e0d9e/asset-v1:HCMUSSH+101+TT_101+type@asset+block/Kynangthuyettrinh.ppt" target="_blank">Tài liệu</a></p>
+                </div>
+        </aside>
+    </div>
+        
+
+
+
+
+
+
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseSock.43ffb68a30fa51e4e467.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseSock({
+        el:'.verification-sock'
+    });
+
+      </script>
+
+
+</div>
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/CourseHome.9cafd328372dcb349520.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseHome({
+        courseRunKey: "course\u002Dv1:HCMUSSH+101+TT_101",
+        resumeCourseLink: ".action-resume-course",
+        courseToolLink: ".course-tool-link",
+        goalApiUrl: "http://0.0.0.0:8000/api/course_goals/v0/course_goals/",
+        username: "root",
+        courseId: "course\u002Dv1:HCMUSSH+101+TT_101",
+    });
+
+      </script>
+
+
+
+    
+    
+    <script type="text/javascript" src="/static/bundles/Enrollment.57a1f0e198ade3332c48.js" ></script>
+      <script type="text/javascript">
+        
+    new CourseEnrollment('.enroll-btn', 'course\u002Dv1:HCMUSSH+101+TT_101');
+
+      </script>
+
+
+
+
+      
+    </div>
+
+        
+
+
+
+
+  <div class="container-fluid wrapper-footer">
+    <footer>
+      <div class="row">
+        <div class="col-md-9">
+          <nav class="navbar site-nav navbar-expand-sm" aria-label="About">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/support/contact_us">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/donate">Donate</a>
+                </li>
+            </ul>
+          </nav>
+
+          <p class="copyright">© Your Platform Name Here.  All rights reserved except where noted.  EdX, Open edX and their respective logos are trademarks or registered trademarks of edX Inc. </p>
+
+          <nav class="navbar legal-nav navbar-expand-sm" aria-label="Legal">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/privacy">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/tos">Terms of Service</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/honor">Honor Code</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.edx.org/?utm_medium=affiliate_partner&amp;utm_source=opensource-partner&amp;utm_content=open-edx-partner-footer-link&amp;utm_campaign=open-edx-footer">Take free online courses at edX.org</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-3">
+            <div class="footer-about-openedx">
+              <p>
+                <a href="http://open.edx.org">
+                  <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png" alt="Powered by Open edX" width="140" />
+                </a>
+              </p>
+            </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  </div>
+
+  
+
+
+
+
+<script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: {CHTMLpreview: false}
+    };
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    }
+  });
+</script>
+<script type="text/x-mathjax-config">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+
+
+<!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_SVG"></script>
+
+
+
+  
+
+  
+
+
+    <!-- begin segment footer -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            analytics.identify(
+                "2",
+                {
+                    email: "",
+                    username: "root"
+                },
+                {
+                    integrations: {
+                        // Disable MailChimp because we don't want to update the user's email
+                        // and username in MailChimp on every page load. We only need to capture
+                        // this data on registration/activation.
+                        MailChimp: false
+                    }
+                }
+            );
+        });
+    </script>
+    <!-- end segment footer -->
+
+  <script type="text/javascript" src="/lms/static/js/vendor/noreferrer.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/lms/static/js/utils/navigation.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/lms/static/js/header/header.js"></script>
+  
+<script src="/lms/static/boostrap/js/bootstrap.min.js"></script>
+<link href="/lms/static/boostrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="/lms/static/site.css" type="text/css" media="all" />
+<script src="/lms/static/client/angular.min.js"></script>
+<script src="/lms/static/client/ajax.js"></script>
+<script src="/lms/static/client/ui.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.qTemplate.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.service.ajax.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.drectives.ajax.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.directitive.ajax.call.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.services.dialog.js"></script>
+<script src="/lms/static/client/ui.directtives/ui.bootstrap.layout.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("body").show();
+    });
+    var mdl = angular.module("lms",["q-ui"]);
+        var ctrl =mdl.controller("lms",["$compile","$ajax","$scope",function($compile,$ajax,$scope){
+          $("body").show();
+            $scope.ret_url="";
+           if( window.location.href.indexOf('?')>-1){
+
+            $scope.ret_url=window.location.href.split('?')[1]
+           }
+
+          $scope.$root.$dialog = dialog
+          $scope.$root.$compile=$compile;
+          $scope.$ajax = $ajax;
+          if(window.onInit){
+              window.onInit($scope);
+          }
+          
+          $("body").css({
+            height:$(window).height()
+          });
+
+        }])
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,24 @@
+<%inherit file="../main.html" />
+<main id="main" aria-label="Content" tabindex="-1">
+        <section class="home">
+          <%block name="outer_wrapper"/>
+          {{data}}
+          <section class="courses-container">
+                <section class="highlighted-courses">
+              
+                    <section class="courses">
+                      <ul class="courses-listing">
+                            <%block name="courseware_list"/>
+                       
+                      </ul>
+                    </section>
+                    <div class="courses-more">
+                      <a class="courses-more-cta" href="/courses"> ${_>"View all Courses"} </a>
+                    </div>
+              
+                </section>
+              </section>
+        </section>
+    
+    </main>
+    ${self.body()}

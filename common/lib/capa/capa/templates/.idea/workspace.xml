@@ -2,25 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25ec6f3e-a1c1-4b5a-bc90-d34891b13e77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/compat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/db/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/db/fields.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/meta_backends/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/meta_backends/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/meta_backends/mongo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/meta_backends/orm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/storages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/storages/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/storages/fallback.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/testutils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../proxy_storage/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../xdj/storages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/select_languages.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/select_languages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/static_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/static_content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/x-static-content.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/x-static-content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/xdj-htmls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/xdj-htmls/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/static/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/views/commons/edx.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xlms/views/commons/edx.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/xblock_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/xblock_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/fix.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/fix.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -1,0 +1,92 @@
+<%
+    import xdj
+    from xdj_apps.xlms.bll.subjects import get_all_subjects
+    xdj.apply_context(self)
+    subjects = get_all_subjects()
+%>
+<style>
+.dropdown-menu.multi-column {
+        
+        border-radius: 0px !important;
+        padding: 16px;
+        width: 900px;
+}
+
+.dropdown-menu.multi-column .dropdown-menu {
+        display: block !important;
+        position: static !important;
+        margin: 4px !important;
+        border: none !important;
+        box-shadow: none !important;
+        min-width:100px;
+        
+}
+@media (min-width: 992px) {
+    .subjects a.dropdown-toggle {
+        
+        color:red;
+        
+    }
+}
+.subjects a.dropdown-toggle {
+    font-size: 16px;
+    color: #313131;
+    font-weight: 400;
+    padding: 7px 25px 19px;
+}
+.subjects a.dropdown-toggle:hover {
+    border-bottom-style: solid; 
+    border-bottom-color: #0075b4;
+    font-size: 16px;
+    color: #313131;
+    font-weight: 400;
+    padding: 7px 25px 19px;
+    background-color: transparent;
+}
+</style>
+<div class="nav-links">
+    <div class="main">
+<div class="mobile-nav-item hidden-mobile nav-item subjects">
+    <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle tab-nav-link " data-toggle="dropdown">${self.res("Subjects")} <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+          
+            <div class="dropdown-menu multi-column">
+              <div class="row">
+                  %for x in subjects:
+                    <div class="col-md-4">
+                            <div class="nav-links">
+                                    <div class="main" style="width:100% !important">
+                                        <div class="mobile-nav-item hidden-mobile nav-item nav-tab"  style="width:100% !important">
+                                                <a class="tab-nav-link" href="/lms/subjects/${x.SubjectCode}"  style="width:100% !important">${x.SubjectName}   </a>   
+                                        </div>
+                                         
+                                    </div>
+                            </div>   
+                         
+                    </div>  
+                  %endfor
+                  <!-- <div class="col-md-4">
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Col 1 - Opt 1</a></li>
+                          <li><a href="#">Col 1 - Opt 2</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4">
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Col 2 - Opt 1</a></li>
+                          <li><a href="#">Col 2 - Opt 2</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4">
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Col 2 - Opt 1</a></li>
+                          <li><a href="#">Col 2 - Opt 2</a></li>
+                      </ul>
+                  </div> -->
+              </div>
+          </div>
+      </li>
+  </ul>
+</div>
+</div>
