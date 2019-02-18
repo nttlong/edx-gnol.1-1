@@ -1,24 +1,26 @@
 from xdj_apps.xmcs.controllers.commons import CommonController
+from xdj_apps.xmcs.controllers.commons.edx_controller import EdxController
 from student.models import CourseAccessRole
 from django.contrib.auth.models import User
 from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_image_urls_for_user
 from django.db.models import Q,F
+
 import xdj
 @xdj.Controller(
     url = "settings/course_team",
-    check_url = r'^course_team/(?P<course_key_string>([^/]+/[^/]+/[^/]+|[^/:]+:[^/+]+\+[^/+]+(\+[^/]+)?))(?:/(?P<email>.+))?$',
-    template = "settings/course_team.html",
-    replace_url = r'^course_team/(?P<course_key_string>([^/]+/[^/]+/[^/]+|[^/:]+:[^/+]+\+[^/+]+(\+[^/]+)?))(?:/(?P<email>.+))?$'
+    check_url_= r'^course_team/(?P<course_key_string>([^/]+/[^/]+/[^/]+|[^/:]+:[^/+]+\+[^/+]+(\+[^/]+)?))(?:/(?P<email>.+))?$',
+    template = "xdj-htmls/settings_course_team.html",
+    replace_url_= r'^course_team/(?P<course_key_string>([^/]+/[^/]+/[^/]+|[^/:]+:[^/+]+\+[^/+]+(\+[^/]+)?))(?:/(?P<email>.+))?$'
 )
-class CourseTeamController(CommonController):
+class CourseTeamController(EdxController):
 
     def on_get(self,model):
-        if not self.__check_is_creator_of_courseware__(model.params.course_key_string,model.user):
-            return model.redirect(model.absUrl+"/signin?next={0}".format(
-                model.escape(model.absUrl+ model.request.get_full_path())
-            ))
-        course = self.__get_course_ware_from_str_key__(model.params.course_key_string, model.user)
-        model.course = course
+        # if not self.__check_is_creator_of_courseware__(model.params.course_key_string,model.user):
+        #     return model.redirect(model.absUrl+"/signin?next={0}".format(
+        #         model.escape(model.absUrl+ model.request.get_full_path())
+        #     ))
+        # course = self.__get_course_ware_from_str_key__(model.params.course_key_string, model.user)
+        # model.course = course
         return self.render(model)
 
     def on_post(self,model):

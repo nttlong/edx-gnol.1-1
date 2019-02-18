@@ -1,4 +1,12 @@
 {
+  "sql":{
+      "engine": "django.db.backends.postgresql_psycopg2",
+      "name":"openedx",
+      "user": "postgres",
+      "password": "123456",
+      "host": "172.16.7.67",
+      "port": "5433"
+  },
   "sql_mssql": {
 
         "engine": "sql_server.pyodbc",
@@ -16,7 +24,7 @@
     "name": "hrm1",
     "engine": "django.db.backends.mysql"
   },
-  "sql": {
+  "sql_my_sql": {
     "host": "172.16.7.63",
     "port": "3306",
     "user":"root",

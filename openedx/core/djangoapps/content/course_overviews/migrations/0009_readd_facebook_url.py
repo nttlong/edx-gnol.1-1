@@ -19,9 +19,10 @@ def table_description():
         cursor.execute("""
             SELECT column_name
             FROM information_schema.columns
-            WHERE table_name = 'course_overviews_courseoverview' AND table_schema = DATABASE()""")
+            WHERE table_name = 'course_overviews_courseoverview'""")
         rows = cursor.fetchall()
         return [r[0] for r in rows]
+        # return  []
 
 
 class Migration(migrations.Migration):

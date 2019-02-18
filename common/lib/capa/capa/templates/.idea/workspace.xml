@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25ec6f3e-a1c1-4b5a-bc90-d34891b13e77" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../manage_pure.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pure/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pure/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pure/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pure/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pure/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../pure/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/commons/edx_controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Open_edX.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Open_edX.egg-info/SOURCES.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/course_experience/course-messages-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/course_experience/course-messages-fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj-gnol-lms-templates/header/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../openedx/core/djangoapps/content/course_overviews/migrations/0009_readd_facebook_url.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../openedx/core/djangoapps/content/course_overviews/migrations/0009_readd_facebook_url.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/config/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/config/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/dev/bin/edxapp-migrate-cms" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/dev/bin/edxapp-migrate-cms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/dev/bin/edxapp-migrate-lms" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/dev/bin/edxapp-migrate-lms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj/middle_ware.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/middle_ware.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/commons/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/commons/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/course_team_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/course_team_controller.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +56,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -52,7 +68,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">

@@ -10,7 +10,7 @@ class GlobalRequestMiddleware(object):
 
     def process_request(self, request):
 
-        if request.path.find(settings.STATIC_URL)>-1:
+        if request.path.find("/static/")>-1:
             return None
         import threading
         threading.current_thread().request = request

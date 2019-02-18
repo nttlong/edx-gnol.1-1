@@ -44,7 +44,7 @@
   "ENABLE_COURSEWARE_INDEX": true,
   "ENABLE_LIBRARY_INDEX": true,
   "PIPELINE_ENABLED": false,
-  "CUSTOM_SETTINGS_ADVANCED": true,
+  "CUSTOM_SETTINGS_ADVANCED": false,
   "SUPPORT_LANGUAGES": [
     {
       "code": "en",

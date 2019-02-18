@@ -1,0 +1,27 @@
+<%page expression_filter="h"/>
+<%inherit file="../base.html"/>
+<%def name="online_help_token()"><% return "schedule" %></%def>
+<%block name="title">${_("Schedule & Details Settings")}</%block>
+<%block name="bodyclass">is-signedin course schedule view-settings feature-upload</%block>
+
+<%namespace name='static' file='../static_content.html'/>
+<%!
+  import urllib
+  from django.utils.translation import ugettext as _
+  from contentstore import utils
+  from openedx.core.djangoapps.certificates.api import can_show_certificate_available_date_field
+  from openedx.core.djangolib.js_utils import (
+      dump_js_escaped_json, js_escaped_string
+  )
+  from openedx.core.djangolib.markup import HTML, Text
+%>
+<%block name="content">
+<div class="wrapper-mast wrapper">
+    <header class="mast has-subtitle">
+      <h1 class="page-header">
+        <small class="subtitle">${_("Settings")}</small>
+        <span class="sr">&gt; </span>${_("Course Team")}
+      </h1>
+    </header>
+  </div>
+</%block>

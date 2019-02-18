@@ -1,5 +1,6 @@
 README.rst
 setup.cfg
+setup.py
 Open_edX.egg-info/PKG-INFO
 Open_edX.egg-info/SOURCES.txt
 Open_edX.egg-info/dependency_links.txt
@@ -7,6 +8,7 @@ Open_edX.egg-info/entry_points.txt
 Open_edX.egg-info/requires.txt
 Open_edX.egg-info/top_level.txt
 cms/__init__.py
+cms/bitnami_wsgi.py
 cms/celery.py
 cms/conftest.py
 cms/startup.py
@@ -14,6 +16,7 @@ cms/urls.py
 cms/urls_dev.py
 cms/wsgi.py
 lms/__init__.py
+lms/bitnami_wsgi.py
 lms/celery.py
 lms/startup.py
 lms/tests.py

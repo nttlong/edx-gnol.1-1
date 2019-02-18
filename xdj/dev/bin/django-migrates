@@ -1,0 +1,4 @@
+#!/bin/sh
+. /opt/edx-hawthorn.2-4/apps/edx/conf/edxapp_env
+cd /opt/edx-hawthorn.2-4/apps/edx/edx-platform
+python manage.py migrate --settings=devstack
