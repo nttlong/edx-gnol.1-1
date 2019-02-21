@@ -297,7 +297,13 @@ class MongoContentStore(ContentStore):
                 }
             })
 
-        items = self.fs_files.aggregate(pipeline_stages)
+        items = list(self.fs_files.aggregate(pipeline_stages,cursor={"batchSize":1024}))
+        if items.__len__() > 0:
+            items = items[0]
+        else:
+            items={
+                "result":None
+            }
         if items['result']:
             result = items['result'][0]
             count = result['count']

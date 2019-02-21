@@ -1,7 +1,7 @@
 {
   "sql":{
       "engine": "django.db.backends.postgresql_psycopg2",
-      "name":"openedx",
+      "name":"test011",
       "user": "postgres",
       "password": "123456",
       "host": "172.16.7.67",
@@ -57,6 +57,13 @@
   },
   "mongo": {
     "host": "172.16.7.63",
+    "port": 27017,
+    "user": "root",
+    "password": "123456",
+    "name": "openedx"
+  },
+  "mongo_63": {
+    "host": "172.16.7.67",
     "port": 27017,
     "user": "root",
     "password": "123456",

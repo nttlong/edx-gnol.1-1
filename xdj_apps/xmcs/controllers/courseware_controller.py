@@ -1,4 +1,5 @@
 import xdj
+from datetime import datetime
 @xdj.Controller(
     url="courseware",
     template="courseware.html"
@@ -49,9 +50,9 @@ class CoursewareController(xdj.BaseController):
         from opaque_keys.edx.locator import CourseLocator
         course_id = CourseLocator(org=org.OrgCode, course=data["number"], run=data["run"])
         from xdj_models.models import CourseAuthors, CourseSubjectsLinks, CourseSubjects
-        ca = CourseAuthors().objects.create()
+        ca = CourseAuthors().objects.create(user=model.user,created_on= datetime.utcnow(),course_id=course_id)
         ca.user = model.user
-        from datetime import datetime
+
         ca.created_on = datetime.utcnow()
         ca.course_id = course_id
         ca.save()

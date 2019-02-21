@@ -122,3 +122,12 @@ CREATE TABLE `entitlements_courseentitlementsupportdetail` (
   CONSTRAINT `b0fed354de33791839d87a8d13813a8b` FOREIGN KEY (`entitlement_id`) REFERENCES `entitlements_courseentitlement` (`id`),
   CONSTRAINT `entitlements_courseentitl_support_user_id_97d3095e_fk` FOREIGN KEY (`support_user_id`) REFERENCES `auth_user` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE SEQUENCE courseware_authors_seq;
+
+CREATE TABLE courseware_authors (
+  id INT NOT NULL DEFAULT NEXTVAL ('courseware_authors_seq'),
+  user_id INT NULL,
+  course_id VARCHAR(100) NULL,
+  created_on TIMESTAMP(0) NULL,
+  PRIMARY KEY (id));

@@ -13,6 +13,6 @@ class CourseAuthors(models.Model):
     course = models.ForeignKey(CourseOverview)
     # course_id = models.CharField(max_length=255)
     created_on =models.DateField()
-    id=models.IntegerField()
+
     class Meta:
         db_table = "courseware_authors"
