@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25ec6f3e-a1c1-4b5a-bc90-d34891b13e77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../../xdj/postsql/install_site.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../xdj/postsql/tables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../../xdj/postsql/tables2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../xdj/postsql/tables3.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../cms/envs/devstack.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../cms/envs/devstack.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../xmodule/xmodule/contentstore/mongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../xmodule/xmodule/contentstore/mongo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj/config/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/config/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj/mysql_fix/xlms.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj/mysql_fix/xlms.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/courseware_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/controllers/courseware_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../xdj_models/models/course_authors.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_models/models/course_authors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/fix.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../xdj_apps/xmcs/static/fix.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

@@ -304,7 +304,7 @@ class MongoContentStore(ContentStore):
             items={
                 "result":None
             }
-        if items['result']:
+        if items.get('result',None):
             result = items['result'][0]
             count = result['count']
             assets = list(result['results'])
