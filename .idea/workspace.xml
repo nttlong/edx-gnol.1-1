@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76d17d1-ee98-4620-ad71-9e5a4ffb3d0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/xdj/postsql/tables3.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.babelrc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.coveragerc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.eslintignore" beforeDir="false" />
@@ -4364,6 +4363,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/lib/capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/capa/capa/templates/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/lib/xmodule/xmodule/contentstore/mongo.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/xmodule/xmodule/contentstore/mongo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/lib/xmodule/xmodule/x_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/xmodule/xmodule/x_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lms/djangoapps/courseware/model_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/lms/djangoapps/courseware/model_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj/postsql/tables3.sql" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/postsql/tables3.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/README.rst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../lms/celery.py" beforeDir="false" />
@@ -8355,38 +8357,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cms/djangoapps/contentstore/tasks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="538" selection-start-line="538" selection-end-line="538" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/lib/xmodule/xmodule/modulestore/xml_exporter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="219" selection-start-line="219" selection-end-line="219" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/lib/xmodule/xmodule/contentstore/mongo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="328" selection-start-line="328" selection-end-line="328" />
+            <state relative-caret-position="181">
+              <caret line="307" column="19" lean-forward="true" selection-start-line="307" selection-start-column="19" selection-end-line="307" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/pymongo/collection.py">
+        <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/mongodb_proxy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="1826" column="28" lean-forward="true" selection-start-line="1826" selection-start-column="28" selection-end-line="1826" selection-end-column="28" />
+            <state relative-caret-position="152">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
             </state>
           </provider>
         </entry>
@@ -8394,8 +8378,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/sql/compiler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="891" selection-start-line="891" selection-end-line="891" />
+            <state relative-caret-position="364">
+              <caret line="912" column="38" selection-start-line="912" selection-start-column="38" selection-end-line="912" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -8409,11 +8393,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/static/fix.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="48" selection-start-column="48" selection-end-column="48" />
+            <state relative-caret-position="180">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -8421,8 +8405,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/test/db_cache/bok_choy_schema_default.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="2376" selection-start-line="2376" selection-end-line="2386" selection-end-column="37" />
+            <state relative-caret-position="158">
+              <caret line="1698" selection-start-line="1698" selection-end-line="1713" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -8430,17 +8414,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj/postsql/tables3.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="178">
+              <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
+        <entry file="file://$PROJECT_DIR$/common/lib/xmodule/xmodule/x_module.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
+            <state relative-caret-position="274">
+              <caret line="1195" selection-start-line="1195" selection-end-line="1195" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lms/djangoapps/courseware/model_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="425" selection-start-line="425" selection-end-line="425" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/test/db_cache/bok_choy_schema_student_module_history.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -8457,9 +8462,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>video_config_transcriptmigrationsetting</find>
-      <find>video_config_videotranscriptenabledflag</find>
-      <find>video_pipeline_coursevideouploadsenabledbydefault</find>
       <find>video_pipeline_videopipelineintegration</find>
       <find>waffle_sample</find>
       <find>workflow_assessmentworkflow</find>
@@ -8487,6 +8489,9 @@
       <find>debug_tool</find>
       <find>user_tasks</find>
       <find>edxval_videoimage</find>
+      <find>.nav-account.nav-is-signedin.nav-dd.ui-right</find>
+      <find>courseware_xmodulestudentprefsfield</find>
+      <find>coursewarehistoryextended_studentmodulehistoryextended</find>
     </findStrings>
     <replaceStrings>
       <replace>=</replace>
@@ -8499,8 +8504,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/controllers/commons/edx-controller.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/controllers/commons/edx_controller.py" />
         <option value="$PROJECT_DIR$/xdj_apps/xlms/controllers/login_controller.py" />
         <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/register.html" />
         <option value="$PROJECT_DIR$/xdj_apps/xlms/views/login.html" />
@@ -8547,9 +8550,11 @@
         <option value="$PROJECT_DIR$/cms/envs/devstack.py" />
         <option value="$PROJECT_DIR$/xdj/config/settings.json" />
         <option value="$PROJECT_DIR$/xdj/config/data.json" />
-        <option value="$PROJECT_DIR$/common/lib/xmodule/xmodule/contentstore/mongo.py" />
-        <option value="$PROJECT_DIR$/xdj/postsql/tables3.sql" />
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/static/fix.css" />
+        <option value="$PROJECT_DIR$/common/lib/xmodule/xmodule/x_module.py" />
+        <option value="$PROJECT_DIR$/lms/djangoapps/courseware/model_data.py" />
+        <option value="$PROJECT_DIR$/xdj/postsql/tables3.sql" />
+        <option value="$PROJECT_DIR$/common/lib/xmodule/xmodule/contentstore/mongo.py" />
       </list>
     </option>
   </component>
@@ -8600,7 +8605,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="editorconfig.notification" value="spaces" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/djangoapps/student/views/management.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common/lib/xmodule/xmodule/x_module.py" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -8628,7 +8633,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cms">
+  <component name="RunManager" selected="Python.manage">
     <configuration name="cms" type="PythonConfigurationType" factoryName="Python">
       <module name="edx-platform" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -8715,13 +8720,13 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31420764" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31420764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.42548597" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.50323975" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -8902,6 +8907,16 @@
           <line>891</line>
           <option name="timeStamp" value="588" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/common/lib/xmodule/xmodule/x_module.py</url>
+          <line>1195</line>
+          <option name="timeStamp" value="591" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lms/djangoapps/courseware/model_data.py</url>
+          <line>421</line>
+          <option name="timeStamp" value="592" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -8925,30 +8940,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cms/djangoapps/contentstore/views/item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="1458" column="7" selection-start-line="1458" selection-start-column="7" selection-end-line="1458" selection-end-column="7" />
-          <folding>
-            <element signature="e#33#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/web_fragments/fragment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lms/djangoapps/discussion/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="734" selection-start-line="734" selection-end-line="734" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/lib/xmodule/xmodule/course_metadata_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -9204,13 +9195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/mongodb_proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cms/djangoapps/contentstore/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -9232,38 +9216,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/lib/xmodule/xmodule/contentstore/mongo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="328" selection-start-line="328" selection-end-line="328" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/pymongo/collection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
-          <caret line="1826" column="28" lean-forward="true" selection-start-line="1826" selection-start-column="28" selection-end-line="1826" selection-end-column="28" />
+          <caret line="1826" column="28" selection-start-line="1826" selection-start-column="28" selection-end-line="1826" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/test/db_cache/bok_choy_schema_default.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="2376" selection-start-line="2376" selection-end-line="2386" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/postsql/tables3.sql">
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/static/fix.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/sql/compiler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="891" selection-start-line="891" selection-end-line="891" />
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -9274,10 +9237,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/static/fix.css">
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/sql/compiler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="48" selection-start-column="48" selection-end-column="48" />
+        <state relative-caret-position="364">
+          <caret line="912" column="38" selection-start-line="912" selection-start-column="38" selection-end-line="912" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/test/db_cache/bok_choy_schema_default.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="1698" selection-start-line="1698" selection-end-line="1713" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lms/djangoapps/courseware/model_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="425" selection-start-line="425" selection-end-line="425" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/test/db_cache/bok_choy_schema_student_module_history.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/postsql/tables3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="37" column="59" selection-start-line="37" selection-start-column="59" selection-end-line="37" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/lib/xmodule/xmodule/x_module.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="1195" selection-start-line="1195" selection-end-line="1195" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/mongodb_proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/lib/xmodule/xmodule/contentstore/mongo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="307" column="19" lean-forward="true" selection-start-line="307" selection-start-column="19" selection-end-line="307" selection-end-column="19" />
         </state>
       </provider>
     </entry>

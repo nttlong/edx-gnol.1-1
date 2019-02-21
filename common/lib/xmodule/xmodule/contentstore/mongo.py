@@ -300,9 +300,13 @@ class MongoContentStore(ContentStore):
         items = list(self.fs_files.aggregate(pipeline_stages,cursor={"batchSize":1024}))
         if items.__len__() > 0:
             items = items[0]
+            if not items.get("result",None):
+                items=dict(
+                    result=[items]
+                )
         else:
             items={
-                "result":None
+                "result" : None
             }
         if items.get('result',None):
             result = items['result'][0]

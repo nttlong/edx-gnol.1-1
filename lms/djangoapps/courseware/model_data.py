@@ -418,7 +418,7 @@ class UserStateCache(object):
                 self.user.username,
                 pending_updates
             )
-        except DatabaseError:
+        except DatabaseError as ex:
             log.exception("Saving user state failed for %s", self.user.username)
             raise KeyValueMultiSaveError([])
         finally:
