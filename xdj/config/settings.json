@@ -1,5 +1,6 @@
 {
-
+  "PLATFORM_NAME": "Lacviet",
+  "ENTRANCE_EXAMS": true,
   "BULK_EMAIL_MAX_RETRIES": 5,
   "BULK_EMAIL_DEFAULT_RETRY_DELAY": 30,
   "GRADES_DOWNLOAD_ROUTING_KEY": "edx.core.high_mem",
@@ -77,6 +78,9 @@
      "debug_toolbar.panels.sql.SQLPanel",
      "debug_toolbar.panels.signals.SignalsPanel",
      "debug_toolbar.panels.logging.LoggingPanel",
-     "debug_toolbar.panels.profiling.ProfilingPanel"]
+     "debug_toolbar.panels.profiling.ProfilingPanel"],
+  "PREVIEW_LMS_BASE": "0.0.0.0:8000",
+  "MAX_UPLOAD_SIZE": "5242880",
+  "MAX_ASSET_UPLOAD_FILE_SIZE_IN_MB": 100
 
 }

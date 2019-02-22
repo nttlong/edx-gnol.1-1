@@ -26,6 +26,7 @@ describe('<AssetsDropZone />', () => {
   });
 
   describe('renders', () => {
+    alert("OK");
     it('contains file browser button', () => {
       expect(wrapper.find('button').text()).toEqual('Browse your computer');
     });
