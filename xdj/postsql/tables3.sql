@@ -95,3 +95,22 @@ CREATE INDEX assessment_staffworkflow_85d183d8 ON assessment_staffworkflow (grad
 CREATE INDEX assessment_staffworkflow_0af9deae ON assessment_staffworkflow (grading_started_at);
 CREATE INDEX assessment_staffworkflow_740da1db ON assessment_staffworkflow (cancelled_at);
 CREATE INDEX assessment_staffworkflow_5096c410 ON assessment_staffworkflow (assessment);
+
+
+CREATE SEQUENCE problem_builder_answer_seq;
+
+CREATE TABLE problem_builder_answer (
+  id int NOT NULL DEFAULT NEXTVAL ('problem_builder_answer_seq'),
+  name varchar(50) NOT NULL,
+  student_id varchar(32) NOT NULL,
+  student_input text NOT NULL,
+  created_on timestamptz(6) NOT NULL,
+  modified_on timestamptz(6) NOT NULL,
+  course_key varchar(255) NOT NULL,
+  PRIMARY KEY (id),
+  CONSTRAINT problem_builder_answer_student_id_2ce682a818c95cbc_uniq UNIQUE  (student_id,course_key,name)
+) ;
+
+CREATE INDEX problem_builder_answer_b068931c ON problem_builder_answer (name);
+CREATE INDEX problem_builder_answer_30a811f6 ON problem_builder_answer (student_id);
+CREATE INDEX problem_builder_answer_c8235886 ON problem_builder_answer (course_key);

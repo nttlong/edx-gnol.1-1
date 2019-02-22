@@ -81,6 +81,12 @@
      "debug_toolbar.panels.profiling.ProfilingPanel"],
   "PREVIEW_LMS_BASE": "0.0.0.0:8000",
   "MAX_UPLOAD_SIZE": "5242880",
-  "MAX_ASSET_UPLOAD_FILE_SIZE_IN_MB": 100
+  "MAX_ASSET_UPLOAD_FILE_SIZE_IN_MB": 100,
+  "ADDL_INSTALLED_APPS": ["edx_sga"],
+  "AWS_ACCESS_KEY_ID": "xzyj1277",
+  "AWS_SECRET_ACCESS_KEY": "cdxa-0kdn",
+  "AWS_STORAGE_BUCKET_NAME": "sga",
+  "OPTIONAL_APPS": ["edx_sga"],
+  "ADVANCED_COMPONENT_TYPES": ["edx_sga"]
 
 }
