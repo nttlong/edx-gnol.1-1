@@ -4,11 +4,6 @@
     <list default="true" id="3f50f91e-e486-4044-8add-6e1ef7068740" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capa/capa/templates/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj/help/xblock.rst" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/help/xblock.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj/postsql/tables3.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/postsql/tables3.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/controllers/XBlockExt/xblock_modifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/controllers/XBlockExt/xblock_modifier.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
