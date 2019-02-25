@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76d17d1-ee98-4620-ad71-9e5a4ffb3d0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/qres/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qres/dynamic_object.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qres/filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qres/funcs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qres/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qres/query.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/qres/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/lib/capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/capa/capa/templates/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/lib/xmodule/xmodule/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/lib/xmodule/xmodule/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -14,69 +22,114 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/backends/postgresql/base.py">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="190">
+              <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/help/xblock.rst">
-          <provider selected="true" editor-type-id="restructured-text-editor" />
+        <entry file="file://$PROJECT_DIR$/qres/dynamic_object.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+              <folding>
+                <element signature="e#39#3274#0" />
+                <element signature="e#3322#8671#0" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
+        <entry file="file://$PROJECT_DIR$/qres/query.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="80" column="54" lean-forward="true" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
+            <state relative-caret-position="277">
+              <caret line="101" column="48" selection-start-line="101" selection-start-column="48" selection-end-line="101" selection-end-column="48" />
+              <folding>
+                <element signature="e#691#728#0" />
+                <element signature="e#813#962#0" />
+                <element signature="e#1008#1147#0" />
+                <element signature="e#1234#1554#0" />
+                <element signature="e#798#987#0" />
+                <element signature="e#1889#2588#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/__init__.py">
+        <entry file="file://$PROJECT_DIR$/qres/filter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="131" selection-start-line="131" selection-end-line="131" />
+            <state relative-caret-position="416">
+              <caret line="213" selection-start-line="213" selection-end-line="213" />
+              <folding>
+                <element signature="e#64#113#0" />
+                <element signature="e#127#237#0" />
+                <element signature="e#312#482#0" />
+                <element signature="e#521#728#0" />
+                <element signature="e#768#1040#0" />
+                <element signature="e#975#1144#0" />
+                <element signature="e#1183#1350#0" />
+                <element signature="e#1389#1565#0" />
+                <element signature="e#1597#1919#0" />
+                <element signature="e#1952#2258#0" />
+                <element signature="e#2288#2653#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/sql/compiler.py">
+        <entry file="file://$PROJECT_DIR$/qres/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="901" column="74" lean-forward="true" selection-start-line="901" selection-start-column="74" selection-end-line="901" selection-end-column="74" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/test/db_cache/bok_choy_schema_default.sql">
+        <entry file="file://$PROJECT_DIR$/qres/funcs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="3751" column="30" lean-forward="true" selection-start-line="3751" selection-start-column="30" selection-end-line="3751" selection-end-column="30" />
+            <state relative-caret-position="135">
+              <caret line="9" column="9" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/postsql/tables3.sql">
+        <entry file="file://$PROJECT_DIR$/qres/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="101" column="37" lean-forward="true" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+            <state relative-caret-position="387">
+              <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/XBlockExt/xblock_modifier.py">
+        <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/elasticsearch/connection/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="286">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj/pymqr/mobject.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="74" selection-end-column="10" />
+              <folding>
+                <element signature="e#127#3362#0" />
+                <element signature="e#3410#8885#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,7 +137,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/XBlockExt/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
+            <state relative-caret-position="480">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
@@ -102,7 +155,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sap_success_factors_</find>
       <find>CREATE TABLE enterprise_enterprisecustomer</find>
       <find>xblock_django_xblockstudioconfigurationflag_seq</find>
       <find>debug_too</find>
@@ -129,9 +181,10 @@
       <find>The maximum size for an upload is</find>
       <find>max_size</find>
       <find>class=&quot;drop-zone center-text&quot;</find>
-      <find>apps</find>
       <find>problem_builder_answer</find>
       <find>MEDIA_ROOT</find>
+      <find>apps</find>
+      <find>pydocs</find>
     </findStrings>
     <replaceStrings>
       <replace>=</replace>
@@ -144,15 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/controllers/course_jump_to.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/bll/users.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/bll/courses.py" />
-        <option value="$PROJECT_DIR$/openedx/features/course_experience/templates/course_experience/course-messages-fragment.html" />
-        <option value="$PROJECT_DIR$/common/lib/capa/capa/templates/course_experience/course-messages-fragment.html" />
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/controllers/course_info_controller.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/commons/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/commons/edx_controller.py" />
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/course_team_controller.py" />
         <option value="$PROJECT_DIR$/xdj/middle_ware.py" />
         <option value="$PROJECT_DIR$/xdj/dev/bin/edxapp-migrate-cms" />
@@ -195,6 +239,15 @@
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/XBlockExt/xblock_modifier.py" />
         <option value="$PROJECT_DIR$/xdj/help/xblock.rst" />
         <option value="$PROJECT_DIR$/xdj/config/settings.json" />
+        <option value="$PROJECT_DIR$/xdj/testes.py" />
+        <option value="$PROJECT_DIR$/qres/dynamic_object.py" />
+        <option value="$PROJECT_DIR$/xdj/esqr.py" />
+        <option value="$PROJECT_DIR$/qres/testes.py" />
+        <option value="$PROJECT_DIR$/qres/models.py" />
+        <option value="$PROJECT_DIR$/qres/funcs.py" />
+        <option value="$PROJECT_DIR$/qres/filter.py" />
+        <option value="$PROJECT_DIR$/qres/test.py" />
+        <option value="$PROJECT_DIR$/qres/query.py" />
       </list>
     </option>
   </component>
@@ -220,19 +273,12 @@
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj" type="462c0819:PsiDirectoryNode" />
+              <item name="qres" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
               <item name="xdj" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj" type="462c0819:PsiDirectoryNode" />
-              <item name="postsql" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,16 +294,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/qres" />
+      <recent name="$PROJECT_DIR$/xdj_apps/xmcs/static" />
+      <recent name="$PROJECT_DIR$/cms/static/studio/css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pure" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/xdj_apps/xlms/views" />
       <recent name="$PROJECT_DIR$/xdj_apps/xlms/controllers" />
       <recent name="$PROJECT_DIR$/xdj-gnol-lms-templates/wiki" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/xdj_apps/xmcs/static" />
-      <recent name="$PROJECT_DIR$/cms/static/studio/css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -272,7 +319,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.manage">
+  <component name="RunManager" selected="Python.testes">
     <configuration name="cms" type="PythonConfigurationType" factoryName="Python">
       <module name="edx-platform" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -336,10 +383,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="testes" type="PythonConfigurationType" factoryName="Python">
+      <module name="edx-platform" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qres" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qres/testes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.cms" />
       <item itemvalue="Python.manage" />
       <item itemvalue="Python.manage_pure" />
+      <item itemvalue="Python.testes" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -357,21 +426,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26612023" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22076502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5237581" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.73434126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.5572354" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.50431967" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="10" visible="true" weight="0.45032397" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24958494" />
@@ -560,6 +630,21 @@
           <line>51</line>
           <option name="timeStamp" value="608" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/qres/models.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="622" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/qres/models.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="623" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/qres/filter.py</url>
+          <line>213</line>
+          <option name="timeStamp" value="627" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -583,83 +668,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/lib/xmodule/xmodule/modulestore/xml_exporter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="219" selection-start-line="219" selection-end-line="219" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/pymongo/collection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="1826" column="28" selection-start-line="1826" selection-start-column="28" selection-end-line="1826" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/static/fix.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/mongodb_proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lms/djangoapps/courseware/model_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6105">
-          <caret line="425" selection-start-line="425" selection-end-line="425" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/test/db_cache/bok_choy_schema_student_module_history.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/djangoapps/terrain/ui_helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="61" column="29" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-cms-templates/container.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/lib/xmodule/xmodule/annotatable_module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/officemix/officemix.py" />
     <entry file="file://$PROJECT_DIR$/common/lib/xmodule/xmodule/modulestore/split_mongo/caching_descriptor_system.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -878,55 +886,164 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/sql/compiler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="901" column="74" lean-forward="true" selection-start-line="901" selection-start-column="74" selection-end-line="901" selection-end-column="74" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/xdj/help/xblock.rst">
+      <provider selected="true" editor-type-id="restructured-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/test/db_cache/bok_choy_schema_default.sql">
+    <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="3751" column="30" lean-forward="true" selection-start-line="3751" selection-start-column="30" selection-end-line="3751" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/postsql/tables3.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="101" column="37" lean-forward="true" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
+        <state relative-caret-position="1200">
+          <caret line="80" column="54" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xdj/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="1965">
           <caret line="131" selection-start-line="131" selection-end-line="131" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/XBlockExt/utils.py">
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/sql/compiler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="13320">
+          <caret line="901" column="74" selection-start-line="901" selection-start-column="74" selection-end-line="901" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/test/db_cache/bok_choy_schema_default.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56265">
+          <caret line="3751" column="30" selection-start-line="3751" selection-start-column="30" selection-end-line="3751" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/postsql/tables3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="101" column="37" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/XBlockExt/xblock_modifier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/help/xblock.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/XBlockExt/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="80" column="54" lean-forward="true" selection-start-line="80" selection-start-column="54" selection-end-line="80" selection-end-column="54" />
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/xblock_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/pymqr/mobject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="74" selection-end-column="10" />
+          <folding>
+            <element signature="e#127#3362#0" />
+            <element signature="e#3410#8885#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/elasticsearch/connection/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qres/dynamic_object.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+          <folding>
+            <element signature="e#39#3274#0" />
+            <element signature="e#3322#8671#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/esqr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qres/testes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qres/funcs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qres/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qres/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qres/filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
+          <folding>
+            <element signature="e#64#113#0" />
+            <element signature="e#127#237#0" />
+            <element signature="e#312#482#0" />
+            <element signature="e#521#728#0" />
+            <element signature="e#768#1040#0" />
+            <element signature="e#975#1144#0" />
+            <element signature="e#1183#1350#0" />
+            <element signature="e#1389#1565#0" />
+            <element signature="e#1597#1919#0" />
+            <element signature="e#1952#2258#0" />
+            <element signature="e#2288#2653#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qres/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="101" column="48" selection-start-line="101" selection-start-column="48" selection-end-line="101" selection-end-column="48" />
+          <folding>
+            <element signature="e#691#728#0" />
+            <element signature="e#813#962#0" />
+            <element signature="e#1008#1147#0" />
+            <element signature="e#1234#1554#0" />
+            <element signature="e#798#987#0" />
+            <element signature="e#1889#2588#0" />
+          </folding>
         </state>
       </provider>
     </entry>
