@@ -69,7 +69,26 @@ class qr_index():
         from elasticsearch import Elasticsearch
 
         from .filter import get_elasticsearch_filter
+
+        _from = page_index*page_size
+        size = page_size
+
+        """
+        "from": 0,
+    "size": 1
+        """
+
         _filter = get_elasticsearch_filter(fields)
+        if not _filter:
+            _filter={
+                "from": _from,
+                "size": size
+            }
+        else:
+            _filter.update({
+                "from": _from,
+                "size": size
+            })
         # # _filter = where(_filter)
         if isinstance(self.qr.es, Elasticsearch):
             ret = self.qr.es.search(self.name, doc_type=doc_type, body=_filter)
@@ -77,13 +96,17 @@ class qr_index():
                 if ret['hits'].get('hits'):
                     ret_data = dict(
                         items=ret['hits']['hits'],
-                        total=ret['hits']['total']
+                        total=ret['hits']['total'],
+                        page_size=page_size,
+                        page_index=page_index
                     )
                     return ret_data
 
         return dict(
             items=[],
-            total=0
+            total=0,
+            page_size=page_size,
+            page_index = page_index
         )
 
     def search_as_objects(self,fields=None,doc_type=None,page_size=50, page_index=0):

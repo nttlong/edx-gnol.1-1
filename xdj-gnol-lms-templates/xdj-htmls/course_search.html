@@ -1,0 +1,173 @@
+<%inherit file="../main.html" />
+<main id="main" aria-label="Content" tabindex="-1" ng-cloak>
+    <section class="find-courses">
+      <section class="courses-container">
+        <div id="discovery-form" role="search" aria-label="course" class="wrapper-search-context">
+          <div id="discovery-message" class="search-status-label">{{$root.showCount(data.total)}}</div>
+          <form class="wrapper-search-input ng-pristine ng-valid">
+            <label for="discovery-input" class="sr">{_//"Search for a course"}</label>
+            <input id="discovery-input" class="discovery-input" placeholder="${_//"Search for a course"}" type="text" ng-model="txtSearch">
+
+            <button type="submit" class="button postfix discovery-submit" title="${_//"Clear search"}" ng-click="doClearSearch()" style="right:50px" ng-if="txtSearch&&txtSearch!=''">
+                  <span class="icon fa fa-times" aria-hidden="true"></span>
+                  <div aria-live="polite" aria-relevant="all">
+
+                  </div>
+            </button>
+
+            <button type="submit" class="button postfix discovery-submit" title="${_//"Search"}" ng-click="doSearch()">
+              <span class="icon fa fa-search" aria-hidden="true"></span>
+              <div aria-live="polite" aria-relevant="all">
+                <div id="loading-indicator" class="loading-spinner hidden">
+                  <span class="icon fa fa-spinner fa-spin" aria-hidden="true"></span>
+                  <span class="sr">${_//"Loading"}</span>
+                </div>
+              </div>
+            </button>
+          </form>
+        </div>
+
+        <div id="filter-bar" class="filters hide-phone is-collapsed is-animated">
+            <div class="filters-inner">
+            <ul class="active-filters facet-list"></ul>
+            <button id="clear-all-filters" class="clear-filters flt-right discovery-button">Clear All</button>
+            </div>
+
+        </div>
+
+        <div class="courses" role="region" aria-label="List of Courses" style="width:100%">
+          <ul class="courses-listing">
+              <li class="courses-listing-item" ng-repeat="p in data.items">
+                  <article class="course" role="region" aria-label="{{p.display_name}}">
+                      <a href="/courses/{{p.id}}/about">
+                          <header class="course-image">
+                              <div class="cover-image">
+                                  <img src="{{p.image_url}" alt="{{p.display_name}}">
+                                  <div class="learn-more" aria-hidden="true">${_//"LEARN MORE"}</div>
+                              </div>
+                          </header>
+                          <section class="course-info" aria-hidden="true">
+                              <h2 class="course-name">
+                                  <span class="course-organization">{{p.org}}</span>
+                                  <span class="course-code">{{p.number}}</span>
+                                  <span class="course-title">{{p.display_name}}</span>
+                              </h2>
+                              <div class="course-date" aria-hidden="true">
+                                  {{p.start|date:'dd-MM-yyyy'}}
+                              </div>
+                          </section>
+
+                            <div class="sr">
+                                <ul>
+                                    <li>{{p.org}}</li>
+                                    <li>{{p.number}}</li>
+                                    <li>${_>>"Start at"}}{{p.satrt}}</li>
+                                </ul>
+                            </div>
+                      </a>
+                  </article>
+              </li>
+
+          </ul>
+        </div>
+
+
+        <!--<aside aria-label="Refine Your Search" class="search-facets phone-menu">-->
+            <!--<h2 class="header-search-facets">Refine Your Search</h2>-->
+            <!--<section class="search-facets-lists">-->
+                <!--<h3 class="header-facet">Organization</h3>-->
+                <!--<ul data-facet="org" class="facet-list collapse">-->
+                    <!--<li>-->
+                        <!--<button data-facet="org" data-value="LV" data-text="LV" class="facet-option discovery-button ">LV<span class="count">-->
+                            <!--<span class="count-number">11</span></span>-->
+                        <!--</button>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<button data-facet="org" data-value="Lacviet" data-text="Lacviet" class="facet-option discovery-button ">Lacviet-->
+                            <!--<span class="count">-->
+                                <!--<span class="count-number">2</span>-->
+                            <!--</span>-->
+                        <!--</button>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                         <!--<button data-facet="org" data-value="HCMUSSH" data-text="HCMUSSH" class="facet-option discovery-button ">HCMUSSH-->
+                             <!--<span class="count">-->
+                                 <!--<span class="count-number">2</span>-->
+                                 <!--</span>-->
+                             <!--</button>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<button data-facet="org" data-value="BC" data-text="BC" class="facet-option discovery-button ">BC-->
+                            <!--<span class="count">-->
+                                <!--<span class="count-number">1</span>-->
+                                <!--</span>-->
+                        <!--</button>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--<h3 class="header-facet">Course Type</h3>-->
+                <!--<ul data-facet="modes" class="facet-list collapse">-->
+                    <!--<li>-->
+                        <!--<button data-facet="modes" data-value="audit" data-text="audit" class="facet-option discovery-button ">-->
+                            <!--audit-->
+                            <!--<span class="count">-->
+                                <!--<span class="count-number">16</span>-->
+                            <!--</span>-->
+                        <!--</button>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--<h3 class="header-facet">Language</h3>-->
+                <!--<ul data-facet="language" class="facet-list collapse">-->
+                    <!--<li>-->
+                        <!--<button data-facet="language" data-value="vi" data-text="Vietnamese" class="facet-option discovery-button ">Vietnamese-->
+                            <!--<span class="count">-->
+                                <!--<span class="count-number">4</span></span>-->
+                        <!--</button>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                        <!--<button data-facet="language" data-value="en" data-text="English" class="facet-option discovery-button ">English-->
+                            <!--<span class="count">-->
+                                <!--<span class="count-number">12</span>-->
+                            <!--</span>-->
+                        <!--</button>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</section>-->
+        <!--</aside>-->
+      </section>
+    </section>
+</main>
+<ajax url="${currentUrl}">
+    <call data-id="doSearch" ng-model="data"></call>
+    <call data-id="doSearch" ng-model="data" data-function="doSearch" data-params="{value:txtSearch}"></call>
+
+</ajax>
+<%block name="angular">
+    <script>
+        function onInit(scope){
+        scope.doClearSearch=function(){
+            scope.txtSearch="";
+            scope.doSearch();
+        }
+        $("#discovery-input").bind("keydown",function(evt){
+            if(evt.keyCode==13){
+                scope.doSearch();
+                evt.preventDefault();
+            }
+
+        });
+            scope.$root.showCount=function(total){
+                if(total==0){
+                    return '${"We could not find any results"}'
+                }
+                if(total==1){
+                    return '${"Viewing {0} course"}'.replace("{0}",total)
+                }
+                else {
+                    return '${"Viewing {0} courses"}'.replace("{0}",total)
+                }
+
+            }
+
+        }
+    </script>
+</%block>
