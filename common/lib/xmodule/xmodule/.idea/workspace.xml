@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f50f91e-e486-4044-8add-6e1ef7068740" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../xdj-gnol-lms-templates/xdj-htmls/course_search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capa/capa/templates/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../qres/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qres/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj-gnol-lms-templates/xdj-htmls/course_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj-gnol-lms-templates/xdj-htmls/course_search.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
