@@ -42,9 +42,7 @@ from openedx.core.djangolib.js_utils import (
             <a href="#" class1="button new-button new-library-button" class="button new-button" ng-click="$root.$dialog($id).url($root.url_new_library).done()"><span class="icon fa fa-plus icon-inline" aria-hidden="true"></span>
             ${_("New Library")}</a>
           % endif
-          <a  class="button new-button" ng-click="$root.$dialog($id).url($root.url_list_of_subject).done()"><span class="icon fa fa-plus icon-inline" aria-hidden="true"></span>
-            ${self.res("Categories")}
-          </a>
+
         </li>
       </ul>
     </nav>
@@ -523,7 +521,8 @@ from openedx.core.djangolib.js_utils import (
 
         <ul class="list-actions">
           <li class="action-item">
-              <a href="#" class="action-primary action-create new-button action-create-library new-library-button"><span class="icon fa fa-plus icon-inline" aria-hidden="true"></span> ${_('Create Your First Library')}</a>
+              <a href="#" class="action-primary action-create new-button action-create-library" ng-click="$root.$dialog($id).url($root.url_new_library).done()">
+                <span class="icon fa fa-plus icon-inline" aria-hidden="true"></span> ${_('Create Your First Library')}</a>
           </li>
         </ul>
         </div>

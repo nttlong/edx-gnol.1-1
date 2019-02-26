@@ -630,6 +630,8 @@ class CourseAboutSearchIndexer(object):
 
         # Broad exception handler to protect around and report problems with indexing
         try:
+            from xdj_apps.xmcs.utils import add_extra_search
+            add_extra_search([course_info])
             searcher.index(cls.DISCOVERY_DOCUMENT_TYPE, [course_info])
         except:  # pylint: disable=bare-except
             log.exception(

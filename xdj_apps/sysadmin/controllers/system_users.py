@@ -101,8 +101,10 @@ class system_user_controller(xdj.BaseController):
                     user.last_name = user_data.last_name
                     user.email = user_data.email
                     user.is_active = user_data.is_active
-                    user.is_staff = user_data.is_staff
-                    user.is_superuser=user_data.is_superuser
+                    if hasattr(user_data,"is_staff"):
+                        user.is_staff = user_data.is_staff
+                    if hasattr(user_data, "is_superuser"):
+                        user.is_superuser=user_data.is_superuser
                     user.save()
                     return dict()
                 else:
@@ -117,9 +119,12 @@ class system_user_controller(xdj.BaseController):
                         email=user_data.email,
                         password=user_data.password
                     )
+                    user.set_password(user_data.password)
                     user.is_active = user_data.__dict__.get("is_active", False)
                     user.is_staff = user.__dict__.get("is_staff",False)
                     user.is_superuser = user_data.__dict__.get("is_superuser", False)
+                    user.first_name =  user_data.__dict__.get("first_name", False)
+                    user.last_name =  user_data.__dict__.get("last_name", False)
                     user.save()
                     return {}
 

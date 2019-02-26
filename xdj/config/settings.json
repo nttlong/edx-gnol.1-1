@@ -87,6 +87,10 @@
   "AWS_SECRET_ACCESS_KEY": "cdxa-0kdn",
   "AWS_STORAGE_BUCKET_NAME": "sga",
   "OPTIONAL_APPS": ["edx_sga"],
-  "ADVANCED_COMPONENT_TYPES": ["edx_sga"]
+  "ADVANCED_COMPONENT_TYPES": ["edx_sga"],
+  "LMS_ROOT_URL":"http://0.0.0.0:8000",
+  "LMS_BASE":"0.0.0.0:8000",
+  "CMS_BASE": "0.0.0.0:8001",
+  "PROFILE_IMAGE_SECRET_KEY": "placeholder_secret_key"
 
 }

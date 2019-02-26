@@ -563,6 +563,11 @@ def debugTemplate(x):
 
 def apply_context(context):
     from xdj.middle_ware import GlobalRequestMiddleware
+    from django.shortcuts import redirect
+    from django.template.context_processors import csrf
+    from django.conf import settings
+
+
     def res(key,value=None):
         if value == None:
             value = key
@@ -574,6 +579,17 @@ def apply_context(context):
     # context.res = res
     context.res = res
     context.request = GlobalRequestMiddleware.get_current_request()
+    request = context.request
+
+    context.currentUrl = request.build_absolute_uri().split("?")[0]
+    context.absUrl = context.currentUrl[0:context.currentUrl.__len__() - request.path.__len__()]
+    context.appUrl = context.absUrl
+    context.static = context.appUrl + "/static"
+    context.redirect = redirect
+
+    context.user = request.user
+    context.csrf_token = csrf(request)["csrf_token"]
+    context.settings = settings
     # context._data["res"] = res
     # context["self"].context._data["res"] = res
 

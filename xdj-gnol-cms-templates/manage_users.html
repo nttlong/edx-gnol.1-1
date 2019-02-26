@@ -17,7 +17,11 @@ from openedx.core.djangolib.js_utils import (
     <%static:include path="js/team-member.underscore" />
 </script>
 </%block>
-
+<%
+    import xdj,re
+    xdj.apply_context(self)
+    self.course_id = self.request.path.split('/')[self.request.path.split('/').__len__()-1]
+%>
 <%block name="content">
 
 <div class="wrapper-mast wrapper">
@@ -69,7 +73,9 @@ from openedx.core.djangolib.js_utils import (
         </form>
       </div>
       %endif
+      <div q-template url="/cms/courseware/team/${self.request.path.split('/')[self.request.path.split('/').__len__()-1]}">
 
+      </div>
       <ol class="user-list" id="user-list">
         <div class="ui-loading">
           <p><span class="spin"><span class="icon fa fa-refresh" aria-hidden="true"></span></span> <span class="copy">${_('Loading')}</span></p>

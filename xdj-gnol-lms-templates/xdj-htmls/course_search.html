@@ -48,12 +48,16 @@
                           </header>
                           <section class="course-info" aria-hidden="true">
                               <h2 class="course-name">
-                                  <span class="course-organization">{{p.org}}</span>
-                                  <span class="course-code">{{p.number}}</span>
-                                  <span class="course-title">{{p.display_name}}</span>
+                                  <span class="course-title" style="height:30px">{{p.display_name}}</span>
+                                  <span class="course-organization">${_//"Subject"} : {{p.subject.name}}</span>
+                                  <span class="course-organization">${_//"Org"} : {{p.organization.name}}</span>
+                                  <span class="course-code">${_//"Number"} : {{p.number}}</span>
+                                  <span class="course-code">${_//"Start at"} : {{p.start|date:'dd-MM-yyyy'}}</span>
+                                  <span class="course-code">${_//"Author"} : {{p.author.username}}</span>
+
                               </h2>
                               <div class="course-date" aria-hidden="true">
-                                  {{p.start|date:'dd-MM-yyyy'}}
+                                  <span class="course-organization">&nbsp;</span>
                               </div>
                           </section>
 
@@ -69,7 +73,32 @@
               </li>
 
           </ul>
+
         </div>
+          <div ng-if="data.total_pages>0">
+              <nav aria-label="Content pagination"  style="text-align:center">
+                  <ul class="pagination">
+                      <li class=" disabled">
+                          <a class="page-link" tabindex="0" role="button">
+                              <span lang="en"><span>previous</span></span><span lang="en"><span class="sr-only">button is disabled</span></span>
+                          </a>
+                      </li>
+                      <li class="page-item active">
+                          <a role="button" class="page-link" tabindex="0" aria-label="Page 1 is your current page" aria-current="page">1</a>
+                      </li>
+                      <li class=" disabled">
+                          <a class="page-link" tabindex="0" role="button">
+                              <span lang="en">
+                                  <span>next</span>
+                              </span>
+                              <span lang="en">
+                                  <span class="sr-only">button is disabled</span>
+                              </span>
+                          </a>
+                      </li>
+                  </ul>
+              </nav>
+          </div>
 
 
         <!--<aside aria-label="Refine Your Search" class="search-facets phone-menu">-->
@@ -137,13 +166,20 @@
     </section>
 </main>
 <ajax url="${currentUrl}">
-    <call data-id="doSearch" ng-model="data"></call>
+    <call data-id="doSearch" ng-model="data" data-params="{value:txtSearch}"></call>
     <call data-id="doSearch" ng-model="data" data-function="doSearch" data-params="{value:txtSearch}"></call>
 
 </ajax>
 <%block name="angular">
     <script>
         function onInit(scope){
+        $(".find-courses").css({
+            "min-height":$(window).height()-$(".wrapper.wrapper-footer").height()
+        });
+        if(window.location.href.indexOf("?search_query=")>-1){
+            scope.txtSearch=window.location.href.split("?search_query=")[1].split("&")[0];
+
+        }
         scope.doClearSearch=function(){
             scope.txtSearch="";
             scope.doSearch();

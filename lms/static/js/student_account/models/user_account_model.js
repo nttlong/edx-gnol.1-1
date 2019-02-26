@@ -51,7 +51,11 @@
             },
 
             profileImageUrl: function() {
-                return this.get('profile_image').image_url_large;
+                if(this.get('profile_image') &&(this.get('profile_image')!=null)){
+                    return this.get('profile_image').image_url_large;
+                }
+                return "";
+
             },
 
             isAboveMinimumAge: function() {

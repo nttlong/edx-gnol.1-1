@@ -10,27 +10,31 @@ from openedx.core.djangolib.js_utils import js_escaped_string
 from openedx.core.djangolib.markup import HTML
 from openedx.features.course_experience import CourseHomeMessages
 %>
-<%
-    import xdj
-    from xdj_apps.xlms.bll.course import get_author
-    xdj.apply_context(self)
-    get_author(self.request)
-%>
+
 <%
 is_rtl = get_language_bidi()
 %>
-
+<%
+    from openedx.core.djangoapps.user_api.accounts.image_helpers import get_profile_image_urls_for_user
+    from xdj_apps.xlms.bll.courses import get_author
+    from xdj_apps.xlms.bll.users import get_user_profile_img_url
+    import xdj
+    xdj.apply_context(self)
+    user = get_author(self.request.session["course_id"])
+    if user:
+        image_src = get_user_profile_img_url(user)["medium"]
+%>
 % if course_home_messages:
     % for message in course_home_messages:
         <div class="course-message">
             % if not is_rtl:
-                <img class="message-author" alt="" src="${static.url(image_src)}"/>
+                <img class="message-author" alt="" src="${image_src}"/>
             % endif
             <div class="message-content" aria-live="polite">
                 ${HTML(message.message_html)}
             </div>
             % if is_rtl:
-                <img class="message-author" alt="" src="${static.url(image_src)}"/>
+                <img class="message-author" alt="" src="${image_src}"/>
             % endif
         </div>
     % endfor
@@ -43,3 +47,4 @@ is_rtl = get_language_bidi()
         username: "${username | n, js_escaped_string}",
     });
 </%static:webpack>
+
