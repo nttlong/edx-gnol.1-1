@@ -1766,7 +1766,7 @@ CREATE SEQUENCE django_comment_common_coursediscussionsettings_seq;
 CREATE TABLE django_comment_common_coursediscussionsettings (
   id int NOT NULL DEFAULT NEXTVAL ('django_comment_common_coursediscussionsettings_seq'),
   course_id varchar(255) NOT NULL,
-  always_divide_inline_discussions smallint NOT NULL,
+  always_divide_inline_discussions bool NOT NULL,
   divided_discussions text,
   division_scheme varchar(20) NOT NULL,
   discussions_id_map text,
@@ -1779,7 +1779,7 @@ CREATE SEQUENCE django_comment_common_forumsconfig_seq;
 CREATE TABLE django_comment_common_forumsconfig (
   id int NOT NULL DEFAULT NEXTVAL ('django_comment_common_forumsconfig_seq'),
   change_date timestamptz(6) NOT NULL,
-  enabled smallint NOT NULL,
+  enabled bool NOT NULL,
   connection_timeout double precision NOT NULL,
   changed_by_id int DEFAULT NULL,
   PRIMARY KEY (id)

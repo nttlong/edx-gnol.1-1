@@ -2,36 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f50f91e-e486-4044-8add-6e1ef7068740" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../xdj/postsql/tables4.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/controllers/course_invitation_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/controllers/course_search_reindex_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/controllers/courseware_team_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/views/course_invitation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/views/courseware_team.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../cms/djangoapps/contentstore/courseware_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../cms/djangoapps/contentstore/courseware_index.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capa/capa/templates/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../capa/capa/templates/course_experience/course-messages-fragment.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../lms/static/js/student_account/models/user_account_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../lms/static/js/student_account/models/user_account_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../openedx/features/course_experience/templates/course_experience/course-messages-fragment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/manage_users.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/manage_users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/settings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/ux/reference/fragments/course-settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/ux/reference/fragments/course-settings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj-gnol-lms-templates/course_experience/course-messages-fragment.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj-gnol-lms-templates/course_experience/course-messages-fragment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj-gnol-lms-templates/xdj-htmls/course_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj-gnol-lms-templates/xdj-htmls/course_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj/config/elastic_search.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/config/elastic_search.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj/config/forum.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/config/forum.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj_apps/sysadmin/controllers/system_users.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_apps/sysadmin/controllers/system_users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj_apps/xlms/bll/courses.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_apps/xlms/bll/courses.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj_apps/xlms/bll/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_apps/xlms/bll/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj_apps/xlms/controllers/course_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_apps/xlms/controllers/course_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/static/fix.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/static/fix.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj/postsql/tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/postsql/tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj/postsql/tables4.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/postsql/tables4.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_apps/xlms/static/site.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +35,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -68,7 +47,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">

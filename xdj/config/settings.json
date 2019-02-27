@@ -91,6 +91,8 @@
   "LMS_ROOT_URL":"http://0.0.0.0:8000",
   "LMS_BASE":"0.0.0.0:8000",
   "CMS_BASE": "0.0.0.0:8001",
-  "PROFILE_IMAGE_SECRET_KEY": "placeholder_secret_key"
-
+  "PROFILE_IMAGE_SECRET_KEY": "placeholder_secret_key",
+  "ENABLE_ENTERPRISE_INTEGRATION": true,
+  "COMMENTS_SERVICE_KEY": "8f0154b617e3c6599b00abfb0f33b94d19dd",
+  "COMMENTS_SERVICE_URL": "http://localhost:18080"
 }

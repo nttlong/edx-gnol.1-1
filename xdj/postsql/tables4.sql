@@ -34,3 +34,47 @@ CREATE TABLE proctoring_proctoredexamstudentallowance (
 ) ;
 
 CREATE INDEX db55b83a7875e70b3a0ebd1f81a898d8 ON proctoring_proctoredexamstudentallowance (proctored_exam_id);
+
+
+CREATE SEQUENCE teams_courseteam_seq;
+
+CREATE TABLE teams_courseteam (
+  id int NOT NULL DEFAULT NEXTVAL ('teams_courseteam_seq'),
+  team_id varchar(255) NOT NULL,
+  discussion_topic_id varchar(255) NOT NULL,
+  name varchar(255) NOT NULL,
+  course_id varchar(255) NOT NULL,
+  topic_id varchar(255) NOT NULL,
+  date_created timestamptz(6) NOT NULL,
+  description varchar(300) NOT NULL,
+  country varchar(2) NOT NULL,
+  language varchar(16) NOT NULL,
+  last_activity_at timestamptz(6) NOT NULL,
+  team_size int NOT NULL,
+  PRIMARY KEY (id),
+  CONSTRAINT team_id UNIQUE  (team_id),
+  CONSTRAINT discussion_topic_id UNIQUE  (discussion_topic_id)
+) ;
+
+CREATE INDEX teams_courseteam_b068931c ON teams_courseteam (name);
+CREATE INDEX teams_courseteam_ea134da7 ON teams_courseteam (course_id);
+CREATE INDEX teams_courseteam_19b4d727 ON teams_courseteam (topic_id);
+CREATE INDEX teams_courseteam_5ea53fcc ON teams_courseteam (last_activity_at);
+CREATE INDEX teams_courseteam_181d83a1 ON teams_courseteam (team_size);
+
+
+CREATE SEQUENCE grades_computegradessetting_seq;
+
+CREATE TABLE grades_computegradessetting (
+  id int NOT NULL DEFAULT NEXTVAL ('grades_computegradessetting_seq'),
+  change_date timestamptz(6) NOT NULL,
+  enabled bool NOT NULL,
+  batch_size int NOT NULL,
+  course_ids text NOT NULL,
+  changed_by_id int DEFAULT NULL,
+  PRIMARY KEY (id)
+ ,
+  CONSTRAINT grades_computegradessetting_changed_by_id_f2bf3678_fk FOREIGN KEY (changed_by_id) REFERENCES auth_user (id)
+) ;
+
+CREATE INDEX grades_computegra_changed_by_id_6599c94d3a43e583_fk_auth_user_id ON grades_computegradessetting (changed_by_id);

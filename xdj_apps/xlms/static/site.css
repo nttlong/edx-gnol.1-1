@@ -532,6 +532,31 @@ body.view-in-course .wrapper-course-material, body.view-in-course .wrapper-previ
    padding: 0;
    height: 57px;
 }
+section.discussion button {
+    text-shadow: none !important;
+    box-shadow:none;
+    border-color:#0075b4;
+}
+section.discussion button:hover {
+    text-shadow: none !important;
+    color:#fff !important;
+}
+div.forum-search {
+    max-height:34px;
+}
+div.forum-search button.search-button {
+    border-left: none !important;
+    border-bottom-left-radius: unset;
+    border-top-left-radius: unset;
+    background-image: linear-gradient(to bottom,#0066a2 0%,#003781 50%,#002072 50%,#002575 100%);
+    color:#fff !important;
+
+}
+div.forum-search input.search-input {
+    border-right: none !important;
+    border-bottom-right-radius: unset;
+    border-top-right-radius: unset;
+}
  /* .dropdown.lang{
    margin-bottom: 16px;
    padding: 0;
