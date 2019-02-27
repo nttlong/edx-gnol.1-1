@@ -83,12 +83,13 @@ class __field__(object):
         self.__expr__ = Q(**expr)
         return self
 
-    def __lshift__(self, other):
+    def __rshift__(self, other):
         from django.db.models.functions import Concat
         from . import __express_field__
         if isinstance(other,__field__):
+            other.__alias__ = other.__f_name__
             other.__f_name__ = self.__f_name__
-            other.__alias__ = self.__f_name__
+
             return other
         elif isinstance(other,Concat):
             return __express_field__(self.__f_name__,other)
@@ -177,6 +178,12 @@ class __field__(object):
         self.__sort__ = "asc"
         return self
 
+    def __lshift__(self, other):
+        return {
+            self.__f_name__:other
+        }
+
+
 
 Fields = __fields__()
 
@@ -197,7 +204,7 @@ def create_model(name, fields=None, app_label='', module='', options=None, admin
 
     # Update Meta with any options that were provided
     if options is not None:
-        for key, value in options.iteritems():
+        for key, value in options.items():
             setattr(Meta, key, value)
 
     # Set up a dictionary to simulate declarations within a class
@@ -219,3 +226,10 @@ def create_model(name, fields=None, app_label='', module='', options=None, admin
     #     admin.site.register(model, Admin)
 
     return model
+
+def check_is_str(val):
+    import sys
+    if sys.version_info[0] == 3:
+        return type(val) is str
+    else:
+        return type(val) in [str,unicode]

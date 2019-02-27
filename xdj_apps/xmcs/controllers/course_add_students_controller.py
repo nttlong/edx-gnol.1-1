@@ -1,11 +1,11 @@
 import xdj
 @xdj.Controller(
-    url="course_invitation/(?P<course_key_string>[^/+]+(/|\+)[^/+]+(/|\+)[^/?]+)",
+    url="course_add_students/(?P<course_key_string>[^/+]+(/|\+)[^/+]+(/|\+)[^/?]+)",
     template="course_invitation.html"
 )
 class CourseInvitationController(xdj.BaseController):
     def on_get(self,model):
-        model.for_inviation = True
+        model.for_inviation =False
         return self.render(model)
     def doSearch(self,model):
         from django.contrib.auth.models import User

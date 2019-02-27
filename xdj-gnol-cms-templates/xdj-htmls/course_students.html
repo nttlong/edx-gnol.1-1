@@ -1,0 +1,72 @@
+<%page expression_filter="h"/>
+<%inherit file="base_settings.html"/>
+<%
+    import xdj
+    xdj.apply_context(self)
+%>
+
+<%block name="title">${self.res("Students")}</%block>
+
+<%block name="content_primary">
+<form id="settings_details" class="settings-details ng-pristine ng-valid" method="post" action="">
+        <div class="group-settings basic">
+
+
+            <div class="note note-promotion note-promotion-courseURL has-actions">
+
+
+            <ul class="list-actions">
+              <li class="action-item">
+
+                <a title="Send a note to students via email" href="javascript:void(0)" class="action action-primary" ng-click="$root.$dialog($id).url('/cms/course_invitation/${unicode(context_course.id)}').done()">
+                    <span class="icon fa fa-envelope-o icon-inline" aria-hidden="true"></span>${self.res("Invite your students")}</a>
+
+                <a title="Send a note to students via email" href="javascript:void(0);" class="action action-primary"  ng-click="$root.$dialog($id).url('/cms/course_add_students/${unicode(context_course.id)}').done()">
+                    <span class="icon fa  icon-inline" aria-hidden="true"></span>${self.res("Add students")}</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+        </div>
+
+      </form>
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="p in data.items">
+        <table>
+            <tbody>
+            <tr>
+                <td style="width:80px">
+                    <img src="{{p.img.medium}}" style="margin:4px">
+                </td>
+                <td style="width:100%;vertical-align: text-top;">
+                    <span>${self.res("Username")}</span>:{{p.username}}<br>
+                    <span>${self.res("Email")}</span>:{{p.email}}<br>
+                    <span>${self.res("Name")}</span>:{{p.first_name}}&nbsp;{{p.last_name}}<br>
+
+                </td>
+                <td style="min-width: 90px;">
+                    {{p.created|date:'dd-MM-yyyy'}}
+                </td>
+            </tr>
+            
+            </tbody>
+        </table>
+
+    </li>
+
+
+</ul>
+<ajax url="${currentUrl}">
+    <call data-id="loadStudents" ng-model="data"></call>
+</ajax>
+</%block>
+<%block name="angular">
+    <script>
+        function onInit(scope){
+
+        }
+    </script>
+</%block>

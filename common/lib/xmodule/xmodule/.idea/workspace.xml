@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f50f91e-e486-4044-8add-6e1ef7068740" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/xdj-htmls/base_settings.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/xdj-htmls/course_students.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/controllers/course_add_students_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/controllers/course_students_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../xdj_sql/error_description.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../xdj_sql/exceptions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../capa/capa/templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../capa/capa/templates/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj/config/forum.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/config/forum.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj/postsql/tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/postsql/tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj/postsql/tables4.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj/postsql/tables4.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_apps/xlms/static/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/widgets/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj-gnol-cms-templates/widgets/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/controllers/commons/edx_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/controllers/commons/edx_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/controllers/course_invitation_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/controllers/course_invitation_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/views/course_invitation.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_apps/xmcs/views/course_invitation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj_sql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_sql/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj_sql/funcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_sql/funcs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj_sql/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_sql/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../xdj_sql/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../xdj_sql/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,10 +35,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1853" />
-    <option name="height" value="1055" />
+    <option name="x" value="66" />
+    <option name="y" value="27" />
+    <option name="width" value="1833" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -84,7 +95,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3967213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

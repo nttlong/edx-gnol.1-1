@@ -1,0 +1,69 @@
+<%page expression_filter="h"/>
+<%inherit file="../base.html"/>
+<%
+    import xdj
+    xdj.apply_context(self)
+%>
+
+
+<%block name="bodyclass">is-signedin course schedule view-settings feature-upload</%block>
+
+<%namespace name='static' file='../static_content.html'/>
+<%!
+  import urllib
+  from django.utils.translation import ugettext as _
+  from contentstore import utils
+  from openedx.core.djangoapps.certificates.api import can_show_certificate_available_date_field
+  from openedx.core.djangolib.js_utils import (
+      dump_js_escaped_json, js_escaped_string
+  )
+  from openedx.core.djangolib.markup import HTML, Text
+%>
+
+<%block name="content">
+<div class="wrapper-mast wrapper">
+    <header class="mast has-subtitle">
+      <h1 class="page-header">
+        <small class="subtitle">${self.res("Info")}</small>
+        <span class="sr">&gt; </span>${self.res("Course students")}
+      </h1>
+    </header>
+  </div>
+
+
+
+<div class="wrapper-content wrapper">
+  <div class="content">
+    <div class="content-primary">
+        <%block name="content_primary"/>
+    </div>
+    <div class="content-supplementary" role="complementary">
+     <div class="bit">
+        <h3 class="title-3">${_("How are these settings used?")}</h3>
+        <p>${_("Your course's schedule determines when students can enroll in and begin a course.")}</p>
+
+        <p>${_("Other information from this page appears on the About page for your course. This information includes the course overview, course image, introduction video, and estimated time requirements. Students use About pages to choose new courses to take.")}</p>
+     </div>
+
+     <div class="bit">
+     % if context_course:
+          <%
+            course_team_url = utils.reverse_course_url('course_team_handler', context_course.id)
+            grading_config_url = utils.reverse_course_url('grading_handler', context_course.id)
+            advanced_config_url = utils.reverse_course_url('advanced_settings_handler', context_course.id)
+          %>
+        <h3 class="title-3">${_("Other Course Settings")}</h3>
+        <nav class="nav-related" aria-label="${_('Other Course Settings')}">
+          <ul>
+            <li class="nav-item"><a href="${grading_config_url}">${_("Grading")}</a></li>
+            <li class="nav-item"><a href="${course_team_url}">${_("Course Team")}</a></li>
+            <li class="nav-item"><a href="${utils.reverse_course_url('group_configurations_list_handler', context_course.id)}">${_("Group Configurations")}</a></li>
+            <li class="nav-item"><a href="${advanced_config_url}">${_("Advanced Settings")}</a></li>
+          </ul>
+        </nav>
+     % endif
+     </div>
+    </div>
+  </div>
+</div>
+</%block>

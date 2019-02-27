@@ -12,7 +12,7 @@
                 </div>
                 </div>
 
-            </div>
+
             <div>
                 <div span="12">&nbsp;</div>
             </div>
@@ -50,8 +50,7 @@
             </div>
             <div>
                 <div  span="12">
-
-                <div class="btn-toolbar pull-right" role="toolbar">
+                    <div class="btn-toolbar pull-right" role="toolbar">
                     <div class="btn-group">
 
                     </div>
@@ -65,6 +64,19 @@
                 </div>
                 </div>
             </div>
+            %if for_inviation:
+                <div>
+
+                    <div span="12">
+                         <div class="bit">
+                            <h3 class="title-3">${_//"What is students invitation?"}</h3>
+                            <p>${_//"The invitation will send email to students and waiting for their acceptance" }</p>
+                         </div>
+
+
+                    </div>
+                </div>
+            %endif
         </form-template>
     </form-layout>
 

@@ -7,6 +7,12 @@
   from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_enabled, released_languages
   from cms.djangoapps.contentstore.config.waffle_utils import should_show_checklists_page
 %>
+<%
+    import xdj
+    xdj.apply_context(self)
+
+
+%>
 <div class="wrapper-header wrapper" id="view-top">
   <header class="primary" role="banner">
 
@@ -29,6 +35,7 @@
             course_info_url = reverse('course_info_handler', kwargs={'course_key_string': unicode(course_key)})
             export_url = reverse('export_handler', kwargs={'course_key_string': unicode(course_key)})
             settings_url = reverse('settings_handler', kwargs={'course_key_string': unicode(course_key)})
+            students_url = "/cms/course_students/"+unicode(course_key)
             grading_url = reverse('grading_handler', kwargs={'course_key_string': unicode(course_key)})
             advanced_settings_url = reverse('advanced_settings_handler', kwargs={'course_key_string': unicode(course_key)})
             tabs_url = reverse('tabs_handler', kwargs={'course_key_string': unicode(course_key)})
@@ -79,18 +86,26 @@
               </div>
             </div>
           </li>
-
           <li class="nav-item nav-course-settings">
             <h3 class="title"><span class="label"><span class="label-prefix sr">${_("Course")} </span>${_("Settings")}</span> <span class="icon fa fa-caret-down ui-toggle-dd" aria-hidden="true"></span></h3>
 
             <div class="wrapper wrapper-nav-sub">
               <div class="nav-sub">
                 <ul>
-                  <li class="nav-item nav-course-settings-schedule">
+                  <script>
+                    function onMenuClick(evt){
+                        window.location.href=$(evt.target).find("a").attr("href")
+
+                    }
+                  </script>
+                  <li class="nav-item nav-course-settings-schedule" onclick="onMenuClick(event);">
                     <a href="${settings_url}">${_("Schedule & Details")}</a>
                   </li>
                   <li class="nav-item nav-course-settings-grading">
                     <a href="${grading_url}">${_("Grading")}</a>
+                  </li>
+                  <li class="nav-item nav-course-settings-grading">
+                    <a href="${students_url}">${self.res("Students")}</a>
                   </li>
                   <li class="nav-item nav-course-settings-team">
                     <a href="${course_team_url}">${_("Course Team")}</a>
