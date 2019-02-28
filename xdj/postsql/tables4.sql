@@ -78,3 +78,15 @@ CREATE TABLE grades_computegradessetting (
 ) ;
 
 CREATE INDEX grades_computegra_changed_by_id_6599c94d3a43e583_fk_auth_user_id ON grades_computegradessetting (changed_by_id);
+
+
+
+CREATE SEQUENCE courseware_options_seq;
+
+CREATE TABLE courseware_options (
+  id int NOT NULL DEFAULT NEXTVAL ('courseware_options_seq'),
+  course_id varchar(145) NOT NULL,
+  is_private bool NOT NULL,
+  PRIMARY KEY (id),
+  CONSTRAINT course_id_UNIQUE UNIQUE  (course_id)
+) ;

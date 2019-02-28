@@ -25,3 +25,12 @@ CREATE TABLE `edxval_videoimage` (
   UNIQUE KEY `course_video_id` (`course_video_id`),
   CONSTRAINT `edxval_course_video_id_595461bc0ff739b3_fk_edxval_coursevideo_id` FOREIGN KEY (`course_video_id`) REFERENCES `edxval_coursevideo` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `courseware_options` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `course_id` varchar(145) NOT NULL,
+  `is_private` smallint(6) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `course_id_UNIQUE` (`course_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
