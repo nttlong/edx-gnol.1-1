@@ -90,6 +90,8 @@ class qr(object):
                     self.__select_related__.append(
                         x.__f_name__
                     )
+        # self.__model__ = self.__model__.objects.get_queryset()
+
         return self
 
     def execute(self,model =None):
@@ -278,10 +280,11 @@ class qr(object):
             alias = _to.__model__._meta.db_table
         if null:
             alias = "_outer_"+alias
-
-        related_models = [x for x in  self.__model__._meta.fields if x.name == alias]
-        if related_models.__len__()>0:
-            return self
+        from django.db.models.base import ModelBase
+        if issubclass(type(self.__model__),ModelBase):
+            related_models = [x for x in  self.__model__._meta.fields if x.name == alias]
+            if related_models.__len__()>0:
+                return self
 
 
         from django.db import models as dj_models
@@ -297,8 +300,10 @@ class qr(object):
         fx.concrete = True
         fx.attname = _local_fields
         fx.column = _local_fields
-
-        self.__model__._meta.add_field(fx)
+        if issubclass(type(self.__model__), ModelBase):
+            self.__model__._meta.add_field(fx)
+        else:
+            self.__model__.model._meta.add_field(fx)
         return self
 
     def left_outer_join(self, to, local_fields,foreign_fields, alias=None):

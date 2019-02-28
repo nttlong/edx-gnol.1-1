@@ -131,3 +131,7 @@ CREATE TABLE courseware_authors (
   course_id VARCHAR(100) NULL,
   created_on TIMESTAMP(0) NULL,
   PRIMARY KEY (id));
+
+
+ALTER TABLE `course_overviews_courseoverview`
+ADD COLUMN `certificate_available_date` VARCHAR(45) NULL AFTER `language`;

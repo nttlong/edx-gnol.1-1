@@ -7,7 +7,7 @@ from datetime import datetime
 @table("courseware_options")
 class CoursewareOptions():
 
-    course = models.ForeignKey(CourseOverview,to_field="id",db_column="course_id")
+    course_id = fields.text()
     is_private = fields.boolean(require=True)
 
 

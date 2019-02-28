@@ -17,7 +17,13 @@ class CoursewareListController(CommonController):
             to=CoursewareAuthors,
             local_fields=CourseoverView.id,
             foreign_fields = CoursewareAuthors.course_id
-        ).select_related(builder.outer(CoursewareAuthors)).join(
+        ).select_related(builder.outer(CoursewareAuthors)).select(
+            builder.outer(CoursewareAuthors).user_id >> builder.fields.user_id
+        ).left_outer_join(
+            to = CoursewareOptions,
+            local_fields = builder.fields.user_id,
+            foreign_fields = CoursewareOptions.course_id
+        ).left_outer_join(
             to = AuthUser,
             local_fields = builder.outer(CoursewareAuthors).user_id,
             foreign_fields = AuthUser.id
@@ -28,7 +34,8 @@ class CoursewareListController(CommonController):
             CourseoverView.display_name,
             CourseoverView.language,
             builder.outer(CoursewareAuthors).user_id >> builder.fields.user_id,
-            builder.outer(CoursewareAuthors).user_id >> builder.fields.user_id
+            builder.outer(AuthUser).username >> builder.fields.author,
+            builder.outer(CoursewareOptions).is_private >> builder.fields.is_private
         )
 
 
