@@ -1,7 +1,9 @@
 from argparse import _ActionsContainer
 from django.db.utils import IntegrityError
 from . import utils
-
+Fields = utils.Fields
+from  . singeton import single, get_join_table
+from . import funcs as Funcs
 class __alias_field__(object):
 
     def __init__(self, expr):
@@ -74,10 +76,16 @@ class qr(object):
         if args.__len__()>0:
             for x in args:
                 try:
-                    if issubclass(x,Model):
+                    if type(x) in [str,unicode]:
+                        self.__select_related__.append(
+                            x
+                        )
+                    elif issubclass(x,Model):
                         self.__select_related__.append(
                             x.__name__
                         )
+
+
                 except TypeError as ex:
                     self.__select_related__.append(
                         x.__f_name__
@@ -144,7 +152,7 @@ class qr(object):
                     _sort_.append("-" + x["field"])
                     # qr_set = qr_set.order_by("-"+x["field"])
             qr_set = qr_set.order_by(*_sort_)
-        return qr_set
+        return qr_set.all()
 
     def count(self):
         return self.execute().count()
@@ -241,46 +249,64 @@ class qr(object):
                     return None, ret
         return item, None
 
+    def join(self,to,local_fields, foreign_fields,null= False, alias=None):
+        """
+        :param to:
+        :param local_fields:
+        :param foreign_fields:
+        :return:
+        """
 
-    def join(self,to,local_fields, foreign_fields):
+        """
+        Search is existing
+        """
+        from . import utils
+        _to = to
+        _foreign_fields = foreign_fields
+        _local_fields = local_fields
+
+        if isinstance(local_fields,utils.__field__):
+            _local_fields = local_fields.__f_name__
+        if isinstance(_foreign_fields,utils.__field__):
+            _foreign_fields = _foreign_fields.__f_name__
+
+        if issubclass(type(to),models.Base):
+            _to = to.__model__
+            if not alias:
+                alias = to.__origin_class__.__name__
+        if not alias:
+            alias = _to.__model__._meta.db_table
+        if null:
+            alias = "_outer_"+alias
+
+        related_models = [x for x in  self.__model__._meta.fields if x.name == alias]
+        if related_models.__len__()>0:
+            return self
+
+
         from django.db import models as dj_models
-        class obj(object):
-            pass
-        link = obj()
-        link.nullable = None
-        # link_type = obj()
-        # link_type.join_type = 'INNER JOIN'
-        link.table_name = to.__model__.__name__
-        link.parent_alias = to.__model__._meta.db_table
-        link.join_type = 'INNER JOIN'
-        INNER = 'INNER JOIN'
-        LOUTER = 'LEFT OUTER JOIN'
-        # _qr = self.__model__.objects.all().query
-        # _qr.alias_map.update({
-        #     link.parent_alias: link_type
-        # })
-        # _qr.join(link)
-        #Depts = models.ForeignKey(to=Depts.__model__,to_field="id",db_column="DeptId")
 
-        lookup_field = dj_models.ForeignKey(
-            to=to.__model__,
-            to_field=foreign_fields.__f_name__,
-            db_column=local_fields.__f_name__,
-            related_name="Depts"
+        fx = dj_models.ForeignKey(
+            to=_to,
+            to_field=_foreign_fields,
+            related_name=_local_fields,
+            null= null
+        )
+        fx.model = self.__model__
+        fx.name = alias
+        fx.concrete = True
+        fx.attname = _local_fields
+        fx.column = _local_fields
+
+        self.__model__._meta.add_field(fx)
+        return self
+
+    def left_outer_join(self, to, local_fields,foreign_fields, alias=None):
+        return self.join(
+            to,local_fields,foreign_fields,True,alias
+        )
 
 
-
-            )
-        lookup_field.concrete = True
-        lookup_field.model = to.__model__
-        lookup_field.column = local_fields.__f_name__
-        lookup_field.attname = local_fields.__f_name__
-        self.__model__._meta.add_field(lookup_field)
-        print (self.__model__.objects.all())
-        # self.__model__.objects.all().query.join(link)
-        # fx = self.__model__.objects.all().query.join(link)
-
-        pass
 
 
 class obj_data(object):
@@ -292,7 +318,23 @@ class obj_data(object):
 
 
 
-Fields = utils.Fields
-from . import funcs as Funcs
+
+
 from . models import table
 from . models import fields
+
+
+class builder():
+    @staticmethod
+    def query(model):
+        return qr(model)
+    fields = utils.Fields
+    funcs = Funcs
+    @staticmethod
+    def outer(model):
+        if issubclass(type(model),models.Base):
+            return getattr(utils.Fields,"_outer_"+model.__origin_class__.__name__)
+
+        return model
+
+
