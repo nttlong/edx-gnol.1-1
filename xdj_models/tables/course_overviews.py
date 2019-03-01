@@ -44,3 +44,4 @@ class CourseoverView():
     eligible_for_financial_aid = fields.boolean()
     language = fields.text()
     certificate_available_date = fields.date()
+    c= fields.lookup()
