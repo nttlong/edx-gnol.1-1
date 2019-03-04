@@ -46,6 +46,7 @@
   "ENABLE_LIBRARY_INDEX": true,
   "PIPELINE_ENABLED": false,
   "CUSTOM_SETTINGS_ADVANCED": false,
+
   "SUPPORT_LANGUAGES": [
     {
       "code": "en",
@@ -67,8 +68,8 @@
         },
         "VIDEO_TRANSCRIPTS_MAX_BYTES": 3145728
     },
-  "COMMENTS_SERVICE_KEY": "b3943ccb6e74",
-  "COMMENTS_SERVICE_URL": "http://172.16.7.63:18080/",
+  "COMMENTS_SERVICE_KEY_": "b3943ccb6e74",
+  "COMMENTS_SERVICE_URL_": "http://172.16.7.63:18080/",
   "DEBUG_TOOLBAR_PANELS_":[
      "debug_toolbar.panels.versions.VersionsPanel",
      "debug_toolbar.panels.timer.TimerPanel",

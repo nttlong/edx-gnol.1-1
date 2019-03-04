@@ -1154,7 +1154,7 @@ CREATE TABLE site_configuration_siteconfigurationhistory (
   modified timestamptz(6) NOT NULL,
   values text NOT NULL,
   site_id int NOT NULL,
-  enabled smallint NOT NULL,
+  enabled bool NOT NULL,
   PRIMARY KEY (id)
  ,
   CONSTRAINT site_configuration_si_site_id_20c9c1a5f8c3358e_fk_django_site_id FOREIGN KEY (site_id) REFERENCES django_site (id)

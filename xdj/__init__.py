@@ -5,6 +5,11 @@ Package này dùng để mở rộng open edx app (dạng micro app)
 """
 from webob.cachecontrol import value_property
 
+from django.conf import settings
+import sys
+import os
+sys.path.append(os.sep.join([settings.REPO_ROOT,"cms/djangoapps"]))
+
 __apps__={}
 __register_apps__ = {}
 __controllers__ = []
@@ -166,6 +171,7 @@ def register_INSTALLED_APPS(for_lms):
         load_email_settings()
         load_feature_settings()
         load_elastic_search_config()
+        load_forum_config()
         settings.MIDDLEWARE_CLASSES.append("xdj.middle_ware.GlobalRequestMiddleware")
     except Exception as ex:
         raise Exception(ex)

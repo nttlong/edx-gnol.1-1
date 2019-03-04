@@ -20,18 +20,19 @@ class CourseSearchController(EdxController):
         from qres.filter import Fields
         if not hasattr(model.post_data,"value") or model.post_data.value == "":
             ret = self.get_es().search_as_objects(doc_type = CourseAboutSearchIndexer.DISCOVERY_DOCUMENT_TYPE,page_size=9)
-            ret.items = [dict(
-                start= x._source.start,
-                display_name = x._source.content.display_name,
-                image_url = x._source.image_url,
-                org = x._source.org,
-                number = x._source.number,
-                id = x._source.id ,
-                organization=x._source.organization,
-                author=x._source.author,
-                subject=x._source.subject
+            for x in ret.items:
+                ret.items = [dict(
+                    start= x._source.start,
+                    display_name = x._source.content.display_name,
+                    image_url = x._source.image_url,
+                    org = x._source.org,
+                    number = x._source.number,
+                    id = x._source.id ,
+                    organization=x._source.organization,
+                    author=x._source.author,
+                    subject=x._source.subject
 
-            )  for x in ret.items]
+                )  for x in ret.items]
             return ret
         else:
             ret = self.get_es().search_as_objects(
