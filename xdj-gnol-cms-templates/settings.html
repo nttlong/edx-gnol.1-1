@@ -1,14 +1,10 @@
+
 <%page expression_filter="h"/>
 <%inherit file="base.html" />
 <%def name="online_help_token()"><% return "schedule" %></%def>
 <%block name="title">${_("Schedule & Details Settings")}</%block>
 <%block name="bodyclass">is-signedin course schedule view-settings feature-upload</%block>
-<%
-    import xdj
-    xdj.apply_context(self)
 
-
-%>
 <%namespace name='static' file='static_content.html'/>
 <%!
   import urllib
@@ -40,13 +36,13 @@ CMS.URL.UPLOAD_ASSET = '${upload_asset_url | n, js_escaped_string}'
 </%block>
 
 <%block name="requirejs">
-    /*require(["js/factories/settings"], function(SettingsFactory) {
+    require(["js/factories/settings"], function(SettingsFactory) {
         SettingsFactory(
             "${details_url | n, js_escaped_string}",
             ${show_min_grade_warning | n, dump_js_escaped_json},
             ${can_show_certificate_available_date_field(context_course) | n, dump_js_escaped_json}
         );
-    });*/
+    });
 </%block>
 
 <%block name="content">
@@ -112,16 +108,15 @@ CMS.URL.UPLOAD_ASSET = '${upload_asset_url | n, js_escaped_string}'
                   ).encode("utf-8"))
                 %>
                 <a title="${_('Send a note to students via email')}"
-                    href="javascript:void(0)" class="action action-primary" ng-click="$root.$dialog($id).url('/cms/course_invitation/${self.request.path.split('/')[self.request.path.split('/').__len__()-1]}').done()">
-                    <span class="icon fa fa-envelope-o icon-inline" aria-hidden="true"></span>${self.res("Invite your students")}</a>
-
+                    href="javascript:void(0);" class="action action-primary"
+                    ng-click="$root.$dialog($id).url('/cms/course_invitation/${self.request.path.split('/')[self.request.path.split('/').__len__()-1]}').done()">
+                    <span class="icon fa fa-envelope-o icon-inline" aria-hidden="true"></span>${_("Invite your students")}</a>
                 <a title="${_('Send a note to students via email')}"
                     href="/cms/course_students/${self.request.path.split('/')[self.request.path.split('/').__len__()-1]}" class="action action-primary">
                     <span class="icon fa  icon-inline" aria-hidden="true"></span>${self.res("Students of this course")}</a>
               </li>
 
             </ul>
-
           </div>
           % endif
 
@@ -214,9 +209,9 @@ CMS.URL.UPLOAD_ASSET = '${upload_asset_url | n, js_escaped_string}'
             </ol>
           </fieldset>
         </div>
-        
+
         <hr class="divide" />
-        
+
         <div id="schedule" class="group-settings schedule">
           <header>
             <h2 class="title-2">${_('Course Schedule')}</h2>
@@ -654,3 +649,6 @@ CMS.URL.UPLOAD_ASSET = '${upload_asset_url | n, js_escaped_string}'
   </div>
 </div>
 </%block>
+
+
+
