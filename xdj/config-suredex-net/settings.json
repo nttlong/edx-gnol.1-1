@@ -1,0 +1,99 @@
+{
+  "PLATFORM_NAME": "Lacviet",
+  "ENTRANCE_EXAMS": true,
+  "BULK_EMAIL_MAX_RETRIES": 5,
+  "BULK_EMAIL_DEFAULT_RETRY_DELAY": 30,
+  "GRADES_DOWNLOAD_ROUTING_KEY": "edx.core.high_mem",
+  "SESSION_EXPIRE_AT_BROWSER_CLOSE": true,
+  "DEFAULT_SITE_THEME_": "lv",
+  "ENABLE_COMPREHENSIVE_THEMING_": true,
+  "STATIC_ROOT_BASE_": "/home/nttlong/code/edx/apps/edx/edx-platform/xdj-edx-gnol-static",
+  "STATIC_ROOT_": "/home/nttlong/code/edx/apps/edx/edx-platform/xdj-edx-gnol-static",
+  "STATIC_GRAB": true,
+  "SESSION_COOKIE_AGE_": 10,
+  "MILESTONES_APP": true,
+  "STATIC_URL_BASE_": "/cms/static/xxx/",
+  "STATIC_URL_": "/cms/static/xxx/",
+  "STATICFILES_DIRS_": [
+    "/home/nttlong/code/edx/apps/edx/edx-platform/common/static",
+    "/home/nttlong/code/edx/apps/edx/edx-platform/cms/static"
+
+  ],
+  "MAKO_MODULE_DIR_": "/home/nttlong/code/edx/apps/edx/edx-platform/xdj-tmp-templates",
+  "LMS_TEMPLATE": "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/xdj-gnol-lms-templates",
+  "CMS_TEMPLATE": "/opt/edx-hawthorn.2-4/apps/edx/edx-platform/xdj-gnol-cms-templates",
+  "LMS_TEMPLATE_": "/home/nttlong/code/edx/apps/edx/edx-platform/xdj-gnol-lms-templates",
+  "CMS_TEMPLATE_": "/home/nttlong/code/edx/apps/edx/edx-platform/xdj-gnol-cms-templates",
+  "MAKO_TEMPLATE_DIRS_BASE_": [
+    "xdj-gnol-lms-templates/wiki",
+    "common/templates"
+  ],
+  "WEBPACK_LOADER_":{
+    "DEFAULT": {
+      "BUNDLE_DIR_NAME": "bundles/",
+      "STATS_FILE":"/home/nttlong/code/edx/apps/edx/var/staticfiles/studio/webpack-stats.json"
+    }
+  },
+  "WEBPACK_CONFIG_PATH_": "webpack.dev.config.js",
+  "WIKI_ENABLED": true,
+  "CMS_ROOT_": "/home/nttlong/code/edx/apps/edx/edx-platform/cms/xx",
+  "FAVICON_PATH":"mages/favicon.ico",
+  "LMS_SEGMENT_KEY": "as103",
+  "EMAIL_TEMPLATE_PATH": "/home/nttlong/code/edx/apps/edx/edx-platform/xdj/email_templates",
+  "COLLECTION_TOKENS": "sys.tokens",
+  "COLLECTION_LANGUAGE": "sys.langs",
+  "ENABLE_COURSEWARE_INDEX": true,
+  "ENABLE_LIBRARY_INDEX": true,
+  "PIPELINE_ENABLED": false,
+  "CUSTOM_SETTINGS_ADVANCED": false,
+
+  "SUPPORT_LANGUAGES": [
+    {
+      "code": "en",
+      "name": "English"
+    },
+    {
+      "code": "vi",
+      "name": "Tiếng Việt"
+    }
+  ],
+  "MEDIA_ROOT": "/opt/edx-hawthorn.2-4/apps/edx/var/media",
+  "USE_TZ": true,
+  "TIME_ZONE": "UTC",
+  "VIDEO_TRANSCRIPTS_SETTINGS": {
+        "DIRECTORY_PREFIX": "video-transcripts-new/",
+        "STORAGE_KWARGS": {
+            "base_url": "/media/",
+            "location": "/opt/edx-hawthorn.2-4/apps/edx/var/media/"
+        },
+        "VIDEO_TRANSCRIPTS_MAX_BYTES": 3145728
+    },
+  "COMMENTS_SERVICE_KEY_": "b3943ccb6e74",
+  "COMMENTS_SERVICE_URL_": "http://172.16.7.63:18080/",
+  "DEBUG_TOOLBAR_PANELS_":[
+     "debug_toolbar.panels.versions.VersionsPanel",
+     "debug_toolbar.panels.timer.TimerPanel",
+     "debug_toolbar.panels.settings.SettingsPanel",
+     "debug_toolbar.panels.headers.HeadersPanel",
+     "debug_toolbar.panels.request.RequestPanel",
+     "debug_toolbar.panels.sql.SQLPanel",
+     "debug_toolbar.panels.signals.SignalsPanel",
+     "debug_toolbar.panels.logging.LoggingPanel",
+     "debug_toolbar.panels.profiling.ProfilingPanel"],
+  "PREVIEW_LMS_BASE": "0.0.0.0:8000",
+  "MAX_UPLOAD_SIZE": "5242880",
+  "MAX_ASSET_UPLOAD_FILE_SIZE_IN_MB": 100,
+  "ADDL_INSTALLED_APPS": ["edx_sga"],
+  "AWS_ACCESS_KEY_ID": "xzyj1277",
+  "AWS_SECRET_ACCESS_KEY": "cdxa-0kdn",
+  "AWS_STORAGE_BUCKET_NAME": "sga",
+  "OPTIONAL_APPS": ["edx_sga"],
+  "ADVANCED_COMPONENT_TYPES": ["edx_sga"],
+  "LMS_ROOT_URL":"http://0.0.0.0:8000",
+  "LMS_BASE":"0.0.0.0:8000",
+  "CMS_BASE": "0.0.0.0:8001",
+  "PROFILE_IMAGE_SECRET_KEY": "placeholder_secret_key",
+  "ENABLE_ENTERPRISE_INTEGRATION": true,
+  "COMMENTS_SERVICE_KEY": "8f0154b617e3c6599b00abfb0f33b94d19dd",
+  "COMMENTS_SERVICE_URL": "http://localhost:18080"
+}

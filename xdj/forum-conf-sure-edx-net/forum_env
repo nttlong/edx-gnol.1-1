@@ -1,0 +1,7 @@
+
+export API_KEY="9198a36ca5349defcc6ecc1d3235390bd47a"
+export MONGOHQ_URL="mongodb://root:123456@172.16.7.63:27018/lv_openedx"
+export SEARCH_SERVER="http://localhost:9200"
+export RACK_ENV="production"
+export SINATRA_ENV="production"
+export NEWRELIC_ENABLE="False"
