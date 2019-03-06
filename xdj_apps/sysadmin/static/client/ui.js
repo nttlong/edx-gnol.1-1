@@ -166,7 +166,10 @@ function dialog($scope) {
         }
         $scope.$root.$compile(frm.contents())(subScope);
         subScope.$element = $(frm.children()[0]);
-        subScope.$applyAsync();
+        setTimeout(function(){
+            subScope.$applyAsync();
+        },100)
+
 
         return subScope;
     }
@@ -180,6 +183,10 @@ function dialog($scope) {
                 me._url = _url;
             }
 
+            return me;
+        }
+        me.onclose = me.onClose = function(callback){
+            me._onClose =callback;
             return me;
         }
         me.params=function(data){
@@ -196,13 +203,20 @@ function dialog($scope) {
                     $mask.remove();
                     var ret = getScript(res);
                     var sScope = compile(scope, ret.scripts, ret.content,me._params);
+
                     if (callback) {
                         callback(sScope);
                     }
                     sScope.$element.appendTo("body");
                     function watch() {
                         if (!$.contains($("body")[0], sScope.$element[0])) {
+
+                            if(me._onClose){
+                                me._onClose();
+                            }
+                            me._onClose = undefined;
                             sScope.$destroy();
+                            return;
                         }
                         else {
                             setTimeout(watch, 500);
@@ -215,15 +229,7 @@ function dialog($scope) {
 
                         });
 
-                    function watch() {
-                        if (!$.contains($("body")[0], sScope.$element[0])) {
 
-                            sScope.$destroy();
-                        }
-                        else {
-                            setTimeout(watch, 500);
-                        }
-                    }
                     sScope.$doClose = function () {
                         sScope.$element.modal('hide')
                     }

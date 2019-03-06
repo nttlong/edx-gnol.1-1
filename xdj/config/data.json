@@ -4,8 +4,8 @@
       "name":"lv_openedx",
       "user": "postgres",
       "password": "123456",
-      "host": "172.16.7.67",
-      "port": "5433"
+      "host": "localhost",
+      "port": "5432"
   },
   "sql_mssql": {
 
@@ -60,7 +60,7 @@
     "port": 27017,
     "user": "root",
     "password": "123456",
-    "name": "lv_openedx"
+    "name": "openedx"
   },
   "mongo_63": {
     "host": "172.16.7.67",
