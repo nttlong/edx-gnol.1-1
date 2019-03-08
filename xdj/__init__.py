@@ -247,6 +247,7 @@ def load_apps(urlpatterns=None):
     :param urlpatterns:
     :return:
     """
+    from exceptions import IOError
     import os
     from django.conf import settings
     from . import private_services as ps
@@ -286,7 +287,12 @@ def load_apps(urlpatterns=None):
             setattr(xdj, "apps", imp.new_module("xdj.apps"))
         if not hasattr(xdj.apps, item):
             setattr(xdj.apps, item, imp.new_module("xdj.apps.{0}".format(item)))
-        app_settings = imp.load_source("xdj.apps.{0}.settings".format(item),os.sep.join([path_to_app_dir,item,"settings.py"]))
+        try:
+            app_settings = imp.load_source("xdj.apps.{0}.settings".format(item),os.sep.join([path_to_app_dir,item,"settings.py"]))
+        except IOError as ex:
+            raise Exception("{0} was not found ".format(item),os.sep.join([path_to_app_dir,item,"settings.py"]))
+        except Exception as ex:
+            raise ex
         if not hasattr(app_settings,"app_name"):
             raise Exception("'{0}' was not found in '{1}'".format(
                 "app_name",

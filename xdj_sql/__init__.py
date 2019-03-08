@@ -48,7 +48,7 @@ class qr(object):
         self.__select_related__ = []
         self.__sort__ = []
 
-    def select(self,*args,**kwargs):
+    def select(self,*args, **kwargs):
         from django.db.models.fields import DeferredAttribute
         from . utils import __field__, check_is_str
         from . import __express_field__
