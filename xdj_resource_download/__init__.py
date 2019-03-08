@@ -14,6 +14,7 @@ def create_new_download(filename):
     return DownloadInfo(
         dir_path = folderpath,
         file_path = filepath,
+        file_name = filename,
         token = dirname
     )
 

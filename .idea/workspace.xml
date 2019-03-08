@@ -2,205 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76d17d1-ee98-4620-ad71-9e5a4ffb3d0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/openpyxl/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/_constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/cell/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/cell/_writer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/cell/cell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/cell/read_only.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/cell/text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/_3d.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/_chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/area_chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/axis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/bar_chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/bubble_chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/chartspace.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/data_source.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/descriptors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/error_bar.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/label.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/layout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/legend.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/line_chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/marker.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/picture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/pie_chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/plotarea.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/print_settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/radar_chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/reference.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/scatter_chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/series.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/series_factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/shapes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/stock_chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/surface_chart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/title.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/trendline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chart/updown_bars.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chartsheet/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chartsheet/chartsheet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chartsheet/custom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chartsheet/properties.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chartsheet/protection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chartsheet/publish.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chartsheet/relation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/chartsheet/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/comments/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/comments/author.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/comments/comment_sheet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/comments/comments.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/comments/shape_writer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/compat/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/compat/abc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/compat/accumulate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/compat/numbers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/compat/singleton.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/compat/strings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/descriptors/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/descriptors/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/descriptors/excel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/descriptors/namespace.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/descriptors/nested.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/descriptors/sequence.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/descriptors/serialisable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/descriptors/slots.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/colors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/connector.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/drawing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/effect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/fill.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/geometry.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/graphic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/line.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/picture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/properties.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/relation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/spreadsheet_drawing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/drawing/xdr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/formatting/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/formatting/formatting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/formatting/rule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/formula/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/formula/tokenizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/formula/translate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/packaging/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/packaging/core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/packaging/extended.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/packaging/interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/packaging/manifest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/packaging/relationship.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/packaging/workbook.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/pivot/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/pivot/cache.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/pivot/fields.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/pivot/record.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/pivot/table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/reader/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/reader/drawings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/reader/excel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/reader/strings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/reader/workbook.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/alignment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/borders.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/builtins.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/cell_style.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/colors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/differential.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/fills.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/fonts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/named_styles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/numbers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/protection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/proxy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/styleable.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/stylesheet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/styles/table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/bound_dictionary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/cell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/dataframe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/datetime.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/escape.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/formulas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/indexed_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/inference.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/protection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/utils/units.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/_writer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/child.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/defined_name.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/external_link/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/external_link/external.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/external_reference.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/function_group.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/properties.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/protection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/smart_tags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/web.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/workbook/workbook.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/_read_only.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/_write_only.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/_writer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/cell_range.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/cell_watch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/controls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/copier.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/custom.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/datavalidation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/dimensions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/drawing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/errors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/header_footer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/hyperlink.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/merge.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/ole.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/pagebreak.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/picture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/properties.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/protection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/related.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/scenario.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/smart_tag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/table.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/worksheet/worksheet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/writer/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/writer/excel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/writer/theme.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/xml/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/xml/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openpyxl/xml/functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/resource/download_excel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj_excel/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj_excel/column_info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj_resource_download/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xdj_resource_download/download_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_download_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_upload_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_pdf/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj/config/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/config/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/config/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/static/client/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/static/client/ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subject.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subject.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/static/client/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/static/client/ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/xmcs/static/client/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xmcs/static/client/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_resource_download/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_resource_download/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_resource_download/download_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_resource_download/download_info.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -210,20 +19,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj/config/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+            <state relative-caret-position="319">
+              <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="97" column="51" lean-forward="true" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
+            <state relative-caret-position="186">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_download_controller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -231,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj_resource_download/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="188">
+              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -240,29 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj_resource_download/download_info.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_excel/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-              <folding>
-                <element signature="e#902#1683#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_excel/column_info.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="60">
+              <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -270,17 +67,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="75">
+              <caret line="5" column="147" selection-start-line="5" selection-start-column="147" selection-end-line="5" selection-end-column="147" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/resource/download_excel.html">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_upload_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="104" selection-start-line="11" selection-start-column="104" selection-end-line="11" selection-end-column="104" />
+            <state relative-caret-position="105">
+              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/upload.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -288,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/openpyxl/worksheet/_writer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
+            <state relative-caret-position="555">
               <caret line="60" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
@@ -308,8 +114,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -360,11 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xdj_sql/utils.py" />
-        <option value="$PROJECT_DIR$/xdj_models/dj/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj_sql/models.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/commons/edx_controller.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/course_students_controller.py" />
         <option value="$PROJECT_DIR$/xdj-gnol-cms-templates/xdj-htmls/course_students.html" />
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/course_add_students_controller.py" />
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/controllers/course_invitation_controller.py" />
@@ -405,19 +206,24 @@
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_download_excel_controller.py" />
         <option value="$PROJECT_DIR$/xdj_excel/column_info.py" />
         <option value="$PROJECT_DIR$/xdj_excel/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj_resource_download/download_info.py" />
         <option value="$PROJECT_DIR$/xdj/config/settings.json" />
-        <option value="$PROJECT_DIR$/xdj_resource_download/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/resource/download_excel.html" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_pdf/__init__.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/xmcs/excel_download_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_resource_download/download_info.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_download_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_resource_download/__init__.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_upload_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/upload.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="114" />
-    <option name="width" value="1038" />
+    <option name="width" value="1048" />
     <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -437,7 +243,20 @@
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj_resource_download" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="sysadmin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="sysadmin" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -448,23 +267,23 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="editorconfig.notification" value="spaces" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/openpyxl/workbook/workbook.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../.." />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/xdj_models/tables" />
-      <recent name="$PROJECT_DIR$/xdj_apps/xmcs/static/fonts" />
-      <recent name="$PROJECT_DIR$/qres" />
-      <recent name="$PROJECT_DIR$/xdj_apps/xmcs/static" />
-      <recent name="$PROJECT_DIR$/cms/static/studio/css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/xdj_apps/xlms/static/banner" />
       <recent name="$PROJECT_DIR$/xdj" />
       <recent name="$PROJECT_DIR$/xdj_apps/xmcs/static/flags" />
       <recent name="$PROJECT_DIR$/pure" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xdj_apps/sysadmin/controllers" />
+      <recent name="$PROJECT_DIR$/xdj_apps/xmcs/controllers" />
+      <recent name="$PROJECT_DIR$/xdj_models/tables" />
+      <recent name="$PROJECT_DIR$/xdj_apps/xmcs/static/fonts" />
+      <recent name="$PROJECT_DIR$/qres" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -588,20 +407,20 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15081967" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27431694" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4697624" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41900647" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.1911447" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.19073276" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.30777538" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.5572354" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24958494" />
@@ -780,6 +599,16 @@
           <line>221</line>
           <option name="timeStamp" value="783" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/pdfkit/api.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="785" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/pdfkit/pdfkit.py</url>
+          <line>141</line>
+          <option name="timeStamp" value="787" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -803,30 +632,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/controllers/course_search.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config-suredex-net/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config-suredex-net/forum.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config/forum.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/conf-sure-edx-net/forum_env" />
-    <entry file="file://$PROJECT_DIR$/xdj/conf-sure-edx-net/httpd-forum.conf" />
     <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/requests/adapters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -968,13 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/static/client/ui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
@@ -1060,17 +858,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_download_excel_controller.py">
+    <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        <state relative-caret-position="1455">
+          <caret line="97" column="51" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/openpyxl/worksheet/_writer.py">
+    <entry file="file://$PROJECT_DIR$/xdj_pdf/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/pdfkit/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/pdfkit/pdfkit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="146" column="37" selection-start-line="146" selection-start-column="37" selection-end-line="146" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_excel/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1081,44 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_excel/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-          <folding>
-            <element signature="e#902#1683#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_resource_download/download_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="97" column="51" lean-forward="true" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_resource_download/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/resource/download_excel.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1126,10 +907,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/openpyxl/worksheet/_writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_download_excel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/config/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="54" column="29" lean-forward="true" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_resource_download/download_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_resource_download/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+        <state relative-caret-position="186">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="147" selection-start-line="5" selection-start-column="147" selection-end-line="5" selection-end-column="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_download_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_upload_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/upload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
         </state>
       </provider>
     </entry>
