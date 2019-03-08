@@ -189,7 +189,7 @@ function dialog($scope) {
         me.params=function(data){
             me._params=data;
             return me;
-        }''
+        }
         me.done = function (callback) {
 
             var $mask=$("<div class='mask'></div>").appendTo("body");

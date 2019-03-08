@@ -1085,5 +1085,5 @@ if settings.FEATURES.get('ENABLE_API_DOCS'):
 urlpatterns.extend(plugin_urls.get_patterns(plugin_constants.ProjectType.LMS))
 import os
 import xdj
-_path = os.sep.join([settings.REPO_ROOT.__str__(),"xdj_apps"])
-urlpatterns = xdj.load_apps(_path,urlpatterns)
+
+urlpatterns = xdj.load_apps(urlpatterns)

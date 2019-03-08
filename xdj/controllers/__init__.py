@@ -16,12 +16,19 @@ lock = threading.Lock()
 def clear_language_cache():
     global __lang_cache__
     __lang_cache__ = {}
+
+
 class Res(object):
     """
-    This class sever for language resource item getter with three level
+    This class serve for language resource item getter with three level
     1- Global:The item apply at global could be access for all application
     2- Application:The item apply at application could be access for all view in application
     3- View:The item apply at view could be access for specific view in application
+
+    Lớp này phục vụ cho trình thu thập mục tài nguyên ngôn ngữ với ba cấp độ
+     1- Toàn cục: Mục áp dụng tại toàn cầu có thể được truy cập cho tất cả các ứng dụng
+     2- Ứng dụng: Mục áp dụng tại ứng dụng có thể được truy cập cho tất cả các chế độ xem trong ứng dụng
+     3- Chế độ tính năng: Mục áp dụng tại chế độ xem có thể được truy cập để xem cụ thể trong ứng dụng
     """
     def __init__(self,on_get_lang_item,app_name,view_name):
         if app_name==None:
@@ -29,6 +36,7 @@ class Res(object):
         self.app_name=app_name
         self.view_name=view_name
         self.on_get_lang_item=on_get_lang_item
+
     def g(self,key,value=None):
         """
         Get global language item resource
@@ -67,6 +75,7 @@ class Res(object):
                 raise ex
         else:
             return __lang_cache__[_key]
+
     def a(self,key,value=None):
         """
         Get application language resource
@@ -106,6 +115,7 @@ class Res(object):
                 raise ex
         else:
             return __lang_cache__[_key]
+
     def v(self,key,value=None):
         """
         Get View Item reources
@@ -146,6 +156,7 @@ class Res(object):
                 raise ex
         else:
             return __lang_cache__[_key]
+
     def __floordiv__(self, other):
         """
         Get global application resource at html template can be use _//"My label"
@@ -159,6 +170,7 @@ class Res(object):
                 return self.g(other[0])
         elif type(other) in [str,unicode]:
             return  self.g(other)
+
     def __gt__(self, other):
         """
         Get Language resource at view at html template can be use _>"My Lable"
@@ -172,6 +184,7 @@ class Res(object):
                 return self.v(other[0])
         elif type(other) in [str,unicode]:
             return  self.v(other)
+
     def __rshift__(self, other):
         """
         Get application resource at template can be use _>>"My lable"
@@ -185,16 +198,22 @@ class Res(object):
                 return self.a(other[0])
         elif type(other) in [str,unicode]:
             return  self.a(other)
+
+
 class PostData(object):
     pass
+
+
 class ModelUser(object):
     def __init__(self):
         self.username=""
-        self.is_staff=False
-        self.is_superuser=False
-        self.is_active=False
+        self.is_staff= False
+        self.is_superuser= False
+        self.is_active= False
+
     def is_anonymous(self):
         return
+
 
 def to_json(data):
     import xdj.JSON
@@ -202,6 +221,10 @@ def to_json(data):
 
 
 class Model(object):
+    """
+    The model definition for all template rendering
+    Định nghĩa mô hình cho tất cả kết xuất mẫu
+    """
     def __init__(self):
         from django.utils.translation import ugettext
         import urllib
@@ -223,10 +246,10 @@ class Model(object):
         print "debugger"
 
 
-
 class __controller_wrapper__(object):
     """
-    Controllwer wrapper class
+    Controller wrapper class. Wrap and return single instance of Controller
+    Controller wrapper class. Gói và trả lại một thể hiện của Bộ điều khiển
     """
     def __init__(self,*args,**kwargs):
         self.url=kwargs["url"]
@@ -300,11 +323,25 @@ class __controller_wrapper__(object):
         else:
             raise Exception("{0} mus be inherit from {1}".format(self.controllerClass,BaseController))
 
-def __createModelFromRequest__(request,rel_login_url,res,host_dir,on_authenticate,settings):
+
+def __create_model_from_request__(request, rel_login_url, res,host_dir, on_authenticate, settings):
+    """
+    Create basic model before process a request in controller
+    Tạo mô hình cơ bản trước khi xử lý yêu cầu trong bộ điều khiển
+    :param request:
+    :param rel_login_url:
+    :param res:
+    :param host_dir:
+    :param on_authenticate:
+    :param settings:
+    :return:
+    """
+
+
     from django.shortcuts import redirect
     from django.template.context_processors import csrf
 
-    model = Model();
+    model = Model()
     model.request = request
     model.currentUrl = request.build_absolute_uri().split("?")[0]
     model.absUrl = model.currentUrl[0:model.currentUrl.__len__() - request.path.__len__()]
@@ -317,10 +354,24 @@ def __createModelFromRequest__(request,rel_login_url,res,host_dir,on_authenticat
     model.settings = settings
 
     return model
-def Controller(*args,**kwargs):
-    ret = __controller_wrapper__(*args,**kwargs)
+
+
+def Controller(*args, **kwargs):
+    """
+    Create an controller from class
+    :param args:
+    :param kwargs:
+    :return:
+    """
+    ret = __controller_wrapper__(*args, **kwargs)
     return ret.wrapper
+
+
 class BaseController(object):
+    """
+    Every controller class in xdj must inherit from this class
+    Mỗi lớp trình điều khiển trong xdj phải kế thừa từ lớp này
+    """
     def __init__(self):
         self.app_name = None
         self.app_dir = None
@@ -330,11 +381,13 @@ class BaseController(object):
         self.on_authenticate = None
         self.rel_login_url = None
         self.params = None
+
     def create_client_model(self, request):
-        model = __createModelFromRequest__(
+        model = __create_model_from_request__(
             request, self.rel_login_url, self.res, self.host_dir, self.on_authenticate, self.settings
         )
         return model
+
     def __view_exec__(self,request,*args,**kwargs):
         import xdj
         from django.http import HttpResponse
@@ -412,6 +465,12 @@ class BaseController(object):
                 type(model),
                 Model
             ))
-    def render(self,model):
+
+    def render(self, model):
+        """
+        Get html content by render tempate and a model
+        :param model:
+        :return:
+        """
         return self.render_with_template(model,self.template)
 

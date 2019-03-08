@@ -6,7 +6,9 @@ def get_version():
            "."+VERSION[3].__str__()+\
            "."+VERSION[4].__str__()
 import documents
-def create_model(name,required,indexes,fields):
+
+
+def create_model(name, required,indexes,fields):
     """
     :param name:
     :param indexes:
@@ -16,7 +18,9 @@ def create_model(name,required,indexes,fields):
     """
     import pymodel
     # type: (str,object, list(pymodel.Index), object) -> object
-    return pymodel.create_model(name,required,indexes,fields)
+    return pymodel.create_model(name, required,indexes,fields)
+
+
 def query(*args,**kwargs):
     # type: (object, object) -> pyquery.query
     """
@@ -28,6 +32,8 @@ def query(*args,**kwargs):
     """
     import pyquery
     return pyquery.query(*args,**kwargs)
+
+
 def __docs__():
     """
     create Mongodb parable expresion
@@ -35,6 +41,8 @@ def __docs__():
     """
     import pydocs
     return pydocs.Fields()
+
+
 def __filters__():
     """
     create Mongodb filterable expression

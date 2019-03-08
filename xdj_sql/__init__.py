@@ -1,19 +1,32 @@
-from argparse import _ActionsContainer
-from django.db.utils import IntegrityError
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+This package is django model queryable. By according django model the package will help us build a readable query like bellow:
+    qr(model).select(fields.fullname << fields.code+" "+fields.name, fields.age)
+    .where(fields.age>23)
+
+"""
+
 from . import utils
 Fields = utils.Fields
 from  . singeton import single, get_join_table
 from . import funcs as Funcs
+
+
 class __alias_field__(object):
 
     def __init__(self, expr):
         self.__expr__ = expr
+
+
 
 class __express_field__(object):
 
     def __init__(self,name, expr):
         self.__expr__ = expr
         self.__f_name__ = name
+
 
 class qr(object):
 

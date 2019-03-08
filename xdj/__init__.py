@@ -2,37 +2,89 @@
 # -*- coding: utf-8 -*-
 """
 Package này dùng để mở rộng open edx app (dạng micro app)
-"""
-from webob.cachecontrol import value_property
+xdj: Extension of django framework including:
+    1- MVC support
+    2- Automatic controller loader:
+        You just create a package in xdj_apps with directory struct like bellow:
+        ├── <app dir name>
+                ├── <controller>(contains your controller files here)
+                │        ├── <controller 1>.py
+                │        ├── <controller 2>.py
+                │        ...
+                │        ├── <controller n>.py
+                │
+                ├── static (all static file serve for your web site here)
+                ├── views (all html view files here)
 
+"""
+
+
+from . dynamic_object import dobject
 from django.conf import settings
 import sys
 import os
-sys.path.append(os.sep.join([settings.REPO_ROOT,"cms/djangoapps"]))
+try:
+    sys.path.append(os.sep.join([settings.REPO_ROOT,"cms/djangoapps"]))
+except Exception as ex:
+    pass
 
-__apps__={}
+__apps__ = {} # micro app setting cache
 __register_apps__ = {}
 __controllers__ = []
 __pages__ = []
 __build_cached__ = None
 __controllert_url_build_cache__ = None
 from . controllers import Model
-def find_url_by_pattern(urls,pattern):
-    for x in urls:
-        if x.regex.pattern == pattern:
-            return x
-        elif hasattr(x,"url_patterns"):
-            ret = find_url_by_pattern(x.url_patterns,pattern)
-            if ret:
-                return ret
-    pass
-def create(urls):
+
+
+def help():
     """
-    Tạp app
+    Show help for this package
+    :return:
+    """
+    print "xdj: Extension of django framework including: \n" \
+          "1- MVC support \n" \
+          "2- Automatic controller loader: \n" \
+          "      You just create a package in xdj_apps with directories looks like bellow: \n" \
+          "        ├── <app dir name> \n" \
+          "        │         ├── <controller>(contains your controller files here) \n" \
+          "        │         │        ├── <controller 1>.py \n" \
+          "        │         │        ├── <controller 2>.py \n" \
+          "        │         │        ...\n" \
+          "        │         │        ├── <controller n>.py \n" \
+          "        │         │ \n"\
+          "        │         ├── static (all static file serve for your web site here)  \n" \
+          "        │         ├── views (all html view files here)\n" \
+          "3- Create controller file:\n" \
+          "  3-1: In controller dir of app create file <controller name>.py\n" \
+          "  3-2: import xdj\n" \
+          "  3-4: add bellow declare:\n" \
+          "         @xdj.Controller(url='...',template='...')\n" \
+          "         class <Controller name>(xdj.BaseController):\n" \
+          "             def on_get(self,model):\n" \
+          "                 return self.render(model)\n"
+
+
+def get_info_of_apps():
+    """
+    Get all apps info and return dictionary with key of each item is the name of app.
+    Lấy thông tin của tất cả các apps là một dictionary với khóa của mỗi item chính là tên của app
+    :return:
+    """
+    return __apps__
+
+
+def __create__(urls):
+    """
+    Tạo app
+    The method will load all apps in xdj_apps and extract information in each app of apps folder the build urls for all apps.
+    Hàm này sẽ tải tất cả các app trong thư mục xdj_apps (mỗi package trong thư mục này là một app).
+    Sau đó, sẽ tiến hành xây dựng lại thông tin url cho django settings
     :param name:
     :param host_dir:
     :return:
     """
+    from . private_services import __find_url_by_pattern__
     urlpatterns = ()
     global __build_cached__
     if __build_cached__ == None:
@@ -106,7 +158,7 @@ def create(urls):
             def exec_url(self,request,*args,**kwargs):
                 return self.obj.__view_exec__(request,*args,**kwargs)
         print "will replace with {0}".format(item.replace_url)
-        match_url = find_url_by_pattern(urls, item.replace_url)
+        match_url = __find_url_by_pattern__(urls, item.replace_url)
         if not match_url:
             print "{0} can not find replacer, will run under {1}".format(item.replace_url,item.url)
         else:
@@ -116,16 +168,18 @@ def create(urls):
             match_url.callback = x.exec_url
     for item in check_urls:
         print "{0} will be check".format(item.check_url)
-        match_url = match_url = find_url_by_pattern(urls, item.check_url)
+        match_url = match_url = __find_url_by_pattern__(urls, item.check_url)
         if not match_url:
             print "{0} can not find checker, will run under {1}".format(item.check_url,item.url)
         else:
             import inspect
             print "{0} will be check by controller {1} in {2}".format(match_url.regex.pattern , item,inspect.getfile(item.__class__))
+
             class obj_check_url():
                 def __init__(self,obj,origin_callback):
                     self.obj = obj
                     self.__origin_callback__ = origin_callback
+
                 def check_request(self,request,*args,**kwargs):
                     ret = self.obj.__view_exec__(request, *args, **kwargs)
                     if ret:
@@ -146,9 +200,6 @@ def create(urls):
             x_obj = obj_check_url(item,match_url.callback)
 
             match_url.callback = x_obj.check_request
-
-
-
     if isinstance(urls, list):
         urls.extend(list(urlpatterns))
 
@@ -159,25 +210,47 @@ def create(urls):
 from . controllers import BaseController,Controller
 from .page import Page
 
-def register_INSTALLED_APPS(for_lms):
-    from django.conf import settings
-    # if settings.INSTALLED_APPS.count("xdj_models.models") == 0:
-    #     settings.INSTALLED_APPS.append("xdj_models.models")
-    try:
-        load_moddels()
-        load_settings(for_lms)
-        load_config()
 
-        load_email_settings()
-        load_feature_settings()
-        load_elastic_search_config()
-        load_forum_config()
-        settings.MIDDLEWARE_CLASSES.append("xdj.middle_ware.GlobalRequestMiddleware")
+def register_INSTALLED_APPS(for_lms):
+    """
+    This method just serve for Openedx nothing more.
+    The method will be call at {source}/apps/edx/edx_platform/cms/startup.py
+    and {source}/apps/edx/edx_platform/lms/startup.py
+
+    Chức năng này chỉ phục vụ cho Openedx không có gì khác.
+     Phương thức này sẽ được gọi tại {source} /apps/edx/edx_pl platform / cms / startup.py
+     và {source} /apps/edx/edx_pl platform / lms / startup.py
+    :param for_lms:
+    :return:
+    """
+    from . import private_services as ps
+    try:
+        ps.__load_middle_ware__()
+        ps.__load_models__()
+        ps.__load_settings__(for_lms)
+        ps.__load_config__()
+
+        ps.__load_email_settings__()
+        ps.__load_feature_settings__()
+        ps.__load_elastic_search_config__()
+        ps.__load_forum_config__()
+        ps.__load_installed_apps__()
+        # settings.MIDDLEWARE_CLASSES.append("xdj.middle_ware.GlobalRequestMiddleware")
     except Exception as ex:
         raise Exception(ex)
 
-def load_apps(path_to_app_dir,urlpatterns=None):
+
+def load_apps(urlpatterns=None):
+    """
+    Load all apps and rebuild urlpattern app info can get by get_info_of_apps
+    Tải tất cả các ứng dụng và xây dựng lại thông tin ứng dụng Mẫu Url có thể nhận được bằng get_info_of_apps
+    :param urlpatterns:
+    :return:
+    """
+    import os
     from django.conf import settings
+    from . import private_services as ps
+    _path = os.sep.join([settings.REPO_ROOT.__str__(), "xdj_apps"])
     if settings.INSTALLED_APPS.count("xdj_models.models") == 0:
         raise Exception("it look like you forgot call xdj.register_INSTALLED_APPS() at manage.py , cms/bitnami_wsgi.py or lms/bitnami_wsgi.py before startup.run()\n"
                         "How to use xdj?\n"
@@ -197,8 +270,10 @@ def load_apps(path_to_app_dir,urlpatterns=None):
     global __controllert_url_build_cache__
     if __controllert_url_build_cache__ == None:
         __controllert_url_build_cache__ = {}
-    sys.path.append(path_to_app_dir)
-    apply_settings()
+    sys.path.append(_path)
+    ps.__apply_settings__()
+    path_to_app_dir = _path
+
     def get_all_sub_dir():
         lst=[x for x in os.walk(path_to_app_dir).next()[1] if x.find(".")==-1]
         return lst
@@ -323,249 +398,14 @@ def load_apps(path_to_app_dir,urlpatterns=None):
             """
             # x=1
 
-    return create(urlpatterns)
+    return __create__(urlpatterns)
 
-class dobject(object):
-    def __init__(self,*args,**kwargs):
-        def feed_data(data):
-            if isinstance(data,dobject):
-                data =data.__dict__
-            for k,v in data.items():
-                    if isinstance(v,dict):
-                        self.__dict__.update({
-                            k:dobject(v)
-                        })
-                    elif isinstance(v,dobject):
-                        self.__dict__.update({
-                            k: v
-                        })
-
-                    elif isinstance(v,list):
-                        lst =[]
-                        for item in v:
-                            lst.append(dobject(item))
-                        self.__dict__.update({
-                            k:lst
-                        })
-                    else:
-                        self.__dict__.update({
-                            k:v
-                        })
-        if args.__len__()==0:
-            feed_data(kwargs)
-        else:
-            feed_data(args[0])
-
-def apply_settings():
-    """
-    https://openedx.atlassian.net/wiki/spaces/AC/pages/34734726/edX+Feature+Flags
-    :return:
-    """
-    from django.conf import settings
-    setattr(settings,"USE_DJANGO_PIPELINE",True)
-    """
-    http://django-pipeline.readthedocs.org/ – whatever version we specify in our requirements.txt
-    """
-    setattr(settings,"DISPLAY_DEBUG_INFO_TO_STAFF",True)
-    """For large courses this slows down courseware access for staff."""
-    setattr(settings,"MILESTONES_APP",True)
-
-def load_config():
-    import json
-    import os
-    import sys
-    filet_of_data_config = os.sep.join([os.path.dirname(__file__),"config","data.json"])
-    with open( filet_of_data_config,'r') as data_file:
-        from django.conf import settings
-        data = json.loads(data_file.read())
-        settings.DATABASES['default']['ENGINE'] = data["sql"]["engine"]
-        settings.DATABASES['default']['NAME'] = data["sql"]["name"]
-        settings.DATABASES['default']['PORT'] = data["sql"]["port"]
-        settings.DATABASES['default']['HOST'] = data["sql"]["host"]
-        settings.DATABASES['default']['USER'] = data["sql"]["user"]
-        settings.DATABASES['default']['PASSWORD'] = data["sql"]["password"]
-
-        settings.DATABASES["read_replica"]['ENGINE'] = data["sql"]["engine"]
-        settings.DATABASES["read_replica"]['NAME'] = data["sql"]["name"]
-        settings.DATABASES["read_replica"]['PORT'] = data["sql"]["port"]
-        settings.DATABASES["read_replica"]['HOST'] = data["sql"]["host"]
-        settings.DATABASES["read_replica"]['USER'] = data["sql"]["user"]
-        settings.DATABASES["read_replica"]['PASSWORD'] = data["sql"]["password"]
-
-        settings.DATABASES['student_module_history']['ENGINE'] = data["sql"]["engine"]
-        settings.DATABASES['student_module_history']['NAME'] = data["sql"]["name"]
-        settings.DATABASES['student_module_history']['PORT'] = data["sql"]["port"]
-        settings.DATABASES['student_module_history']['HOST'] = data["sql"]["host"]
-        settings.DATABASES['student_module_history']['USER'] = data["sql"]["user"]
-        settings.DATABASES['student_module_history']['PASSWORD'] = data["sql"]["password"]
-
-        settings.CONTENTSTORE["DOC_STORE_CONFIG"]["db"] = data["mongo"]["name"]
-        settings.CONTENTSTORE["DOC_STORE_CONFIG"]["host"] = data["mongo"]["host"]
-        settings.CONTENTSTORE["DOC_STORE_CONFIG"]["user"] = data["mongo"]["user"]
-        settings.CONTENTSTORE["DOC_STORE_CONFIG"]["password"] = data["mongo"]["password"]
-        settings.CONTENTSTORE["DOC_STORE_CONFIG"]["port"] = data["mongo"]["port"]
-
-        settings.CONTENTSTORE["OPTIONS"]["db"] = data["mongo"]["name"]
-        settings.CONTENTSTORE["OPTIONS"]["host"] = data["mongo"]["host"]
-        settings.CONTENTSTORE["OPTIONS"]["user"] = data["mongo"]["user"]
-        settings.CONTENTSTORE["OPTIONS"]["password"] = data["mongo"]["password"]
-        settings.CONTENTSTORE["OPTIONS"]["port"] = data["mongo"]["port"]
-
-        settings.DOC_STORE_CONFIG["db"] = data["mongo"]["name"]
-        settings.DOC_STORE_CONFIG["host"] = data["mongo"]["host"]
-        settings.DOC_STORE_CONFIG["user"] = data["mongo"]["user"]
-        settings.DOC_STORE_CONFIG["password"] = data["mongo"]["password"]
-        settings.DOC_STORE_CONFIG["port"] = data["mongo"]["port"]
-
-        settings.MODULESTORE["default"]["OPTIONS"]["stores"][0]["DOC_STORE_CONFIG"]["db"] = data["mongo"]["name"]
-        settings.MODULESTORE["default"]["OPTIONS"]["stores"][0]["DOC_STORE_CONFIG"]["host"] = data["mongo"]["host"]
-        settings.MODULESTORE["default"]["OPTIONS"]["stores"][0]["DOC_STORE_CONFIG"]["user"] = data["mongo"]["user"]
-        settings.MODULESTORE["default"]["OPTIONS"]["stores"][0]["DOC_STORE_CONFIG"]["password"] = data["mongo"]["password"]
-        settings.MODULESTORE["default"]["OPTIONS"]["stores"][0]["DOC_STORE_CONFIG"]["port"] = data["mongo"]["port"]
-
-        settings.MODULESTORE["default"]["OPTIONS"]["stores"][1]["DOC_STORE_CONFIG"]["db"] = data["mongo"]["name"]
-        settings.MODULESTORE["default"]["OPTIONS"]["stores"][1]["DOC_STORE_CONFIG"]["host"] = data["mongo"]["host"]
-        settings.MODULESTORE["default"]["OPTIONS"]["stores"][1]["DOC_STORE_CONFIG"]["user"] = data["mongo"]["user"]
-        settings.MODULESTORE["default"]["OPTIONS"]["stores"][1]["DOC_STORE_CONFIG"]["password"] = data["mongo"]["password"]
-        settings.MODULESTORE["default"]["OPTIONS"]["stores"][1]["DOC_STORE_CONFIG"]["port"] = data["mongo"]["port"]
-
-def load_settings(for_lms):
-    from django.conf import settings
-    import json
-    import os
-    import sys
-    import logging
-    logger = logging.getLogger(__name__)
-    logger.info("load settings")
-
-    filet_of_settings_config = os.sep.join([os.path.dirname(__file__), "config", "settings.json"])
-    with open(filet_of_settings_config, 'r') as data_file:
-
-        data = json.loads(data_file.read())
-        logger.info(data)
-        for k,v in data.items():
-            setattr(settings,k,v)
-        if data.has_key("MAKO_TEMPLATE_DIRS_BASE"):
-            r = settings.REPO_ROOT
-            for x in data["MAKO_TEMPLATE_DIRS_BASE"]:
-                import path
-                import os
-                settings.TEMPLATES[0]['DIRS'].append(path.Path(os.sep.join([r,x])))
-                settings.TEMPLATES[1]['DIRS'].append(path.Path(os.sep.join([r,x])))
-
-    import path
-    if data.has_key("STATIC_ROOT"):
-        settings.STATIC_ROOT = path.path(data["STATIC_ROOT"])
-        p = [x for x in settings.STATICFILES_DIRS if
-             x.__str__()[x.__str__().__len__() - "/lms/static".__len__():] not in ["/lms/static", "/cms/static"]]
-        # p.append(settings.STATIC_ROOT)
-        settings.STATICFILES_DIRS = p
-    if for_lms:
-        if hasattr(settings,"LMS_TEMPLATE"):
-            x = os.sep.join([settings.REPO_ROOT, "lms","templates"])
-            settings.MAKO_TEMPLATE_DIRS_BASE = [p for p in settings.MAKO_TEMPLATE_DIRS_BASE if p.__str__() != x]
-            settings.MAKO_TEMPLATE_DIRS_BASE.append(settings.LMS_TEMPLATE)
-            settings.DEFAULT_TEMPLATE_ENGINE_DIRS=settings.MAKO_TEMPLATE_DIRS_BASE
-            settings.TEMPLATES[0]['DIRS'] = settings.MAKO_TEMPLATE_DIRS_BASE
-            settings.TEMPLATES[1]['DIRS'] = settings.MAKO_TEMPLATE_DIRS_BASE
-    else:
-        if hasattr(settings,"CMS_TEMPLATE"):
-            x = os.sep.join([settings.REPO_ROOT, "cms", "templates"])
-            settings.MAKO_TEMPLATE_DIRS_BASE = [p for p in settings.MAKO_TEMPLATE_DIRS_BASE if p.__str__() != x]
-            settings.MAKO_TEMPLATE_DIRS_BASE.append(settings.CMS_TEMPLATE)
-            settings.DEFAULT_TEMPLATE_ENGINE_DIRS=settings.MAKO_TEMPLATE_DIRS_BASE
-            settings.TEMPLATES[0]['DIRS'] = settings.MAKO_TEMPLATE_DIRS_BASE
-            settings.TEMPLATES[1]['DIRS'] = settings.MAKO_TEMPLATE_DIRS_BASE
-    settings.WEBPACK_LOADER["DEFAULT"]["STATS_FILE"] = settings.WEBPACK_LOADER["DEFAULT"]["STATS_FILE"].replace(",/",
-                                                                                                                "/")
-
-
-
-    return  None
-
-def load_email_settings():
-    try:
-        import json
-        import os
-        import sys
-        filet_of_settings_config = os.sep.join([os.path.dirname(__file__), "config", "email.json"])
-        with open(filet_of_settings_config, 'r') as data_file:
-            from django.conf import settings
-            data = json.loads(data_file.read())
-            settings.EMAIL_HOST = data['host']
-            settings.EMAIL_HOST_USER = data['user']
-            settings.EMAIL_HOST_PASSWORD = data['password']
-            settings.EMAIL_USE_TLS = data["tsl"]
-            settings.EMAIL_PORT = data["port"]
-            settings.EMAIL_FILE_PATH = data["path"]
-            settings.SERVER_EMAIL = data["email"]
-            settings.DEFAULT_FROM_EMAIL =data["email"]
-            settings.CONTACT_EMAIL = data["contact_email"]
-            settings.API_ACCESS_FROM_EMAIL = data["email"]
-            settings.API_ACCESS_MANAGER_EMAIL = data["email"]
-            settings.BUGS_EMAIL = data["email"]
-            settings.BULK_EMAIL_DEFAULT_FROM_EMAIL = data["email"]
-            settings.FEEDBACK_SUBMISSION_EMAIL =data["email"]
-    except Exception as ex:
-        from xdj.errors import LoadConfigError
-        raise LoadConfigError(filet_of_settings_config,ex.message,ex)
-
-
-
-def load_forum_config():
-    import json
-    import os
-    import sys
-    filet_of_settings_config = os.sep.join([os.path.dirname(__file__), "config", "forum.json"])
-    with open(filet_of_settings_config, 'r') as data_file:
-        from django.conf import settings
-        data = json.loads(data_file.read())
-        """
-        "COMMENTS_SERVICE_KEY": "9198a36ca5349defcc6ecc1d3235390bd47a",
-        "COMMENTS_SERVICE_URL": "http://localhost:18080"
-        """
-        settings.COMMENTS_SERVICE_KEY = data['key']
-        settings.COMMENTS_SERVICE_URL = data['url']
-
-def load_feature_settings():
-    import json
-    import os
-    import sys
-    filet_of_settings_config = os.sep.join([os.path.dirname(__file__), "config", "feature.json"])
-    with open(filet_of_settings_config, 'r') as data_file:
-        from django.conf import settings
-        data = json.loads(data_file.read())
-        for k,v in data.items():
-            settings.FEATURES.update({
-                k:v
-            })
-
-def load_moddels():
-    import json
-    import os
-    filet_of_settings_config = os.sep.join([os.path.dirname(__file__), "config", "models.json"])
-    with open(filet_of_settings_config, 'r') as data_file:
-        from django.conf import settings
-        data = json.loads(data_file.read())
-        for item in data:
-            if settings.INSTALLED_APPS.count(item) ==0:
-                settings.INSTALLED_APPS.append(item)
-
-
-def load_elastic_search_config():
-    import json
-    import os
-    import sys
-    filet_of_settings_config = os.sep.join([os.path.dirname(__file__), "config", "elastic_search.json"])
-    with open(filet_of_settings_config, 'r') as data_file:
-        from django.conf import settings
-        data = json.loads(data_file.read())
-        settings.ELASTIC_SEARCH_CONFIG=data
 
 def debugTemplate(x):
     from xdj.middle_ware import GlobalRequestMiddleware
     request = GlobalRequestMiddleware.get_current_request()
     pass
+
 
 def apply_context(context):
     from xdj.middle_ware import GlobalRequestMiddleware
@@ -601,6 +441,7 @@ def apply_context(context):
 
 
 class Handler(object):
+
     def from_json(self,txt):
         from xdj import JSON
         return JSON.from_json(txt)

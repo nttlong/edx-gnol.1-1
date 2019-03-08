@@ -1,0 +1,5 @@
+[
+    "xdj.middle_ware.GlobalRequestMiddleware",
+    "htmlmin.middleware.HtmlMinifyMiddleware",
+    "htmlmin.middleware.MarkRequestMiddleware"
+]
