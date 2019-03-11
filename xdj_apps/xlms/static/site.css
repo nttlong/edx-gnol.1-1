@@ -1,161 +1,54 @@
-/* div.mask{
-    position:fixed;
-    left:0;
-    top:0;
-    bottom:0;
-    right:0;
-    background-image:url(images/loading-mask.gif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-
-}
-
- .course-outline ol.block-tree.accordion li.outline-item.section input[type="submit"], input[type="button"], button, .button {
-    color:red !important;
-    box-shadow:none !important;
-    text-shadow:none !important;
- }
- .course-outline ol.block-tree.accordion li.outline-item.section
- .course-outline ol.block-tree.accordion li.outline-item.section input[type="submit"], input[type="button"], button, .button {
-    color:#000 !important;
-    box-shadow:none !important;
-    text-shadow:none !important;
-    padding:5px !important;
- }
- textarea, input[type="text"], input[type="url"], input[type="email"], input[type="password"], input[type="tel"] {
-   border-radius: 0 !important;
-   font: inherit !important;
-   height: 35px;
-   padding: 5px 12px;
-   vertical-align: top;
-   -webkit-font-smoothing: antialiased;}
-.btn {
-   display: inline-block;
-   padding: 6px 12px;
-   margin-bottom: 0;
-   font-size: inherit !important;
-   font-weight: inherit !important;
-   line-height: 1.42857143;
-   text-align: center;
-   white-space: nowrap;
-   vertical-align: middle;
-   -ms-touch-action: manipulation;
-   touch-action: manipulation;
-   cursor: pointer;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
-   background-image: none;
-   border: 1px solid #0075b4 !important;
-   border-radius: 0px !important;
-   color: #fcfcfc;
-   font-family: inherit !important;
-}
-
-.flag-icon, .flag-icon-background {
-background-repeat: no-repeat;
-background-size: contain;
-background-position: 50%;
-}
-.global-header {
-   box-sizing: border-box;
-   width: 100%;
-   position: relative;
-   overflow: visible;
-   padding-bottom: 10px;
-   border-bottom: 4px solid #0075b4 !important;
-   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1);
-   background: #fff;
-   height: 80px;
-   line-height: 1.5;
-   
-}
-.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
-   cursor: not-allowed;
-   filter: alpha(opacity=65);
-   -webkit-box-shadow: none;
-   background-color: #1c1c1c !important;
-   box-shadow: none;
-   opacity: .65;
-}
-.btn.btn-primary.main-search {
-   height: 35px;width:32px
-}
-.btn.btn-primary.main-search .icon.fa {
-   display: inline-block !important;
-   font: normal normal normal 14px/1 FontAwesome !important;
-   font-size: 14px !important;
-   text-rendering: auto !important;
-   -webkit-font-smoothing: antialiased !important;
-   -moz-osx-font-smoothing: grayscale !important;
-   margin: 0 !important;
-   padding: 0 !important;
-}
-#expand-collapse-outline-all-button {
-   color: #000 !important;
-}
-.btn.btn-link.bookmark-button .bookmark-text {
-   color:#000 !important;
-}
-
-button[disabled="disabled"]{
-   color: #fafafa !important;
-   padding: 8px !important;
-   font-size: 16px;
-}
-button.btn.register-btn, button.btn.login-btn  {
-    background: #fff;
-    color: #0075b4;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 8px !important;
-}
-button.btn.register-btn:hover, button.btn.login-btn:hover  {
-   background: #0075b4;
-   color: #fff !important;
-   font-weight: 400;
-   font-size: 16px;
-   padding: 8px !important;
-}
 @media (max-width: 991px) {
-   .mobile-menu .mobile-nav-link a {
-      font-size: 1rem;
-      font-weight: 600;
-      text-decoration: none;
-      outline: none;
-      display: block;
-      background-color: #fff;
-      border-radius: 0;
-      width: 100%;
-      padding: 12px 20px;
-      border-bottom: 1px solid #e7e7e7;
-      text-align: left;
-      cursor: pointer;
-      color: #000;
-   }
-}
+            .mobile-nav-item.hidden-mobile.nav-item.nav-tab {
 
-.progress.wrapper-course-material, .navbar.course-tabs, .instructor.wrapper-course-material{
-   background-color: transparent;
-    color: black;
-    border: none;
-    box-shadow: none;
-    height: 58px;
-    border: solid 4px red;
-    overflow-x: hidden;
+                margin-top:14px !important;
+            }
+            .content-wrapper.main-container {
 
-}
-.progress.wrapper-course-material li.nav-item, .navbar.course-tabs li.nav-item, .instructor.wrapper-course-material li.nav-item{
-   font-size: 14px
-}
+            }
+            .global-header {
+                padding-bottom:26px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+            }
+            .global-header .header-logo {
 
- /* .btn-primary:hover, button.section-name.accordion-trigger:hover, button.subsection-text.accordion-trigger:hover {
-    border:solid 1px #dcdcdc !important;
-    background:none !important;
-    padding:4px !important;
- } */ 
+            }
+            .static-mobile-menu{
+                position:fixed;
+                left:0;
+                top:70px;
+                right:0;
+                z-index:200000;
+                background-color:#fcfcfc;
+                padding:20px;
+                display:none;
+
+            }
+            .nav-links .secondary .mobile-nav-item.hidden-mobile.nav-item.visible {
+                display:block;
+            }
+            .nav-links .main .mobile-nav-item.hidden-mobile.nav-item.visible {
+                display:block;
+            }
+            .dropdown-menu.multi-column {
+                margin: 0;
+                background-color: #fff;
+
+                position: relative !important;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+            }
+            .mobile-nav-item.hidden-mobile.nav-item.nav-tab {
+                margin-top:6px;
+            }
+            .nav-item.subjects .dropdown-toggle.tab-nav-link{
+                padding:16px !important;
+            }
+            .dropdown.language.open ul.dropdown-menu{
+                background-color:#fcfcfc;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+            }
+
+        }
  div.mask{
    position:fixed;
    left:0;

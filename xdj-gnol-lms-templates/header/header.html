@@ -64,6 +64,37 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         <%include file="select_languages.html"/>
         
     </div>
+    <style>
+        @media (max-width: 768px) {
+
+        }
+
+    </style>
+    <script>
+    var is_mobile_dropdown_open =false;
+    var is_init_scroll = false;
+        $(".hamburger-menu").click(function(evt){
+            if(!is_init_scroll){
+                $(window).scroll(function() {
+                     $($(".main-header").find(".nav-links")[0]).hide();
+                });
+                is_init_scroll=true;
+            }
+             $($(".main-header").find(".nav-links")[0]).addClass("static-mobile-menu");
+
+             $($(".main-header").find(".nav-links")[0]).find(".mobile-nav-item").show();
+            is_mobile_dropdown_open = ! is_mobile_dropdown_open;
+            if(is_mobile_dropdown_open){
+
+                $($(".main-header").find(".nav-links")[0]).show();
+            }
+            else{
+                $($(".main-header").find(".nav-links")[0]).hide();
+            }
+
+        });
+
+    </script>
     
     
 </header>
