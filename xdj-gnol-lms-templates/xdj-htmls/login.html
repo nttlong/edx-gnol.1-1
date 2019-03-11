@@ -1,6 +1,6 @@
 <%inherit file="../main.html" />
-<div class="container-fluid main-container" style="max-width:350px">
-        <form action="${currentUrl}" method="post" style="min-width:350px;position:relative;top:400px" id="frmLogin">
+<div class="container-fluid main-container" style="max-width:350px;display:none">
+        <form action="${currentUrl}" method="post" style="min-width:350px;position:relative;top:400px" id="frmLogin" ng-cloak>
             <fieldset>
                 <legend>
                     ${_>"Login"}&nbsp;${_>"or"} <a href="/register">${_>"register new account"}</a>
@@ -45,8 +45,10 @@
     <script name="angular">
         
        function onInit(scope){
-           
-            
+            setTimeout(function(){
+                $(".container-fluid.main-container").show();
+            },100);
+
             $("#content").css({
                 height:$(window).height()-$(".wrapper.wrapper-footer").height()-$(".global-header").height()-60
             });

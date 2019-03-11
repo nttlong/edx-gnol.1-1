@@ -7,12 +7,12 @@
         bottom: 0;
     }
 </style>
-<div class="container-fluid main-container" style="max-width: 600px">
+<div class="container-fluid main-container" style="max-width: 600px;display:none">
         <form action="/register" method="post">
             <input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token.__str__()}"/>
                 <fieldset>
                         <legend>${_>"Register new account"} ${_>"or"} <a href="/login">${_>"Login"}</a> </legend>
-                            <form-layout xs-cols="12" md-cols="4,8" sm-cols="4,8" lg-cols="4,8" >
+                            <form-layout xs-cols="12" md-cols="4,8" sm-cols="4,8" lg-cols="4,8" ng-cloak>
                                     <form-template>
                                         <div>
                                             <lable>${_>"Username"}</lable><input type="text" placeholder="${_>'Enter your Username'}" name="username" ng-model="data.username"  ng-change="$serverResponse=undefined">
@@ -84,6 +84,9 @@
     </div>
 <script name="angular">
         function onInit($scope){
+            setTimeout(function(){
+                $(".container-fluid.main-container").show();
+            },100);
             $scope.$serverResponse= ${to_json(ng_response)};
             $scope.data = $scope.$serverResponse.data;
             $scope.ret_url="";
