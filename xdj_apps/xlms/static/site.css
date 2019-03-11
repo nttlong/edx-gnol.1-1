@@ -25,6 +25,17 @@
                 display:block;
 
             }
+            .static-mobile-menu .mobile-nav-item.hidden-mobile.nav-item {
+                display:block;
+
+
+
+            }
+            .static-mobile-menu .mobile-nav-item.hidden-mobile.nav-item a.explorer-courses {
+                float:left;
+                width:100%;
+
+            }
             .nav-links .secondary .mobile-nav-item.hidden-mobile.nav-item.visible {
                 display:block;
             }

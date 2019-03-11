@@ -80,17 +80,18 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
                 });
                 is_init_scroll=true;
             }
-             $(".main-header").find(".nav-links").addClass("static-mobile-menu");
+
              $("#global-user-menu").show();
 
-             $(".main-header").find(".nav-links").find(".mobile-nav-item").show();
+
             is_mobile_dropdown_open = ! is_mobile_dropdown_open;
             if(is_mobile_dropdown_open){
-
-                $($(".main-header").find(".nav-links")[0]).show();
+                $(".main-header").find(".nav-links").addClass("static-mobile-menu");
+                //$($(".main-header").find(".nav-links")[0]).show();
             }
             else{
-                $($(".main-header").find(".nav-links")[0]).hide();
+                $(".main-header").find(".static-mobile-menu").removeClass("static-mobile-menu");
+                //$($(".main-header").find(".nav-links")[0]).hide();
             }
 
         });
