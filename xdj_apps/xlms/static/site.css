@@ -1,3 +1,5 @@
+ [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak { display: none; }
+
 /*for mobile*/
 @media (max-width: 991px) {
             .mobile-nav-item.hidden-mobile.nav-item.nav-tab {
