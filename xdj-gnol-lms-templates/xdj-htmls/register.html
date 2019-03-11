@@ -86,6 +86,9 @@
         function onInit($scope){
             setTimeout(function(){
                 $(".container-fluid.main-container").show();
+                $(".container-fluid.main-container").css({
+                    "min-height":$(window).height()-$(".global-header ").height()-$(".wrapper wrapper-footer").height()
+                });
             },100);
             $scope.$serverResponse= ${to_json(ng_response)};
             $scope.data = $scope.$serverResponse.data;
