@@ -224,6 +224,7 @@ angularDefine(function(mdl){
         restrict:"ECA",
         scope:false,
         compile: function(element, attributes){
+            element.hide();
             var originHtml=element.html();
             element.empty();
             return {
@@ -242,13 +243,14 @@ angularDefine(function(mdl){
     mdl.directive("formLayout",["$parse","$compile",function($parse,$compile){
         return {
             restrict:"ECA",
-            template:"<div ng-transclude></div>",
+            template:"<div ng-transclude style='display:none'></div>",
             transclude:true,
             replace:true,
             scope:false,
             priority:0,
 
             link:function(s,e,a){
+            e.hide();
 
 
             function watch(){
@@ -261,15 +263,29 @@ angularDefine(function(mdl){
                 }    
             }
             function init(html){
-                var divRow=$("<div></div>");
+                var divRow=$("<div style='position:absolute;top:-2000px'></div>");
+
                 divRow.html(html);
 
                 divRow=makeUpForm(divRow,a);
+                divRow.appendTo("body");
                 $compile(divRow.contents())(s);
                 
-                divRow.contents().appendTo(e[0])
 
-                s.$apply();
+                setTimeout(function(){
+                    e.hide();
+
+                    divRow.contents().appendTo(e[0]);
+                    s.$apply();
+
+                    divRow.show();
+                    setTimeout(function(){
+                        e.show();
+                    },100)
+
+                },10);
+
+
             }
             watch();
             }

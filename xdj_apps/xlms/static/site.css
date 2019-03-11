@@ -1,7 +1,8 @@
+/*for mobile*/
 @media (max-width: 991px) {
             .mobile-nav-item.hidden-mobile.nav-item.nav-tab {
 
-                margin-top:14px !important;
+
             }
             .content-wrapper.main-container {
 
@@ -14,14 +15,14 @@
 
             }
             .static-mobile-menu{
-                position:fixed;
+                position:relative;
                 left:0;
                 top:70px;
                 right:0;
                 z-index:200000;
                 background-color:#fcfcfc;
                 padding:20px;
-                display:none;
+                display:block;
 
             }
             .nav-links .secondary .mobile-nav-item.hidden-mobile.nav-item.visible {
@@ -47,8 +48,83 @@
                 background-color:#fcfcfc;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
             }
+            .hero {
+                max-height:180px;
+                min-height:180px;
+            }
+            .course-info header.course-profile .intro-inner-wrapper .media {
+                max-height:180px;
+                min-height:180px;
 
-        }
+            }
+
+            .course-info header.course-profile .intro-inner-wrapper .intro>.heading-group h1 {
+                font-size: 22px;
+                width: 100%;
+                font-weight: bold;
+            }
+            .course-info header.course-profile .intro-inner-wrapper .intro>.heading-group  br {
+                display:none;
+            }
+            .course-info header.course-profile .intro-inner-wrapper>div.table {
+                display:block;
+
+            }
+            .course-info header.course-profile .intro-inner-wrapper .intro {
+                    display: block;
+                    padding: 0 !important;
+                    margin: 0 !important;
+
+                    width: 100%
+            }
+            .course-info header.course-profile .intro-inner-wrapper .intro>.heading-group {
+                margin:0;
+                padding:0;
+
+                max-height:280px;
+                min-height:280px;
+
+            }
+
+            .course-info header.course-profile .intro-inner-wrapper .intro .main-cta {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width:100%;
+                position:relative;
+                top:-40px;
+            }
+            .course-info header.course-profile {
+                overflow:visible !important;
+
+            }
+            .course-info header.course-profile .intro-inner-wrapper .media {
+                position:relative;
+                top:-300px;
+            }
+            .course-info header.course-profile .intro-inner-wrapper .media .hero img {
+                width:100% !important;
+            }
+            #frmLogin {
+                position:unset !important;
+            }
+            .mobile-nav-item.hidden-mobile.nav-item.subjects a.dropdown-toggle.tab-nav-link {
+                width:100%;
+                float:left;
+            }
+            .mobile-nav-item.hidden-mobile.nav-item.subjects.dropdown-menu.multi-column .mobile-nav-item.hidden-mobile.nav-item.nav-tab{
+                margin-top:0 !important;
+            }
+
+
+}
+.wrapper-footer {
+    position: relative !important;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*for mobile end*/
  div.mask{
    position:fixed;
    left:0;
@@ -406,7 +482,7 @@ nav.sequence-list-wrapper {
 }
 .course-info header.course-profile .intro-inner-wrapper .media .hero img {
    display: block;
-   width: auto !important;
+   width: auto;
    max-height: 230px !important;
 }
 html, body {
@@ -449,6 +525,13 @@ div.forum-search input.search-input {
     border-right: none !important;
     border-bottom-right-radius: unset;
     border-top-right-radius: unset;
+}
+.dropdown-menu.multi-column div.col-md-4{
+
+        padding:8px;
+}
+.dropdown-menu.multi-column .subject-link {
+
 }
  /* .dropdown.lang{
    margin-bottom: 16px;

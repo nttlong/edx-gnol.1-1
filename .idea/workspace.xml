@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76d17d1-ee98-4620-ad71-9e5a4ffb3d0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/htmlmin/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/commands.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/decorators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/middleware.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/minify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/tests/mock_settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/tests/mock_settings_without_exclude.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/tests/mocks.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/tests/pico_django.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/tests/test_decorator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/tests/test_middleware.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/tests/test_minify.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/tests/test_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlmin/util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-cms-templates/widgets/select_languages.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-cms-templates/widgets/select_languages.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/navbar-authenticated.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/navbar-authenticated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/select_languages.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/select_languages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/user_dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/header/user_dropdown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/course_search.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/course_search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/header-subjects.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/header-subjects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj/config/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/config/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/config/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.bootstrap.layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.bootstrap.layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/static/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/static/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/views/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/views/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/views/base_lms.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/views/base_lms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/xlms/views/commons/nav_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xlms/views/commons/nav_bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/xmcs/views/base_nav_bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/xmcs/views/base_nav_bar.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,55 +28,50 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/angular1/controllers/IndexController.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/config/apps.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="13" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/config/middleware.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/htmlmin/tests/mocks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="90" column="42" lean-forward="true" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="920">
+              <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/select_languages.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="18" />
+              <folding>
+                <element signature="n#div#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/navbar-authenticated.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="80" column="37" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+              <folding>
+                <element signature="e#1061#1297#0" />
+                <element signature="e#1339#1606#0" />
+                <element signature="e#1627#1887#0" />
+                <element signature="e#1937#2148#0" />
+                <element signature="e#2201#2424#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/user_dropdown.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="29" column="68" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="68" />
+              <folding>
+                <element signature="e#1293#2582#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,34 +79,60 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/static/site.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/pymqr/compilers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="387">
+              <caret line="533" column="4" selection-start-line="533" selection-start-column="4" selection-end-line="533" selection-end-column="4" />
               <folding>
-                <element signature="e#0#91#0" expanded="true" />
+                <element signature="e#0#12446#0" />
+                <element signature="e#0#12446#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_sql/error_description.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.bootstrap.layout.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="257" column="49" lean-forward="true" selection-start-line="257" selection-start-column="49" selection-end-line="257" selection-end-column="49" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_sql/__init__.py">
+        <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="538">
+              <caret line="116" column="41" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="41" />
+              <folding>
+                <element signature="e#634#3073#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/views/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/header-subjects.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="50" column="40" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -130,16 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>http://sureworks.net/photo/banner/5a0bac80d5b52917b8cc7a12.png</find>
-      <find>style=&quot;background-image: url(background-image: url(/lms/static/banner/lv.png)&quot;</find>
-      <find>djDebug.querySelector('#djHideToolBarButton').addEventListener('click',</find>
-      <find>djDebug.querySelector('#djHideToolBarButton').addEventListener('click', function(event) {</find>
-      <find>djDebug.querySelector('#djHideToolBarButton').addEventListener('click', function(event)</find>
-      <find>settings/details</find>
-      <find>settings</find>
-      <find>Invite your students</find>
-      <find>/settings</find>
-      <find>$root.$dialog($id).url('/cms/course_invitation</find>
       <find>xdj-gnol-cms-templates/settings.html</find>
       <find>load_forum_config</find>
       <find>$root.$dialog($id).url('/cms/course_invitation/</find>
@@ -160,6 +169,16 @@
       <find>find_url_by_pattern</find>
       <find>client/ui.directtives/ui.qTemplate.js</find>
       <find>angularjs/client</find>
+      <find>172.16.7.67</find>
+      <find>ng-controller=&quot;lms&quot;</find>
+      <find>ng-cloak</find>
+      <find>class=&quot;dropdown language&quot;</find>
+      <find>subject</find>
+      <find>mobile-nav-item hidden-mobile nav-item subjects</find>
+      <find>header-subjects.html</find>
+      <find>.course-info header.course-profile .intro-inner-wrapper .media .hero img</find>
+      <find>margin-top: 21px;margin-right:8px;</find>
+      <find>14px !important;</find>
     </findStrings>
     <replaceStrings>
       <replace>=</replace>
@@ -175,19 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/header/select_languages.html" />
-        <option value="$PROJECT_DIR$/xdj/config/elastic_search.json" />
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/controllers/course_search.py" />
-        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/base_index_header.html" />
-        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/index.html" />
-        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/index.html" />
-        <option value="$PROJECT_DIR$/,/home/nttlong/code/edx/apps/edx/var/staticfiles/debug_toolbar/js/toolbar.js" />
-        <option value="$PROJECT_DIR$/debug_toolbar/static/debug_toolbar/js/toolbar.js" />
-        <option value="$PROJECT_DIR$/xdj-gnol-cms-templates/settings.html" />
-        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_dowload_excel_controller.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subject.html" />
-        <option value="$PROJECT_DIR$/xdj/config/data.json" />
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/static/client/ui.js" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/static/client/ui.js" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_download_excel_controller.py" />
         <option value="$PROJECT_DIR$/xdj_excel/column_info.py" />
@@ -218,13 +224,26 @@
         <option value="$PROJECT_DIR$/xdj_apps/angular1/settings.py" />
         <option value="$PROJECT_DIR$/xdj_apps/angular1/controllers/IndexController.py" />
         <option value="$PROJECT_DIR$/xdj-gnol-cms-templates/xdj-script.html" />
-        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/main.html" />
         <option value="$PROJECT_DIR$/xdj_apps/xlms/views/commons/exd_scripts.html" />
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/views/base.html" />
         <option value="$PROJECT_DIR$/xdj_apps/xlms/views/commons/static.html" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/common/static.html" />
+        <option value="$PROJECT_DIR$/xdj/config/data.json" />
+        <option value="$PROJECT_DIR$/xdj_apps/xmcs/views/register.html" />
+        <option value="$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.bootstrap.layout.js" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/main.html" />
+        <option value="$PROJECT_DIR$/xdj_apps/xlms/views/base_lms.html" />
+        <option value="$PROJECT_DIR$/xdj_apps/xlms/views/base.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/course_search.html" />
+        <option value="$PROJECT_DIR$/xdj_apps/xlms/views/commons/nav_bar.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-cms-templates/widgets/select_languages.html" />
+        <option value="$PROJECT_DIR$/xdj_apps/xmcs/views/base_nav_bar.html" />
         <option value="$PROJECT_DIR$/xdj/config/settings.json" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/header/select_languages.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/header/navbar-authenticated.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/header/user_dropdown.html" />
         <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/header/header.html" />
+        <option value="$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/header-subjects.html" />
         <option value="$PROJECT_DIR$/xdj_apps/xlms/static/site.css" />
       </list>
     </option>
@@ -252,20 +271,19 @@
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj-gnol-lms-templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
-              <item name="xlms" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj-gnol-lms-templates" type="462c0819:PsiDirectoryNode" />
+              <item name="header" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
-              <item name="xlms" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj-gnol-lms-templates" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj-htmls" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -416,13 +434,13 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16502732" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20874317" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.11447084" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.34341252" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -641,71 +659,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xdj/help.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/help.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/help/xblock.rst">
-      <provider selected="true" editor-type-id="restructured-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openpyxl/worksheet/worksheet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="395" selection-start-line="395" selection-end-line="395" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openpyxl/cell/_writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/openpyxl/cell/cell.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="126" selection-start-line="126" selection-end-line="126" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_pdf/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/pdfkit/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/pdfkit/pdfkit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="146" column="37" selection-start-line="146" selection-start-column="37" selection-end-line="146" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_excel/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_excel/column_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/resource/download_excel.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -787,13 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -957,24 +903,122 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/pytz/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="231" selection-start-line="231" selection-end-line="231" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/config/elastic_search.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/psycopg2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/config/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/register-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="116" column="41" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="41" />
+          <folding>
+            <element signature="e#634#3073#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/views/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.bootstrap.layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="257" column="49" lean-forward="true" selection-start-line="257" selection-start-column="49" selection-end-line="257" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="90" column="42" lean-forward="true" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+        <state relative-caret-position="239">
+          <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/select_languages.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/navbar-authenticated.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="80" column="37" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+          <folding>
+            <element signature="e#1061#1297#0" />
+            <element signature="e#1339#1606#0" />
+            <element signature="e#1627#1887#0" />
+            <element signature="e#1937#2148#0" />
+            <element signature="e#2201#2424#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/user_dropdown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="29" column="68" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="68" />
+          <folding>
+            <element signature="e#1293#2582#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="920">
+          <caret line="83" column="43" selection-start-line="83" selection-start-column="43" selection-end-line="83" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/header-subjects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="50" column="40" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/static/site.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+        <state relative-caret-position="387">
+          <caret line="533" column="4" selection-start-line="533" selection-start-column="4" selection-end-line="533" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#12446#0" />
+            <element signature="e#0#12446#0" />
+          </folding>
         </state>
       </provider>
     </entry>

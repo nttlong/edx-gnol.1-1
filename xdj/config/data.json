@@ -4,8 +4,8 @@
       "name":"lv_openedx",
       "user": "postgres",
       "password": "123456",
-      "host": "localhost",
-      "port": "5432"
+      "host": "172.16.7.67",
+      "port": "5433"
   },
   "sql_mssql": {
 
@@ -48,11 +48,11 @@
     "name": "lms2",
     "engine": "django.db.backends.mysql"
   },
-  "mongo_": {
+  "mongo__": {
     "host": "localhost",
     "port": 27018,
     "user": "bn_edx",
-    "password": "fdbb816e4e",
+    "password": "6162b76013",
     "name": "bitnami_edxapp"
   },
   "mongo": {
@@ -60,7 +60,7 @@
     "port": 27017,
     "user": "root",
     "password": "123456",
-    "name": "openedx"
+    "name": "lv_openedx"
   },
   "mongo_63": {
     "host": "172.16.7.67",
