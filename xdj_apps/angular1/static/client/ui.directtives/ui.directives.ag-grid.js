@@ -100,6 +100,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     }
                 }
                 function fireOnRowEdit(data){
+                    debugger;
                     if(attr.row){
                         $parse(attr.row).assign(scope,data);
                     }
@@ -217,6 +218,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     cmp.datasource.getRows(cmp.postParams);
                 }
                 function hookKeyDown(event){
+                    debugger;
                     var agBody=undefined;
                     if(ele.find(".ag-body").length>0){
                         agBody = ele.find(".ag-body")[0];
@@ -227,6 +229,23 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     }
                     var isInGrid=$.contains(agBody,event.target);
                     if(!isInGrid) return;
+
+                    var key = undefined;
+                    var e= event;
+                    var possible = [ e.key, e.keyIdentifier, e.keyCode, e.which ];
+
+                    while (key === undefined && possible.length > 0)
+                    {
+                        key = possible.pop();
+                    }
+
+                    if (key && (key == '115' || key == '83' ) && (e.ctrlKey || e.metaKey) && !(e.altKey))
+                    {
+                        e.preventDefault();
+                        alert("Ctrl-s pressed");
+                        return false;
+                    }
+
                     if(event.keyCode!=13 &&
                     event.keyCode !=45 &&
                     event.keyCode != 46 &&
@@ -303,7 +322,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                 var dataSource = {
                     rowCount: null,
                     getRows: function (params) {
-                        debugger;
+
                         cmp.postParams=params;
                         pageIndex=params.endRow/100 -1;
                         if(attr.onLoadData){
@@ -510,8 +529,10 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                                 }
                             }
                         }
+
                         if(attr.allowEdit=="true"){
-                        if( $(ele).attr('data-editable') !='true'){
+
+                        if( $(e).attr('data-editable') =='true'){
 
                                 col.editable=true;
                             }
