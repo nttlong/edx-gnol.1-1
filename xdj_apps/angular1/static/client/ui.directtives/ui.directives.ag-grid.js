@@ -50,6 +50,13 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
     '</div>'+
   '</div>';
 
+  var ag_custom_components = [];
+  function ag_register_component(name,callback){
+        ag_custom_components.push({
+            name:name,
+            component:callback()
+        })
+  }
   angularDefine(function(mdl){
     mdl.directive('bAgGrid', ["$parse","$filter", function ($parse,$filter) {
        
@@ -210,7 +217,15 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     cmp.datasource.getRows(cmp.postParams);
                 }
                 function hookKeyDown(event){
-                    var isInGrid=$.contains(ele.find(".ag-body")[0],event.target);
+                    var agBody=undefined;
+                    if(ele.find(".ag-body").length>0){
+                        agBody = ele.find(".ag-body")[0];
+
+                    }
+                    else {
+                        agBody =ele.find(".ag-body-viewport")[0];
+                    }
+                    var isInGrid=$.contains(agBody,event.target);
                     if(!isInGrid) return;
                     if(event.keyCode!=13 &&
                     event.keyCode !=45 &&
@@ -288,6 +303,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                 var dataSource = {
                     rowCount: null,
                     getRows: function (params) {
+                        debugger;
                         cmp.postParams=params;
                         pageIndex=params.endRow/100 -1;
                         if(attr.onLoadData){
@@ -304,7 +320,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                                         params.successCallback(res.items, res.total_items);
                                     }
                                 }
-                                fn(sender)
+                                fn(sender.params,sender.done)
                             }
                         }
                     }
@@ -327,6 +343,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     infiniteInitialRowCount: 1,
                     maxBlocksInCache: 2,
                     onGridReady: function(params) {
+
                         unHookGridKeyDownWatcher();
                         hookGridKeyDownWatcher();
                         setTimeout(function(){params.api.sizeColumnsToFit();},200)
@@ -412,6 +429,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                         fireOnRowEdit(event.data);
                     }
                 };
+
                 function cleanGrid(){
                     $(ele.find("#grid")[0]).empty();
                 }
@@ -449,10 +467,12 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     var ret =[];
                     var autoWidthCols =[];
                     var totalWidth =0;
+                    var selectedCol = undefined;
                     if(attr.showSelectedColumn){
-                        col={
-                            displayName:"<input type=\"checkbox\">",
-                            field:"$selected"
+                        selectedCol = col={
+                            displayName:"",
+                            field:"$selected",
+                            headerComponent: "default_header_check_box"
                         }
                         col.width=50;
                         col.minWidth=50;
@@ -492,6 +512,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                         }
                         if(attr.allowEdit=="true"){
                         if( $(ele).attr('data-editable') !='true'){
+
                                 col.editable=true;
                             }
                         }
@@ -523,7 +544,11 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                             col.lockPosition=true;
                         }
                         if($(e).attr("data-pinned")){
+
                             col.pinned=$(e).attr("data-pinned");
+                            if(selectedCol){
+                                    selectedCol.pinned=true;
+                            }
                         }
                         if($(e).attr('data-type')=='date'){
                             col.cellRenderer=function(params){
@@ -561,6 +586,10 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     }
                     gridOptions.columnDefs =cols;
                     gridOptions.height=$(ele[0]).height();
+                    gridOptions.components={};
+                    for(var i=0;i<ag_custom_components.length;i++){
+                        gridOptions.components[ag_custom_components[i].name]=ag_custom_components[i].component;
+                    }
                     $(ele.find("#grid")[0]).empty();
                     gEle=$("<div  class=\"ag-theme-fresh\"></div>")
                     gEle.appendTo(ele.find("#grid")[0]);
@@ -580,6 +609,10 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     gridOptions.columnDefs =cols;
                     gridOptions.height=$(ele[0]).height();
                     $(ele.find("#grid")[0]).empty();
+                    gridOptions.components={};
+                    for(var i=0;i<ag_custom_components.length;i++){
+                        gridOptions.components[ag_custom_components[i].name]=ag_custom_components[i].component;
+                    }
                     var gEle=$("<div  class=\"ag-theme-fresh\" ></div>").appendTo(ele.find("#grid")[0]);
                     // gEle.css({
                     //     height:$(ele.height())
@@ -594,5 +627,37 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
              watch();
         }
     }}]);
-  })
+  });
 
+ag_register_component("default_header_check_box",function(){
+
+    function CustomHeaderGroup() {}
+
+    CustomHeaderGroup.prototype.init = function (params) {
+
+        this.params = params;
+        var checkbox = document.createElement('input');
+        this.eGui = $('<div><input type="checkbox"/></div>')[0];
+        this.eGui.className = 'ag-header-group-cell-label';
+//        this.eGui.innerHTML = '' +
+//            '<div class="customHeaderLabel">' + this.params.displayName + '</div>' +
+//            '<div class="customExpandButton"><i class="fa fa-arrow-right"></i></div>';
+
+//        this.onExpandButtonClickedListener = this.expandOrCollapse.bind(this);
+//        this.eExpandButton = this.eGui.querySelector(".customExpandButton");
+//        this.eExpandButton.addEventListener('click', this.onExpandButtonClickedListener);
+//
+//        this.onExpandChangedListener = this.syncExpandButtons.bind(this);
+//        this.params.columnGroup.getOriginalColumnGroup().addEventListener('expandedChanged', this.onExpandChangedListener);
+//
+//        this.syncExpandButtons();
+    };
+
+    CustomHeaderGroup.prototype.getGui = function () {
+        return this.eGui;
+    };
+
+
+
+    return CustomHeaderGroup;
+})

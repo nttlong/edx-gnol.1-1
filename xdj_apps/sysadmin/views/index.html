@@ -7,6 +7,7 @@
   <%include file="common/header.html"/>
   <%include file="common/script.html"/>
   <%include file="common/static.html"/>
+  <%include file="common/vendor.html"/>
   <style>
 
 
@@ -40,6 +41,9 @@
 <script>
   var mdl=angular.module("admin",["q-ui"]);
   mdl.controller("admin",["$compile","$scope",function($compile,scope){
+      scope.$root.$settings={
+        defaultDateFormat:"dd/MM/yyyy"
+       };
       history_navigator(scope.$root);
       scope.$root.$url=$url
       scope.$root.$dialog=dialog

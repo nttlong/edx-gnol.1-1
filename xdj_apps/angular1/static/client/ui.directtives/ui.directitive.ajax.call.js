@@ -8,16 +8,20 @@ mdl.directive("call",["$parse",function($parse){
         priority:2,
         scope:false,
         link:function(s,e,a){
-         
+
             s.$watch(e.parent().attr("ws")||"$ws",function(o,v){
-                var scope=findScopeById(e.parent().attr("s-id")*1);
+                var scope=findScopeById(e.parent().attr("s-id")*1)||s;
                 var ws=undefined;
-                function exec(){
+                function exec(params,callback){
                     
-                        var data=scope.$eval(a.params);
+                        var data=params||scope.$eval(a.params);
                         ws.call(a.id,data,function(e,r){
                             if(e){
                                 throw(e);
+                                return;
+                            }
+                            if(callback){
+                                callback(r);
                                 return;
                             }
                             if(a.callback){

@@ -1,5 +1,5 @@
 <div title="${_//'Export to excel and download'}" ng-init="data.filename='${filename}';$parent.$tools.url_download=undefined">
-    <form-layout xs-cols="12" sm-cols="4,8" md-cols="3,9" lg-cols="3,9" ng-if="$parent.$tools.doExcelExport">
+    <form-layout xs-cols="12" sm-cols="4,8" md-cols="3,9" lg-cols="3,9">
         <form-template>
             <div>
                 <span>
@@ -7,9 +7,9 @@
                 </span>
                 <input type="text" ng-model="data.filename" placeholder="${_//'Enter filename'}">
             </div>
-            <div ng-if="$parent.$parent.$tools.url_download" >
+            <div ng-if="$parent.$tools.url_download" >
 
-                <a href="{{$parent.$parent.$parent.$tools.url_download.url}}" target="_blank"  span="12">
+                <a href="{{$parent.$parent.$tools.url_download.url}}" target="_blank"  span="12">
                     ${_//"Click here to download"}
                 </a>
 
@@ -21,7 +21,7 @@
 
                             </div>
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default" ng-click="$parent.$parent.$tools.excel_filename = data.filename; $parent.$parent.$tools.doExcelExport();">${_//"Do export"}</button>
+                                <button type="button" class="btn btn-default" ng-click="$parent.$tools.excel_filename = data.filename; $parent.$tools.doExcelExport();">${_//"Do export"}</button>
 
                             </div>
                             <div class="btn-group">
@@ -41,6 +41,9 @@
     <script>
         (function(scope){
             scope.filename = "${filename}";
+            scope.test=function(){
+                console.log(scope.$parent);
+            }
         });
     </script>
 

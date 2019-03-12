@@ -31,6 +31,7 @@ def __create_workbook__(columns,data):
         row_index = 2
         if isinstance(data, list):
             for row in data:
+                col_index = 1
                 for col in columns:
                     val = None
 
