@@ -41,7 +41,7 @@
         data-dialog-cancel-caption="Cancel"
         data-dialog-message-content ="Do you want to delete"
         data-dialog-caption="Confirm message"
-        style="height:600px"
+        style="width:100%;float:left"
         data-allow-edit ="true"
         data-changed-rows="changedLanguageItems"
         data-on-save-items ="ajaxSaveItems"
@@ -65,3 +65,13 @@
 
     </ajax>
     </div>
+<script>
+    (function(scope){
+        debugger;
+        console.log(scope);
+        scope.$element.find("#agGrid").css({height:$(window).height()-220});
+        $(window).resize(function(){
+            scope.$element.find("#agGrid").css({height:$(window).height()-220});
+        });
+    });
+</script>
