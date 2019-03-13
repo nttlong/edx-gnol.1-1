@@ -10,10 +10,11 @@ mdl.directive("call",["$parse",function($parse){
         link:function(s,e,a){
             $(e[0]).hide();
             s.$watch(e.parent().attr("ws")||"$ws",function(o,v){
-                var scope=findScopeById(e.parent().attr("s-id")*1)||s;
+                debugger;
+                var scope=findScopeById($(e.parents("[scope-id]")[0]).attr("scope-id")*1)||s;
                 var ws=undefined;
                 function exec(params,callback,noMask){
-                    
+                        debugger;
                         var data=params||scope.$eval(a.params);
                         ws.call(a.id,data,function(e,r){
                             if(e){

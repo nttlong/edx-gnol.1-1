@@ -69,6 +69,7 @@
     (function(scope){
         debugger;
         console.log(scope);
+        scope.$tools={};
         scope.$element.find("#agGrid").css({height:$(window).height()-220});
         $(window).resize(function(){
             scope.$element.find("#agGrid").css({height:$(window).height()-220});

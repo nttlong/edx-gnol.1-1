@@ -119,7 +119,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     };
                 }
                 function fireOnRowEdit(data){
-                    debugger;
+                    
                     if(attr.row){
                         $parse(attr.row).assign(scope,data);
                     }
@@ -242,7 +242,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     fireOnAddNewRow(cmp.row)
                 }
                 cmp.doRefresh=function(){
-                    debugger;
+                   
                     
                     // cmp.api.setDatasource(cmp.dataSource);
                     cmp.datasource.getRows(cmp.postParams);
@@ -257,11 +257,14 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     fireOnSaveRow(cmp.getModifiedRows());
                 }
                 cmp.doSaveItems=function(){
-                    debugger;
+                   
                     if(!attr.onSaveItems){
                         console.error("data-on-save-items was not found in directive (this attr bind to a function in which you want to save data items");
                     }
                     var rows=[];
+                    if((!cmp.modifiedRows)||(cmp.modifiedRows.length==0)){
+                        return;
+                    }
                     for(var i=0;i<cmp.modifiedRows.length;i++){
                         rows.push(cmp.modifiedRows[i]);
                     }
@@ -277,7 +280,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     else if(angular.isObject(fn)&&fn.ajaxComponent){
                         // fn.after(function(){cmp.doRefresh();});
                         fn.done(function(){
-                            debugger;
+                   
                             cmp.isClientUseCtrl_S=false;
                             cmp.doRefresh();
                             
@@ -397,7 +400,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     getRows: function (params) {
                         cmp.postParams=params;
                         if(cmp.isClientUseCtrl_S)  {
-                            debugger; 
+                           
                             return;
                         }
                         if(cmp.modifiedRows && cmp.modifiedRows.length>0){
@@ -423,7 +426,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                                         pageSize:params.endRow-params.startRow,
                                     },
                                     done:function(res){
-                                        debugger;
+                                       
                                         cmp.old_response_data =res;
                                         params.successCallback(res.items, res.total_items);
                                     }
@@ -551,7 +554,7 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                         }  
                     },
                     onRowValueChanged:function(event){
-                        debugger;
+                      
                     },
                     onSelectionChanged: function(event){
                         var row=event.api.getSelectedRows()[0];

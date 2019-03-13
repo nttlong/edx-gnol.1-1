@@ -48,13 +48,13 @@ angularDefine(function(mdl){
             };
         }
         function compile(scope, scripts, content,url) {
-            
+            debugger;
             var subScope = scope.$new(true, scope);
             
             var $ele = $("<div>" + content + "</div>");
+            $($ele.find("*")[0]).attr("scope-id",subScope.$id);
             subScope.$element = $ele.children();
-            $compile($ele.contents())(subScope);
-            subScope.$applyAsync();
+            
     
             return {
                 scope:subScope,
@@ -75,6 +75,8 @@ angularDefine(function(mdl){
                             }
                         }
                     }
+                    $compile(subScope.$element.contents())(subScope);
+                    subScope.$applyAsync();
                 }
     
             } 

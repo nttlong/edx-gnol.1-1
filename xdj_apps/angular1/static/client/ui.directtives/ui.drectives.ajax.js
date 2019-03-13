@@ -8,8 +8,10 @@ angularDefine(function(mdl){
             scope:false,
             template:"<ajax-caller ng-transclude></ajax-caller>",
             link:function(s,e,a){
-                
-                e.attr("s-id",angular.element(e[0]).scope().$id);
+                var scopeEles= $(e[0]).parents("[scope-id]");
+                if(scopeEles.length==0){
+                    e.attr("scope-id",angular.element(e[0]).scope().$id);
+                }
                 if(a.ws){
                     $parse(a.ws).assign(s,$ajax.with(a.url));
                 }
