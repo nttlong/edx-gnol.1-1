@@ -417,7 +417,13 @@ class BaseController(object):
                 try:
                     from xdj import JSON
                     if request.body.__len__()>0:
-                        model.post_data.__dict__.update(JSON.from_json(request.body))
+                        client_data = JSON.from_json(request.body)
+                        if isinstance(client_data,list):
+                            model.post_data.__dict__.update({
+                                "items":client_data
+                            })
+                        else:
+                            model.post_data.__dict__.update(client_data)
                     method_name = request.META["HTTP_AJAX_POST"]
                     method_items = method_name.split('.')
                     obj= self

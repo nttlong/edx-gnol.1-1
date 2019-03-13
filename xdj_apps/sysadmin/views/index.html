@@ -38,12 +38,19 @@
   </div>
   <div class="control-sidebar-bg"></div>
 </div>
+
 <script>
   var mdl=angular.module("admin",["q-ui"]);
   mdl.controller("admin",["$compile","$scope",function($compile,scope){
       scope.$root.$settings={
         defaultDateFormat:"dd/MM/yyyy"
        };
+      scope.$root.$agGridSettings={
+          warningSaveData:"${_//'Do you want to save changed items before this action? (Press Ctrl-S to save data)'}",
+          defaultDateFormat:"dd/MM/yyyy",
+          okCaption:'${_//"OK"}',
+          cancelCaption:'${_//"Cancel"}'
+      }
       history_navigator(scope.$root);
       scope.$root.$url=$url
       scope.$root.$dialog=dialog

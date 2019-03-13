@@ -1,6 +1,7 @@
 /*
     <div b-ag-grid  
         id="agGrid" 
+        data-key-fields="a,b,c"
         on-load-data="doLoadData" 
         data-allow-edit="false" 
         data-show-selected-column="true"
@@ -9,12 +10,14 @@
         data-on-edit="doEditWithRow(myRow)"
         data-on-insert="doInsert()"
         data-on-delete="doDelete(myRow)"
+        data-on-save="doSaveData"
         data-msg-delete="Do you want to delete this row?"
         data-row="myRow"
         data-dialog-ok-caption="OK"
         data-dialog-cancel-caption="Cancel"
         data-dialog-message-content ="Do you want to delete"
         data-dialog-caption="Confirm message"
+
 
         >
         <columns>
@@ -67,6 +70,15 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
         transclude:true,
         template:"<div><div id='grid' style='height:400px'></div><div  ng-transclude style='display:none' id='configs'></div></div>" ,
         link: function (scope, ele, attr) {
+            if(!scope.$root.$agGridSettings){
+                console.error("It looks like you forgot put $root.$agGridSettings");
+            }
+            if(!scope.$root.$agGridSettings.warningSaveData){
+                console.error("It looks like you forgot put $root.$agGridSettings.warningSaveData");
+            }
+            if(!scope.$root.$agGridSettings.defaultDateFormat){
+                console.error("It looks like you forgot put $root.$agGridSettings.defaultDateFormat");
+            }
             var agGrid;
             function watch(){
                 
@@ -97,7 +109,14 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                         else {
                             me.api.setFocusedCell(0, gridOptions.colDef[0].field);
                         }
-                    }
+                    };
+                    me.getModifiedRows=function(){
+                        data = [];
+                        me.api.forEachNode( function(rowNode, index) {
+                            data.push(rowNode.data);
+                        });
+                        return data;
+                    };
                 }
                 function fireOnRowEdit(data){
                     debugger;
@@ -117,6 +136,14 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                         var fn =scope.$eval(attr.onInsert);
                         if(angular.isFunction(fn)){
                             fn();
+                        }
+                    }
+                }
+                function fireOnSaveRow(rows){
+                    if(attr.onSave){
+                        var fn =scope.$eval(attr.onSave);
+                        if(angular.isFunction(fn)){
+                            fn(rows);
                         }
                     }
                 }
@@ -215,10 +242,53 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     fireOnAddNewRow(cmp.row)
                 }
                 cmp.doRefresh=function(){
+                    debugger;
+                    
+                    // cmp.api.setDatasource(cmp.dataSource);
                     cmp.datasource.getRows(cmp.postParams);
+                    cmp.api.refreshCells({
+                        force:true
+                    });
+                    cmp.modifiedRows =[];
+                    cmp.modifiedData={};
+                    cmp.isClientUseCtrl_S =false;
+                }
+                cmp.doSave=function(){
+                    fireOnSaveRow(cmp.getModifiedRows());
+                }
+                cmp.doSaveItems=function(){
+                    debugger;
+                    if(!attr.onSaveItems){
+                        console.error("data-on-save-items was not found in directive (this attr bind to a function in which you want to save data items");
+                    }
+                    var rows=[];
+                    for(var i=0;i<cmp.modifiedRows.length;i++){
+                        rows.push(cmp.modifiedRows[i]);
+                    }
+                    $parse(attr.changedRows).assign(scope,rows);
+                   
+                    var fn = scope.$eval(attr.onSaveItems);
+                    
+                    if(angular.isFunction(fn)){
+                        fn(rows);
+                        cmp.modifiedRows =[];
+                        cmp.modifiedData={};
+                    }
+                    else if(angular.isObject(fn)&&fn.ajaxComponent){
+                        // fn.after(function(){cmp.doRefresh();});
+                        fn.done(function(){
+                            debugger;
+                            cmp.isClientUseCtrl_S=false;
+                            cmp.doRefresh();
+                            
+                        })
+
+                    }
+                    if(cmp.currentMsg){
+                        cmp.currentMsg.remove();
+                    }
                 }
                 function hookKeyDown(event){
-                    debugger;
                     var agBody=undefined;
                     if(ele.find(".ag-body").length>0){
                         agBody = ele.find(".ag-body")[0];
@@ -238,11 +308,12 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                     {
                         key = possible.pop();
                     }
-
+                    //When end user press ctrl-S    
                     if (key && (key == '115' || key == '83' ) && (e.ctrlKey || e.metaKey) && !(e.altKey))
                     {
                         e.preventDefault();
-                        alert("Ctrl-s pressed");
+                        cmp.isClientUseCtrl_S=true;
+                        cmp.doSaveItems();
                         return false;
                     }
 
@@ -287,7 +358,9 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
 
                     }
                     if(event.keyCode==116){
-                        cmp.datasource.getRows(cmp.postParams);
+                        /*F5*/
+                        
+                        cmp.doRefresh();
                     }
 
                     event.preventDefault();
@@ -322,8 +395,22 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                 var dataSource = {
                     rowCount: null,
                     getRows: function (params) {
-
                         cmp.postParams=params;
+                        if(cmp.isClientUseCtrl_S)  {
+                            debugger; 
+                            return;
+                        }
+                        if(cmp.modifiedRows && cmp.modifiedRows.length>0){
+                            cmp.currentMsg = agGridCreateSildeUpConfirm(scope,scope.$root.$agGridSettings.warningSaveData,function(){
+                                cmp.doSaveItems();   
+                            })
+                            var res=cmp.old_response_data
+                            params.successCallback(res.items, res.total_items);
+                            return;
+                        }
+                        
+                          
+                        
                         pageIndex=params.endRow/100 -1;
                         if(attr.onLoadData){
                             var fn= scope.$eval(attr.onLoadData);
@@ -336,6 +423,8 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                                         pageSize:params.endRow-params.startRow,
                                     },
                                     done:function(res){
+                                        debugger;
+                                        cmp.old_response_data =res;
                                         params.successCallback(res.items, res.total_items);
                                     }
                                 }
@@ -369,8 +458,6 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                         // params.api.sizeColumnsToFit();
                         params.api.setDatasource(dataSource);
                         cmp.api =params.api;
-
-                       
                         var h=ele.height();
                         function watchHeight(){
                             var r=ele.height()
@@ -419,14 +506,52 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                                 fn(event.data,event.column.colDef.field);
                             }
                         }
+                        if(attr.allowEdit=="true"){
+                            var keyData ={};
+                            if(!attr.keyFields){
+                                console.error("data-key-fields was not found in directive");
+                            }  
+                            var keys = attr.keyFields.split(',');
+                            for(var i=0;i<keys.length;i++){
+                                keyData[keys[i]]=event.data[keys[i]];
+                            }
+                            cmp.editingKey= JSON.stringify(keyData);
+                            cmp.oldDataRow = JSON.stringify(event.data);  
+                        }
                     },
                     onCellEditingStopped: function(event) {
-                        if (attr.onAfterEdit){
-                            var fn=scope.$eval(attr.onAfterEdit);
-                            if(angular.isFunction(fn)){
-                                fn(event.data,event.column.colDef.field);
+                        
+                        if(attr.allowEdit=="true"){
+                            if(cmp.oldDataRow==JSON.stringify(event.data)) return;
+                            if(!cmp.modifiedRows){
+                                cmp.modifiedRows=[];
                             }
-                        }
+                            if(!cmp.modifiedData){
+                                cmp.modifiedData={}
+                            }
+                            if(!attr.keyFields){
+                                console.error("data-key-fields was not found in directive");
+                            }    
+                            
+                            if(!cmp.modifiedData[cmp.editingKey]){
+                                cmp.modifiedRows.push(event.data);
+                                cmp.modifiedData[cmp.editingKey]=event.data;
+                            }
+                            if(!attr.changedRows){
+                                console.error("data-changed-rows was not found in directive");
+                            }
+                            $parse(attr.changedRows).assign(scope,cmp.modifiedRows);
+                            if (attr.onAfterEdit){
+                                var fn=scope.$eval(attr.onAfterEdit);
+                                if(angular.isFunction(fn)){
+                                    fn(event.data,event.column.colDef.field);
+                                }
+                            }
+                            
+                        }  
+                    },
+                    onRowValueChanged:function(event){
+                        debugger;
                     },
                     onSelectionChanged: function(event){
                         var row=event.api.getSelectedRows()[0];
@@ -577,11 +702,11 @@ var ag_grid_msg_delete_dialog ='<div class="modal" tabindex="-1" role="dialog">'
                                     return $filter("date")(params.value,$(e).attr('data-format'));
                                 }
                                 else {
-                                    if(scope.$root.$settings && scope.$root.$settings.defaultDateFormat){
-                                        return $filter("date")(params.value,scope.$root.$settings.defaultDateFormat);
+                                    if(scope.$root.$settings && scope.$root.$agGridSettings.defaultDateFormat){
+                                        return $filter("date")(params.value,scope.$root.$$agGridSettings.defaultDateFormat);
                                     }
                                     else {
-                                        return "root scope with defaultDateFormat in $settings was not found, please put $settings.defaultDateFormat at root scope";
+                                        return "root scope with defaultDateFormat in $settings was not found, please put $agGridSettings.defaultDateFormat at root scope";
                                     }
                                 }
                             }
@@ -682,3 +807,65 @@ ag_register_component("default_header_check_box",function(){
 
     return CustomHeaderGroup;
 })
+function agGridCreateSildeUpConfirm(scope,msg,okCallback,cancelCallback){
+    /*
+        <div style='position:fixed;
+                        left:0;bottom:0;
+                        right:0;
+                        padding:20px;
+                        background-color:#0c0c0c;
+                        font-size:14px;
+                        color:#fcfcfc;z-index:20000'
+                        >
+                        <div class="row">
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <strong id='msg'></strong>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div class="btn-toolbar pull-right" role="toolbar">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary" id="btnOK"></button>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default" id="btnCancel">5</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+             </div>
+    */
+   var tmp = '<div style=\'position:fixed;'+
+'left:0;bottom:0;'+
+'right:0;'+
+'padding:20px;'+
+'background-color:#0c0c0c;'+
+'font-size:14px;'+
+'color:#fcfcfc;z-index:20000\''+
+'>'+
+'<div class="row">'+
+'<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">'+
+'<strong id=\'msg\'></strong>'+
+'</div>'+
+'<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">'+
+'<div class="btn-toolbar pull-right" role="toolbar">'+
+'<div class="btn-group">'+
+'<button type="button" class="btn btn-primary" id="btnOK"></button>'+
+'</div>'+
+'<div class="btn-group">'+
+'<button type="button" class="btn btn-default" id="btnCancel">5</button>'+
+'</div>'+
+'</div>'+
+'</div>'+
+'</div>'+
+'</div>'
+    var div=$(tmp);
+    div.find("#msg").html(msg);
+    div.find("#btnOK").html(scope.$root.$agGridSettings.okCaption);
+    div.find("#btnCancel").html(scope.$root.$agGridSettings.cancelCaption);
+    div.find("#btnOK").bind("click",okCallback);
+    div.find("#btnCancel").bind("click",function(){
+        div.remove();
+    })
+    div.appendTo("body");
+    return div;
+}

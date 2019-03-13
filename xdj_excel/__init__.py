@@ -9,16 +9,14 @@ def __create_workbook__(columns,data):
     wb = Workbook()
 
     ws = wb.active
+    ws.title = "data"
     ws.protection.sheet = True
     if isinstance(columns, tuple):
         col_index = 1
         for col in columns:
             col_letter = get_column_letter(col_index)
 
-            range = wb.create_named_range(col.field,ws,col_letter + ":" + col_letter)
-
-
-
+            range = wb.create_named_range(col.field, ws, col_letter + ":" + col_letter)
             if isinstance(col, Column):
                 ws.cell(1, col_index, col.caption)
             else:
@@ -62,7 +60,8 @@ def __create_workbook__(columns,data):
                 locked=False
             )
         col_index = col_index + 1
-
+    ws.freeze_panes = "A2"
+    ws.auto_filter.ref = "A1:" + get_column_letter(columns.__len__()) + "1"
     return wb
 
 

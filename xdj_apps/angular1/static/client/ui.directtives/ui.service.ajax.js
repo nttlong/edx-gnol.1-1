@@ -10,7 +10,7 @@ mdl.service("$ajax",[function(){
         this.owner=owner;
         this._id=id;
     }
-    executor.prototype.__exec=function(callback,_id,_data){
+    executor.prototype.__exec=function(callback,_id,_data,noMask){
         var me=this;
         var sender=undefined;
         if(instance.onBeforeCall){
@@ -24,7 +24,10 @@ mdl.service("$ajax",[function(){
         if(!_data){
             callData=me._data;
         }
-        var $mask=$("<div class='mask'></div>").appendTo("body");
+        var $mask= undefined;
+        if(!noMask){
+            $mask=$("<div class='mask'></div>").appendTo("body");
+        }
 //        callData = callData||{}
 //        callData["csrfmiddlewaretoken"]=$("[name='csrfmiddlewaretoken']").val()
 
@@ -39,7 +42,7 @@ mdl.service("$ajax",[function(){
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success:function(res){
-                $mask.remove();
+                if($mask)      $mask.remove();
                 if(instance.onAfterCall){
                     instance.onAfterCall(me,sender);
                 }
@@ -48,7 +51,7 @@ mdl.service("$ajax",[function(){
                 }
             },
             error:function(ex){
-                $mask.remove();
+                if($mask)      $mask.remove();
                 if(instance.onAfterCall){
                     instance.onAfterCall(me,sender);
                 }
