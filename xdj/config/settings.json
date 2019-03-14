@@ -97,5 +97,7 @@
   "COMMENTS_SERVICE_KEY": "8f0154b617e3c6599b00abfb0f33b94d19dd",
   "COMMENTS_SERVICE_URL": "http://localhost:18080",
   "TEMP_DOWNLOAD_DIR": "/opt/edx-hawthorn.2-4/apps/edx/var/media/download",
-  "HTML_MINIFY": false
+  "TEMP_UPLOAD_DIR": "/opt/edx-hawthorn.2-4/apps/edx/var/media/upload",
+  "HTML_MINIFY": false,
+  "DEBUG": false
 }

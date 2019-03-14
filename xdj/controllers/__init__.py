@@ -227,6 +227,7 @@ class Model(object):
     """
     def __init__(self):
         from django.utils.translation import ugettext
+        from xdj import get_hash_controller
         import urllib
         self.request = None
         self.response = None
@@ -236,11 +237,12 @@ class Model(object):
         self.redirect = None
         self.user= ModelUser()
         self.csrf_token = None
-        self.post_data= PostData();
+        self.post_data= PostData()
         self.settings=None
         self.to_json= to_json
         self.escape = urllib.quote_plus
         self.djRes = ugettext
+        self.get_hash_controller=get_hash_controller
 
     def debugger(self):
         print "debugger"
@@ -430,7 +432,14 @@ class BaseController(object):
                     for i in range(0,method_items.__len__()-1):
                         obj=getattr(obj,method_items[i])
                     method_exec = getattr(obj,method_items[method_items.__len__()-1])
-                    ret = method_exec(model)
+                    from xdj.controller_privileges import Action
+                    ret = None
+                    if isinstance(method_exec, Action):
+                        ret = method_exec.fn(obj,model)
+                    else:
+                        # from django.http import HttpResponseForbidden
+                        # return HttpResponseForbidden()
+                        ret = method_exec(model)
                     from util.json_request import JsonResponse
                     if type(ret) == JsonResponse:
                         return ret

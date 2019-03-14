@@ -1,5 +1,9 @@
 [
     "xdj.middle_ware.GlobalRequestMiddleware",
     "htmlmin.middleware.HtmlMinifyMiddleware",
-    "htmlmin.middleware.MarkRequestMiddleware"
+    "htmlmin.middleware.MarkRequestMiddleware",
+    "django.middleware.cache.UpdateCacheMiddleware",
+
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.cache.FetchFromCacheMiddleware"
 ]

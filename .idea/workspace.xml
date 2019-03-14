@@ -2,11 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a76d17d1-ee98-4620-ad71-9e5a4ffb3d0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/xdj/controller_privileges.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/resources_manager/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/resources_manager/controllers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/resources_manager/controllers/download_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/resources_manager/controllers/excel_export.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/resources_manager/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/resources_manager/views/download.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/resources_manager/views/excel_export.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_upload_excel_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/resource/upload_excel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xdj_resource_upload/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj/config/middleware.json" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/config/middleware.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj/config/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/config/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj/controllers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj/controllers/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.directitive.ajax.call.js" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.directitive.ajax.call.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.directives.ag-grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.directives.ag-grid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.qTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.qTemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_download_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_download_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_upload_controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/linguistics_list_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/linguistics_list_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_download_excel_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_download_excel_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/views/common/static.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/common/static.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/views/linguistics/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/xdj_apps/sysadmin/views/linguistics/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xdj_apps/sysadmin/views/upload.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,18 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/linguistics/list.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#!!top" />
-                <element signature="e#1152#1158#1" expanded="true" />
-                <element signature="e#3447#4653#0" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -35,39 +49,68 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj/config/middleware.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj/config/apps.json">
+        <entry file="file://$PROJECT_DIR$/../../../python/lib/python2.7/importlib/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="1" selection-end-line="2" selection-end-column="1" />
+            <state relative-caret-position="400">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/compressor/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/manager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="168" column="34" lean-forward="true" selection-start-line="168" selection-start-column="34" selection-end-line="168" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bs4/.idea/bs4.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/xdj/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="430" selection-start-line="430" selection-end-line="430" />
+              <folding>
+                <element signature="e#709#745#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/linguistics_list_controller.py">
+        <entry file="file://$PROJECT_DIR$/xdj/middle_ware.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="21" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="15" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/core/handlers/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
-              <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-              <folding>
-                <element signature="e#253#1560#0" />
-              </folding>
+              <caret line="156" selection-start-line="156" selection-end-line="156" />
             </state>
           </provider>
         </entry>
@@ -75,27 +118,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+            <state relative-caret-position="346">
+              <caret line="91" column="39" lean-forward="true" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdcal.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subject.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html">
+        <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/fields/related_descriptors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="122">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
             </state>
           </provider>
         </entry>
@@ -105,21 +138,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>register_INSTALLED_APPS</find>
-      <find>load_installed_apps</find>
-      <find>apply_settings</find>
-      <find>load_email_settings</find>
-      <find>__createModelFromRequest__</find>
-      <find>find_url_by_pattern</find>
-      <find>client/ui.directtives/ui.qTemplate.js</find>
-      <find>angularjs/client</find>
       <find>172.16.7.67</find>
       <find>ng-controller=&quot;lms&quot;</find>
       <find>ng-cloak</find>
@@ -142,6 +167,14 @@
       <find>fireOnAddNewRow</find>
       <find>debugger</find>
       <find>DoSaveItems</find>
+      <find>resource/download/excel</find>
+      <find>system_user_controller</find>
+      <find>Model</find>
+      <find>__view_exec__</find>
+      <find>print</find>
+      <find>print</find>
+      <find>courseware_subjects</find>
+      <find>print sql</find>
     </findStrings>
     <replaceStrings>
       <replace>=</replace>
@@ -157,24 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj/config/middleware.json.py" />
-        <option value="$PROJECT_DIR$/xdj/config/middleware.json" />
-        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/upload.html" />
-        <option value="$PROJECT_DIR$/xdj/config/apps.json" />
-        <option value="$PROJECT_DIR$/lms/urls.py" />
-        <option value="$PROJECT_DIR$/cms/urls.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/xmcs/static/client/ui.js" />
-        <option value="$PROJECT_DIR$/xdj/dynamic_object.py" />
-        <option value="$PROJECT_DIR$/xdj/private_services.py" />
-        <option value="$PROJECT_DIR$/xdj/pymqr/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj_sql/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/angular1/settings.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/angular1/controllers/IndexController.py" />
-        <option value="$PROJECT_DIR$/xdj-gnol-cms-templates/xdj-script.html" />
-        <option value="$PROJECT_DIR$/xdj_apps/xlms/views/commons/exd_scripts.html" />
-        <option value="$PROJECT_DIR$/xdj_apps/xmcs/views/base.html" />
         <option value="$PROJECT_DIR$/xdj_apps/xlms/views/commons/static.html" />
         <option value="$PROJECT_DIR$/xdj/config/data.json" />
         <option value="$PROJECT_DIR$/xdj_apps/xmcs/views/register.html" />
@@ -199,22 +214,40 @@
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/common/ag-grid.html" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/common/vendor.html" />
-        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/common/static.html" />
         <option value="$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.directitive.ajax.call.js" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/index.html" />
         <option value="$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.directives.ag-grid.js" />
-        <option value="$PROJECT_DIR$/xdj/controllers/__init__.py" />
         <option value="$PROJECT_DIR$/xdj_excel/__init__.py" />
-        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/linguistics_list_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/commons/resource_upload_excel_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_upload_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/common/static.html" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/resource/upload_excel.html" />
+        <option value="$PROJECT_DIR$/xdj_resource_upload/__init__.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_upload_excel_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/angular1/controllers/download_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/resources_manager/controllers/download_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/resources_manager/views/download.html" />
+        <option value="$PROJECT_DIR$/xdj_apps/resources_manager/settings.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/resources_manager/controllers/excel_export.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_download_controller.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_download_excel_controller.py" />
         <option value="$PROJECT_DIR$/xdj_apps/sysadmin/views/linguistics/list.html" />
+        <option value="$PROJECT_DIR$/xdj_apps/resources_manager/views/excel_export.html" />
+        <option value="$PROJECT_DIR$/xdj/controller_privileges.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/controllers/linguistics_list_controller.py" />
+        <option value="$PROJECT_DIR$/xdj/__init__.py" />
+        <option value="$PROJECT_DIR$/xdj/controllers/__init__.py" />
         <option value="$PROJECT_DIR$/xdj/config/settings.json" />
+        <option value="$PROJECT_DIR$/xdj/config/middleware.json" />
+        <option value="$PROJECT_DIR$/xdj/middle_ware.py" />
+        <option value="$PROJECT_DIR$/xdj_apps/sysadmin/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="114" />
-    <option name="width" value="1038" />
+    <option name="width" value="1028" />
     <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -223,6 +256,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,41 +267,45 @@
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
               <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="xdj" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj_apps" type="462c0819:PsiDirectoryNode" />
+              <item name="sysadmin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="edx-platform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="edx-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="xdj_sql" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="editorconfig.notification" value="spaces" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/compressor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/sql/compiler.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/xdj_apps/resources_manager/controllers" />
+      <recent name="$PROJECT_DIR$/xdj_apps/sysadmin/controllers" />
+      <recent name="$PROJECT_DIR$/xdj_apps/angular1/static" />
+      <recent name="$PROJECT_DIR$/xdj_apps/xmcs/controllers" />
+      <recent name="$PROJECT_DIR$/xdj_models/tables" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/xdj_apps/angular1/static/vendor" />
       <recent name="$PROJECT_DIR$/xdj_apps/xlms/static/banner" />
       <recent name="$PROJECT_DIR$/xdj" />
       <recent name="$PROJECT_DIR$/xdj_apps/xmcs/static/flags" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/xdj_apps/angular1/static" />
-      <recent name="$PROJECT_DIR$/xdj_apps/sysadmin/controllers" />
-      <recent name="$PROJECT_DIR$/xdj_apps/xmcs/controllers" />
-      <recent name="$PROJECT_DIR$/xdj_models/tables" />
-      <recent name="$PROJECT_DIR$/xdj_apps/xmcs/static/fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -389,14 +427,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22131148" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19836065" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4352052" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33909288" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -543,11 +582,6 @@
           <option name="timeStamp" value="689" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/sql/compiler.py</url>
-          <line>891</line>
-          <option name="timeStamp" value="711" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/xdj_apps/xmcs/controllers/courseware_team_controller.py</url>
           <line>10</line>
           <option name="timeStamp" value="712" />
@@ -592,6 +626,31 @@
           <line>141</line>
           <option name="timeStamp" value="787" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_upload_excel_controller.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="794" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/psycopg2/pool.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="808" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="809" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/xdj_apps/sysadmin/settings.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="816" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/xdj_apps/sysadmin/settings.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="818" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -615,256 +674,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/pytz/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="231" selection-start-line="231" selection-end-line="231" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config/elastic_search.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/psycopg2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/register-form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3150" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="116" column="41" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="41" />
-          <folding>
-            <element signature="e#634#3073#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xmcs/views/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.bootstrap.layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="257" column="49" lean-forward="true" selection-start-line="257" selection-start-column="49" selection-end-line="257" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/select_languages.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="n#div#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/navbar-authenticated.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="80" column="37" lean-forward="true" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
-          <folding>
-            <element signature="e#1061#1297#0" />
-            <element signature="e#1339#1606#0" />
-            <element signature="e#1627#1887#0" />
-            <element signature="e#1937#2148#0" />
-            <element signature="e#2201#2424#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/user_dropdown.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="29" column="68" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="68" />
-          <folding>
-            <element signature="e#1293#2582#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" column="18" selection-start-line="93" selection-start-column="18" selection-end-line="93" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/navigation/navbar-not-authenticated.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/header/navbar-not-authenticated.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="79" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/xlms/static/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/course_subjects.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/course_search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="134" selection-start-line="8" selection-start-column="134" selection-end-line="8" selection-end-column="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="19" selection-start-line="47" selection-start-column="12" selection-end-line="49" selection-end-column="19" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/header-subjects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="40" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj-gnol-lms-templates/xdj-htmls/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.drectives.ajax.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/resource/download_excel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/angular1/static/vendor/dist/lib/misc/linkedList.js" />
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/common/script.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/common/header.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/common/ag-grid.html" />
-    <entry file="file://$PROJECT_DIR$/xdj/config/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/common/vendor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/utils/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2730">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/core/handlers/exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.directitive.ajax.call.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/common/static.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="48" column="114" selection-start-line="48" selection-start-column="114" selection-end-line="48" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/angular1/static/client/ui.directtives/ui.directives.ag-grid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="261" column="24" selection-start-line="261" selection-start-column="24" selection-end-line="261" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/JSON/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="133" selection-start-line="133" selection-end-line="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/pymqr/pyquery.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="163" selection-start-line="163" selection-end-line="163" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/pymqr/pydocs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="381" selection-start-line="381" selection-end-line="381" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xdj/pymqr/pycollection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -875,44 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/controllers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="432" selection-start-line="432" selection-end-line="432" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="75" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xdj_excel/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subject.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/linguistics_list_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding>
-            <element signature="e#253#1560#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config/middleware.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -932,31 +707,317 @@
     <entry file="file://$PROJECT_DIR$/jdcal.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subject.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/system/subjects.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/upload.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="81" column="54" lean-forward="true" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_upload_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/common/static.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_resource_download/download_info.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_resource_download/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="5" selection-start-line="4" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/resource/upload_excel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_resource_upload/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="40" column="6" selection-start-line="38" selection-start-column="4" selection-end-line="40" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/encodings/utf_8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/angular1/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/angular1/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/resources_manager/views/download.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/resource/download_excel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="51" lean-forward="true" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/resources_manager/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_download_excel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-start-column="2" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/resources_manager/views/excel_export.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/views/linguistics/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+        <state relative-caret-position="705">
+          <caret line="66" column="10" lean-forward="true" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#!!top" />
-            <element signature="e#1152#1158#1" expanded="true" />
-            <element signature="e#3447#4653#0" />
             <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/resource_upload_excel_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/excel_download_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/resources_manager/controllers/download_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/resources_manager/controllers/excel_export.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/controller_privileges.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/linguistics_list_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+          <folding>
+            <element signature="e#253#1560#0" />
+            <element signature="e#1603#2563#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/xhr/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/controllers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="396" selection-start-line="396" selection-end-line="396" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/psycopg2/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="97" column="17" selection-start-line="97" selection-start-column="12" selection-end-line="97" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/psycopg2/pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/utils/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/backends/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/sql/compiler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="894" column="29" lean-forward="true" selection-start-line="894" selection-start-column="29" selection-end-line="894" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/config/settings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="91" column="39" lean-forward="true" selection-start-line="91" selection-start-column="39" selection-end-line="91" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="168" column="34" lean-forward="true" selection-start-line="168" selection-start-column="34" selection-end-line="168" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/db/models/fields/related_descriptors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../venvs/edxapp/lib/python2.7/site-packages/django/core/handlers/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../python/lib/python2.7/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/config/middleware.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/controllers/system_subjects_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="430" selection-start-line="430" selection-end-line="430" />
+          <folding>
+            <element signature="e#709#745#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj/middle_ware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xdj_apps/sysadmin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="15" selection-end-column="21" />
         </state>
       </provider>
     </entry>

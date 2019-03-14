@@ -23,6 +23,7 @@ from . dynamic_object import dobject
 from django.conf import settings
 import sys
 import os
+from .controller_privileges import Privilges,privilege
 try:
     sys.path.append(os.sep.join([settings.REPO_ROOT,"cms/djangoapps"]))
 except Exception as ex:
@@ -34,6 +35,8 @@ __controllers__ = []
 __pages__ = []
 __build_cached__ = None
 __controllert_url_build_cache__ = None
+__controlers_hash__ = None
+__controlers_hash_vert__ = None
 from . controllers import Model
 
 
@@ -84,6 +87,13 @@ def __create__(urls):
     :param host_dir:
     :return:
     """
+    global __controlers_hash__
+    if not __controlers_hash__:
+        __controlers_hash__ = {}
+    global __controlers_hash_vert__
+    if not __controlers_hash_vert__:
+        __controlers_hash_vert__ = {}
+    import uuid
     from . private_services import __find_url_by_pattern__
     urlpatterns = ()
     global __build_cached__
@@ -95,6 +105,20 @@ def __create__(urls):
     replace_urls = []
     check_urls = []
     for item in __controllers__:
+        hash_path = item.instance.__class__.__module__ + "/" + item.instance.__class__.__name__
+        controller_id = uuid.uuid4().__str__()
+        __controlers_hash__.update({
+            controller_id: dict(instance = item,
+                                hash_path = hash_path)
+        })
+        __controlers_hash_vert__.update({
+            hash_path:dict(
+                instance  = item,
+                controller_id = controller_id
+            )
+        })
+
+
 
         if item.instance.replace_url:
             replace_urls.append(item.instance)
@@ -357,7 +381,7 @@ def load_apps(urlpatterns=None):
             import inspect
             controller_file = os.sep.join([controller_dir,file])
             extension = os.path.splitext(controller_file)[1][1:]
-            if (not __controllert_url_build_cache__.has_key(controller_file)) and extension=="py":
+            if (not __controllert_url_build_cache__.has_key(controller_file)) and extension == "py":
                 m = None
                 try:
                     m = imp.load_source("{0}.{1}".format(item,file.split('.')[0]),controller_file)
@@ -403,8 +427,8 @@ def load_apps(urlpatterns=None):
                 raise Exception("{0} do not have 'app_dir'".format(self.controllerClass))
             """
             # x=1
-
-    return __create__(urlpatterns)
+    ret_url_patterns = __create__(urlpatterns)
+    return ret_url_patterns
 
 
 def debugTemplate(x):
@@ -465,6 +489,31 @@ def clear_language_cache():
     clear_language_cache()
 
 
+def find_controller_by_path(path_to_find):
+    global __controlers_hash_vert__
+    if not __controlers_hash_vert__:
+        __controlers_hash_vert__ = {}
+    return [k for k,v in __controlers_hash_vert__.items() if k.lower().count(path_to_find.lower())>0]
+
+
+def get_hash_controller(controller_path):
+    global __controlers_hash_vert__
+    if not __controlers_hash_vert__:
+        __controlers_hash_vert__ = {}
+    ret = __controlers_hash_vert__.get(controller_path,None)
+    if ret:
+        return ret.get('controller_id',None)
+
+
+def get_controller_by_id(controller_id):
+    global __controlers_hash__
+    if not __controlers_hash__:
+        __controlers_hash__ = {}
+    ret = __controlers_hash__.get(controller_id,None)
+    if not ret:
+        return  None
+    else:
+        return ret.get('instance',None)
 
 
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import xdj
 @xdj.Controller(
     url="linguistics/list",
@@ -5,9 +7,15 @@ import xdj
 )
 class LinguisticsListController(xdj.BaseController):
 
+    """
+    This feature allow manage Language resource: insert, update,detlete, export and import
+    Tính năng này cho phép quản lý tài nguyên ngôn ngữ: chèn, cập nhật, xóa, xuất và nhập
+    """
+
     def on_get(self,model):
         return self.render(model)
 
+    @xdj.privilege(xdj.Privilges.VIEW)
     def DoLoadItems(self,model):
         if not hasattr(model.post_data,"pageSize"):
             return  {}
@@ -40,7 +48,7 @@ class LinguisticsListController(xdj.BaseController):
         ret = qr.get_page(model.post_data.pageSize,model.post_data.pageIndex)
         return ret
         pass
-
+    @xdj.privilege(xdj.Privilges.UPDATE)
     def DoSaveItems(self,model):
         from xdj import pymqr, medxdb, clear_language_cache
         from xdj.pymqr import docs, funcs, filters

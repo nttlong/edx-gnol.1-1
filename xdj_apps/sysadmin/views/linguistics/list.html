@@ -7,7 +7,7 @@
                     <button type="button" class="btn btn-default" ng-click="selectedId=-1;$root.$dialog($id).url('${appUrl}/resource/import/excel').onclose(doRefresh).done();">${_//"Import"}</button>
                 </div>
                 <div class="btn-group">
-                    <button type="button" class="btn btn-default" ng-click="$root.$dialog($id).url('${appUrl}/resource/download/excel').done();">${_//"Export"}</button>
+                    <button type="button" class="btn btn-default" ng-click="$root.$dialog($id).url('/resource_manager/export/excel').done();">${_//"Export"}</button>
                 </div>
                 <div class="btn-group">
                     <button type="button" class="btn btn-default" ng-click="agGrid.doSaveItems();">${_//"Save (Ctrl+S)"}</button>
@@ -67,8 +67,6 @@
     </div>
 <script>
     (function(scope){
-        debugger;
-        console.log(scope);
         scope.$tools={};
         scope.$element.find("#agGrid").css({height:$(window).height()-220});
         $(window).resize(function(){
