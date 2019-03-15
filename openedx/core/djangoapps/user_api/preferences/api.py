@@ -27,7 +27,8 @@ from ..serializers import RawUserPreferenceSerializer
 
 log = logging.getLogger(__name__)
 
-
+__cache_user_api_prerences__ = None
+__cache_get_user_preference__ = None
 @intercept_errors(UserAPIInternalError, ignore_errors=[UserAPIRequestError])
 def get_user_preference(requesting_user, preference_key, username=None):
     """Returns the value of the user preference with the specified key.
@@ -50,7 +51,18 @@ def get_user_preference(requesting_user, preference_key, username=None):
          UserAPIInternalError: the operation failed due to an unexpected error.
     """
     existing_user = _get_authorized_user(requesting_user, username, allow_staff=True)
-    return UserPreference.get_value(existing_user, preference_key)
+    global __cache_get_user_preference__
+    if not __cache_get_user_preference__:
+        __cache_get_user_preference__ = {}
+    if not __cache_get_user_preference__.has_key(existing_user.username):
+        __cache_get_user_preference__.update({
+            existing_user.username:{}
+        })
+    if not __cache_get_user_preference__[existing_user.username].has_key(preference_key):
+        __cache_get_user_preference__[existing_user.username].update({
+            preference_key: UserPreference.get_value(existing_user, preference_key)
+        })
+    return __cache_get_user_preference__[existing_user.username][preference_key]
 
 
 @intercept_errors(UserAPIInternalError, ignore_errors=[UserAPIRequestError])
@@ -168,7 +180,18 @@ def set_user_preference(requesting_user, preference_key, preference_value, usern
         PreferenceUpdateError: the operation failed when performing the update.
         UserAPIInternalError: the operation failed due to an unexpected error.
     """
+    global __cache_user_api_prerences__
+    if not __cache_user_api_prerences__:
+        __cache_user_api_prerences__ = {}
+
+
+
     existing_user = _get_authorized_user(requesting_user, username)
+    if __cache_user_api_prerences__.has_key(existing_user.username):
+        return
+    __cache_user_api_prerences__.update({
+        existing_user.username: existing_user
+    })
     if preference_value is not None:
         preference_value = unicode(preference_value)
     serializer = create_user_preference_serializer(existing_user, preference_key, preference_value)
@@ -177,6 +200,7 @@ def set_user_preference(requesting_user, preference_key, preference_value, usern
     if serializer_is_dirty(serializer):
         try:
             serializer.save()
+
         except Exception as error:
             raise _create_preference_update_error(preference_key, preference_value, error)
 
@@ -335,7 +359,7 @@ def _check_authorized(requesting_user, username, allow_staff=False):
         if not requesting_user.is_staff or not allow_staff:
             raise UserNotAuthorized()
 
-
+__cache_existing_user_preference__ = None
 def create_user_preference_serializer(user, preference_key, preference_value):
     """Creates a serializer for the specified user preference.
 
@@ -347,10 +371,19 @@ def create_user_preference_serializer(user, preference_key, preference_value):
     Returns:
         A serializer that can be used to save the user preference.
     """
-    try:
-        existing_user_preference = UserPreference.objects.get(user=user, key=preference_key)
-    except ObjectDoesNotExist:
-        existing_user_preference = None
+    global __cache_existing_user_preference__
+    if not __cache_existing_user_preference__:
+        __cache_existing_user_preference__ = {}
+    if __cache_existing_user_preference__.has_key(user.username):
+        existing_user_preference = __cache_existing_user_preference__[user.username]
+    else:
+        try:
+            existing_user_preference = UserPreference.objects.get(user=user, key=preference_key)
+            __cache_existing_user_preference__.update({
+                user.username: existing_user_preference
+            })
+        except ObjectDoesNotExist:
+            existing_user_preference = None
     new_data = {
         "key": preference_key,
         "value": preference_value,

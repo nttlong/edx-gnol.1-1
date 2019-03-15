@@ -99,5 +99,6 @@
   "TEMP_DOWNLOAD_DIR": "/opt/edx-hawthorn.2-4/apps/edx/var/media/download",
   "TEMP_UPLOAD_DIR": "/opt/edx-hawthorn.2-4/apps/edx/var/media/upload",
   "HTML_MINIFY": false,
-  "DEBUG": false
+  "DEBUG": true,
+  "ENABLE_COMPREHENSIVE_THEMING": true
 }

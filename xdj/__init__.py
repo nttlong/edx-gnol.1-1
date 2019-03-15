@@ -455,6 +455,8 @@ def apply_context(context):
     # context.res = res
     context.res = res
     context.request = GlobalRequestMiddleware.get_current_request()
+    if not context.request:
+        context.request = context.context._data.get('request')
     request = context.request
 
     context.currentUrl = request.build_absolute_uri().split("?")[0]

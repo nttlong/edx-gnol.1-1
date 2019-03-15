@@ -6,14 +6,18 @@ class GlobalRequestMiddleware(object):
     @classmethod
     def get_current_request(cls):
         import threading
-        return threading.current_thread().request
+        if hasattr(threading.current_thread(),"request"):
+            return threading.current_thread().request
+        else:
+            return None
 
     def process_request(self, request):
+        import threading
+        threading.current_thread().request = request
 
         if request.path.find("/static/")>-1:
             return None
-        import threading
-        threading.current_thread().request = request
+
         class RES(object):
             def __rshift__(self, other):
                 return  other
